@@ -1,0 +1,20 @@
+{
+  "name": "stylekit",
+  "version": "0.0.0",
+  "authors": [
+    "Trevor Harwell <trevor.harwell@evisions.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "apps",
+    "public",
+    "themes",
+    "semantic"
+  ]
+}
