@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       stylekit: {
         options: {},
         files: {
-          'dist/blessed/stylekit.css': 'dist/stylekit.css'
+          'dist/stylekit.blessed.css': 'dist/stylekit.css'
         }
       }
     },

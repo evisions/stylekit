@@ -202,8 +202,8 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-@imagePath : '../images';
-@fontPath  : '../fonts';
+@imagePath : './assets/images';
+@fontPath  : './assets/fonts';
 
 /*-------------------
        Em Sizes
