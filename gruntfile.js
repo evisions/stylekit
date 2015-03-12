@@ -55,11 +55,22 @@ module.exports = function(grunt) {
           'dist/blessed/stylekit.css': 'dist/stylekit.css'
         }
       }
+    },
+
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        commit: true,
+        commitFiles: ['-a'],
+        pushTo: 'origin master'
+      }
     }
 
   });
 
   require('load-grunt-tasks')(grunt);
+
+  grunt.registerTask('release', ['build', 'bump']);
 
   grunt.registerTask('build', ['less', 'autoprefixer', 'bless']);
 
