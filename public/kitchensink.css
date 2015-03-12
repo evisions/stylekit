@@ -41,9 +41,9 @@
 #sink .demo.container .segment.example {
   z-index: 1;
 }
-/*#sink .demo.container .ui.label:not(.empty) {
-  margin-bottom: 1em;
-}*/
+#sink .demo.container .ui.label:not(.empty) {
+  /*margin-bottom: 1em;*/
+}
 
 #sink .demo.container .segment .ui.label {
   margin-bottom: 0em;

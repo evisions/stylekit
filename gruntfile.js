@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      semantic: {
+      stylekit: {
         files: [
           'apps**/*.less',
           'apps/**/*.variables',
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           'themes/**/*.variables',
           'themes/**/*.overrides'
         ],
-        tasks: ['less:stylekit', 'autoprefixer'],
+        tasks: ['build'],
         options: {
           spawn: false,
           livereload: true
@@ -46,13 +46,22 @@ module.exports = function(grunt) {
           base: ['public', 'dist', 'themes/default/assets']
         }
       }
+    },
+
+    bless: {
+      stylekit: {
+        options: {},
+        files: {
+          'dist/blessed/stylekit.css': 'dist/stylekit.css'
+        }
+      }
     }
 
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('build', ['less', 'autoprefixer']);
+  grunt.registerTask('build', ['less', 'autoprefixer', 'bless']);
 
   grunt.registerTask('default', ['build',  'connect', 'watch']);
 };
