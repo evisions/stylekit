@@ -64,6 +64,15 @@ module.exports = function(grunt) {
         commitFiles: ['-a'],
         pushTo: 'origin master'
       }
+    },
+
+    copy: {
+      assets: {
+        expand: true,
+        cwd: 'themes/evisions/assets',
+        src: '**/*',
+        dest: 'dist/assets'
+      }
     }
 
   });
@@ -72,7 +81,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('release', ['build', 'bump']);
 
-  grunt.registerTask('build', ['less', 'autoprefixer', 'bless']);
+  grunt.registerTask('build', ['less', 'autoprefixer', 'bless', 'copy:assets']);
 
   grunt.registerTask('default', ['build',  'connect', 'watch']);
 };
