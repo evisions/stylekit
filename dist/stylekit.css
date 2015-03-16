@@ -14046,7 +14046,7 @@ ol.ui.horizontal.list li:before,
   color: #ffffff;
 }
 .ui.dimmer .ui.loader:before {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: #3a3a3a;
 }
 .ui.dimmer .ui.loader:after {
   border-color: #ffffff transparent transparent;
@@ -14145,7 +14145,7 @@ ol.ui.horizontal.list li:before,
   color: #ffffff;
 }
 .ui.inverted.loader:before {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: #3a3a3a;
 }
 .ui.inverted.loader:after {
   border-top-color: #ffffff;
