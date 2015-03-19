@@ -4841,7 +4841,7 @@
 }
 .ui.test.ad {
   position: relative;
-  background: #333333;
+  background: #3a3a3a;
 }
 .ui.test.ad:after {
   position: absolute;
@@ -8694,7 +8694,7 @@ a.ui.card:hover,
 .ui.inverted.orange.statistics .statistic > .value,
 .ui.statistics .inverted.orange.statistic > .value,
 .ui.inverted.orange.statistic > .value {
-  color: #ff851b;
+  color: #ffaf23;
 }
 .ui.inverted.pink.statistics .statistic > .value,
 .ui.statistics .inverted.pink.statistic > .value,
@@ -14745,7 +14745,7 @@ a.ui.nag {
   background-color: #f2c61f;
 }
 .ui.black.inverted.progress .bar {
-  background-color: #333333;
+  background-color: #3a3a3a;
 }
 .ui.blue.inverted.progress .bar {
   background-color: #54c8ff;
@@ -14754,7 +14754,7 @@ a.ui.nag {
   background-color: #2ecc40;
 }
 .ui.orange.inverted.progress .bar {
-  background-color: #ff851b;
+  background-color: #ffaf23;
 }
 .ui.pink.inverted.progress .bar {
   background-color: #ff8edf;
@@ -16953,7 +16953,7 @@ a.ui.nag {
 }
 /* Whole Page */
 body.pushable {
-  background: #333333 !important;
+  background: #3a3a3a !important;
 }
 /* Page Context */
 .pushable:not(body) {
@@ -18218,6 +18218,10 @@ html.ios {
 /*******************************
          Tab Overrides
 *******************************/
+.ui.tabular.menu .active.item {
+  border-radius: 0 !important;
+  box-shadow: 0em 2px 0em inset;
+}
 /*******************************
         User Overrides
 *******************************/

@@ -55,10 +55,10 @@
 @yellow           : #F2C61F;
 
 /*---  Light Colors  ---*/
-@lightBlack       : #333333;
+@lightBlack       : #3a3a3a;
 @lightBlue        : #54C8FF;
 @lightGreen       : #2ECC40;
-@lightOrange      : #FF851B;
+@lightOrange      : #ffaf23;
 @lightPink        : #FF8EDF;
 @lightPurple      : #CDC6FF;
 @lightRed         : #FF695E;
@@ -77,7 +77,7 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+@primaryColor        : @lightOrange;
 @secondaryColor      : @black;
 
 @lightPrimaryColor   : @lightBlue;
