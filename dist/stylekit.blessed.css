@@ -3443,7 +3443,7 @@
   margin: 1em 0em;
   border: 1px solid #d0d0d0;
   box-shadow: none;
-  border-radius: 0.25rem;
+  border-radius: none;
   color: rgba(0, 0, 0, 0.8);
   border-collapse: separate;
   border-spacing: 0px;
@@ -3484,13 +3484,13 @@
   border-left: none;
 }
 .ui.table thead tr:first-child > th:first-child {
-  border-radius: 0.25rem 0em 0em 0em;
+  border-radius: none 0em 0em 0em;
 }
 .ui.table thead tr:first-child > th:last-child {
-  border-radius: 0em 0.25rem 0em 0em;
+  border-radius: 0em none 0em 0em;
 }
 .ui.table thead tr:first-child > th:only-child {
-  border-radius: 0.25rem 0.25rem 0em 0em;
+  border-radius: none none 0em 0em;
 }
 /* Footer */
 .ui.table tfoot {
@@ -3512,13 +3512,13 @@
   border-left: none;
 }
 .ui.table tfoot tr:first-child > th:first-child {
-  border-radius: 0em 0em 0em 0.25rem;
+  border-radius: 0em 0em 0em none;
 }
 .ui.table tfoot tr:first-child > th:last-child {
-  border-radius: 0em 0em 0.25rem 0em;
+  border-radius: 0em 0em none 0em;
 }
 .ui.table tfoot tr:first-child > th:only-child {
-  border-radius: 0em 0em 0.25rem 0.25rem;
+  border-radius: 0em 0em none none;
 }
 /* Table Row */
 .ui.table tr td {
@@ -3875,7 +3875,7 @@
 /* Top */
 .ui[class*="top attached"].table {
   margin-top: 1em 0em;
-  border-radius: 0.25rem 0.25rem 0em 0em;
+  border-radius: none none 0em 0em;
 }
 .ui.table[class*="top attached"]:first-child {
   margin-top: 0em;
@@ -3884,7 +3884,7 @@
 .ui.table[class*="bottom attached"] {
   margin-top: 0em;
   margin-bottom: 1em 0em;
-  border-radius: 0em 0em 0.25rem 0.25rem;
+  border-radius: 0em 0em none none;
 }
 .ui.table[class*="bottom attached"]:last-child {
   margin-bottom: 0em;

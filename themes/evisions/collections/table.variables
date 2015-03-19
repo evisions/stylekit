@@ -14,7 +14,7 @@
   border-color @transitionDuration @transitionEasing,
   color @transitionDuration @transitionEasing
 ;
-@borderRadius: 0.25rem;
+@borderRadius: none;
 @background: #FFFFFF;
 @color: @textColor;
 @borderWidth: 1px;

@@ -23,7 +23,7 @@
 @textColor: rgba(0, 0, 0, 0.6);
 @textShadow: none;
 @invertedTextShadow: none;
-@borderRadius: @defaultBorderRadius;
+@borderRadius: none;
 @verticalAlign: baseline;
 
 /* Internal Shadow */
