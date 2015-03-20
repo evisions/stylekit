@@ -22131,7 +22131,7 @@ ol.ui.horizontal.list li:before,
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #1b1c1d;
+  background: #3a3a3a;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {

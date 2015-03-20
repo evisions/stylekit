@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1426894678656');
+@import url('stylekit.blessed-blessed1.css?z=1426894779769');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -1878,7 +1878,7 @@
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #1b1c1d;
+  background: #3a3a3a;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {

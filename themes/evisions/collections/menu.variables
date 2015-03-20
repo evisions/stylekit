@@ -268,7 +268,7 @@
 ---------------*/
 
 /* Inverted */
-@invertedBackground: @black;
+@invertedBackground: @lightBlack;
 @invertedBoxShadow: none;
 @invertedHeaderBackground: rgba(0, 0, 0, 0.3);
 
