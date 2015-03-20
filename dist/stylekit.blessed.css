@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1426779147278');
+@import url('stylekit.blessed-blessed1.css?z=1426883831871');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -432,6 +432,27 @@
 /*******************************
          Theme Overrides
 *******************************/
+@media only screen and (min-width: 992px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
 /*******************************
          Site Overrides
 *******************************/

@@ -19118,8 +19118,8 @@ ol.ui.horizontal.list li:before,
     width: auto;
     margin-left: 0em;
     margin-right: 0em;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -19127,8 +19127,8 @@ ol.ui.horizontal.list li:before,
     width: auto;
     margin-left: 0em;
     margin-right: 0em;
-    padding-left: 23%;
-    padding-right: 23%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /*-------------------
@@ -20685,6 +20685,27 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+@media only screen and (min-width: 992px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ui.page.grid {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
 /*******************************
          Site Overrides
 *******************************/

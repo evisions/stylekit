@@ -52,7 +52,8 @@ module.exports = function(grunt) {
       stylekit: {
         options: {},
         files: {
-          'dist/stylekit.blessed.css': 'dist/stylekit.css'
+          'dist/stylekit.blessed.css': 'dist/stylekit.css',
+          'dist/stylekit.min.blessed.css': 'dist/stylekit.min.css'
         }
       }
     },
@@ -73,6 +74,14 @@ module.exports = function(grunt) {
         src: '**/*',
         dest: 'dist/assets'
       }
+    },
+
+    cssmin: {
+      target: {
+        files: {
+          'dist/stylekit.min.css': ['dist/stylekit.css']
+        }
+      }
     }
 
   });
@@ -81,7 +90,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('release', ['build', 'bump']);
 
-  grunt.registerTask('build', ['less', 'autoprefixer', 'bless', 'copy:assets']);
+  grunt.registerTask('build', ['less', 'autoprefixer', 'cssmin', 'bless', 'copy:assets']);
 
   grunt.registerTask('default', ['build',  'connect', 'watch']);
 };
