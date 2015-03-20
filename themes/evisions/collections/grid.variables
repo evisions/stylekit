@@ -45,11 +45,16 @@
 
 @largeMonitorWidth: auto;
 @largeMonitorMargin: 0em;
-@largeMonitorGutter: 15%;
+// @largeMonitorGutter: 15%;
+@largeMonitorGutter: 0;
 
 @widescreenMonitorWidth: auto;
 @widescreenMargin: 0em;
-@widescreenMonitorGutter: 23%;
+@widescreenMonitorGutter: @largeMonitorGutter;
+
+@computerMaxWith: 1200px;
+@largeMonitorMaxWidth: @computerMaxWith;
+@widescreenMonitorMaxWidth: @computerMaxWith;
 
 
 /*--------------

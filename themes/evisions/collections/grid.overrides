@@ -2,3 +2,34 @@
          Theme Overrides
 *******************************/
 
+@media only screen and (max-width: (@largestMobileScreen)) {
+  .ui.page.grid {
+
+  }
+}
+@media only screen and (min-width: @tabletBreakpoint ) {
+  .ui.page.grid {
+
+  }
+}
+@media only screen and (min-width: @computerBreakpoint) {
+  .ui.page.grid {
+    max-width: @computerMaxWith;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: @largeMonitorBreakpoint) {
+  .ui.page.grid {
+    max-width: @largeMonitorMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
+  .ui.page.grid {
+    max-width: @widescreenMonitorMaxWidth;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
