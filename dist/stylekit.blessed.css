@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1426894819854');
+@import url('stylekit.blessed-blessed1.css?z=1427148784248');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -452,6 +452,10 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}
+.ui.grid.compact > .column:not(.row) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 /*******************************
          Site Overrides

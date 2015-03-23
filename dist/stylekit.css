@@ -20706,6 +20706,10 @@ ol.ui.horizontal.list li:before,
     margin-right: auto !important;
   }
 }
+.ui.grid.compact > .column:not(.row) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 /*******************************
          Site Overrides
 *******************************/
