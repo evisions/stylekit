@@ -33,3 +33,8 @@
     margin-right: auto !important;
   }
 }
+
+.ui.grid.compact > .column:not(.row) {
+  padding-top: (@rowSpacing / 4);
+  padding-bottom: (@rowSpacing / 4);
+}
