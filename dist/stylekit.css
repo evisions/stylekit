@@ -24937,12 +24937,28 @@ ol.ui.horizontal.list li:before,
   height: 3rem;
   max-width: 14.28571429%;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   position: relative;
 }
 .ui.calendar .day .text {
   display: inline-block;
+}
+.ui.calendar .day .appointment {
+  position: absolute;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  width: 0.25rem;
+  height: 0.25rem;
+  vertical-align: baseline;
+  padding: 0.25rem;
+  border-radius: 500rem;
+  text-align: center;
+  background-color: #ffa609;
+  left: 50%;
+  margin-left: -0.25rem;
+  bottom: .25em;
 }
 .ui.calendar .day.other {
   font-weight: bold;
@@ -24950,23 +24966,24 @@ ol.ui.horizontal.list li:before,
 }
 .ui.calendar .day.today {
   font-weight: bold;
-  background-color: #e4e5e5;
+  background-color: #e4e5e5 !important;
 }
 .ui.calendar .day.disabled {
   cursor: default !important;
   color: rgba(40, 40, 40, 0.3);
 }
-.ui.calendar .row {
+.ui.calendar .week {
   display: table;
   border-collapse: collapse;
 }
-.ui.calendar .content .header {
+.ui.calendar .week.header .cell {
   color: rgba(0, 0, 0, 0.85);
   width: 3rem;
   height: 2rem;
   display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
+  text-transform: uppercase;
 }
 .ui.calendar .controls.default {
   width: 21rem;
@@ -24976,7 +24993,7 @@ ol.ui.horizontal.list li:before,
   font-weight: bold;
 }
 .ui.calendar .controls.default .title {
-  width: 100%;
+  width: auto;
 }
 .ui.calendar .controls.default table {
   width: 100%;
@@ -24985,13 +25002,28 @@ ol.ui.horizontal.list li:before,
 .ui.calendar .controls.default table td:nth-child(1),
 .ui.calendar .controls.default table td:nth-child(3) {
   cursor: pointer;
+  width: 3rem;
+  vertical-align: middle;
+  text-align: center;
+}
+.ui.calendar .controls.default table td .control {
+  padding: 0.25rem;
+  border-radius: 500rem;
+  display: inline-block;
+}
+.ui.calendar .controls.default table td .control .icon {
+  margin: 0;
+}
+.ui.calendar .controls.default table td .control:hover {
+  background: none;
+  color: #ffa609;
 }
 .ui.calendar .controls.default table td:nth-child(2) {
   text-align: center;
   vertical-align: middle;
 }
-.ui.calendar .controls.default table td:nth-child(3) {
-  text-align: right;
+.ui.calendar .controls.default table td {
+  text-align: center;
   vertical-align: middle;
 }
 /**
@@ -25003,14 +25035,41 @@ ol.ui.horizontal.list li:before,
 .ui.calendar.fluid .day {
   width: 14.28571429%;
 }
-.ui.calendar.fluid .row {
+.ui.calendar.fluid .week {
   width: 100%;
 }
-.ui.calendar.fluid .content .header {
+.ui.calendar.fluid .week.header .cell {
   width: 14.28571429%;
 }
 .ui.calendar.fluid .controls.default {
   width: 100%;
+}
+.ui.calendar.fluid .controls.default table td:nth-child(1),
+.ui.calendar.fluid .controls.default table td:nth-child(3) {
+  width: 14.28571429%;
+}
+/**
+ * Vertical Fluid
+ */
+.ui.calendar.vertical.fluid {
+  position: relative;
+  height: 100%;
+}
+.ui.calendar.vertical.fluid .content {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ui.calendar.vertical.fluid .week.header {
+  height: 10%;
+}
+.ui.calendar.vertical.fluid .week {
+  height: 15%;
+}
+.ui.calendar.vertical.fluid .cell {
+  height: 100%;
 }
 /**
  * Celled
@@ -25020,7 +25079,7 @@ ol.ui.horizontal.list li:before,
   border-right: 1px solid #dcddde;
   border-bottom: 1px solid #dcddde;
 }
-.ui.calendar.celled .content .header {
+.ui.calendar.celled .week.header .cell {
   border: 1px solid #dcddde;
 }
 /**

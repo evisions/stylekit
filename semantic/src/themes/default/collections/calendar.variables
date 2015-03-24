@@ -17,6 +17,13 @@
 
 @otherDayFontWeight: bold;
 
+@controlBorderRadius: 500rem;
+@controlPadding: .25rem;
+@controlBackgroundHover: none;
+@controlColorHover: @primaryColorActive;
 
 @activeDayColor: @primaryColorActive;
 @activeDayBackground: inherit;
+
+@appointmentWidth: .25rem;
+@appointmentBackground: @primaryColorActive;

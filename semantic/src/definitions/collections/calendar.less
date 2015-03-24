@@ -13,13 +13,30 @@
   height: @normalDayHeight;
   max-width: 100%/7;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   position: relative;
 }
 
 .ui.calendar .day .text {
   display: inline-block;
+}
+
+.ui.calendar .day .appointment {
+  position: absolute;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  width: @appointmentWidth;
+  height: @appointmentWidth;
+  vertical-align: baseline;
+  padding: @appointmentWidth;
+  border-radius: 500rem;
+  text-align: center;
+  background-color: @appointmentBackground;
+  left: 50%;
+  margin-left: -(@appointmentWidth);
+  bottom: .25em;
 }
 
 .ui.calendar .day.other {
@@ -29,7 +46,7 @@
 
 .ui.calendar .day.today {
   font-weight: @todayFontWeight;
-  background-color: @todayBackground;
+  background-color: @todayBackground !important;
 }
 
 .ui.calendar .day.disabled {
@@ -37,18 +54,19 @@
   color: @disabledTextColor;
 }
 
-.ui.calendar .row {
+.ui.calendar .week {
   display: table;
   border-collapse: collapse;
 }
 
-.ui.calendar .content .header {
+.ui.calendar .week.header .cell {
   color: @contentHeaderColor;
   width: @normalHeaderWidth;
   height: @normalHeaderHeight;
   display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
+  text-transform: uppercase;
 }
 
 .ui.calendar .controls.default {
@@ -60,7 +78,7 @@
 }
 
 .ui.calendar .controls.default .title {
-  width: 100%;
+  width: auto;
 }
 
 .ui.calendar .controls.default table {
@@ -71,6 +89,24 @@
 .ui.calendar .controls.default table td:nth-child(1),
 .ui.calendar .controls.default table td:nth-child(3) {
   cursor: pointer;
+  width: @normalDayWidth;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.ui.calendar .controls.default table td .control {
+  padding: @controlPadding;
+  border-radius: @controlBorderRadius;
+  display: inline-block;
+}
+
+.ui.calendar .controls.default table td .control .icon {
+  margin: 0;
+}
+
+.ui.calendar .controls.default table td .control:hover {
+  background: @controlBackgroundHover;
+  color: @controlColorHover;
 }
 
 .ui.calendar .controls.default table td:nth-child(2) {
@@ -78,8 +114,8 @@
   vertical-align: middle;
 }
 
-.ui.calendar .controls.default table td:nth-child(3) {
-  text-align: right;
+.ui.calendar .controls.default table td {
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -95,15 +131,44 @@
   width: 100%/7;
 }
 
-.ui.calendar.fluid .row {
+.ui.calendar.fluid .week {
   width: 100%;
 }
 
-.ui.calendar.fluid .content .header {
+.ui.calendar.fluid .week.header .cell {
   width: 100%/7;
 }
 .ui.calendar.fluid .controls.default {
   width: 100%;
+}
+
+.ui.calendar.fluid .controls.default table td:nth-child(1),
+.ui.calendar.fluid .controls.default table td:nth-child(3) {
+  width: 100%/7;
+}
+
+/**
+ * Vertical Fluid
+ */
+.ui.calendar.vertical.fluid {
+  position: relative;
+  height: 100%;
+}
+.ui.calendar.vertical.fluid .content {
+  position: absolute;
+  top: @normalHeaderHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ui.calendar.vertical.fluid .week.header {
+  height: 10%;
+}
+.ui.calendar.vertical.fluid .week {
+  height: 90%/6;
+}
+.ui.calendar.vertical.fluid .cell {
+  height: 100%;
 }
 
 /**
@@ -115,7 +180,7 @@
   border-bottom: 1px solid @lightGrey;
 }
 
-.ui.calendar.celled .content .header {
+.ui.calendar.celled .week.header .cell {
   border: 1px solid @lightGrey;
 }
 
