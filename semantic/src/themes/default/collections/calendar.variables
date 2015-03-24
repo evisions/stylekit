@@ -1,0 +1,22 @@
+@dayFontWeight: bold;
+@dayCursor: pointer;
+@dayColor: @darkTextColor;
+
+@normalDayWidth: 3rem;
+@normalDayHeight: 3rem;
+
+@normalHeaderWidth: @normalDayWidth;
+@normalHeaderHeight: 2rem;
+
+@controlsWidth: @normalHeaderWidth * 7;
+
+@contentHeaderColor: @darkTextColor;
+
+@todayFontWeight: @dayFontWeight;
+@todayBackground: @lightGreyHover;
+
+@otherDayFontWeight: bold;
+
+
+@activeDayColor: @primaryColorActive;
+@activeDayBackground: inherit;

@@ -20710,6 +20710,13 @@ ol.ui.horizontal.list li:before,
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.ui.grid.fitted > .column:not(.row) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ui.grid.fitted {
+  margin: 0;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -24596,6 +24603,445 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Site Overrides
 *******************************/
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Global */
+/* Elements */
+/* Collections */
+/* Modules */
+/* Views */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+    Default Theme
+-------------------*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* 4px @ default em */
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+       Easing
+--------------------*/
+/*-------------------
+     All Colors
+--------------------*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Text ---*/
+/*--- Colored Headers ---*/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Header Spacing */
+/* Makes sure padded grid can fit at 320px */
+/* Used to match floats with text */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+           States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Standard  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*------------------
+   Packaged Theme
+-------------------*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* 4px @ default em */
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+       Easing
+--------------------*/
+/*-------------------
+     All Colors
+--------------------*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Text ---*/
+/*--- Colored Headers ---*/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Header Spacing */
+/* Makes sure padded grid can fit at 320px */
+/* Used to match floats with text */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+           States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Standard  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*------------------
+     Site Theme
+-------------------*/
+/*******************************
+     User Global Variables
+*******************************/
+/*******************************
+        Import Mix-ins
+*******************************/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+/**
+ * Basic Styling
+ */
+.ui.calendar .day {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  max-width: 14.28571429%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+}
+.ui.calendar .day .text {
+  display: inline-block;
+}
+.ui.calendar .day.other {
+  font-weight: bold;
+  color: rgba(40, 40, 40, 0.3);
+}
+.ui.calendar .day.today {
+  font-weight: bold;
+  background-color: #e4e5e5;
+}
+.ui.calendar .day.disabled {
+  cursor: default !important;
+  color: rgba(40, 40, 40, 0.3);
+}
+.ui.calendar .row {
+  display: table;
+  border-collapse: collapse;
+}
+.ui.calendar .content .header {
+  color: rgba(0, 0, 0, 0.85);
+  width: 3rem;
+  height: 2rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.ui.calendar .controls.default {
+  width: 21rem;
+  margin-bottom: 0.5rem;
+}
+.ui.calendar .controls.default .month {
+  font-weight: bold;
+}
+.ui.calendar .controls.default .title {
+  width: 100%;
+}
+.ui.calendar .controls.default table {
+  width: 100%;
+  vertical-align: middle;
+}
+.ui.calendar .controls.default table td:nth-child(1),
+.ui.calendar .controls.default table td:nth-child(3) {
+  cursor: pointer;
+}
+.ui.calendar .controls.default table td:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+}
+.ui.calendar .controls.default table td:nth-child(3) {
+  text-align: right;
+  vertical-align: middle;
+}
+/**
+ * Fluid
+ */
+.ui.calendar.fluid {
+  width: 100%;
+}
+.ui.calendar.fluid .day {
+  width: 14.28571429%;
+}
+.ui.calendar.fluid .row {
+  width: 100%;
+}
+.ui.calendar.fluid .content .header {
+  width: 14.28571429%;
+}
+.ui.calendar.fluid .controls.default {
+  width: 100%;
+}
+/**
+ * Celled
+ */
+.ui.calendar.celled .day {
+  border-left: 1px solid #dcddde;
+  border-right: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
+}
+.ui.calendar.celled .content .header {
+  border: 1px solid #dcddde;
+}
+/**
+ * Selectable
+ */
+.ui.calendar.selectable .day {
+  cursor: pointer;
+}
+.ui.calendar.selectable .day.active {
+  background-color: inherit;
+}
+.ui.calendar.selectable .day.active .text {
+  color: #ffa609;
+}
+/**
+ * Label Support
+ */
+.ui.calendar .day .ui.label.empty.floating {
+  top: -0.3em;
+  margin: 0em 0em 0em -0.7em !important;
+}
 /* Views */
 /*!
  * # Semantic UI - Ad

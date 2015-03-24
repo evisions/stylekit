@@ -38,3 +38,11 @@
   padding-top: (@rowSpacing / 4);
   padding-bottom: (@rowSpacing / 4);
 }
+
+.ui.grid.fitted > .column:not(.row) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ui.grid.fitted {
+  margin: 0;
+}

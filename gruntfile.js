@@ -28,12 +28,15 @@ module.exports = function(grunt) {
           'apps/**/*.overrides',
           'themes**/*.less',
           'themes/**/*.variables',
-          'themes/**/*.overrides'
+          'themes/**/*.overrides',
+          'semantic/src/definitions/**/*.less',
+          'semantic/src/themes/default/**/*.variables',
+          'semantic/src/themes/default/**/*.overrides'
         ],
         tasks: ['build'],
         options: {
           spawn: false,
-          livereload: true
+          livereload: 35732
         },
       }
     },
@@ -42,7 +45,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8080,
-          livereload: true,
+          livereload: 35732,
           base: ['public', 'dist', 'themes/evisions/assets']
         }
       }
