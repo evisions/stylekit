@@ -8,7 +8,7 @@
 @minHeight: 48px;
 @outline: 0px;
 @verticalPadding: 12px;
-@verticalMargin: 12px;
+@verticalMargin: 10px;
 
 @iconPositionTop: @fontSize;
 @iconSearchPositionLeft: @fontSize;
@@ -20,6 +20,7 @@
 @tokenTextOutline: 0;
 @tokenMinHeight: 1em;
 @tokenMinWidth: 1em;
+@tokenVerticalMargin: 10px;
 
 @tokenInputFontSize: @fontSize;
 @tokenInputHorizontalPadding: 10px;

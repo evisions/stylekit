@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1427761708983');
+@import url('stylekit.blessed-blessed1.css?z=1427762608194');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -5284,10 +5284,10 @@
 .ui.visual.search .token.container {
   display: inline;
 }
-.ui.visual.search .token.container {
+.ui.visual.search .token.container .ui.label {
   cursor: pointer;
   font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .ui.visual.search .token.container .detail {
   cursor: text;
@@ -5301,7 +5301,7 @@
   display: inline-block;
   font-size: 14px;
   line-height: 2em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   min-height: 2em;
   min-width: 2em;
   outline: 0;

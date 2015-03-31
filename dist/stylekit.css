@@ -25537,10 +25537,10 @@ ol.ui.horizontal.list li:before,
 .ui.visual.search .token.container {
   display: inline;
 }
-.ui.visual.search .token.container {
+.ui.visual.search .token.container .ui.label {
   cursor: pointer;
   font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .ui.visual.search .token.container .detail {
   cursor: text;
@@ -25554,7 +25554,7 @@ ol.ui.horizontal.list li:before,
   display: inline-block;
   font-size: 14px;
   line-height: 2em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   min-height: 2em;
   min-width: 2em;
   outline: 0;
