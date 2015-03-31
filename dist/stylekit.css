@@ -25533,16 +25533,16 @@ ol.ui.horizontal.list li:before,
   opacity: 0.5;
   top: 16px;
 }
-/* Token Container */
-.ui.visual.search .token.container {
+/* Token Box */
+.ui.visual.search .token.box {
   display: inline;
 }
-.ui.visual.search .token.container .ui.label {
+.ui.visual.search .token.box .ui.label {
   cursor: pointer;
   font-size: 12px;
   margin-bottom: 10px;
 }
-.ui.visual.search .token.container .detail {
+.ui.visual.search .token.box .detail {
   cursor: text;
   outline: 0;
   min-height: 1em;
@@ -25571,12 +25571,12 @@ ol.ui.horizontal.list li:before,
 /*--------------
      Active
 ---------------*/
-.ui.visual.search .token.container .ui.label.selected:not(.editing) {
+.ui.visual.search .token.box .ui.label.selected:not(.editing) {
   color: #ffffff;
   background-color: #3b83c0;
   outline: 0;
 }
-.ui.visual.search .token.container .ui.label.selected.editing .detail {
+.ui.visual.search .token.box .ui.label.selected.editing .detail {
   color: #1b1c1d;
 }
 /* Views */

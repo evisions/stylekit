@@ -40,16 +40,16 @@
   top: @placeholderPositionTop;
 }
 
-/* Token Container */
-.ui.visual.search .token.container {
+/* Token Box */
+.ui.visual.search .token.box {
   display: inline;
 }
-.ui.visual.search .token.container .ui.label{
+.ui.visual.search .token.box .ui.label{
   cursor: pointer;
   font-size: @visualSearchFontSize;
   margin-bottom: @tokenVerticalMargin;
 }
-.ui.visual.search .token.container .detail {
+.ui.visual.search .token.box .detail {
   cursor: text;
   outline: @tokenTextOutline;
   min-height: @tokenMinHeight;
@@ -83,12 +83,12 @@
      Active
 ---------------*/
 
-.ui.visual.search .token.container .ui.label.selected:not(.editing) {
+.ui.visual.search .token.box .ui.label.selected:not(.editing) {
   color: @activeTokenColor;
   background-color: @activeTokenBackground;
   outline: @activeTokenOutline;
 }
 
-.ui.visual.search .token.container .ui.label.selected.editing .detail {
+.ui.visual.search .token.box .ui.label.selected.editing .detail {
   color: @activeTokenTextColor;
 }
