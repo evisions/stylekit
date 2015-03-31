@@ -25512,18 +25512,18 @@ ol.ui.horizontal.list li:before,
 .ui.visual.search .prompt {
   border-radius: 0px;
   min-height: 48px;
-  padding: 12px 36px 0px 36px;
+  padding: 10px 36px 0px 36px;
   position: relative;
 }
 .ui.visual.search .prompt > i.search.icon {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 12px;
 }
 .ui.visual.search .prompt > i.remove.icon {
   cursor: pointer;
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 12px;
 }
 /* Placeholder */
@@ -25531,7 +25531,7 @@ ol.ui.horizontal.list li:before,
   display: none;
   position: absolute;
   opacity: 0.5;
-  top: 12px;
+  top: 16px;
 }
 /* Token Container */
 .ui.visual.search .token.container {

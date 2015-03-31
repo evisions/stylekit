@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1427762992943');
+@import url('stylekit.blessed-blessed1.css?z=1427818661847');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -5259,18 +5259,18 @@
 .ui.visual.search .prompt {
   border-radius: 0px;
   min-height: 48px;
-  padding: 12px 36px 0px 36px;
+  padding: 10px 36px 0px 36px;
   position: relative;
 }
 .ui.visual.search .prompt > i.search.icon {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 12px;
 }
 .ui.visual.search .prompt > i.remove.icon {
   cursor: pointer;
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 12px;
 }
 /* Placeholder */
@@ -5278,7 +5278,7 @@
   display: none;
   position: absolute;
   opacity: 0.5;
-  top: 12px;
+  top: 16px;
 }
 /* Token Container */
 .ui.visual.search .token.container {
