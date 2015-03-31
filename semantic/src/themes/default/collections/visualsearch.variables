@@ -1,0 +1,38 @@
+/*******************************
+          Visual Search
+*******************************/
+
+@borderRadius: 0px;
+@fontSize: 12px;
+@horizontalPadding: 36px;
+@minHeight: 48px;
+@outline: 0px;
+@verticalPadding: 12px;
+@verticalMargin: 12px;
+
+@iconPositionTop: @fontSize;
+@iconSearchPositionLeft: @fontSize;
+@iconRemovePositionRight: @fontSize;
+
+@placeholderPositionTop: 12px;
+@placeholderOpacity: 0.5;
+
+@tokenTextOutline: 0;
+@tokenMinHeight: 1em;
+@tokenMinWidth: 1em;
+
+@tokenInputFontSize: @fontSize;
+@tokenInputHorizontalPadding: 10px;
+@tokenInputMinHeight: 2em;
+@tokenInputMinWidth: 2em;
+@tokenInputOutline: 0;
+
+/*-------------------
+       States
+--------------------*/
+
+@activeTokenColor: @white;
+@activeTokenBackground: @blue;
+@activeTokenOutline: 0;
+
+@activeTokenTextColor: @black;

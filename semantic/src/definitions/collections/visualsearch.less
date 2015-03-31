@@ -1,0 +1,94 @@
+/*******************************
+            Theme
+*******************************/
+
+@type    : 'collection';
+@element : 'visualsearch';
+
+@import (multiple) '../../../../theme.config';
+
+/*******************************
+        Visual Search
+*******************************/
+
+/* Prompt */
+.ui.visual.search .prompt{
+  border-radius: @borderRadius;
+  min-height: @minHeight;
+  padding: @verticalPadding @horizontalPadding 0px @horizontalPadding;
+  position: relative;
+}
+
+.ui.visual.search .prompt > i.search.icon {
+  position: absolute;
+  top: @iconPositionTop;
+  left: @iconSearchPositionLeft;
+}
+
+.ui.visual.search .prompt > i.remove.icon {
+  cursor: pointer;
+  position: absolute;
+  top: @iconPositionTop;
+  right: @iconRemovePositionRight;
+}
+
+/* Placeholder */
+.ui.visual.search .placeholder {
+  display: none;
+  position: absolute;
+  opacity: @placeholderOpacity;
+  top: @placeholderPositionTop;
+}
+
+/* Token Container */
+.ui.visual.search .token.container {
+  display: inline;
+}
+.ui.visual.search .token.container {
+  cursor: pointer;
+  font-size: @fontSize;
+  margin-bottom: @verticalMargin;
+}
+.ui.visual.search .token.container .detail {
+  cursor: text;
+  outline: @tokenTextOutline;
+  min-height: @tokenMinHeight;
+  min-width: @tokenMinWidth;
+}
+
+/* Input */
+.ui.visual.search .token.input {
+  cursor: text;
+  display: inline-block;
+  font-size: @tokenInputFontSize;
+  line-height: @tokenInputMinHeight;
+  margin-bottom: @verticalMargin;
+  min-height: @tokenInputMinHeight;
+  min-width: @tokenInputMinWidth;
+  outline: @tokenInputOutline;
+  padding: 0px @tokenInputHorizontalPadding;
+  vertical-align: bottom;  
+}
+
+/* Results */
+.ui.visual.search .results {
+  display: block;
+}
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+     Active
+---------------*/
+
+.ui.visual.search .token.container .ui.label.selected:not(.editing) {
+  color: @activeTokenColor;
+  background-color: @activeTokenBackground;
+  outline: @activeTokenOutline;
+}
+
+.ui.visual.search .token.container .ui.label.selected.editing .detail {
+  color: @activeTokenTextColor;
+}
