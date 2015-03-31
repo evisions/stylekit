@@ -13,9 +13,9 @@
 
 /* Prompt */
 .ui.visual.search .prompt{
-  border-radius: @borderRadius;
-  min-height: @minHeight;
-  padding: @verticalPadding @horizontalPadding 0px @horizontalPadding;
+  border-radius: @promptBorderRadius;
+  min-height: @promptMinHeight;
+  padding: @promptVerticalPadding @promptHorizontalPadding 0px @promptHorizontalPadding;
   position: relative;
 }
 
@@ -46,7 +46,7 @@
 }
 .ui.visual.search .token.container .ui.label{
   cursor: pointer;
-  font-size: @fontSize;
+  font-size: @visualSearchFontSize;
   margin-bottom: @tokenVerticalMargin;
 }
 .ui.visual.search .token.container .detail {

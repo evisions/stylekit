@@ -25517,14 +25517,14 @@ ol.ui.horizontal.list li:before,
 }
 .ui.visual.search .prompt > i.search.icon {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 12px;
+  left: 12px;
 }
 .ui.visual.search .prompt > i.remove.icon {
   cursor: pointer;
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 12px;
+  right: 12px;
 }
 /* Placeholder */
 .ui.visual.search .placeholder {
@@ -25539,7 +25539,7 @@ ol.ui.horizontal.list li:before,
 }
 .ui.visual.search .token.container .ui.label {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 .ui.visual.search .token.container .detail {
@@ -25552,7 +25552,7 @@ ol.ui.horizontal.list li:before,
 .ui.visual.search .token.input {
   cursor: text;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2em;
   margin-bottom: 10px;
   min-height: 2em;

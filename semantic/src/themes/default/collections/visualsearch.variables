@@ -2,17 +2,18 @@
           Visual Search
 *******************************/
 
-@borderRadius: 0px;
-@fontSize: 12px;
-@horizontalPadding: 36px;
-@minHeight: 48px;
-@outline: 0px;
-@verticalPadding: 12px;
-@verticalMargin: 10px;
+@visualSearchFontSize: 12px;
 
-@iconPositionTop: @fontSize;
-@iconSearchPositionLeft: @fontSize;
-@iconRemovePositionRight: @fontSize;
+@promptBorderRadius: 0px;
+@promptHorizontalPadding: 36px;
+@promptMinHeight: 48px;
+@promptOutline: 0px;
+@promptVerticalPadding: 12px;
+@promptVerticalMargin: 10px;
+
+@iconPositionTop: @visualSearchFontSize;
+@iconSearchPositionLeft: @visualSearchFontSize;
+@iconRemovePositionRight: @visualSearchFontSize;
 
 @placeholderPositionTop: 12px;
 @placeholderOpacity: 0.5;
@@ -22,7 +23,7 @@
 @tokenMinWidth: 1em;
 @tokenVerticalMargin: 10px;
 
-@tokenInputFontSize: @fontSize;
+@tokenInputFontSize: @visualSearchFontSize;
 @tokenInputHorizontalPadding: 10px;
 @tokenInputMinHeight: 2em;
 @tokenInputMinWidth: 2em;
