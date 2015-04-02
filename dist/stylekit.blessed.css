@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1427762992943');
+@import url('stylekit.blessed-blessed1.css?z=1427995056150');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -5311,6 +5311,9 @@
 /* Results */
 .ui.visual.search .results {
   display: block;
+}
+.ui.visual.search .results:empty {
+  display: none;
 }
 /*******************************
              States
