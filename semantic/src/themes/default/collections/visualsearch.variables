@@ -8,14 +8,14 @@
 @promptHorizontalPadding: 36px;
 @promptMinHeight: 48px;
 @promptOutline: 0px;
-@promptVerticalPadding: 12px;
+@promptVerticalPadding: 10px;
 @promptVerticalMargin: 10px;
 
-@iconPositionTop: @visualSearchFontSize;
-@iconSearchPositionLeft: @visualSearchFontSize;
-@iconRemovePositionRight: @visualSearchFontSize;
+@iconPositionTop: 16px;
+@iconSearchPositionLeft: 12px;
+@iconRemovePositionRight: 12px;
 
-@placeholderPositionTop: 12px;
+@placeholderPositionTop: 16px;
 @placeholderOpacity: 0.5;
 
 @tokenTextOutline: 0;

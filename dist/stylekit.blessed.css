@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1427995056150');
+@import url('stylekit.blessed-blessed1.css?z=1427995155721');
 
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
@@ -5259,18 +5259,18 @@
 .ui.visual.search .prompt {
   border-radius: 0px;
   min-height: 48px;
-  padding: 12px 36px 0px 36px;
+  padding: 10px 36px 0px 36px;
   position: relative;
 }
 .ui.visual.search .prompt > i.search.icon {
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 12px;
 }
 .ui.visual.search .prompt > i.remove.icon {
   cursor: pointer;
   position: absolute;
-  top: 12px;
+  top: 16px;
   right: 12px;
 }
 /* Placeholder */
@@ -5278,18 +5278,18 @@
   display: none;
   position: absolute;
   opacity: 0.5;
-  top: 12px;
+  top: 16px;
 }
-/* Token Container */
-.ui.visual.search .token.container {
+/* Token Box */
+.ui.visual.search .token.box {
   display: inline;
 }
-.ui.visual.search .token.container .ui.label {
+.ui.visual.search .token.box .ui.label {
   cursor: pointer;
   font-size: 12px;
   margin-bottom: 10px;
 }
-.ui.visual.search .token.container .detail {
+.ui.visual.search .token.box .detail {
   cursor: text;
   outline: 0;
   min-height: 1em;
@@ -5321,12 +5321,12 @@
 /*--------------
      Active
 ---------------*/
-.ui.visual.search .token.container .ui.label.selected:not(.editing) {
+.ui.visual.search .token.box .ui.label.selected:not(.editing) {
   color: #ffffff;
   background-color: #3b83c0;
   outline: 0;
 }
-.ui.visual.search .token.container .ui.label.selected.editing .detail {
+.ui.visual.search .token.box .ui.label.selected.editing .detail {
   color: #1b1c1d;
 }
 /* Views */
