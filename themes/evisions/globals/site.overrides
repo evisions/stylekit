@@ -1,3 +1,23 @@
 /*******************************
         Global Overrides
 *******************************/
+
+
+span.text.blue {
+  color: @blue;
+}
+span.text.red {
+  color: @red;
+}
+span.text.green {
+  color: @green;
+}
+span.text.yellow {
+  color: @yellow;
+}
+span.text.orange {
+  color: @orange;
+}
+span.text.light.orange {
+  color: @lightOrange;
+}

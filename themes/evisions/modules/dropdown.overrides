@@ -65,3 +65,37 @@
   content: "\f0da";
 }
 */
+
+
+.ui.dropdown > .header {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.2em;
+  &.blue {
+    color: @blue;
+  }
+  &.yellow {
+    color: @yellow;
+  }
+  &.red {
+    color: @red;
+  }
+  &.orange {
+    color: @orange;
+  }
+}
+
+.ui.dropdown > .text {
+  &.blue {
+    color: @blue;
+  }
+  &.yellow {
+    color: @yellow;
+  }
+  &.red {
+    color: @red;
+  }
+  &.orange {
+    color: @orange;
+  }
+}

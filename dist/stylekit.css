@@ -1460,6 +1460,24 @@ input::selection {
 /*******************************
         Global Overrides
 *******************************/
+span.text.blue {
+  color: #3b83c0;
+}
+span.text.red {
+  color: #d95c5c;
+}
+span.text.green {
+  color: #5bbd72;
+}
+span.text.yellow {
+  color: #f2c61f;
+}
+span.text.orange {
+  color: #e07b53;
+}
+span.text.light.orange {
+  color: #ffaf23;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -4133,6 +4151,113 @@ input::selection {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.white.buttons .button,
+.ui.white.button {
+  background-color: #ffffff;
+  color: #ffffff;
+  text-shadow: #ffffff;
+  background-image: none;
+}
+.ui.white.button {
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+.ui.white.buttons .button:hover,
+.ui.white.button:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+  text-shadow: none;
+}
+.ui.white.buttons .button:active,
+.ui.white.button:active {
+  background-color: #ededed;
+  color: #ffffff;
+  text-shadow: #ffffff;
+}
+.ui.white.buttons .active.button,
+.ui.white.buttons .active.button:active,
+.ui.white.active.button,
+.ui.white.button .active.button:active {
+  background-color: #f2f2f2;
+  color: #ffffff;
+  text-shadow: #ffffff;
+}
+/* Basic */
+.ui.basic.white.buttons .button,
+.ui.basic.white.button {
+  box-shadow: 0px 0px 0px 2px rgba(39, 41, 43, 0.15) inset !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.ui.basic.white.buttons .button:hover,
+.ui.basic.white.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ffffff !important;
+}
+.ui.basic.white.buttons .button:active,
+.ui.basic.white.button:active {
+  box-shadow: 0px 0px 0px 2px #ededed inset !important;
+  color: #ededed !important;
+}
+.ui.basic.white.buttons .active.button,
+.ui.basic.white.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 2px #ededed inset !important;
+  color: #ededed !important;
+}
+.ui.buttons > .basic.white.button:not(:first-child) {
+  margin-left: -2px;
+}
+/* Inverted */
+.ui.inverted.white.buttons .button,
+.ui.inverted.white.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .button:hover,
+.ui.inverted.white.button:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .active.button,
+.ui.inverted.white.active.button {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .button:active,
+.ui.inverted.white.button:active {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+/* Inverted Basic */
+.ui.inverted.white.basic.buttons .button,
+.ui.inverted.white.buttons .basic.button,
+.ui.inverted.white.basic.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
+  color: #ffffff !important;
+}
+.ui.inverted.white.basic.buttons .button:hover,
+.ui.inverted.white.buttons .basic.button:hover,
+.ui.inverted.white.basic.button:hover {
+  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
+  color: #ff695e !important;
+}
+.ui.inverted.white.basic.buttons .active.button,
+.ui.inverted.white.buttons .basic.active.button,
+.ui.inverted.white.basic.active.button {
+  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
+  color: #ff695e !important;
+}
+.ui.inverted.white.basic.buttons .button:active,
+.ui.inverted.white.buttons .basic.button:active,
+.ui.inverted.white.basic.button:active {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ff695e !important;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -16161,6 +16286,9 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.inverted.blue.segment {
+  border-color: #3b83c0;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -21232,6 +21360,9 @@ ol.ui.horizontal.list li:before,
 .ui.menu .item.image {
   padding: 0 0.95em;
 }
+.ui.menu.vertical .item.image {
+  padding: 0.78571em 0.95em !important;
+}
 /* Floated Content */
 .ui.menu > .item:first-child {
   border-radius: 0.2857rem 0px 0px 0.2857rem;
@@ -22208,7 +22339,7 @@ ol.ui.horizontal.list li:before,
 .ui.inverted.menu .active.item {
   box-shadow: none !important;
   background: rgba(255, 255, 255, 0.2);
-  color: #ffffff !important;
+  color: #ffaf23 !important;
 }
 .ui.inverted.vertical.menu .item .menu .active.item {
   background: transparent;
@@ -22560,6 +22691,22 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.fixed.left.menu > .right.menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.ui.menu .active.item {
+  cursor: default !important;
+}
+.ui.menu .active.item:not(.dropdown) > i.icon {
+  color: #ffaf23;
+}
+.ui.inverted.vertical.menu .active.item:hover,
+.ui.inverted.menu .active.item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -33411,6 +33558,35 @@ select.ui.dropdown {
   content: "\f0da";
 }
 */
+.ui.dropdown > .header {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+.ui.dropdown > .header.blue {
+  color: #3b83c0;
+}
+.ui.dropdown > .header.yellow {
+  color: #f2c61f;
+}
+.ui.dropdown > .header.red {
+  color: #d95c5c;
+}
+.ui.dropdown > .header.orange {
+  color: #e07b53;
+}
+.ui.dropdown > .text.blue {
+  color: #3b83c0;
+}
+.ui.dropdown > .text.yellow {
+  color: #f2c61f;
+}
+.ui.dropdown > .text.red {
+  color: #d95c5c;
+}
+.ui.dropdown > .text.orange {
+  color: #e07b53;
+}
 /*******************************
         User Overrides
 *******************************/

@@ -1,5 +1,167 @@
-@import url('stylekit.blessed-blessed1.css?z=1427995422552');
+@import url('stylekit.blessed-blessed1.css?z=1428337599777');
 
+/* Justified */
+.ui.justified.grid,
+.ui.justified.grid > .row > .column,
+.ui.justified.grid > .column,
+.ui.grid .justified.column,
+.ui.grid > .justified.row > .column {
+  text-align: justify;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.ui.grid .justified.column {
+  text-align: justify !important;
+  -webkit-hyphens: auto !important;
+     -moz-hyphens: auto !important;
+      -ms-hyphens: auto !important;
+          hyphens: auto !important;
+}
+/*----------------------
+   Vertically Aligned
+-----------------------*/
+/* Top Aligned */
+.ui[class*="top aligned"].grid,
+.ui[class*="top aligned"].grid > .row > .column,
+.ui[class*="top aligned"].grid > .column,
+.ui.grid [class*="top aligned"].column,
+.ui.grid > [class*="top aligned"].row > .column {
+  vertical-align: top;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.ui.grid [class*="top aligned"].column {
+  vertical-align: top !important;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+/* Middle Aligned */
+.ui[class*="middle aligned"].grid,
+.ui[class*="middle aligned"].grid > .row > .column,
+.ui[class*="middle aligned"].grid > .column,
+.ui.grid > [class*="middle aligned"].row > .column {
+  vertical-align: middle;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.ui.grid [class*="middle aligned"].column {
+  vertical-align: middle !important;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+/* Bottom Aligned */
+.ui[class*="bottom aligned"].grid,
+.ui[class*="bottom aligned"].grid > .row > .column,
+.ui[class*="bottom aligned"].grid > .column,
+.ui.grid > [class*="bottom aligned"].row > .column {
+  vertical-align: bottom;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+.ui.grid [class*="bottom aligned"].column {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  vertical-align: bottom !important;
+}
+/*----------------------
+         Colored
+-----------------------*/
+.ui.grid > .white.row,
+.ui.grid .white.column {
+  background-color: #ffffff !important;
+  color: rgba(0, 0, 0, 0.8);
+}
+.ui.grid > .row > .white.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .black.row,
+.ui.grid .black.column {
+  background-color: #1b1c1d !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .black.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .blue.row,
+.ui.grid .blue.column {
+  background-color: #3b83c0 !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .blue.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .green.row,
+.ui.grid .green.column {
+  background-color: #5bbd72 !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .green.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .orange.row,
+.ui.grid .orange.column {
+  background-color: #e07b53 !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .orange.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .pink.row,
+.ui.grid .pink.column {
+  background-color: #d9499a !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .pink.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .purple.row,
+.ui.grid .purple.column {
+  background-color: #564f8a !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .purple.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid > .red.row,
+.ui.grid .red.column {
+  background-color: #d95c5c !important;
+  color: #ffffff;
+}
+.ui.grid > .row > .red.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .ui.grid > .teal.row,
 .ui.grid .teal.column {
   background-color: #00b5ad !important;
@@ -979,6 +1141,9 @@
 .ui.menu .item.image {
   padding: 0 0.95em;
 }
+.ui.menu.vertical .item.image {
+  padding: 0.78571em 0.95em !important;
+}
 /* Floated Content */
 .ui.menu > .item:first-child {
   border-radius: 0.2857rem 0px 0px 0.2857rem;
@@ -1955,7 +2120,7 @@
 .ui.inverted.menu .active.item {
   box-shadow: none !important;
   background: rgba(255, 255, 255, 0.2);
-  color: #ffffff !important;
+  color: #ffaf23 !important;
 }
 .ui.inverted.vertical.menu .item .menu .active.item {
   background: transparent;
@@ -2307,6 +2472,22 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.fixed.left.menu > .right.menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+.ui.menu .active.item {
+  cursor: default !important;
+}
+.ui.menu .active.item:not(.dropdown) > i.icon {
+  color: #ffaf23;
+}
+.ui.inverted.vertical.menu .active.item:hover,
+.ui.inverted.menu .active.item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -13158,6 +13339,35 @@ select.ui.dropdown {
   content: "\f0da";
 }
 */
+.ui.dropdown > .header {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.2em;
+}
+.ui.dropdown > .header.blue {
+  color: #3b83c0;
+}
+.ui.dropdown > .header.yellow {
+  color: #f2c61f;
+}
+.ui.dropdown > .header.red {
+  color: #d95c5c;
+}
+.ui.dropdown > .header.orange {
+  color: #e07b53;
+}
+.ui.dropdown > .text.blue {
+  color: #3b83c0;
+}
+.ui.dropdown > .text.yellow {
+  color: #f2c61f;
+}
+.ui.dropdown > .text.red {
+  color: #d95c5c;
+}
+.ui.dropdown > .text.orange {
+  color: #e07b53;
+}
 /*******************************
         User Overrides
 *******************************/

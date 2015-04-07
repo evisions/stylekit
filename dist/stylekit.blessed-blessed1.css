@@ -1460,6 +1460,24 @@ input::selection {
 /*******************************
         Global Overrides
 *******************************/
+span.text.blue {
+  color: #3b83c0;
+}
+span.text.red {
+  color: #d95c5c;
+}
+span.text.green {
+  color: #5bbd72;
+}
+span.text.yellow {
+  color: #f2c61f;
+}
+span.text.orange {
+  color: #e07b53;
+}
+span.text.light.orange {
+  color: #ffaf23;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -4133,6 +4151,113 @@ input::selection {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.white.buttons .button,
+.ui.white.button {
+  background-color: #ffffff;
+  color: #ffffff;
+  text-shadow: #ffffff;
+  background-image: none;
+}
+.ui.white.button {
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+.ui.white.buttons .button:hover,
+.ui.white.button:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+  text-shadow: none;
+}
+.ui.white.buttons .button:active,
+.ui.white.button:active {
+  background-color: #ededed;
+  color: #ffffff;
+  text-shadow: #ffffff;
+}
+.ui.white.buttons .active.button,
+.ui.white.buttons .active.button:active,
+.ui.white.active.button,
+.ui.white.button .active.button:active {
+  background-color: #f2f2f2;
+  color: #ffffff;
+  text-shadow: #ffffff;
+}
+/* Basic */
+.ui.basic.white.buttons .button,
+.ui.basic.white.button {
+  box-shadow: 0px 0px 0px 2px rgba(39, 41, 43, 0.15) inset !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.ui.basic.white.buttons .button:hover,
+.ui.basic.white.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ffffff !important;
+}
+.ui.basic.white.buttons .button:active,
+.ui.basic.white.button:active {
+  box-shadow: 0px 0px 0px 2px #ededed inset !important;
+  color: #ededed !important;
+}
+.ui.basic.white.buttons .active.button,
+.ui.basic.white.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 2px #ededed inset !important;
+  color: #ededed !important;
+}
+.ui.buttons > .basic.white.button:not(:first-child) {
+  margin-left: -2px;
+}
+/* Inverted */
+.ui.inverted.white.buttons .button,
+.ui.inverted.white.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .button:hover,
+.ui.inverted.white.button:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .active.button,
+.ui.inverted.white.active.button {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.ui.inverted.white.buttons .button:active,
+.ui.inverted.white.button:active {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+/* Inverted Basic */
+.ui.inverted.white.basic.buttons .button,
+.ui.inverted.white.buttons .basic.button,
+.ui.inverted.white.basic.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
+  color: #ffffff !important;
+}
+.ui.inverted.white.basic.buttons .button:hover,
+.ui.inverted.white.buttons .basic.button:hover,
+.ui.inverted.white.basic.button:hover {
+  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
+  color: #ff695e !important;
+}
+.ui.inverted.white.basic.buttons .active.button,
+.ui.inverted.white.buttons .basic.active.button,
+.ui.inverted.white.basic.active.button {
+  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
+  color: #ff695e !important;
+}
+.ui.inverted.white.basic.buttons .button:active,
+.ui.inverted.white.buttons .basic.button:active,
+.ui.inverted.white.basic.button:active {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+  color: #ff695e !important;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -16161,6 +16286,9 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.inverted.blue.segment {
+  border-color: #3b83c0;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -20090,166 +20218,4 @@ ol.ui.horizontal.list li:before,
 }
 .ui.grid [class*="right aligned"].column {
   text-align: right !important;
-}
-/* Justified */
-.ui.justified.grid,
-.ui.justified.grid > .row > .column,
-.ui.justified.grid > .column,
-.ui.grid .justified.column,
-.ui.grid > .justified.row > .column {
-  text-align: justify;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-.ui.grid .justified.column {
-  text-align: justify !important;
-  -webkit-hyphens: auto !important;
-     -moz-hyphens: auto !important;
-      -ms-hyphens: auto !important;
-          hyphens: auto !important;
-}
-/*----------------------
-   Vertically Aligned
------------------------*/
-/* Top Aligned */
-.ui[class*="top aligned"].grid,
-.ui[class*="top aligned"].grid > .row > .column,
-.ui[class*="top aligned"].grid > .column,
-.ui.grid [class*="top aligned"].column,
-.ui.grid > [class*="top aligned"].row > .column {
-  vertical-align: top;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-}
-.ui.grid [class*="top aligned"].column {
-  vertical-align: top !important;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-}
-/* Middle Aligned */
-.ui[class*="middle aligned"].grid,
-.ui[class*="middle aligned"].grid > .row > .column,
-.ui[class*="middle aligned"].grid > .column,
-.ui.grid > [class*="middle aligned"].row > .column {
-  vertical-align: middle;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-}
-.ui.grid [class*="middle aligned"].column {
-  vertical-align: middle !important;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-}
-/* Bottom Aligned */
-.ui[class*="bottom aligned"].grid,
-.ui[class*="bottom aligned"].grid > .row > .column,
-.ui[class*="bottom aligned"].grid > .column,
-.ui.grid > [class*="bottom aligned"].row > .column {
-  vertical-align: bottom;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
-.ui.grid [class*="bottom aligned"].column {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-  vertical-align: bottom !important;
-}
-/*----------------------
-         Colored
------------------------*/
-.ui.grid > .white.row,
-.ui.grid .white.column {
-  background-color: #ffffff !important;
-  color: rgba(0, 0, 0, 0.8);
-}
-.ui.grid > .row > .white.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .black.row,
-.ui.grid .black.column {
-  background-color: #1b1c1d !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .black.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .blue.row,
-.ui.grid .blue.column {
-  background-color: #3b83c0 !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .blue.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .green.row,
-.ui.grid .green.column {
-  background-color: #5bbd72 !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .green.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .orange.row,
-.ui.grid .orange.column {
-  background-color: #e07b53 !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .orange.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .pink.row,
-.ui.grid .pink.column {
-  background-color: #d9499a !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .pink.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .purple.row,
-.ui.grid .purple.column {
-  background-color: #564f8a !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .purple.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.ui.grid > .red.row,
-.ui.grid .red.column {
-  background-color: #d95c5c !important;
-  color: #ffffff;
-}
-.ui.grid > .row > .red.column {
-  margin-top: -1rem;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }

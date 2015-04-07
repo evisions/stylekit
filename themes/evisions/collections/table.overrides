@@ -6,73 +6,66 @@
 /**
  * Sortable on indivicual column header
  */
- .ui.table thead th.sortable {
-   cursor: pointer;
-   white-space: nowrap;
-   border-left: @sortableBorder;
-   color: @sortableColor;
- }
- .ui.table thead th.sortable:first-child {
-   border-left: none;
- }
- .ui.table thead th.sortable.sorted,
- .ui.table thead th.sortable.sorted:hover {
-   user-select: none;
- }
-
- .ui.table thead th.sortable:after {
-   display: inline-block;
-   content: '';
-   width: @sortableIconWidth;
-   height: 1em;
-   opacity: @sortableIconOpacity;
-
-   margin: 0em 0em 0em @sortableIconDistance;
-
-   font-family: @sortableIconFont;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: inherit;
- }
- .ui.table thead th.sortable.ascending:after {
-   content: @sortableIconAscending;
- }
- .ui.table thead th.sortable.descending:after {
-   content: @sortableIconDescending;
- }
-
- /* Hover */
- .ui.table th.sortable.disabled:hover {
-   cursor: auto;
-   color: @sortableDisabledColor;
- }
- .ui.table thead th.sortable:hover {
-   background: @sortableHoverBackground;
-   color: @sortableHoverColor;
- }
-
- /* Sorted */
- .ui.table thead th.sortable.sorted {
-   background: @sortableActiveBackground;
-   color: @sortableActiveColor;
- }
-
- /* Sorted Hover */
- .ui.table thead th.sortable.sorted:hover {
-   background: @sortableActiveHoverBackground;
-   color: @sortableActiveHoverColor;
- }
-
- /* Inverted */
- .ui.inverted.table thead th.sortable.sorted {
-   background: @sortableInvertedActiveBackground;
-   color: @sortableInvertedActiveColor;
- }
- .ui.inverted.table thead th.sortable:hover {
-   background: @sortableInvertedHoverBackground;
-   color: @sortableInvertedHoverColor;
- }
- .ui.inverted.table thead th.sortable {
-   border-left-color: @sortableInvertedBorderColor;
-   border-right-color: @sortableInvertedBorderColor;
- }
+.ui.table thead th.sortable {
+  cursor: pointer;
+  white-space: nowrap;
+  border-left: @sortableBorder;
+  color: @sortableColor;
+}
+.ui.table thead th.sortable:first-child {
+  border-left: none;
+}
+.ui.table thead th.sortable.sorted,
+.ui.table thead th.sortable.sorted:hover {
+  user-select: none;
+}
+.ui.table thead th.sortable:after {
+  display: inline-block;
+  content: '';
+  width: @sortableIconWidth;
+  height: 1em;
+  opacity: @sortableIconOpacity;
+  margin: 0em 0em 0em @sortableIconDistance;
+  font-family: @sortableIconFont;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.ui.table thead th.sortable.ascending:after {
+  content: @sortableIconAscending;
+}
+.ui.table thead th.sortable.descending:after {
+  content: @sortableIconDescending;
+}
+/* Hover */
+.ui.table th.sortable.disabled:hover {
+  cursor: auto;
+  color: @sortableDisabledColor;
+}
+.ui.table thead th.sortable:hover {
+  background: @sortableHoverBackground;
+  color: @sortableHoverColor;
+}
+/* Sorted */
+.ui.table thead th.sortable.sorted {
+  background: @sortableActiveBackground;
+  color: @sortableActiveColor;
+}
+/* Sorted Hover */
+.ui.table thead th.sortable.sorted:hover {
+  background: @sortableActiveHoverBackground;
+  color: @sortableActiveHoverColor;
+}
+/* Inverted */
+.ui.inverted.table thead th.sortable.sorted {
+  background: @sortableInvertedActiveBackground;
+  color: @sortableInvertedActiveColor;
+}
+.ui.inverted.table thead th.sortable:hover {
+  background: @sortableInvertedHoverBackground;
+  color: @sortableInvertedHoverColor;
+}
+.ui.inverted.table thead th.sortable {
+  border-left-color: @sortableInvertedBorderColor;
+  border-right-color: @sortableInvertedBorderColor;
+}

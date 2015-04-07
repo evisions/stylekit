@@ -154,13 +154,16 @@
 @pressedBackground: @subtleTransparentBlack;
 @pressedColor: @pressedTextColor;
 
+@activeCursor: default;
 @activeBackground: @subtleTransparentBlack;
 @activeColor: @darkTextColor;
 @activeBorderSize: 2px;
 @activeFontWeight: normal;
 @activeIconOpacity: 1;
 
-@activeHoverBackground: @hoverBackground;
+// @activeHoverBackground: @hoverBackground;
+@activeHoverBackground: @activeBackground;
+@activeInvertedHoverBackground: @invertedActiveBackground;
 @subMenuActiveBackground: transparent;
 
 @loadingBackgroundColor: rgba(255, 255, 255, 0.8);
@@ -288,9 +291,11 @@
 
 /* Inverted Active */
 @invertedActiveBackground: rgba(255, 255, 255, 0.2);
-@invertedActiveColor: @white;
+// @invertedActiveColor: @white;
+@invertedActiveColor: @lightOrange;
 @invertedSubMenuActiveBackground: transparent;
 @invertedSubMenuActiveColor: @white;
+@invertedIconActiveColor: @lightOrange;
 
 /* Inverted Secondary */
 @secondaryInvertedColor: @invertedLightTextColor;
