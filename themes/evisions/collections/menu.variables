@@ -19,6 +19,9 @@
 @verticalPadding: 0.78571em;
 @horizontalPadding: 0.95em;
 
+@heroVerticalPadding: 1.2em;
+@heroHorizontalPadding: 0.95em;
+
 @background: #FFFFFF;
 @itemBackground: none;
 
@@ -291,8 +294,7 @@
 
 /* Inverted Active */
 @invertedActiveBackground: rgba(255, 255, 255, 0.2);
-// @invertedActiveColor: @white;
-@invertedActiveColor: @lightOrange;
+@invertedActiveColor: @white;
 @invertedSubMenuActiveBackground: transparent;
 @invertedSubMenuActiveColor: @white;
 @invertedIconActiveColor: @lightOrange;

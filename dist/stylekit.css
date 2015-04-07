@@ -22339,7 +22339,7 @@ ol.ui.horizontal.list li:before,
 .ui.inverted.menu .active.item {
   box-shadow: none !important;
   background: rgba(255, 255, 255, 0.2);
-  color: #ffaf23 !important;
+  color: #ffffff !important;
 }
 .ui.inverted.vertical.menu .item .menu .active.item {
   background: transparent;
@@ -22700,12 +22700,16 @@ ol.ui.horizontal.list li:before,
 .ui.menu .active.item {
   cursor: default !important;
 }
-.ui.menu .active.item:not(.dropdown) > i.icon {
-  color: #ffaf23;
-}
 .ui.inverted.vertical.menu .active.item:hover,
 .ui.inverted.menu .active.item:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.ui.menu.vertical.labeled.hero .item {
+  padding: 1.2em 0.95em;
+}
+.ui.menu .item.icon > i.icon + .ui.label.floating {
+  top: 0.2em !important;
+  margin: 0em 0em 0em -2.3em !important;
 }
 /*******************************
          Site Overrides
