@@ -136,7 +136,8 @@
 @activeColor: rgba(50, 50, 50, 0.9);
 @activeBackgroundColor: #E0E0E0;
 @activeBoxShadow: @stateMarkerWidth 0px 0px @activeColor inset;
-@activeBackgroundHover: #EFEFEF;
+// @activeBackgroundHover: #EFEFEF;
+@activeBackgroundHover: darken(@activeBackgroundColor, 2%);
 @activeColorHover: rgba(50, 50, 50, 1);
 
 /*--------------
@@ -226,3 +227,5 @@
 @small: 0.9em;
 @medium: 1em;
 @large: 1.1em;
+
+@selectableHoverCursor: pointer;

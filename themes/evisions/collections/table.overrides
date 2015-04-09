@@ -69,3 +69,13 @@
   border-left-color: @sortableInvertedBorderColor;
   border-right-color: @sortableInvertedBorderColor;
 }
+
+
+.ui.table.selectable tbody tr:hover td {
+  background: @activeBackgroundHover;
+  cursor: @selectableHoverCursor;
+}
+
+.ui.table.inverted.selectable tbody tr:hover td {
+  background: @sortableInvertedHoverBackground;
+}
