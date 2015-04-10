@@ -24822,7 +24822,7 @@ ol.ui.horizontal.list li:before,
   border-left-color: transparent;
   border-right-color: transparent;
 }
-.ui.table.selectable tbody tr:hover td {
+.ui.table.selectable tbody tr:not(.empty):hover td {
   background: #dbdbdb;
   cursor: pointer;
 }

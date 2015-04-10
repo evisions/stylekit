@@ -71,11 +71,11 @@
 }
 
 
-.ui.table.selectable tbody tr:hover td {
+.ui.table.selectable tbody tr:not(.empty):hover td {
   background: @activeBackgroundHover;
   cursor: @selectableHoverCursor;
 }
 
-.ui.table.inverted.selectable tbody tr:hover td {
+.ui.table.inverted.selectable tbody tr:not(.empty):hover td {
   background: @sortableInvertedHoverBackground;
 }

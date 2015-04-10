@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428537805711');
+@import url('stylekit.blessed-blessed1.css?z=1428337599777');
 
 /* Justified */
 .ui.justified.grid,
@@ -4603,7 +4603,7 @@
   border-left-color: transparent;
   border-right-color: transparent;
 }
-.ui.table.selectable tbody tr:hover td {
+.ui.table.selectable tbody tr:not(.empty):hover td {
   background: #dbdbdb;
   cursor: pointer;
 }
