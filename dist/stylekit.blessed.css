@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428699616472');
+@import url('stylekit.blessed-blessed1.css?z=1428337599777');
 
 /* Justified */
 .ui.justified.grid,
@@ -2491,6 +2491,9 @@
 .ui.menu .item.icon > i.icon + .ui.label.floating {
   top: 0.2em !important;
   margin: 0em 0em 0em -2.3em !important;
+}
+.ui.menu.vertical.mini {
+  width: 3.5rem;
 }
 /*******************************
          Site Overrides

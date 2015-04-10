@@ -22711,6 +22711,9 @@ ol.ui.horizontal.list li:before,
   top: 0.2em !important;
   margin: 0em 0em 0em -2.3em !important;
 }
+.ui.menu.vertical.mini {
+  width: 3.5rem;
+}
 /*******************************
          Site Overrides
 *******************************/

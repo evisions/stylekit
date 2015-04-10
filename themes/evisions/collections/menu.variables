@@ -31,6 +31,8 @@
   @subtleShadow
 ;
 
+@miniMenuSize: 3.5rem;
+
 @borderSize: 0em;
 
 @transition:
