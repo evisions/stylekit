@@ -24006,7 +24006,7 @@ ol.ui.horizontal.list li:before,
     padding: 0em;
   }
   .ui.table:not(.unstackable) thead {
-    display: block;
+    display: none;
   }
   .ui.table:not(.unstackable) tfoot {
     display: block;
@@ -24240,7 +24240,7 @@ ol.ui.horizontal.list li:before,
     padding: 0em;
   }
   .ui[class*="tablet stackable"].table thead {
-    display: block;
+    display: none;
   }
   .ui[class*="tablet stackable"].table tfoot {
     display: block;
@@ -24832,6 +24832,29 @@ ol.ui.horizontal.list li:before,
 .ui.table.inverted.selectable tbody tr:not(.empty):hover td {
   background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+}
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .ui.table:not(.unstackable) {
+    position: relative;
+  }
+  .ui.table:not(.unstackable) tr > td {
+    word-break: break-all;
+    padding-left: 40%;
+  }
+  .ui.table:not(.unstackable) tr > td:before {
+    content: attr(data-column-name);
+    font-weight: bold;
+    left: 0.75em;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 30%;
+  }
+  .ui.table:not(.unstackable) td:first-child {
+    font-weight: normal;
+  }
 }
 /*******************************
          Site Overrides

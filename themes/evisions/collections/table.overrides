@@ -79,3 +79,30 @@
 .ui.table.inverted.selectable tbody tr:not(.empty):hover td {
   background: @sortableInvertedHoverBackground;
 }
+
+/* Responsive */
+@media only screen and (max-width : @largestMobileScreen) {
+
+  .ui.table:not(.unstackable) {
+    position: relative;
+  }
+  .ui.table:not(.unstackable) tr > td {
+    word-break: break-all;
+    padding-left: 40%;
+  }
+  .ui.table:not(.unstackable) tr > td:before {
+    content: attr(data-column-name);
+    font-weight: @headerFontWeight;
+    left: @responsiveCellHorizontalPadding;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 30%;
+  }
+
+  .ui.table:not(.unstackable) td:first-child {
+    font-weight: normal;
+  }  
+
+}
