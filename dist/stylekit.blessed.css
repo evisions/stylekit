@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428945405330');
+@import url('stylekit.blessed-blessed1.css?z=1428946761601');
 
 /* Justified */
 .ui.justified.grid,
@@ -3790,7 +3790,7 @@
     padding: 0em;
   }
   .ui.table:not(.unstackable) thead {
-    display: none;
+    display: block;
   }
   .ui.table:not(.unstackable) tfoot {
     display: block;
@@ -4024,7 +4024,7 @@
     padding: 0em;
   }
   .ui[class*="tablet stackable"].table thead {
-    display: none;
+    display: block;
   }
   .ui[class*="tablet stackable"].table tfoot {
     display: block;
@@ -4538,6 +4538,9 @@
 .ui.transparent.table td {
   border-top: 0px;
 }
+.ui.table thead tr.responsive.sort {
+  display: none;
+}
 /**
  * Sortable on indivicual column header
  */
@@ -4621,6 +4624,12 @@
 @media only screen and (max-width: 767px) {
   .ui.table:not(.unstackable) {
     position: relative;
+  }
+  .ui.table:not(.unstackable) thead tr:first-child {
+    display: none !important;
+  }
+  .ui.table:not(.unstackable) thead tr.responsive.sort {
+    display: block;
   }
   .ui.table:not(.unstackable) tbody tr {
     border-bottom: 0px;

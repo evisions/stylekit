@@ -86,7 +86,7 @@
 @footerTextTransform: none;
 
 /* Responsive Size */
-@responsiveHeaderDisplay: none;
+@responsiveHeaderDisplay: block;
 @responsiveFooterDisplay: block;
 @responsiveRowVerticalPadding: 1em;
 @responsiveRowBoxShadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
