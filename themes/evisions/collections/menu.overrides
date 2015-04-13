@@ -24,6 +24,9 @@
 .ui.menu.vertical.labeled.hero .item {
   padding: @heroVerticalPadding @heroHorizontalPadding;
 }
+.ui.menu.vertical.icon.hero:not(.labeled) .item {
+  padding: @heroVerticalPadding*2 @heroHorizontalPadding;
+}
 
 .ui.menu .item.icon > i.icon + .ui.label.floating {
   top: 0.2em !important;
