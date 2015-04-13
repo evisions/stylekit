@@ -93,6 +93,7 @@
 @responsiveCellVerticalPadding: 0.25em;
 @responsiveCellHorizontalPadding: 0.75em;
 @responsiveCellBoxShadow: none !important;
+@responsiveCellMinHeight: 1.8em;
 @responsiveStatusColor: transparent;
 
 /*--------------

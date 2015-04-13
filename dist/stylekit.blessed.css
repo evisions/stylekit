@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428708295126');
+@import url('stylekit.blessed-blessed1.css?z=1428707208892');
 
 /* Justified */
 .ui.justified.grid,
@@ -4619,8 +4619,15 @@
   .ui.table:not(.unstackable) {
     position: relative;
   }
+  .ui.table:not(.unstackable) tbody tr {
+    border-bottom: 0px;
+  }
+  .ui.table:not(.unstackable) tr:last-child td:last-child {
+    box-shadow: none !important;
+  }
   .ui.table:not(.unstackable) tr > td {
     word-break: break-all;
+    min-height: 1.8em;
     padding-left: 40%;
   }
   .ui.table:not(.unstackable) tr > td:before {
