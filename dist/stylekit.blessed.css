@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428906313472');
+@import url('stylekit.blessed-blessed1.css?z=1428337599777');
 
 /* Justified */
 .ui.justified.grid,
@@ -2487,6 +2487,9 @@
 }
 .ui.menu.vertical.labeled.hero .item {
   padding: 1.2em 0.95em;
+}
+.ui.menu.vertical.icon.hero:not(.labeled) .item {
+  padding: 2.4em 0.95em;
 }
 .ui.menu .item.icon > i.icon + .ui.label.floating {
   top: 0.2em !important;

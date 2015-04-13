@@ -22707,6 +22707,9 @@ ol.ui.horizontal.list li:before,
 .ui.menu.vertical.labeled.hero .item {
   padding: 1.2em 0.95em;
 }
+.ui.menu.vertical.icon.hero:not(.labeled) .item {
+  padding: 2.4em 0.95em;
+}
 .ui.menu .item.icon > i.icon + .ui.label.floating {
   top: 0.2em !important;
   margin: 0em 0em 0em -2.3em !important;
