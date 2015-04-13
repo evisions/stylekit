@@ -36,3 +36,9 @@
 .ui.menu.vertical.mini {
   width: @miniMenuSize;
 }
+
+// add color back to icons
+.ui.inverted.menu .dropdown .menu .item i.icon {
+  color: @dropdownTextColor !important;
+  transition: none;
+}
