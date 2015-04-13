@@ -79,3 +79,37 @@
 .ui.table.inverted.selectable tbody tr:not(.empty):hover td {
   background: @sortableInvertedHoverBackground;
 }
+
+/* Responsive */
+@media only screen and (max-width : @largestMobileScreen) {
+
+  .ui.table:not(.unstackable) {
+    position: relative;
+  }
+  .ui.table:not(.unstackable) tbody tr {
+    border-bottom: 0px;
+  }
+  .ui.table:not(.unstackable) tr:last-child td:last-child {
+    box-shadow: none !important;
+  }
+  .ui.table:not(.unstackable) tr > td {
+    word-break: break-all;
+    min-height: @responsiveCellMinHeight;
+    padding-left: 40%;
+  }
+  .ui.table:not(.unstackable) tr > td:before {
+    content: attr(data-column-name);
+    font-weight: @headerFontWeight;
+    left: @responsiveCellHorizontalPadding;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 30%;
+  }
+
+  .ui.table:not(.unstackable) td:first-child {
+    font-weight: normal;
+  }
+
+}

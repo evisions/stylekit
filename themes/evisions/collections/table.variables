@@ -86,13 +86,14 @@
 @footerTextTransform: none;
 
 /* Responsive Size */
-@responsiveHeaderDisplay: block;
+@responsiveHeaderDisplay: none;
 @responsiveFooterDisplay: block;
 @responsiveRowVerticalPadding: 1em;
 @responsiveRowBoxShadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
 @responsiveCellVerticalPadding: 0.25em;
 @responsiveCellHorizontalPadding: 0.75em;
 @responsiveCellBoxShadow: none !important;
+@responsiveCellMinHeight: 1.8em;
 @responsiveStatusColor: transparent;
 
 /*--------------
