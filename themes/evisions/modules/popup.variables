@@ -64,6 +64,11 @@
 @nestedGridMargin: -0.7rem -0.875rem; /* (padding * @medium) */
 @nestedGridWidth: ~"calc(100% + 1.75rem)";
 
+/* Attached Segment Inside Popup */
+@nestedSegmentMarginHorizontal: -0.875rem;
+@nestSegmentMarginVertical: -0.7rem;
+@nestSegmentWidth: ~"calc(100% + 1.75rem)";
+
 /*-------------------
        States
 --------------------*/

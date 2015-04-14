@@ -1,3 +1,25 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+
+.ui.popup .ui.segment.attached {
+  margin-left: @nestedSegmentMarginHorizontal;
+  margin-right: @nestedSegmentMarginHorizontal;
+  width: @nestSegmentWidth;
+  max-width: @nestSegmentWidth;
+}
+
+.ui.popup .ui.segment.attached:not(.bottom) {
+  margin-bottom: 0;
+}
+
+.ui.popup .ui.segment.top.attached {
+  border-top-color: transparent;
+  margin-top: @nestSegmentMarginVertical;
+}
+
+.ui.popup .ui.segment.bottom.attached {
+  border-bottom-color: transparent;
+  margin-bottom: @nestSegmentMarginVertical;
+}

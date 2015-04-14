@@ -1,5 +1,8 @@
-@import url('stylekit.blessed-blessed1.css?z=1428944347179');
+@import url('stylekit.blessed-blessed1.css?z=1429042087464');
 
+.ui.grid [class*="right aligned"].column {
+  text-align: right !important;
+}
 /* Justified */
 .ui.justified.grid,
 .ui.justified.grid > .row > .column,
@@ -15048,6 +15051,7 @@ a.ui.nag {
 --------------------*/
 /* Grid Inside Popup */
 /* (padding * @medium) */
+/* Attached Segment Inside Popup */
 /*-------------------
        States
 --------------------*/
@@ -15307,6 +15311,23 @@ a.ui.nag {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.popup .ui.segment.attached {
+  margin-left: -0.875rem;
+  margin-right: -0.875rem;
+  width: calc(100% + 1.75rem);
+  max-width: calc(100% + 1.75rem);
+}
+.ui.popup .ui.segment.attached:not(.bottom) {
+  margin-bottom: 0;
+}
+.ui.popup .ui.segment.top.attached {
+  border-top-color: transparent;
+  margin-top: -0.7rem;
+}
+.ui.popup .ui.segment.bottom.attached {
+  border-bottom-color: transparent;
+  margin-bottom: -0.7rem;
+}
 /*******************************
         User Overrides
 *******************************/
