@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1428946761601');
+@import url('stylekit.blessed-blessed1.css?z=1428969598701');
 
 /* Justified */
 .ui.justified.grid,
@@ -2497,6 +2497,11 @@
 }
 .ui.menu.vertical.mini {
   width: 3.5rem;
+}
+.ui.inverted.menu .dropdown .menu .item i.icon {
+  color: rgba(0, 0, 0, 0.8) !important;
+  -webkit-transition: none;
+          transition: none;
 }
 /*******************************
          Site Overrides
