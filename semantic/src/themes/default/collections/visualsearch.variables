@@ -29,6 +29,10 @@
 @tokenInputMinWidth: 2em;
 @tokenInputOutline: 0;
 
+@resultFooterBackground: #D0D0D0;
+@resultsMaxHeight: 265px;
+@resultCountFontSize: 10px;
+
 /*-------------------
        States
 --------------------*/
