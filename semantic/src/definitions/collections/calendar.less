@@ -6,20 +6,101 @@
 /**
  * Basic Styling
  */
+.ui.calendar.right.aligned .day > .text {
+  display: block;
+  text-align: right;
+  left: auto;
+  right: 0.1rem;
+}
+.ui.calendar.large.right.aligned .day > .text {
+  right: 0.3rem;
+}
+
+.ui.calendar.center.aligned .day > .text {
+  display: block;
+  text-align: center;
+  left: 50%;
+  margin-left: -0.5rem;
+}
+.ui.calendar .day .appointments {
+  font-size: @fontSize;
+}
+
+.ui.calendar.right.aligned .week.header .cell {
+  text-align: right;
+}
+
+.ui.calendar.center.aligned .week.header .cell {
+  text-align: center;
+}
+
+.ui.calendar .week.header .cell {
+  background: @weekHeaderBackground;
+}
+.ui.calendar .week .day {
+  background: @dayBackground;
+}
+.ui.calendar .controls.default {
+  background: @defaultControlsBackground;
+  height: @defaultControlsHeight;
+}
+.ui.calendar .controls.default.large {
+  font-size: @relativeLarge;
+}
+.ui.calendar .controls.default.massive {
+  font-size: @relativeMassive;
+}
+.ui.calendar .controls.default.huge {
+  font-size: @relativeHuge;
+}
+.ui.calendar.large {
+  font-size: @relativeLarge;
+}
+.ui.calendar.massive {
+  font-size: @relativeMassive;
+}
+.ui.calendar.large .week.header .cell {
+  background: @largeWeekHeaderBackground;
+}
+.ui.calendar.large .week .day {
+  background: @largeDayBackground;
+}
+
 .ui.calendar .day {
   color: @dayColor;
-  font-weight: @dayFontWeight;
   width: @normalDayWidth;
   height: @normalDayHeight;
   max-width: 100%/7;
   display: table-cell;
   vertical-align: top;
-  text-align: center;
+  position: relative;
+  padding: @dayPadding;
+  vertical-align: middle;
   position: relative;
 }
 
-.ui.calendar .day .text {
+.ui.calendar .day > .text {
+  font-weight: @dayFontWeight;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+
+.ui.calendar.large .day > .text {
+  top: 0.3rem;
+  left: 0.3rem;
+}
+
+.ui.calendar.large .day {
+  padding: @largeDayPadding;
+}
+
+.ui.calendar .day > .text {
   display: inline-block;
+}
+
+.ui.calendar:not(.celled) .day:not(.other) {
+  border-top: @dayBorderTop;
 }
 
 .ui.calendar .day .appointment {
@@ -36,7 +117,7 @@
   background-color: @appointmentBackground;
   left: 50%;
   margin-left: -(@appointmentWidth);
-  bottom: .25em;
+  bottom: .15em;
 }
 
 .ui.calendar .day.other {
@@ -56,6 +137,7 @@
 
 .ui.calendar .week {
   display: table;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
@@ -63,15 +145,24 @@
   color: @contentHeaderColor;
   width: @normalHeaderWidth;
   height: @normalHeaderHeight;
+  padding: @headerCellPadding;
   display: table-cell;
-  text-align: center;
   vertical-align: top;
-  text-transform: uppercase;
+}
+
+.ui.calendar.large .week.header .cell {
+  height: @largeHeaderHeight;
+}
+
+.ui.calendar.large .week.header .cell {
+  padding: @largeHeaderCellPadding;
 }
 
 .ui.calendar .controls.default {
   width: @controlsWidth;
-  margin-bottom: 0.5rem;
+}
+.ui.calendar .controls.default table {
+  height: 100%;
 }
 .ui.calendar .controls.default .month {
   font-weight: bold;
@@ -82,8 +173,16 @@
 }
 
 .ui.calendar .controls.default table {
-  width: 100%;
   vertical-align: middle;
+}
+
+.ui.calendar .controls.default.fluid table {
+  width: 100%;
+}
+
+.ui.calendar .controls.default.centered table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ui.calendar .controls.default table td:nth-child(1),
@@ -161,11 +260,14 @@
   right: 0;
   bottom: 0;
 }
+.ui.calendar.large.vertical.fluid .content {
+  top: @largeHeaderHeight;
+}
 .ui.calendar.vertical.fluid .week.header {
-  height: 10%;
+  height: 2em;
 }
 .ui.calendar.vertical.fluid .week {
-  height: 90%/6;
+  height: ~"calc("(100%/6)~" - "(@weekHeaderHeight/6)~")";
 }
 .ui.calendar.vertical.fluid .cell {
   height: 100%;
@@ -192,11 +294,14 @@
 }
 
 .ui.calendar.selectable .day.active {
-  background-color: @activeDayBackground;
+  background-color: @dayBackgroundActive;
+}
+.ui.calendar.selectable .day.today.active {
+  background-color: @todayBackgroundActive;
 }
 
-.ui.calendar.selectable .day.active .text {
-  color: @activeDayColor;
+.ui.calendar.selectable .day.active > .text {
+  color: @dayColorActive;
 }
 
 
@@ -206,4 +311,42 @@
 .ui.calendar .day .ui.label.empty.floating {
   top: -0.3em;
   margin: 0em 0em 0em -0.7em !important;
+}
+
+/**
+ * Appointment Information
+ */
+.ui.calendar .day .appointments .item {
+  background: @appointmentItemBackground;
+  color: @appointmentItemColor;
+  padding: @appointmentItemPadding;
+  border: @appointmentItemBorder;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-bottom: 0.5em;
+  box-shadow: @boxShadow;
+}
+.ui.calendar .day .appointments .item:last-child {
+  margin-bottom: 0;
+}
+.ui.calendar .day .appointments .item .time {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.ui.calendar .day .appointments .item .text {
+  display: inline;
+  font-weight: @appointmentItemTextWeight;
+}
+.ui.calendar .day .appointments .item:hover {
+  background: @appointmentItemHoverBackground;
+  color: @appointmentItemHoverColor;
+  border: @appointmentItemHoverBorder;
+}
+
+.ui.calendar .day .appointments .item.active {
+  background: @appointmentItemActiveBackground;
+  color: @appointmentItemActiveColor;
+  border: @appointmentItemActiveBorder;
 }
