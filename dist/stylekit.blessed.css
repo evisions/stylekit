@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429207859121');
+@import url('stylekit.blessed-blessed1.css?z=1429042930180');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5007,13 +5007,20 @@
 /**
  * Basic Styling
  */
-.ui.calendar.right.aligned .day .text {
+.ui.calendar.right.aligned .day > .text {
   display: block;
   text-align: right;
+  left: auto;
+  right: 0.1rem;
 }
-.ui.calendar.center.aligned .day .text {
+.ui.calendar.large.right.aligned .day > .text {
+  right: 0.3rem;
+}
+.ui.calendar.center.aligned .day > .text {
   display: block;
   text-align: center;
+  left: 50%;
+  margin-left: -0.5rem;
 }
 .ui.calendar .day .appointments {
   font-size: 14px;
@@ -5062,16 +5069,24 @@
   max-width: 14.28571429%;
   display: table-cell;
   vertical-align: top;
-  position: relative;
   padding: 0.1em 0.2em 0.1em 0.1em;
+  vertical-align: middle;
+  position: relative;
 }
-.ui.calendar .day .text {
+.ui.calendar .day > .text {
   font-weight: bold;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+.ui.calendar.large .day > .text {
+  top: 0.3rem;
+  left: 0.3rem;
 }
 .ui.calendar.large .day {
   padding: 0.5em;
 }
-.ui.calendar .day .text {
+.ui.calendar .day > .text {
   display: inline-block;
 }
 .ui.calendar:not(.celled) .day:not(.other) {
@@ -5244,7 +5259,7 @@
 .ui.calendar.selectable .day.today.active {
   background-color: #c9eeff !important;
 }
-.ui.calendar.selectable .day.active .text {
+.ui.calendar.selectable .day.active > .text {
   color: rgba(0, 0, 0, 0.85);
 }
 /**
@@ -5266,6 +5281,11 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  margin-bottom: 0.5em;
+  box-shadow: 0px 1px 3px -2px rgba(0, 0, 0, 0.25);
+}
+.ui.calendar .day .appointments .item:last-child {
+  margin-bottom: 0;
 }
 .ui.calendar .day .appointments .item .time {
   display: inline;

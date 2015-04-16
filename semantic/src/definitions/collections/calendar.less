@@ -6,14 +6,21 @@
 /**
  * Basic Styling
  */
-.ui.calendar.right.aligned .day .text {
+.ui.calendar.right.aligned .day > .text {
   display: block;
   text-align: right;
+  left: auto;
+  right: 0.1rem;
+}
+.ui.calendar.large.right.aligned .day > .text {
+  right: 0.3rem;
 }
 
-.ui.calendar.center.aligned .day .text {
+.ui.calendar.center.aligned .day > .text {
   display: block;
   text-align: center;
+  left: 50%;
+  margin-left: -0.5rem;
 }
 .ui.calendar .day .appointments {
   font-size: @fontSize;
@@ -68,17 +75,27 @@
   vertical-align: top;
   position: relative;
   padding: @dayPadding;
+  vertical-align: middle;
+  position: relative;
 }
 
-.ui.calendar .day .text {
+.ui.calendar .day > .text {
   font-weight: @dayFontWeight;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+}
+
+.ui.calendar.large .day > .text {
+  top: 0.3rem;
+  left: 0.3rem;
 }
 
 .ui.calendar.large .day {
   padding: @largeDayPadding;
 }
 
-.ui.calendar .day .text {
+.ui.calendar .day > .text {
   display: inline-block;
 }
 
@@ -283,7 +300,7 @@
   background-color: @todayBackgroundActive;
 }
 
-.ui.calendar.selectable .day.active .text {
+.ui.calendar.selectable .day.active > .text {
   color: @dayColorActive;
 }
 
@@ -308,6 +325,11 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  margin-bottom: 0.5em;
+  box-shadow: @boxShadow;
+}
+.ui.calendar .day .appointments .item:last-child {
+  margin-bottom: 0;
 }
 .ui.calendar .day .appointments .item .time {
   display: inline;
