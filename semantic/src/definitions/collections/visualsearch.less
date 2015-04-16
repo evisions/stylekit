@@ -82,16 +82,20 @@
 
 .ui.visual.search .results .result.footer {
   background-color: @resultFooterBackground;
-  color: @textColor;
   position: relative;
   text-align: center;
 }
 
 .ui.visual.search .results .result.footer i.count {
   position: absolute;
-  left: @resultHorizontalPadding;
-  top: @resultVerticalPadding;
+  left: @resultFooterHorizontalPadding;
+  top: @resultFooterVerticalPadding;
   font-size: @resultCountFontSize;
+}
+
+.ui.visual.search .results .result.footer span.description {
+  color: @textColor;
+  font-weight: bold;
 }
 
 /*******************************

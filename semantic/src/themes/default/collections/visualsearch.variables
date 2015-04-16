@@ -31,9 +31,9 @@
 
 @resultFooterBackground: #D0D0D0;
 @resultCountFontSize: 10px;
-@resultHorizontalPadding: 1em;
+@resultFooterHorizontalPadding: 1em;
 @resultsMaxHeight: 265px;
-@resultVerticalPadding: 0.5em;
+@resultFooterVerticalPadding: 1em;
 
 /*-------------------
        States
