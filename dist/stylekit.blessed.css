@@ -1,5 +1,15 @@
-@import url('stylekit.blessed-blessed1.css?z=1429042954390');
+@import url('stylekit.blessed-blessed1.css?z=1429133893957');
 
+.ui.grid [class*="center aligned"].column {
+  text-align: center !important;
+}
+/* Right Aligned */
+.ui[class*="right aligned"].grid,
+.ui[class*="right aligned"].grid > .row > .column,
+.ui[class*="right aligned"].grid > .column,
+.ui.grid > [class*="right aligned"].row > .column {
+  text-align: right;
+}
 .ui.grid [class*="right aligned"].column {
   text-align: right !important;
 }
