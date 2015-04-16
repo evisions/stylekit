@@ -33,6 +33,7 @@
 @resultCountFontSize: 10px;
 @resultHorizontalPadding: 1em;
 @resultsMaxHeight: 265px;
+@resultVerticalPadding: 0.5em;
 
 /*-------------------
        States

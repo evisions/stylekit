@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429217937977');
+@import url('stylekit.blessed-blessed1.css?z=1429217891316');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5705,12 +5705,14 @@
 }
 .ui.visual.search .results .result.footer {
   background-color: #d0d0d0;
+  color: rgba(0, 0, 0, 0.8);
   position: relative;
   text-align: center;
 }
 .ui.visual.search .results .result.footer i.count {
   position: absolute;
   left: 1em;
+  top: 0.5em;
   font-size: 10px;
 }
 /*******************************
