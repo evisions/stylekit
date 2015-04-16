@@ -1,0 +1,68 @@
+@dayFontWeight: bold;
+@dayCursor: pointer;
+@dayColor: @darkTextColor;
+@dayPadding: 0.1em 0.2em 0.1em 0.1em;
+@dayBorderTop: 1px solid #ccc;
+
+@largeDayPadding: 0.5em;
+@largeHeaderCellPadding: @largeDayPadding;
+@largeHeaderHeight: 3rem;
+
+@normalDayWidth: 3rem;
+@normalDayHeight: 3rem;
+@weekHeaderHeight: 2em;
+
+@headerCellPadding: @dayPadding;
+@normalHeaderWidth: @normalDayWidth;
+@normalHeaderHeight: 2rem;
+
+
+@controlsWidth: @normalHeaderWidth * 7;
+
+@contentHeaderColor: @darkTextColor;
+
+@todayFontWeight: @dayFontWeight;
+@todayBackground: @lightGreyHover;
+
+@otherDayFontWeight: bold;
+
+@controlBorderRadius: 500rem;
+@controlPadding: .25rem;
+@controlBackgroundHover: none;
+@controlColorHover: @primaryColorActive;
+
+@dayColorActive: @dayColor;
+@dayBackgroundActive: lighten(@lightBlueHover, 25%);
+@todayBackgroundActive: darken(@dayBackgroundActive, 5%) !important;
+
+@appointmentWidth: .25rem;
+@appointmentBackground: @primaryColorActive;
+
+@weekHeaderBackground: transparent;
+@dayBackground: transparent;
+
+@defaultControlsBackground: transparent;
+@defaultControlsHeight: @normalHeaderHeight;
+
+@largeWeekHeaderBackground: transparent;
+@largeDayBackground: @white;
+
+
+
+/**
+ * Appointment Items
+ */
+@appointmentItemPadding: 0.1rem 1rem 0.1rem 2.5rem;
+@appointmentItemBackground: lighten(@lightGrey, 10%);
+@appointmentItemColor: @dayColor;
+@appointmentItemTextWeight: bold;
+@appointmentItemBorder: 1px solid darken(@appointmentItemBackground, 5%);
+
+@appointmentItemHoverBackground: darken(@appointmentItemBackground, 2%);
+@appointmentItemHoverColor: @appointmentItemColor;
+@appointmentItemHoverBorder: 1px solid darken(@appointmentItemHoverBackground, 2%);
+
+@appointmentItemActiveBackground: darken(@appointmentItemBackground, 10%);
+@appointmentItemActiveColor: @appointmentItemColor;
+@appointmentItemActiveBorder: 1px solid darken(@appointmentItemActiveBackground, 2%);
+
