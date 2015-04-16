@@ -10999,7 +10999,7 @@ img.ui.bordered.image {
   padding-right: 2em !important;
 }
 .ui.transparent[class*="left icon"].input > input {
-  padding-left: 0em !important;
+  padding-right: 0em !important;
   padding-left: 2em !important;
 }
 /* Transparent Inverted */
@@ -11195,6 +11195,29 @@ img.ui.bordered.image {
 ---------------------*/
 .ui.fluid.input {
   display: block;
+}
+/*--------------------
+      Editable
+---------------------*/
+.ui.editable.transparent.input input {
+  cursor: pointer;
+  padding: 0.67861em 1em !important;
+}
+.ui.editable.transparent.input > i.icon {
+  cursor: pointer;
+  display: none;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.ui.editable.transparent.input:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.15);
+}
+.ui.editable.transparent.input:hover > i.icon {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  display: block;
+}
+.ui.editable.input > .ui.button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 /*--------------------
         Size
@@ -20211,14 +20234,4 @@ ol.ui.horizontal.list li:before,
 .ui[class*="center aligned"].grid > .column,
 .ui.grid > [class*="center aligned"].row > .column {
   text-align: center;
-}
-.ui.grid [class*="center aligned"].column {
-  text-align: center !important;
-}
-/* Right Aligned */
-.ui[class*="right aligned"].grid,
-.ui[class*="right aligned"].grid > .row > .column,
-.ui[class*="right aligned"].grid > .column,
-.ui.grid > [class*="right aligned"].row > .column {
-  text-align: right;
 }

@@ -194,7 +194,7 @@
   padding-right: @transparentIconMargin !important;
 }
 .ui.transparent[class*="left icon"].input > input {
-  padding-left: 0em !important;
+  padding-right: 0em !important;
   padding-left: @transparentIconMargin !important;
 }
 
@@ -398,6 +398,34 @@
 
 .ui.fluid.input {
   display: block;
+}
+
+
+/*--------------------
+      Editable
+---------------------*/
+
+.ui.editable.transparent.input input {
+  cursor: pointer;
+  padding: @padding !important;
+}
+.ui.editable.transparent.input > i.icon {
+  cursor: pointer;
+  display: none;
+  padding-left: @horizontalPadding;
+  padding-right: @horizontalPadding;
+}
+
+.ui.editable.transparent.input:hover {
+  outline: @border;
+}
+.ui.editable.transparent.input:hover > i.icon {
+  border-left: @border;
+  display: block;
+}
+
+.ui.editable.input > .ui.button {
+  border: @border;
 }
 
 /*--------------------
