@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-@import url('stylekit.blessed-blessed1.css?z=1429133893957');
-=======
-@import url('stylekit.blessed-blessed1.css?z=1429209413076');
->>>>>>> d50ed6ca31d3ac296972e711ae69c048b109038e
+@import url('stylekit.blessed-blessed1.css?z=1429217891316');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5708,12 +5704,14 @@
   display: none;
 }
 .ui.visual.search .results .result.footer {
-  background-color: gray;
+  background-color: #d0d0d0;
+  position: relative;
   text-align: center;
 }
 .ui.visual.search .results .result.footer i.count {
   position: absolute;
   left: 1em;
+  font-size: 10px;
 }
 /*******************************
              States

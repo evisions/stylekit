@@ -25939,12 +25939,14 @@ ol.ui.horizontal.list li:before,
   display: none;
 }
 .ui.visual.search .results .result.footer {
-  background-color: gray;
+  background-color: #d0d0d0;
+  position: relative;
   text-align: center;
 }
 .ui.visual.search .results .result.footer i.count {
   position: absolute;
   left: 1em;
+  font-size: 10px;
 }
 /*******************************
              States
