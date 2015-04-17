@@ -73,9 +73,29 @@
 /* Results */
 .ui.visual.search .results {
   display: block;
+  max-height: @resultsMaxHeight;
+  overflow-y: auto;
 }
 .ui.visual.search .results:empty {
   display: none;
+}
+
+.ui.visual.search .results .result.footer {
+  background-color: @resultFooterBackground;
+  position: relative;
+  text-align: center;
+}
+
+.ui.visual.search .results .result.footer i.count {
+  position: absolute;
+  left: @resultFooterHorizontalPadding;
+  top: @resultFooterVerticalPadding;
+  font-size: @resultCountFontSize;
+}
+
+.ui.visual.search .results .result.footer span.description {
+  color: @textColor;
+  font-weight: bold;
 }
 
 /*******************************
