@@ -283,13 +283,13 @@
  * Celled
  */
 .ui.calendar.celled .day {
-  border-left: 1px solid @lightGrey;
-  border-right: 1px solid @lightGrey;
-  border-bottom: 1px solid @lightGrey;
+  border-left: @dayCellBorder;
+  border-right: @dayCellBorder;
+  border-bottom: @dayCellBorder;
 }
 
 .ui.calendar.celled .week.header .cell {
-  border: 1px solid @lightGrey;
+  border: @headerCellBorder;
 }
 
 /**
@@ -355,4 +355,142 @@
   background: @appointmentItemActiveBackground;
   color: @appointmentItemActiveColor;
   border: @appointmentItemActiveBorder;
+}
+
+/**
+ * Calendar Week
+ */
+
+.ui.week {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.ui.week.fluid {
+  width: 100%;
+}
+
+.ui.week.fluid.vertical {
+  height: 100%;
+}
+
+.ui.week > .wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.ui.week table .collapsing {
+  width: 1px;
+  white-space: nowrap;
+}
+.ui.week table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ui.week table.fixed.layout  {
+  table-layout: fixed;
+}
+.ui.week table.full.height {
+  height: 100%;
+}
+
+.ui.week .time.gutter {
+  width: @weekGutterWidth;
+}
+
+.ui.week .time.grid > table.layout {
+  vertical-align: bottom;
+}
+.ui.week .time.grid > table.layout td {
+  height: @timeGridHeight;
+}
+.ui.week .time.grid > table.layout .time.interval {
+  background: @timeGridDayBackground;
+  padding: @timeGridDayPadding;
+  border-bottom: @timeGridDayBorder;
+  border-left: @timeGridDayBorder;
+  border-right: @timeGridDayBorder;
+}
+.ui.week .time.grid > table.layout .time.interval:not(.business) {
+  background: @timeGridDayOffHoursBackground;
+}
+.ui.week .time.grid .major.interval .time.interval {
+  border-bottom: @timeGridMajorIntervalBorder;
+}
+.ui.week .time.grid .time.gutter {
+  background: @timeGutterBackground;
+  vertical-align: bottom;
+  padding: @timeGutterPadding;
+  text-align: right;
+}
+.ui.week .time.grid .time.gutter .text {
+  color: @timeGutterTextColor;
+  margin-bottom: -0.5em;
+}
+
+.ui.week .time.grid .minor.interval .time.interval {
+  border-bottom: @timeGridMinorIntervalBorder;
+}
+
+.ui.week .header .cell {
+  height: @headerCellHeight;
+  padding: @headerCellPadding;
+  border: @headerCellBorder;
+}
+.ui.week.right.aligned .header .cell {
+  text-align: right;
+}
+.ui.week.center.aligned .header .cell {
+  text-align: center;
+}
+.ui.week .scroller {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+.ui.week .layout.appointment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+
+.ui.week .appointments .position.layout {
+  position: relative;
+}
+
+.ui.week .appointments .appointment {
+  position: absolute;
+  background: @weekAppointmentBackground;
+  cursor: pointer;
+  padding: @weekAppointmentPadding;
+  border-left: @weekAppointmentBorder;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ui.week .appointments .appointment .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.ui.week .appointments .appointment .time {
+  padding-right: 0.5em;
+}
+
+.ui.week .appointments .appointment.active {
+  background: @weekAppointmentActiveBackground;
+  color: @weekAppointmentActiveColor;
 }

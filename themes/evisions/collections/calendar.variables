@@ -5,6 +5,7 @@
 @dayColor: @darkTextColor;
 @dayPadding: 0.1em 0.2em 0.1em 0.1em;
 @dayBorderTop: 1px solid #ccc;
+@dayCellBorder: 1px solid @lightGrey;
 
 @largeDayPadding: 0.5em;
 @largeHeaderCellPadding: @largeDayPadding;
@@ -14,6 +15,7 @@
 @normalDayHeight: 3rem;
 @weekHeaderHeight: 2em;
 
+@headerCellBorder: 1px solid @lightGrey;
 @headerCellPadding: @dayPadding;
 @normalHeaderWidth: @normalDayWidth;
 @normalHeaderHeight: 2rem;
@@ -68,3 +70,27 @@
 @appointmentItemActiveColor: @appointmentItemColor;
 @appointmentItemActiveBorder: 1px solid darken(@appointmentItemActiveBackground, 2%);
 
+
+
+/**
+ * Calendar Week
+ */
+@weekGutterWidth: 10rem;
+@headerCellHeight: 3em;
+@headerCellPadding: 0 0.5em;
+@headerCellBorder: 1px solid @lightGrey;
+@timeGridHeight: 2em;
+@timeGutterPadding: 0 0.5em 0 0;
+@timeGutterBackground: transparent;
+@timeGutterTextColor: @darkGrey;
+@timeGridDayBackground: @white;
+@timeGridDayOffHoursBackground: darken(@white, 1%);
+@timeGridDayPadding: 0 0.5em;
+@timeGridDayBorder: 1px solid #f1f1f1;
+@timeGridMajorIntervalBorder: 1px solid @lightGrey;
+@timeGridMinorIntervalBorder: 1px dotted @lightGrey;
+@weekAppointmentBackground: lighten(@lightBlueHover, 25%);
+@weekAppointmentPadding: 0.2rem 0.5rem 0.2rem 2.5rem;
+@weekAppointmentBorder: 4px solid @blue;
+@weekAppointmentActiveBackground: @lightBlue;
+@weekAppointmentActiveColor: @dayColor;
