@@ -4988,6 +4988,9 @@
 /**
  * Appointment Items
  */
+/**
+ * Calendar Week
+ */
 /*------------------
      Site Theme
 -------------------*/
@@ -5129,7 +5132,7 @@
   color: rgba(0, 0, 0, 0.85);
   width: 3rem;
   height: 2rem;
-  padding: 0.1em 0.2em 0.1em 0.1em;
+  padding: 0 0.5em;
   display: table-cell;
   vertical-align: top;
 }
@@ -5310,6 +5313,127 @@
   background: #dcddde;
   color: rgba(0, 0, 0, 0.85);
   border: 1px solid #d7d8d9;
+}
+/**
+ * Calendar Week
+ */
+.ui.week {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.ui.week.fluid {
+  width: 100%;
+}
+.ui.week.fluid.vertical {
+  height: 100%;
+}
+.ui.week > .wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.ui.week table .collapsing {
+  width: 1px;
+  white-space: nowrap;
+}
+.ui.week table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ui.week table.fixed.layout {
+  table-layout: fixed;
+}
+.ui.week table.full.height {
+  height: 100%;
+}
+.ui.week .time.gutter {
+  width: 10rem;
+}
+.ui.week .time.grid > table.layout {
+  vertical-align: bottom;
+}
+.ui.week .time.grid > table.layout td {
+  height: 2em;
+}
+.ui.week .time.grid > table.layout .time.interval {
+  background: #ffffff;
+  padding: 0 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+}
+.ui.week .time.grid > table.layout .time.interval:not(.business) {
+  background: #fcfcfc;
+}
+.ui.week .time.grid .major.interval .time.interval {
+  border-bottom: 1px solid #dcddde;
+}
+.ui.week .time.grid .time.gutter {
+  background: transparent;
+  vertical-align: bottom;
+  padding: 0 0.5em 0 0;
+  text-align: right;
+}
+.ui.week .time.grid .time.gutter .text {
+  color: #aaaaaa;
+  margin-bottom: -0.5em;
+}
+.ui.week .time.grid .minor.interval .time.interval {
+  border-bottom: 1px dotted #dcddde;
+}
+.ui.week .header .cell {
+  height: 3em;
+  padding: 0 0.5em;
+  border: 1px solid #dcddde;
+}
+.ui.week.right.aligned .header .cell {
+  text-align: right;
+}
+.ui.week.center.aligned .header .cell {
+  text-align: center;
+}
+.ui.week .scroller {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.ui.week .layout.appointment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.ui.week .appointments .position.layout {
+  position: relative;
+}
+.ui.week .appointments .appointment {
+  position: absolute;
+  background: #e3f6ff;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem 0.2rem 2.5rem;
+  border-left: 4px solid #3b83c0;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui.week .appointments .appointment .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.ui.week .appointments .appointment .time {
+  padding-right: 0.5em;
+}
+.ui.week .appointments .appointment.active {
+  background: #54c8ff;
+  color: rgba(0, 0, 0, 0.85);
 }
 /*******************************
             Theme
