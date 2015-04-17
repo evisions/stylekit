@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429225526953');
+@import url('stylekit.blessed-blessed1.css?z=1429042930180');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5147,6 +5147,12 @@
 }
 .ui.calendar .controls.default .month {
   font-weight: bold;
+}
+.ui.calendar .controls.default .year {
+  font-weight: normal;
+}
+.ui.calendar .controls.default .year .dropdown .text {
+  font-weight: normal;
 }
 .ui.calendar .controls.default .title {
   width: auto;
