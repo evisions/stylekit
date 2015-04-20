@@ -22751,6 +22751,26 @@ ol.ui.horizontal.list li:before,
   -webkit-transition: none;
           transition: none;
 }
+.ui.menu > .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: -0.65em;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.071rem;
+  font-weight: bold;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.ui.menu.large > .title {
+  font-size: 1.28rem;
+}
+.ui.menu.huge > .title {
+  font-size: 1.714rem;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -25275,18 +25295,22 @@ ol.ui.horizontal.list li:before,
 .ui.calendar .week .day {
   background: transparent;
 }
-.ui.calendar .controls.default {
+.ui.calendar .controls.default,
+.ui.week .controls.default {
   background: transparent;
   height: 2rem;
 }
-.ui.calendar .controls.default.large {
-  font-size: 1.14285714em;
+.ui.calendar .controls.default.large,
+.ui.week .controls.default.large {
+  font-size: 1.14285714rem;
 }
-.ui.calendar .controls.default.massive {
-  font-size: 1.71428571em;
+.ui.calendar .controls.default.massive,
+.ui.week .controls.default.massive {
+  font-size: 1.71428571rem;
 }
-.ui.calendar .controls.default.huge {
-  font-size: 1.42857143em;
+.ui.calendar .controls.default.huge,
+.ui.week .controls.default.huge {
+  font-size: 1.42857143rem;
 }
 .ui.calendar.large {
   font-size: 1.14285714em;
@@ -25380,57 +25404,76 @@ ol.ui.horizontal.list li:before,
 .ui.calendar .controls.default {
   width: 21rem;
 }
-.ui.calendar .controls.default table {
+.ui.calendar .controls.default table,
+.ui.week .controls.default table {
   height: 100%;
 }
-.ui.calendar .controls.default .month {
+.ui.calendar .controls.default .month,
+.ui.week .controls.default .month {
   font-weight: bold;
 }
-.ui.calendar .controls.default .year {
+.ui.calendar .controls.default .year,
+.ui.week .controls.default .year {
   font-weight: normal;
 }
-.ui.calendar .controls.default .year .dropdown .text {
+.ui.calendar .controls.default .year .dropdown .text,
+.ui.week .controls.default .year .dropdown .text {
   font-weight: normal;
 }
-.ui.calendar .controls.default .title {
+.ui.calendar .controls.default .title,
+.ui.week .controls.default .title {
   width: auto;
 }
-.ui.calendar .controls.default table {
+.ui.calendar .controls.default table,
+.ui.week .controls.default table {
   vertical-align: middle;
 }
-.ui.calendar .controls.default.fluid table {
+.ui.calendar .controls.default.fluid table,
+.ui.week .controls.default.fluid table {
   width: 100%;
 }
-.ui.calendar .controls.default.centered table {
+.ui.calendar .controls.default.centered table,
+.ui.week .controls.default.centered table {
   margin-left: auto;
   margin-right: auto;
 }
 .ui.calendar .controls.default table td:nth-child(1),
-.ui.calendar .controls.default table td:nth-child(3) {
+.ui.week .controls.default table td:nth-child(1),
+.ui.calendar .controls.default table td:nth-child(3),
+.ui.week .controls.default table td:nth-child(3) {
   cursor: pointer;
   width: 3rem;
   vertical-align: middle;
   text-align: center;
 }
-.ui.calendar .controls.default table td .control {
+.ui.calendar .controls.default table td .control,
+.ui.week .controls.default table td .control {
   padding: 0.25rem;
   border-radius: 500rem;
   display: inline-block;
 }
-.ui.calendar .controls.default table td .control .icon {
+.ui.calendar .controls.default table td .control .icon,
+.ui.week .controls.default table td .control .icon {
   margin: 0;
 }
-.ui.calendar .controls.default table td .control:hover {
+.ui.calendar .controls.default table td .control:hover,
+.ui.week .controls.default table td .control:hover {
   background: none;
   color: #ffa609;
 }
-.ui.calendar .controls.default table td:nth-child(2) {
+.ui.calendar .controls.default table td:nth-child(2),
+.ui.week .controls.default table td:nth-child(2) {
   text-align: center;
   vertical-align: middle;
 }
-.ui.calendar .controls.default table td {
+.ui.calendar .controls.default table td,
+.ui.week .controls.default table td {
   text-align: center;
   vertical-align: middle;
+}
+.ui.week .controls.default {
+  width: 100%;
+  margin-bottom: 0.75em;
 }
 /**
  * Fluid
@@ -25669,6 +25712,7 @@ ol.ui.horizontal.list li:before,
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 2em;
 }
 .ui.week .appointments .appointment:after {
   content: '';

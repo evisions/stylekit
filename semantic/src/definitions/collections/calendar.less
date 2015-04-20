@@ -40,18 +40,20 @@
 .ui.calendar .week .day {
   background: @dayBackground;
 }
-.ui.calendar .controls.default {
-  background: @defaultControlsBackground;
-  height: @defaultControlsHeight;
-}
-.ui.calendar .controls.default.large {
-  font-size: @relativeLarge;
-}
-.ui.calendar .controls.default.massive {
-  font-size: @relativeMassive;
-}
-.ui.calendar .controls.default.huge {
-  font-size: @relativeHuge;
+.ui.calendar,.ui.week {
+  .controls.default {
+    background: @defaultControlsBackground;
+    height: @defaultControlsHeight;
+  }
+  .controls.default.large {
+    font-size: @large;
+  }
+  .controls.default.massive {
+    font-size: @massive;
+  }
+  .controls.default.huge {
+    font-size: @huge;
+  }
 }
 .ui.calendar.large {
   font-size: @relativeLarge;
@@ -159,69 +161,76 @@
 }
 
 .ui.calendar .controls.default {
-  width: @controlsWidth;
+  width: @controlsWidth;  
 }
-.ui.calendar .controls.default table {
-  height: 100%;
-}
-.ui.calendar .controls.default .month {
-  font-weight: bold;
-}
-.ui.calendar .controls.default .year {
-  font-weight: normal;
-}
-.ui.calendar .controls.default .year .dropdown .text{
-  font-weight: normal;
+.ui.calendar,.ui.week {
+  .controls.default table {
+    height: 100%;
+  }
+  .controls.default .month {
+    font-weight: bold;
+  }
+  .controls.default .year {
+    font-weight: normal;
+  }
+  .controls.default .year .dropdown .text{
+    font-weight: normal;
+  }
+
+  .controls.default .title {
+    width: auto;
+  }
+
+  .controls.default table {
+    vertical-align: middle;
+  }
+
+  .controls.default.fluid table {
+    width: 100%;
+  }
+
+  .controls.default.centered table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .controls.default table td:nth-child(1),
+  .controls.default table td:nth-child(3) {
+    cursor: pointer;
+    width: @normalDayWidth;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .controls.default table td .control {
+    padding: @controlPadding;
+    border-radius: @controlBorderRadius;
+    display: inline-block;
+  }
+
+  .controls.default table td .control .icon {
+    margin: 0;
+  }
+
+  .controls.default table td .control:hover {
+    background: @controlBackgroundHover;
+    color: @controlColorHover;
+  }
+
+  .controls.default table td:nth-child(2) {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .controls.default table td {
+    text-align: center;
+    vertical-align: middle;
+  }
 }
 
-.ui.calendar .controls.default .title {
-  width: auto;
-}
-
-.ui.calendar .controls.default table {
-  vertical-align: middle;
-}
-
-.ui.calendar .controls.default.fluid table {
+.ui.week .controls.default {
   width: 100%;
-}
-
-.ui.calendar .controls.default.centered table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ui.calendar .controls.default table td:nth-child(1),
-.ui.calendar .controls.default table td:nth-child(3) {
-  cursor: pointer;
-  width: @normalDayWidth;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.ui.calendar .controls.default table td .control {
-  padding: @controlPadding;
-  border-radius: @controlBorderRadius;
-  display: inline-block;
-}
-
-.ui.calendar .controls.default table td .control .icon {
-  margin: 0;
-}
-
-.ui.calendar .controls.default table td .control:hover {
-  background: @controlBackgroundHover;
-  color: @controlColorHover;
-}
-
-.ui.calendar .controls.default table td:nth-child(2) {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.ui.calendar .controls.default table td {
-  text-align: center;
-  vertical-align: middle;
+  margin-bottom: 0.75em;
 }
 
 /**
@@ -491,6 +500,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-height: 2em;
 }
 
 .ui.week .appointments .appointment:after {

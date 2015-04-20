@@ -42,3 +42,24 @@
   color: @dropdownTextColor !important;
   transition: none;
 }
+
+.ui.menu > .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: -0.65em;
+  text-align: center;
+  display: inline-block;
+  font-size: @h4;
+  font-weight: bold;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.ui.menu.large > .title {
+  font-size: @h3;
+}
+.ui.menu.huge > .title {
+  font-size: @h2;
+}
