@@ -25519,7 +25519,7 @@ ol.ui.horizontal.list li:before,
 .ui.calendar .day .appointments .item {
   background: #f6f7f7;
   color: rgba(0, 0, 0, 0.85);
-  padding: 0.1rem 1rem 0.1rem 2.5rem;
+  padding: 0.1rem 1rem 0.1rem 1.5rem;
   border: 1px solid #e9eaea;
   overflow: hidden;
   white-space: nowrap;
@@ -25527,6 +25527,18 @@ ol.ui.horizontal.list li:before,
   width: 100%;
   margin-bottom: 0.5em;
   box-shadow: 0px 1px 3px -2px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.ui.calendar .day .appointments .item:after {
+  content: '';
+  position: absolute;
+  background: #3b83c0;
+  top: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em;
+  margin-top: -0.25em;
+  left: 0.5em;
 }
 .ui.calendar .day .appointments .item:last-child {
   margin-bottom: 0;
@@ -25657,6 +25669,17 @@ ol.ui.horizontal.list li:before,
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.ui.week .appointments .appointment:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0.9em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.5em 0.5em;
+  margin-top: -0.25em;
+  background: #3b83c0;
 }
 .ui.week .appointments .appointment .text {
   overflow: hidden;
