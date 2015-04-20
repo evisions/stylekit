@@ -6,6 +6,7 @@
 @dayPadding: 0.1em 0.2em 0.1em 0.1em;
 @dayBorderTop: 1px solid #ccc;
 @dayCellBorder: 1px solid @lightGrey;
+@dayDotSize: 0.5em;
 
 @largeDayPadding: 0.5em;
 @largeHeaderCellPadding: @largeDayPadding;
@@ -56,7 +57,7 @@
 /**
  * Appointment Items
  */
-@appointmentItemPadding: 0.1rem 1rem 0.1rem 2.5rem;
+@appointmentItemPadding: 0.1rem 1rem 0.1rem 1.5rem;
 @appointmentItemBackground: lighten(@lightGrey, 10%);
 @appointmentItemColor: @dayColor;
 @appointmentItemTextWeight: bold;
