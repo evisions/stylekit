@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429570918469');
+@import url('stylekit.blessed-blessed1.css?z=1429653606625');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5897,7 +5897,7 @@
   max-height: 265px;
   overflow-y: auto;
 }
-.ui.visual.search .results:empty {
+.ui.visual.search .results.empty {
   display: none;
 }
 .ui.visual.search .results .result.footer {

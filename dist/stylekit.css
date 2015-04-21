@@ -26132,7 +26132,7 @@ ol.ui.horizontal.list li:before,
   max-height: 265px;
   overflow-y: auto;
 }
-.ui.visual.search .results:empty {
+.ui.visual.search .results.empty {
   display: none;
 }
 .ui.visual.search .results .result.footer {
