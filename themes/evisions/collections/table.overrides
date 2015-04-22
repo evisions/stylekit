@@ -76,8 +76,16 @@
 
 
 .ui.table.selectable tbody tr:not(.empty):hover td {
-  background: @activeBackgroundHover;
+  background: @backgroundHover;
   cursor: @selectableHoverCursor;
+}
+
+.ui.table.selectable tbody tr.active:not(.empty):hover td {
+  background: @activeBackgroundHover;
+}
+
+.ui.table.selectable.striped tbody tr:nth-child(2n):not(.empty):hover td {
+  background: @activeBackgroundHover;
 }
 
 .ui.table.inverted.selectable tbody tr:not(.empty):hover td {
@@ -122,4 +130,13 @@
     font-weight: normal;
   }
 
+}
+
+
+/**
+ * Color
+ */
+
+.ui.table tr.light.blue td {
+  background: lighten(@lightBlue, 27%);
 }

@@ -137,8 +137,10 @@
 @activeColor: rgba(50, 50, 50, 0.9);
 @activeBackgroundColor: #E0E0E0;
 @activeBoxShadow: @stateMarkerWidth 0px 0px @activeColor inset;
+@backgroundHover: darken(@activeBackgroundColor, 2%);
 // @activeBackgroundHover: #EFEFEF;
-@activeBackgroundHover: darken(@activeBackgroundColor, 2%);
+@activeBackgroundHover: @backgroundHover;
+// @activeBackgroundHover: darken(@backgroundHover, 2%);
 @activeColorHover: rgba(50, 50, 50, 1);
 
 /*--------------

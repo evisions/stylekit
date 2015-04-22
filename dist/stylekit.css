@@ -24889,6 +24889,12 @@ ol.ui.horizontal.list li:before,
   background: #dbdbdb;
   cursor: pointer;
 }
+.ui.table.selectable tbody tr.active:not(.empty):hover td {
+  background: #dbdbdb;
+}
+.ui.table.selectable.striped tbody tr:nth-child(2n):not(.empty):hover td {
+  background: #dbdbdb;
+}
 .ui.table.inverted.selectable tbody tr:not(.empty):hover td {
   background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
@@ -24928,6 +24934,12 @@ ol.ui.horizontal.list li:before,
   .ui.table:not(.unstackable) td:first-child {
     font-weight: normal;
   }
+}
+/**
+ * Color
+ */
+.ui.table tr.light.blue td {
+  background: #def4ff;
 }
 /*******************************
          Site Overrides
