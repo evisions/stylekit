@@ -127,9 +127,31 @@
   color: @disabledTextColor;
 }
 
+.ui.calendar .day.weekend:not(.other) {
+  color: @weekendDayColor;
+}
+
+.ui.calendar .day.weekend:not(.active) {
+  background: @weekendDayBackground !important;
+}
+
 .ui.calendar .day.today {
   font-weight: @todayFontWeight;
   background-color: @todayBackground !important;
+}
+
+.ui.calendar .day .more {
+  color: @moreColor;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: @moreBottom;
+  height: auto;
+}
+
+.ui.calendar .day .more:hover {
+  color: @moreColorHover;
 }
 
 .ui.calendar .day.disabled {

@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429719543796');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
 .ui.grid [class*="center aligned"].column {
   text-align: center !important;
@@ -5151,9 +5151,27 @@
   font-weight: bold;
   color: rgba(40, 40, 40, 0.3);
 }
+.ui.calendar .day.weekend:not(.other) {
+  color: #343637;
+}
+.ui.calendar .day.weekend:not(.active) {
+  background: #fcfcfc !important;
+}
 .ui.calendar .day.today {
   font-weight: bold;
   background-color: #e4e5e5 !important;
+}
+.ui.calendar .day .more {
+  color: #cccccc;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0.5em;
+  height: auto;
+}
+.ui.calendar .day .more:hover {
+  color: #1b1c1d;
 }
 .ui.calendar .day.disabled {
   cursor: default !important;

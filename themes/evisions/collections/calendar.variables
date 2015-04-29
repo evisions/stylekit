@@ -21,6 +21,9 @@
 @normalHeaderWidth: @normalDayWidth;
 @normalHeaderHeight: 2rem;
 
+@moreColor: @grey;
+@moreColorHover: @black;
+@moreBottom: 0.5em;
 
 @controlsWidth: @normalHeaderWidth * 7;
 
@@ -30,6 +33,9 @@
 @todayBackground: @lightGreyHover;
 
 @otherDayFontWeight: bold;
+
+@weekendDayBackground: darken(@white, 1%);
+@weekendDayColor: lighten(@black, 10%);
 
 @controlBorderRadius: 500rem;
 @controlPadding: .25rem;
