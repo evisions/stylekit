@@ -523,6 +523,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   min-height: 2em;
+  box-shadow: @boxShadow;
+}
+
+.ui.week .appointments .appointment.overlap {
+  width: 50%;
+  opacity: 0.8;
+}
+
+.ui.week .appointments .appointment.overlap .text {
+  display: none;
+}
+
+.ui.week .appointments .appointment.overlap.post {
+  left: 50%;
 }
 
 .ui.week .appointments .appointment:after {
@@ -550,4 +564,5 @@
 .ui.week .appointments .appointment.active {
   background: @weekAppointmentActiveBackground;
   color: @weekAppointmentActiveColor;
+  z-index: 2;
 }

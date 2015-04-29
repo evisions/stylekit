@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1430332789630');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
@@ -5601,6 +5601,17 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   min-height: 2em;
+  box-shadow: 0px 1px 3px -2px rgba(0, 0, 0, 0.25);
+}
+.ui.week .appointments .appointment.overlap {
+  width: 50%;
+  opacity: 0.8;
+}
+.ui.week .appointments .appointment.overlap .text {
+  display: none;
+}
+.ui.week .appointments .appointment.overlap.post {
+  left: 50%;
 }
 .ui.week .appointments .appointment:after {
   content: '';
@@ -5624,6 +5635,7 @@
 .ui.week .appointments .appointment.active {
   background: #54c8ff;
   color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
 }
 /*******************************
             Theme
