@@ -10866,7 +10866,8 @@ img.ui.bordered.image {
   display: inline-block;
   color: rgba(0, 0, 0, 0.8);
 }
-.ui.input input {
+.ui.input input,
+.ui.input textarea {
   margin: 0em;
   width: 100%;
   outline: none;
@@ -10883,14 +10884,20 @@ img.ui.bordered.image {
           transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   box-shadow: none;
 }
+.ui.input textarea {
+  box-sizing: border-box;
+  resize: none;
+}
 /*--------------------
       Placeholder
 ---------------------*/
 /* browsers require these rules separate */
-.ui.input input::-webkit-input-placeholder {
+.ui.input input::-webkit-input-placeholder,
+.ui.input textarea::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
-.ui.input input::-moz-placeholder {
+.ui.input input::-moz-placeholder,
+.ui.input textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 /*******************************
@@ -10900,7 +10907,9 @@ img.ui.bordered.image {
         Active
 ---------------------*/
 .ui.input input:active,
-.ui.input.down input {
+.ui.input textarea:active,
+.ui.input.down input,
+.ui.input.down textarea {
   border-color: rgba(0, 0, 0, 0.3);
   background: #fafafa;
   color: rgba(0, 0, 0, 0.8);
@@ -10942,41 +10951,52 @@ img.ui.bordered.image {
         Focus
 ---------------------*/
 .ui.input.focus input,
-.ui.input input:focus {
+.ui.input.focus textarea,
+.ui.input input:focus,
+.ui.input textarea:focus {
   border-color: rgba(39, 41, 43, 0.3);
   background: #ffffff;
   color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
 }
 .ui.input.focus input input::-webkit-input-placeholder,
-.ui.input input:focus input::-webkit-input-placeholder {
+.ui.input.focus textarea textarea::-webkit-input-placeholder,
+.ui.input input:focus input::-webkit-input-placeholder,
+.ui.input textarea:focus textarea::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.8);
 }
 .ui.input.focus input input::-moz-placeholder,
-.ui.input input:focus input::-moz-placeholder {
+.ui.input.focus textarea textarea::-moz-placeholder,
+.ui.input input:focus input::-moz-placeholder,
+.ui.input textarea:focus textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.8);
 }
 /*--------------------
         Error
 ---------------------*/
-.ui.input.error input {
+.ui.input.error input,
+.ui.input.error textarea {
   background-color: #fff0f0;
   border-color: #dbb1b1;
   color: #d95c5c;
   box-shadow: none;
 }
 /* Error Placeholder */
-.ui.input.error input ::-webkit-input-placeholder {
+.ui.input.error input ::-webkit-input-placeholder,
+.ui.input.error textarea ::-webkit-input-placeholder {
   color: rgba(255, 80, 80, 0.4);
 }
-.ui.input.error input ::-moz-placeholder {
+.ui.input.error input ::-moz-placeholder,
+.ui.input.error textarea ::-moz-placeholder {
   color: rgba(255, 80, 80, 0.4);
 }
 /* Focused Error Placeholder */
-.ui.input.error input :focus::-webkit-input-placeholder {
+.ui.input.error input :focus::-webkit-input-placeholder,
+.ui.input.error textarea :focus::-webkit-input-placeholder {
   color: rgba(255, 80, 80, 0.7);
 }
-.ui.input.error input :focus::-moz-placeholder {
+.ui.input.error input :focus::-moz-placeholder,
+.ui.input.error textarea :focus::-moz-placeholder {
   color: rgba(255, 80, 80, 0.7);
 }
 /*******************************
@@ -11010,6 +11030,31 @@ img.ui.bordered.image {
   color: #ffffff;
 }
 .ui.transparent.inverted.input input {
+  color: inherit;
+}
+.ui.transparent.input input {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0em;
+}
+/* Textarea Transparent*/
+.ui.transparent.input textarea {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 0em;
+}
+.ui.transparent.icon.input > textarea {
+  padding-left: 0em !important;
+  padding-right: 2em !important;
+}
+.ui.transparent[class*="left icon"].input > textarea {
+  padding-right: 0em !important;
+  padding-left: 2em !important;
+}
+.ui.transparent.inverted.input textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.ui.transparent.inverted.input textarea {
   color: inherit;
 }
 /*--------------------
@@ -11058,7 +11103,8 @@ img.ui.bordered.image {
   right: auto;
   left: 0.5em;
 }
-.ui[class*="left icon"].input > input {
+.ui[class*="left icon"].input > input,
+.ui[class*="left icon"].input > textarea {
   padding-left: 2.82142em !important;
   padding-right: 1em !important;
 }
@@ -11096,7 +11142,8 @@ img.ui.bordered.image {
   display: flex;
 }
 /* Label on Left */
-.ui.labeled.input:not([class*="corner labeled"]):not([class*="right labeled"]) > input {
+.ui.labeled.input:not([class*="corner labeled"]):not([class*="right labeled"]) > input,
+.ui.labeled.input:not([class*="corner labeled"]):not([class*="right labeled"]) > textarea {
   border-left: none;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -11106,7 +11153,8 @@ img.ui.bordered.image {
   border-bottom-right-radius: 0px;
 }
 /* Label on Right */
-.ui[class*="right labeled"].input > input {
+.ui[class*="right labeled"].input > input,
+.ui[class*="right labeled"].input > textarea {
   border-right: none;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -11122,11 +11170,13 @@ img.ui.bordered.image {
   font-size: 0.75em;
   border-radius: 0em 0.2857rem 0em 0em;
 }
-.ui.labeled.input input {
+.ui.labeled.input input,
+.ui.labeled.input textarea {
   padding-right: 2.5em !important;
 }
 /* Spacing with corner label */
-.ui[class*="corner labeled"].icon.input:not(.left) > input {
+.ui[class*="corner labeled"].icon.input:not(.left) > input,
+.ui[class*="corner labeled"].icon.input:not(.left) > textarea {
   padding-right: 3.25em !important;
 }
 .ui[class*="corner labeled"].icon.input:not(.left) > .icon {
@@ -11162,7 +11212,8 @@ img.ui.bordered.image {
   display: flex;
 }
 /* Button on Right */
-.ui.action.input:not([class*="left action"]) > input {
+.ui.action.input:not([class*="left action"]) > input,
+.ui.action.input:not([class*="left action"]) > textarea {
   border-right: none;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -11178,7 +11229,8 @@ img.ui.bordered.image {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.ui[class*="left action"].input > input {
+.ui[class*="left action"].input > input,
+.ui[class*="left action"].input > textarea {
   border-left: none;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -11187,7 +11239,8 @@ img.ui.bordered.image {
        Inverted
 ---------------------*/
 /* Standard */
-.ui.inverted.input input {
+.ui.inverted.input input,
+.ui.inverted.input textarea {
   border: none;
 }
 /*--------------------
@@ -11199,7 +11252,8 @@ img.ui.bordered.image {
 /*--------------------
       Editable
 ---------------------*/
-.ui.editable.transparent.input input {
+.ui.editable.transparent.input input,
+.ui.editable.transparent.input textarea {
   cursor: pointer;
   padding: 0.67861em 1em !important;
 }
@@ -20141,97 +20195,4 @@ ol.ui.horizontal.list li:before,
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
   box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.2);
-}
-.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
-.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
-  box-shadow: none;
-}
-.ui.inverted[class*="vertically divided"].grid > .row:before {
-  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.2);
-}
-/* Relaxed */
-.ui.relaxed[class*="vertically divided"].grid > .row:before {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  width: calc(100% -  3rem );
-}
-.ui[class*="very relaxed"][class*="vertically divided"].grid > .row:before {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  width: calc(100% -  5rem );
-}
-/*----------------------
-         Celled
------------------------*/
-.ui.celled.grid {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  margin: 1em 0em;
-  box-shadow: 0px 0px 0px 1px #d4d4d5;
-}
-.ui.celled.grid > .row,
-.ui.celled.grid > .column.row,
-.ui.celled.grid > .column.row:first-child {
-  display: table;
-  table-layout: fixed;
-  width: 100% !important;
-  margin: 0em;
-  padding: 0em;
-  box-shadow: 0px -1px 0px 0px #d4d4d5;
-}
-.ui.celled.grid > .column:not(.row),
-.ui.celled.grid > .row > .column {
-  display: table-cell;
-  box-shadow: -1px 0px 0px 0px #d4d4d5;
-}
-.ui.celled.grid > .column:first-child,
-.ui.celled.grid > .row > .column:first-child {
-  box-shadow: none;
-}
-.ui.celled.page.grid {
-  box-shadow: none;
-}
-.ui.celled.grid > .column:not(.row),
-.ui.celled.grid > .row > .column {
-  padding: 0.75em;
-}
-.ui.relaxed.celled.grid > .column:not(.row),
-.ui.relaxed.celled.grid > .row > .column {
-  padding: 1em;
-}
-.ui[class*="very relaxed"].celled.grid > .column:not(.row),
-.ui[class*="very relaxed"].celled.grid > .row > .column {
-  padding: 2em;
-}
-/* Internally Celled */
-.ui[class*="internally celled"].grid {
-  box-shadow: none;
-}
-.ui[class*="internally celled"].grid > .row:first-child {
-  box-shadow: none;
-}
-.ui[class*="internally celled"].grid > .row > .column:first-child {
-  box-shadow: none;
-}
-/*----------------------
-  Horizontally Centered
------------------------*/
-/* Left Aligned */
-.ui[class*="left aligned"].grid,
-.ui[class*="left aligned"].grid > .row > .column,
-.ui[class*="left aligned"].grid > .column,
-.ui.grid [class*="left aligned"].column,
-.ui.grid > [class*="left aligned"].row > .column {
-  text-align: left;
-}
-.ui.grid [class*="left aligned"].column {
-  text-align: left !important;
-}
-/* Center Aligned */
-.ui[class*="center aligned"].grid,
-.ui[class*="center aligned"].grid > .row > .column,
-.ui[class*="center aligned"].grid > .column,
-.ui.grid > [class*="center aligned"].row > .column {
-  text-align: center;
 }
