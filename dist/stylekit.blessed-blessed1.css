@@ -9859,6 +9859,15 @@ i.icon.pinterest.official {
 i.icon.bed:before {
   content: "\f236";
 }
+i.icon.panda:before {
+  content: "\f23f";
+}
+i.icon.sad.panda:before {
+  content: "\f240";
+}
+i.icon.sleep:before {
+  content: "\f241";
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -20190,9 +20199,4 @@ ol.ui.horizontal.list li:before,
 /* First Row Vertically Divided */
 .ui[class*="vertically divided"].grid > .row:first-child:before {
   box-shadow: none;
-}
-/* Inverted Divided */
-.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
-.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
-  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.2);
 }

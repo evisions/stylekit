@@ -1,5 +1,10 @@
-@import url('stylekit.blessed-blessed1.css?z=1430350242467');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
+/* Inverted Divided */
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.2);
+}
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
   box-shadow: none;
@@ -12928,6 +12933,7 @@ body.dimmed.dimmable > :not(.dimmer) {
 /* Simple */
 /* Floating */
 /* Pointing */
+/* Loader */
 /*------------------
      Site Theme
 -------------------*/
@@ -13487,6 +13493,38 @@ select.ui.dropdown {
   visibility: hidden;
   z-index: -1;
 }
+.ui.loading.loading.dropdown > i.icon.dropdown:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -0.29285em 0em 0em -0.64285em;
+  width: 1.2857em;
+  height: 1.2857em;
+  border-radius: 500rem;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
+}
+.ui.loading.loading.dropdown > i.icon.dropdown:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -0.29285em 0em 0em -0.64285em;
+  width: 1.2857em;
+  height: 1.2857em;
+  -webkit-animation: button-spin 0.6s linear;
+          animation: button-spin 0.6s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: #aaaaaa transparent transparent;
+  border-style: solid;
+  border-width: 0.2em;
+  box-shadow: 0px 0px 0px 1px transparent;
+}
+/*--------------------
+    Success
+----------------------*/
 /*--------------------
     Keyboard Select
 ----------------------*/
