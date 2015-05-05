@@ -270,3 +270,9 @@
 
 @pointingMenuDistance: 0.75em;
 @pointingMenuBorderRadius: @borderRadius;
+
+/* Loader */
+@loaderSize: 1.2857em;
+@loaderOffset: -(@loaderSize / 2);
+@loaderMargin: (@loaderOffset + 0.35em) 0em 0em @loaderOffset;
+@invertedLoaderFillColor: rgba(0, 0, 0, 0.15);
