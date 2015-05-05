@@ -11309,6 +11309,14 @@ img.ui.bordered.image {
 /*******************************
          Theme Overrides
 *******************************/
+/*--------------------
+    Success
+----------------------*/
+.ui.success.dropdown > i.icon.dropdown:before {
+  font-family: Icons !important;
+  content: '\f00c';
+  color: #5bbd72;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -33722,9 +33730,6 @@ select.ui.dropdown {
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
 }
-/*--------------------
-    Success
-----------------------*/
 /*--------------------
     Keyboard Select
 ----------------------*/

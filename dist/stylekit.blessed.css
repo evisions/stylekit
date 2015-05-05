@@ -1,5 +1,9 @@
 @import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
+/* First Row Vertically Divided */
+.ui[class*="vertically divided"].grid > .row:first-child:before {
+  box-shadow: none;
+}
 /* Inverted Divided */
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
@@ -13522,9 +13526,6 @@ select.ui.dropdown {
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
 }
-/*--------------------
-    Success
-----------------------*/
 /*--------------------
     Keyboard Select
 ----------------------*/

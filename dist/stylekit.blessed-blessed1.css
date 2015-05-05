@@ -11309,6 +11309,14 @@ img.ui.bordered.image {
 /*******************************
          Theme Overrides
 *******************************/
+/*--------------------
+    Success
+----------------------*/
+.ui.success.dropdown > i.icon.dropdown:before {
+  font-family: Icons !important;
+  content: '\f00c';
+  color: #5bbd72;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -20195,8 +20203,4 @@ ol.ui.horizontal.list li:before,
 [class*="horizontally padded"].ui.divided.grid,
 .ui.padded.divided.grid:not(.vertically):not(.horizontally) {
   width: 100%;
-}
-/* First Row Vertically Divided */
-.ui[class*="vertically divided"].grid > .row:first-child:before {
-  box-shadow: none;
 }
