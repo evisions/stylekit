@@ -4157,6 +4157,7 @@ span.text.light.orange {
   color: #ffffff;
   text-shadow: #ffffff;
   background-image: none;
+  border-radius: 0.2857em;
 }
 .ui.white.button {
   box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
