@@ -1,5 +1,19 @@
-@import url('stylekit.blessed-blessed1.css?z=1430350242467');
+@import url('stylekit.blessed-blessed1.css?z=1431021358672');
 
+/* Padded Horizontally Divided */
+[class*="horizontally padded"].ui.divided.grid,
+.ui.padded.divided.grid:not(.vertically):not(.horizontally) {
+  width: 100%;
+}
+/* First Row Vertically Divided */
+.ui[class*="vertically divided"].grid > .row:first-child:before {
+  box-shadow: none;
+}
+/* Inverted Divided */
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.2);
+}
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .column:not(.row):first-child,
 .ui.inverted.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
   box-shadow: none;
