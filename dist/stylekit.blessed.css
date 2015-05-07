@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1431032559057');
+@import url('stylekit.blessed-blessed1.css?z=1431037509815');
 
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
@@ -2200,7 +2200,7 @@
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #3a3a3a;
+  background: #2f4050;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {
@@ -4837,7 +4837,7 @@
  * Color
  */
 .ui.table tr.light.blue td {
-  background: #def4ff;
+  background: #cde6fa;
 }
 /*******************************
          Site Overrides
@@ -5275,7 +5275,7 @@
   padding: 0.25rem;
   border-radius: 500rem;
   text-align: center;
-  background-color: #ffa609;
+  background-color: #389aed;
   left: 50%;
   margin-left: -0.25rem;
   bottom: .15em;
@@ -5387,7 +5387,7 @@
 .ui.calendar .controls.default table td .control:hover,
 .ui.week .controls.default table td .control:hover {
   background: none;
-  color: #ffa609;
+  color: #389aed;
 }
 .ui.calendar .controls.default table td:nth-child(2),
 .ui.week .controls.default table td:nth-child(2) {
@@ -5469,10 +5469,10 @@
   cursor: pointer;
 }
 .ui.calendar.selectable .day.active {
-  background-color: #e3f6ff;
+  background-color: #d2e8fb;
 }
 .ui.calendar.selectable .day.today.active {
-  background-color: #c9eeff !important;
+  background-color: #bbdcf9 !important;
 }
 .ui.calendar.selectable .day.active > .text {
   color: rgba(0, 0, 0, 0.85);
@@ -5630,7 +5630,7 @@
 }
 .ui.week .appointments .appointment {
   position: absolute;
-  background: #e3f6ff;
+  background: #d2e8fb;
   cursor: pointer;
   padding: 0.2rem 0.5rem 0.2rem 2.5rem;
   border-left: 4px solid #3b83c0;
@@ -5673,7 +5673,7 @@
   padding-right: 0.5em;
 }
 .ui.week .appointments .appointment.active {
-  background: #54c8ff;
+  background: #4fa6ef;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
@@ -10476,7 +10476,7 @@ a.ui.card:hover,
 .ui.inverted.blue.statistics .statistic > .value,
 .ui.statistics .inverted.blue.statistic > .value,
 .ui.inverted.blue.statistic > .value {
-  color: #54c8ff;
+  color: #4fa6ef;
 }
 .ui.inverted.green.statistics .statistic > .value,
 .ui.statistics .inverted.green.statistic > .value,
@@ -16618,7 +16618,7 @@ a.ui.nag {
   background-color: #3a3a3a;
 }
 .ui.blue.inverted.progress .bar {
-  background-color: #54c8ff;
+  background-color: #4fa6ef;
 }
 .ui.green.inverted.progress .bar {
   background-color: #2ecc40;

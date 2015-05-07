@@ -15,6 +15,7 @@
 @verticalPadding: 0.78571em;
 @horizontalPadding: 1.5em;
 
+
 /* Text */
 @textTransform: none;
 @tapColor: transparent;
@@ -23,7 +24,6 @@
 @textColor: rgba(0, 0, 0, 0.6);
 @textShadow: none;
 @invertedTextShadow: none;
-@borderRadius: none;
 @verticalAlign: baseline;
 
 /* Internal Shadow */
@@ -173,13 +173,14 @@
 
 /* Inverted */
 @invertedBorderSize: 2px;
+@invertedBorderRadius: @relativeBorderRadius;
 @invertedTextColor: @white;
 @invertedTextHoverColor: @hoverColor;
 @invertedGroupButtonOffset: 0px 0px 0px -(@invertedBorderSize);
 @invertedVerticalGroupButtonOffset: 0px 0px -(@invertedBorderSize) 0px;
 
 /* Basic */
-@basicBorderRadius: @borderRadius;
+@basicBorderRadius: @relativeBorderRadius;
 @basicBorderSize: 1px;
 @basicTextColor: @textColor;
 @basicColoredBorderSize: 2px;
