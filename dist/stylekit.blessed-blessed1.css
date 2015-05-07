@@ -9859,6 +9859,15 @@ i.icon.pinterest.official {
 i.icon.bed:before {
   content: "\f236";
 }
+i.icon.panda:before {
+  content: "\f23f";
+}
+i.icon.sad.panda:before {
+  content: "\f240";
+}
+i.icon.sleep:before {
+  content: "\f241";
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -11300,6 +11309,14 @@ img.ui.bordered.image {
 /*******************************
          Theme Overrides
 *******************************/
+/*--------------------
+    Success
+----------------------*/
+.ui.success.dropdown > i.icon.dropdown:before {
+  font-family: Icons !important;
+  content: '\f00c';
+  color: #5bbd72;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -20202,25 +20219,4 @@ ol.ui.horizontal.list li:before,
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
 .ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
   box-shadow: none;
-}
-/* Divided Row */
-.ui.grid > .divided.row > .column {
-  box-shadow: -1px 0px 0px 0px rgba(39, 41, 43, 0.15);
-}
-.ui.grid > .divided.row > .column:first-child {
-  box-shadow: none;
-}
-/* Vertically Divided */
-.ui[class*="vertically divided"].grid > .row {
-  position: relative;
-}
-.ui[class*="vertically divided"].grid > .row:before {
-  position: absolute;
-  content: "";
-  top: 0em;
-  left: 0px;
-  width: calc(100% -  2rem );
-  height: 1px;
-  margin: 0% 1rem;
-  box-shadow: 0px -1px 0px 0px rgba(39, 41, 43, 0.15);
 }

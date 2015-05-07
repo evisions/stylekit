@@ -773,3 +773,7 @@ i.icon.neuter:before { content: "\f22c"; }
 i.icon.facebook.official { content: "\f230"; }
 i.icon.pinterest.official { content: "\f231"; }
 i.icon.bed:before { content: "\f236"; }
+
+i.icon.panda:before { content: "\f23f"; }
+i.icon.sad.panda:before { content: "\f240"; }
+i.icon.sleep:before { content: "\f241"; }

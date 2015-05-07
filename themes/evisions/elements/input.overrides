@@ -1,3 +1,13 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+
+/*--------------------
+    Success
+----------------------*/
+.ui.success.dropdown > i.icon.dropdown:before {
+  font-family: Icons !important;
+  content: '\f00c';
+  color: @green;
+}
