@@ -1,5 +1,10 @@
-@import url('stylekit.blessed-blessed1.css?z=1431022872011');
+@import url('stylekit.blessed-blessed1.css?z=1431032559057');
 
+/* No divider on first column on row */
+.ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  box-shadow: none;
+}
 /* Divided Row */
 .ui.grid > .divided.row > .column {
   box-shadow: -1px 0px 0px 0px rgba(39, 41, 43, 0.15);

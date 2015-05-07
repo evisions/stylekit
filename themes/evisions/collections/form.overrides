@@ -7,43 +7,51 @@
 ---------------------*/
 
 /* Editable Text */
-.ui.form .field > .text {
+.field > .text {
   i.icon {
     display: none;
   }
 }
-.ui.form.editable .field > .text {
-  display: inline-block;
-  border: 1px solid transparent;
-  padding: @fWTextPadding;
-  position: relative;
-  i.icon {
-    border-left: 1px solid transparent;
-    cursor: default;
-    display: none;
-    padding-left: 1em;
-    padding-right: 1em;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    right: 0px;
-    margin: 0em;
-    height: 100%;
-    opacity: 0.5em;
-    width: @fWIconWidth;
-    &:before {
+.editable.field {
+  > .text {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: @fWTextPadding;
+    position: relative;
+    white-space: pre;
+    i.icon {
+      border-left: 1px solid transparent;
+      cursor: default;
+      display: none;
+      padding-left: 1em;
+      padding-right: 1em;
       position: absolute;
-      left: 0px;
-      top: 50%;
-      margin-top: -0.5em;
-      width: 100%;
+      text-align: center;
+      top: 0px;
+      right: 0px;
+      margin: 0em;
+      height: 100%;
+      opacity: 0.5em;
+      width: @fWIconWidth;
+      &:before {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        margin-top: -0.5em;
+        width: 100%;
+      }
     }
   }
+  > .ui.button {
+    margin-top: 3px;
+  }
   &:hover {
-    border-color: @borderColor;
-    i.icon {
-      display: inline-block;
-      border-left-color: @borderColor;
-    }
+    > .text {
+      border-color: @borderColor;
+      i.icon {
+        display: inline-block;
+        border-left-color: @borderColor;
+      }
+    }   
   }
 }

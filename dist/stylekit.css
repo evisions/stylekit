@@ -18807,16 +18807,17 @@ ol.ui.horizontal.list li:before,
     Form Wrapper
 ---------------------*/
 /* Editable Text */
-.ui.form .field > .text i.icon {
+.field > .text i.icon {
   display: none;
 }
-.ui.form.editable .field > .text {
+.editable.field > .text {
   display: inline-block;
   border: 1px solid transparent;
-  padding: 0.67861em 2.25em 0.67861em 1em;
+  padding: 0.67861em 3.25em 0.67861em 1em;
   position: relative;
+  white-space: pre;
 }
-.ui.form.editable .field > .text i.icon {
+.editable.field > .text i.icon {
   border-left: 1px solid transparent;
   cursor: default;
   display: none;
@@ -18831,17 +18832,20 @@ ol.ui.horizontal.list li:before,
   opacity: 0.5em;
   width: 1.25em;
 }
-.ui.form.editable .field > .text i.icon:before {
+.editable.field > .text i.icon:before {
   position: absolute;
   left: 0px;
   top: 50%;
   margin-top: -0.5em;
   width: 100%;
 }
-.ui.form.editable .field > .text:hover {
+.editable.field > .ui.button {
+  margin-top: 3px;
+}
+.editable.field:hover > .text {
   border-color: rgba(39, 41, 43, 0.15);
 }
-.ui.form.editable .field > .text:hover i.icon {
+.editable.field:hover > .text i.icon {
   display: inline-block;
   border-left-color: rgba(39, 41, 43, 0.15);
 }
