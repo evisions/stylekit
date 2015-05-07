@@ -56,7 +56,7 @@
 
 /*---  Light Colors  ---*/
 @lightBlack       : #3a3a3a;
-@lightBlue        : #54C8FF;
+@lightBlue        : #4FA6EF;
 @lightGreen       : #2ECC40;
 @lightOrange      : #ffaf23;
 @lightPink        : #FF8EDF;
@@ -72,13 +72,14 @@
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
 @white            : #FFFFFF;
+@darkBlue         : #2f4050;
 
 /*-------------------
     Brand Colors
 --------------------*/
 
-@primaryColor        : @lightOrange;
-@secondaryColor      : @black;
+@primaryColor        : @lightBlue;
+@secondaryColor      : @blue;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
