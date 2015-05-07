@@ -8,7 +8,6 @@
   color: @whiteTextColor;
   text-shadow: @whiteTextShadow;
   background-image: @coloredBackgroundImage;
-  border-radius: @relativeBorderRadius;
 }
 .ui.white.button {
   box-shadow: @coloredBoxShadow;
