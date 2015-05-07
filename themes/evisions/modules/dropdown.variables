@@ -55,6 +55,7 @@
 @itemLineHeight: 1.2em;
 @itemLineHeightOffset: (@itemLineHeight - 1em);
 @itemTextTransform: none;
+@itemTextDecoration: none;
 @itemBoxShadow: none;
 
 /* Sub Menu */
