@@ -24377,12 +24377,12 @@ ol.ui.horizontal.list li:before,
 }
 .ui.table tr.active td,
 .ui.table td.active {
-  background: #e0e0e0 !important;
+  background: #4fa6ef !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {
-  background: #e0e0e0 !important;
+  background: #4fa6ef !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 /*--------------
