@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1431122834135');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
