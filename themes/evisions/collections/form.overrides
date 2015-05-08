@@ -15,15 +15,12 @@
 .editable.field {
   > .text {
     display: inline-block;
-    border: 1px solid transparent;
-    padding: @fWTextPadding;
     position: relative;
     min-height: @fWMinHeight;
-    white-space: pre;
+    white-space: pre-wrap;
     i.icon {
-      border-left: 1px solid transparent;
-      cursor: default;
       display: none;
+      cursor: default;
       padding-left: 1em;
       padding-right: 1em;
       position: absolute;
@@ -48,11 +45,12 @@
   }
   &:hover {
     > .text {
-      border-color: @borderColor;
+      border: 1px solid @borderColor;
+      padding: @fWTextPadding;
       i.icon {
+        border-left: 1px solid @borderColor;
         display: inline-block;
-        border-left-color: @borderColor;
       }
-    }   
+    }
   }
 }
