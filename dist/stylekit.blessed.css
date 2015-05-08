@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1431032942941');
+@import url('stylekit.blessed-blessed1.css?z=1431122834135');
 
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
@@ -5275,7 +5275,7 @@
   padding: 0.25rem;
   border-radius: 500rem;
   text-align: center;
-  background-color: #389aed;
+  background-color: #3576ac;
   left: 50%;
   margin-left: -0.25rem;
   bottom: .15em;
@@ -5387,7 +5387,7 @@
 .ui.calendar .controls.default table td .control:hover,
 .ui.week .controls.default table td .control:hover {
   background: none;
-  color: #389aed;
+  color: #3576ac;
 }
 .ui.calendar .controls.default table td:nth-child(2),
 .ui.week .controls.default table td:nth-child(2) {
