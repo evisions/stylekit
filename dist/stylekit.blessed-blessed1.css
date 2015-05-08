@@ -18807,19 +18807,18 @@ ol.ui.horizontal.list li:before,
     Form Wrapper
 ---------------------*/
 /* Editable Text */
-.ui.form .field > .text i.icon {
+.field > .text i.icon {
   display: none;
 }
-.ui.form.editable .field > .text {
+.editable.field > .text {
   display: inline-block;
-  border: 1px solid transparent;
-  padding: 0.67861em 2.25em 0.67861em 1em;
   position: relative;
+  min-height: 3em;
+  white-space: pre-wrap;
 }
-.ui.form.editable .field > .text i.icon {
-  border-left: 1px solid transparent;
-  cursor: default;
+.editable.field > .text i.icon {
   display: none;
+  cursor: default;
   padding-left: 1em;
   padding-right: 1em;
   position: absolute;
@@ -18831,19 +18830,23 @@ ol.ui.horizontal.list li:before,
   opacity: 0.5em;
   width: 1.25em;
 }
-.ui.form.editable .field > .text i.icon:before {
+.editable.field > .text i.icon:before {
   position: absolute;
   left: 0px;
   top: 50%;
   margin-top: -0.5em;
   width: 100%;
 }
-.ui.form.editable .field > .text:hover {
-  border-color: rgba(39, 41, 43, 0.15);
+.editable.field > .ui.button {
+  margin-top: 3px;
 }
-.ui.form.editable .field > .text:hover i.icon {
+.editable.field:hover > .text {
+  border: 1px solid rgba(39, 41, 43, 0.15);
+  padding: 0.67861em 3.25em 0.67861em 1em;
+}
+.editable.field:hover > .text i.icon {
+  border-left: 1px solid rgba(39, 41, 43, 0.15);
   display: inline-block;
-  border-left-color: rgba(39, 41, 43, 0.15);
 }
 /*******************************
          Site Overrides
@@ -20214,9 +20217,4 @@ ol.ui.horizontal.list li:before,
   margin-bottom: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-}
-/* No divider on first column on row */
-.ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
-.ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
-  box-shadow: none;
 }
