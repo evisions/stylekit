@@ -1369,7 +1369,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.33;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   font-smoothing: antialiased;
 }
 /*******************************
@@ -1431,31 +1431,31 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #cce2ff;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 ::-moz-selection {
   background-color: #cce2ff;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 ::selection {
   background-color: #cce2ff;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /*******************************
         Global Overrides
@@ -6594,7 +6594,7 @@ i.flag.zimbabwe:before {
   font-weight: bold;
   line-height: 1.33em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.header:first-child {
   margin-top: -0.165em;
@@ -10873,7 +10873,7 @@ img.ui.bordered.image {
 .ui.input {
   position: relative;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.input input,
 .ui.input textarea {
@@ -10887,7 +10887,7 @@ img.ui.bordered.image {
   padding: 0.67861em 1em;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   border-radius: 0.2857rem;
   -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
           transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -10921,7 +10921,7 @@ img.ui.bordered.image {
 .ui.input.down textarea {
   border-color: rgba(0, 0, 0, 0.3);
   background: #fafafa;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   box-shadow: none;
 }
 /*--------------------
@@ -10972,13 +10972,13 @@ img.ui.bordered.image {
 .ui.input.focus textarea textarea::-webkit-input-placeholder,
 .ui.input input:focus input::-webkit-input-placeholder,
 .ui.input textarea:focus textarea::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.input.focus input input::-moz-placeholder,
 .ui.input.focus textarea textarea::-moz-placeholder,
 .ui.input input:focus input::-moz-placeholder,
 .ui.input textarea:focus textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /*--------------------
         Error
@@ -13157,7 +13157,7 @@ ol.ui.list ol,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
@@ -13171,7 +13171,7 @@ ol.ui.list ol,
 /* Linking Content */
 .ui.list .item a {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: #676a6c !important;
 }
 .ui.list .item a:hover {
   color: #00b2f3 !important;
@@ -13183,12 +13183,12 @@ ol.ui.list ol,
   margin: 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.list .list > .item .description,
 .ui.list > .item .description {
   display: block;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /* Floated Content */
 .ui.list .list > .item [class*="left floated"],
@@ -13286,7 +13286,7 @@ ol.ui.list ol,
 --------------------*/
 .ui.list .list > a.item:hover .icon,
 .ui.list > a.item:hover .icon {
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /*******************************
            Variations
@@ -13469,7 +13469,7 @@ ul.ui.list li:before,
   margin-left: -1rem;
   content: '•';
   opacity: 1;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   vertical-align: top;
 }
 ul.ui.list ul,
@@ -13520,7 +13520,7 @@ ol.ui.list li:before,
   counter-increment: ordered;
   content: counters(ordered, ".") " ";
   text-align: right;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   vertical-align: middle;
   opacity: 0.8;
 }
@@ -14278,7 +14278,7 @@ ol.ui.horizontal.list li:before,
 }
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.inverted.dimmer .ui.loader:before {
   border-color: rgba(0, 0, 0, 0.1);
@@ -16275,7 +16275,7 @@ ol.ui.horizontal.list li:before,
   box-shadow: none;
 }
 .ui.inverted.segment .segment {
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.inverted.segment .inverted.segment {
   color: #ffffff;
@@ -16294,11 +16294,11 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 .ui.secondary.segment {
   background: #faf9fa;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.tertiary.segment {
   background: #ebebeb;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.secondary.inverted.segment {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -16795,7 +16795,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em 0em;
   padding: 0.9285em 1.5em 0.9285em 2.25em;
   background: #ffffff;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   box-shadow: 0px 0px 0px 1px #d4d4d5;
   border-radius: 0em;
 }
@@ -16861,7 +16861,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.9285em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 .ui.steps .step .title ~ .description {
   margin-top: 0.1em;
@@ -16998,7 +16998,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #ececec;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
 }
 /* Completed */
 .ui.steps .step.completed > .icon:before,
@@ -18063,14 +18063,14 @@ ol.ui.horizontal.list li:before,
 .ui.form .field > label {
   display: block;
   margin: 0em 0em 0.2857rem 0em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
 }
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.2857rem 0em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -18079,7 +18079,7 @@ ol.ui.horizontal.list li:before,
   display: inline-block;
   vertical-align: middle;
   margin: 0em 1em 0em 0em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -18122,7 +18122,7 @@ ol.ui.horizontal.list li:before,
   font-size: 1em;
   background: #ffffff;
   border: 1px solid rgba(39, 41, 43, 0.15);
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -18137,7 +18137,7 @@ ol.ui.horizontal.list li:before,
   background: #ffffff;
   border: 1px solid rgba(39, 41, 43, 0.15);
   outline: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -18171,7 +18171,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 1em;
-  color: rgba(0, 0, 0, 0.8);
+  color: #676a6c;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
           transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -18233,16 +18233,16 @@ ol.ui.horizontal.list li:before,
 ---------------------*/
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: rgba(140, 140, 140, 0.8);
+  color: #f6f6f6;
 }
 .ui.form ::-moz-placeholder {
-  color: rgba(140, 140, 140, 0.8);
+  color: #f6f6f6;
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: rgba(89, 89, 89, 0.8);
+  color: #c1c3c4;
 }
 .ui.form :focus::-moz-placeholder {
-  color: rgba(89, 89, 89, 0.8);
+  color: #c1c3c4;
 }
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {

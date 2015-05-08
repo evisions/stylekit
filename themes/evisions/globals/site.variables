@@ -69,6 +69,7 @@
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
 @darkGrey         : #AAAAAA;
+@textGrey         : #676A6C;
 @lightGrey        : #DCDDDE;
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
@@ -112,7 +113,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.33;
-@textColor           : rgba(0, 0, 0, 0.8);
+@textColor           : @textGrey;
 
 /*-------------------
       Paragraph
