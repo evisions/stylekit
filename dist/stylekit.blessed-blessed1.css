@@ -18815,6 +18815,7 @@ ol.ui.horizontal.list li:before,
   border: 1px solid transparent;
   padding: 0.67861em 3.25em 0.67861em 1em;
   position: relative;
+  min-height: 3em;
   white-space: pre;
 }
 .editable.field > .text i.icon {
