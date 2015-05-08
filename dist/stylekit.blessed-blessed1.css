@@ -3948,7 +3948,7 @@ span.text.light.orange {
 --------------------*/
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #4fa6ef;
+  background-color: #3b83c0;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3958,19 +3958,19 @@ span.text.light.orange {
 }
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #5dadf0;
+  background-color: #458ac6;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #2e95ec;
+  background-color: #3370a5;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.primary.buttons .active.button,
 .ui.primary.active.button {
-  background-color: #389aed;
+  background-color: #3576ac;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3979,7 +3979,7 @@ span.text.light.orange {
 --------------------*/
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #3b83c0;
+  background-color: #4fa6ef;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3989,19 +3989,19 @@ span.text.light.orange {
 }
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #458ac6;
+  background-color: #5dadf0;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #3370a5;
+  background-color: #2e95ec;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .active.button,
 .ui.secondary.active.button {
-  background-color: #3576ac;
+  background-color: #389aed;
   color: #ffffff;
   text-shadow: none;
 }
@@ -18812,13 +18812,15 @@ ol.ui.horizontal.list li:before,
 }
 .editable.field > .text {
   display: inline-block;
+  border: 1px solid transparent;
+  padding: 0.67861em 3.25em 0.67861em 1em;
   position: relative;
-  min-height: 3em;
-  white-space: pre-wrap;
+  white-space: pre;
 }
 .editable.field > .text i.icon {
-  display: none;
+  border-left: 1px solid transparent;
   cursor: default;
+  display: none;
   padding-left: 1em;
   padding-right: 1em;
   position: absolute;
@@ -18841,12 +18843,11 @@ ol.ui.horizontal.list li:before,
   margin-top: 3px;
 }
 .editable.field:hover > .text {
-  border: 1px solid rgba(39, 41, 43, 0.15);
-  padding: 0.67861em 3.25em 0.67861em 1em;
+  border-color: rgba(39, 41, 43, 0.15);
 }
 .editable.field:hover > .text i.icon {
-  border-left: 1px solid rgba(39, 41, 43, 0.15);
   display: inline-block;
+  border-left-color: rgba(39, 41, 43, 0.15);
 }
 /*******************************
          Site Overrides
