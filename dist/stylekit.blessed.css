@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1429805490660');
+@import url('stylekit.blessed-blessed1.css?z=1431122834135');
 
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
@@ -4158,12 +4158,12 @@
 }
 .ui.table tr.active td,
 .ui.table td.active {
-  background: #4fa6ef !important;
+  background: #8fc9ff !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {
-  background: #4fa6ef !important;
+  background: #8fc9ff !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 /*--------------
@@ -4837,7 +4837,7 @@
  * Color
  */
 .ui.table tr.light.blue td {
-  background: #cde6fa;
+  background: #ffffff;
 }
 /*******************************
          Site Overrides
@@ -5469,10 +5469,10 @@
   cursor: pointer;
 }
 .ui.calendar.selectable .day.active {
-  background-color: #d2e8fb;
+  background-color: #ffffff;
 }
 .ui.calendar.selectable .day.today.active {
-  background-color: #bbdcf9 !important;
+  background-color: #f2f2f2 !important;
 }
 .ui.calendar.selectable .day.active > .text {
   color: rgba(0, 0, 0, 0.85);
@@ -5630,7 +5630,7 @@
 }
 .ui.week .appointments .appointment {
   position: absolute;
-  background: #d2e8fb;
+  background: #ffffff;
   cursor: pointer;
   padding: 0.2rem 0.5rem 0.2rem 2.5rem;
   border-left: 4px solid #3b83c0;
@@ -5673,7 +5673,7 @@
   padding-right: 0.5em;
 }
 .ui.week .appointments .appointment.active {
-  background: #4fa6ef;
+  background: #8fc9ff;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
@@ -10476,7 +10476,7 @@ a.ui.card:hover,
 .ui.inverted.blue.statistics .statistic > .value,
 .ui.statistics .inverted.blue.statistic > .value,
 .ui.inverted.blue.statistic > .value {
-  color: #4fa6ef;
+  color: #8fc9ff;
 }
 .ui.inverted.green.statistics .statistic > .value,
 .ui.statistics .inverted.green.statistic > .value,
@@ -16618,7 +16618,7 @@ a.ui.nag {
   background-color: #3a3a3a;
 }
 .ui.blue.inverted.progress .bar {
-  background-color: #4fa6ef;
+  background-color: #8fc9ff;
 }
 .ui.green.inverted.progress .bar {
   background-color: #2ecc40;
