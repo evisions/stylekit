@@ -22420,7 +22420,7 @@ ol.ui.horizontal.list li:before,
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #2f4050;
+  background: #294c6c;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {
