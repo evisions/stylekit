@@ -3140,25 +3140,25 @@ span.text.light.orange {
 .ui.inverted.blue.buttons .button,
 .ui.inverted.blue.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #8fc9ff inset !important;
-  color: #8fc9ff;
+  box-shadow: 0px 0px 0px 2px #dfeffd inset !important;
+  color: #dfeffd;
 }
 .ui.inverted.blue.buttons .button:hover,
 .ui.inverted.blue.button:hover {
-  box-shadow: 0px 0px 0px 2px #8fc9ff inset !important;
-  background-color: #8fc9ff;
+  box-shadow: 0px 0px 0px 2px #dfeffd inset !important;
+  background-color: #dfeffd;
   color: #ffffff;
 }
 .ui.inverted.blue.buttons .active.button,
 .ui.inverted.blue.active.button {
-  box-shadow: 0px 0px 0px 2px #8fc9ff inset !important;
-  background-color: #8fc9ff;
+  box-shadow: 0px 0px 0px 2px #dfeffd inset !important;
+  background-color: #dfeffd;
   color: #ffffff;
 }
 .ui.inverted.blue.buttons .button:active,
 .ui.inverted.blue.button:active {
-  box-shadow: 0px 0px 0px 2px #6bb8ff inset !important;
-  background-color: #6bb8ff;
+  box-shadow: 0px 0px 0px 2px #bddefb inset !important;
+  background-color: #bddefb;
   color: #ffffff;
 }
 /* Inverted Basic */
@@ -3172,20 +3172,20 @@ span.text.light.orange {
 .ui.inverted.blue.basic.buttons .button:hover,
 .ui.inverted.blue.buttons .basic.button:hover,
 .ui.inverted.blue.basic.button:hover {
-  box-shadow: 0px 0px 0px 2px #8fc9ff inset !important;
-  color: #8fc9ff !important;
+  box-shadow: 0px 0px 0px 2px #dfeffd inset !important;
+  color: #dfeffd !important;
 }
 .ui.inverted.blue.basic.buttons .active.button,
 .ui.inverted.blue.buttons .basic.active.button,
 .ui.inverted.blue.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #8fc9ff inset !important;
-  color: #8fc9ff !important;
+  box-shadow: 0px 0px 0px 2px #dfeffd inset !important;
+  color: #dfeffd !important;
 }
 .ui.inverted.blue.basic.buttons .button:active,
 .ui.inverted.blue.buttons .basic.button:active,
 .ui.inverted.blue.basic.button:active {
-  box-shadow: 0px 0px 0px 2px #6bb8ff inset !important;
-  color: #8fc9ff !important;
+  box-shadow: 0px 0px 0px 2px #bddefb inset !important;
+  color: #dfeffd !important;
 }
 /*--- Green ---*/
 .ui.green.buttons .button,
@@ -3979,7 +3979,7 @@ span.text.light.orange {
 --------------------*/
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #8fc9ff;
+  background-color: #dfeffd;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3989,19 +3989,19 @@ span.text.light.orange {
 }
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #9ed0ff;
+  background-color: #edf6fe;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #6bb8ff;
+  background-color: #bddefb;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .active.button,
 .ui.secondary.active.button {
-  background-color: #75bdff;
+  background-color: #c7e3fc;
   color: #ffffff;
   text-shadow: none;
 }
@@ -6913,10 +6913,10 @@ a.ui.inverted.black.header:hover {
   color: #b2b2b2 !important;
 }
 .ui.inverted.blue.header {
-  color: #8fc9ff !important;
+  color: #dfeffd !important;
 }
 a.ui.inverted.blue.header:hover {
-  color: #9ed0ff !important;
+  color: #edf6fe !important;
 }
 .ui.inverted.green.header {
   color: #2ecc40 !important;
@@ -7654,7 +7654,7 @@ i.inverted.black.icon {
   color: #3a3a3a !important;
 }
 i.inverted.blue.icon {
-  color: #8fc9ff !important;
+  color: #dfeffd !important;
 }
 i.inverted.green.icon {
   color: #2ecc40 !important;
@@ -24377,12 +24377,12 @@ ol.ui.horizontal.list li:before,
 }
 .ui.table tr.active td,
 .ui.table td.active {
-  background: #8fc9ff !important;
+  background: #dfeffd !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {
-  background: #8fc9ff !important;
+  background: #dfeffd !important;
   color: rgba(50, 50, 50, 0.9) !important;
 }
 /*--------------
@@ -25892,7 +25892,7 @@ ol.ui.horizontal.list li:before,
   padding-right: 0.5em;
 }
 .ui.week .appointments .appointment.active {
-  background: #8fc9ff;
+  background: #dfeffd;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
@@ -30695,7 +30695,7 @@ a.ui.card:hover,
 .ui.inverted.blue.statistics .statistic > .value,
 .ui.statistics .inverted.blue.statistic > .value,
 .ui.inverted.blue.statistic > .value {
-  color: #8fc9ff;
+  color: #dfeffd;
 }
 .ui.inverted.green.statistics .statistic > .value,
 .ui.statistics .inverted.green.statistic > .value,
@@ -36837,7 +36837,7 @@ a.ui.nag {
   background-color: #3a3a3a;
 }
 .ui.blue.inverted.progress .bar {
-  background-color: #8fc9ff;
+  background-color: #dfeffd;
 }
 .ui.green.inverted.progress .bar {
   background-color: #2ecc40;

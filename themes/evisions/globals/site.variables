@@ -57,7 +57,7 @@
 
 /*---  Light Colors  ---*/
 @lightBlack       : #3a3a3a;
-@lightBlue        : #8FC9FF;
+@lightBlue        : #DFEFFD;
 @lightGreen       : #2ECC40;
 @lightOrange      : #ffaf23;
 @lightPink        : #FF8EDF;
