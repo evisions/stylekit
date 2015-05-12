@@ -1369,7 +1369,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.33;
-  color: #676a6c;
+  color: #333333;
   font-smoothing: antialiased;
 }
 /*******************************
@@ -1431,31 +1431,31 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #cce2ff;
-  color: #676a6c;
+  color: #333333;
 }
 ::-moz-selection {
   background-color: #cce2ff;
-  color: #676a6c;
+  color: #333333;
 }
 ::selection {
   background-color: #cce2ff;
-  color: #676a6c;
+  color: #333333;
 }
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #676a6c;
+  color: #333333;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #676a6c;
+  color: #333333;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #676a6c;
+  color: #333333;
 }
 /*******************************
         Global Overrides
@@ -2082,7 +2082,7 @@ span.text.light.orange {
   border-color: rgba(0, 0, 0, 0.1);
 }
 .ui.basic.loading.button:not(.inverted):after {
-  border-top-color: #aaaaaa;
+  border-top-color: #333333;
 }
 /*-------------------
       Disabled
@@ -6594,7 +6594,7 @@ i.flag.zimbabwe:before {
   font-weight: bold;
   line-height: 1.33em;
   text-transform: none;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.header:first-child {
   margin-top: -0.165em;
@@ -6907,10 +6907,10 @@ a.ui.yellow.header:hover {
    Inverted Colors
 --------------------*/
 .ui.inverted.black.header {
-  color: #aaaaaa !important;
+  color: #333333 !important;
 }
 a.ui.inverted.black.header:hover {
-  color: #b2b2b2 !important;
+  color: #3b3b3b !important;
 }
 .ui.inverted.blue.header {
   color: #dfeffd !important;
@@ -10873,7 +10873,7 @@ img.ui.bordered.image {
 .ui.input {
   position: relative;
   display: inline-block;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.input input,
 .ui.input textarea {
@@ -10887,7 +10887,7 @@ img.ui.bordered.image {
   padding: 0.67861em 1em;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  color: #676a6c;
+  color: #333333;
   border-radius: 0.2857rem;
   -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
           transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -10921,7 +10921,7 @@ img.ui.bordered.image {
 .ui.input.down textarea {
   border-color: rgba(0, 0, 0, 0.3);
   background: #fafafa;
-  color: #676a6c;
+  color: #333333;
   box-shadow: none;
 }
 /*--------------------
@@ -10951,7 +10951,7 @@ img.ui.bordered.image {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #aaaaaa transparent transparent;
+  border-color: #333333 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
@@ -10972,13 +10972,13 @@ img.ui.bordered.image {
 .ui.input.focus textarea textarea::-webkit-input-placeholder,
 .ui.input input:focus input::-webkit-input-placeholder,
 .ui.input textarea:focus textarea::-webkit-input-placeholder {
-  color: #676a6c;
+  color: #333333;
 }
 .ui.input.focus input input::-moz-placeholder,
 .ui.input.focus textarea textarea::-moz-placeholder,
 .ui.input input:focus input::-moz-placeholder,
 .ui.input textarea:focus textarea::-moz-placeholder {
-  color: #676a6c;
+  color: #333333;
 }
 /*--------------------
         Error
@@ -13157,7 +13157,7 @@ ol.ui.list ol,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
@@ -13171,7 +13171,7 @@ ol.ui.list ol,
 /* Linking Content */
 .ui.list .item a {
   cursor: pointer;
-  color: #676a6c !important;
+  color: #333333 !important;
 }
 .ui.list .item a:hover {
   color: #00b2f3 !important;
@@ -13183,12 +13183,12 @@ ol.ui.list ol,
   margin: 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.list .list > .item .description,
 .ui.list > .item .description {
   display: block;
-  color: #676a6c;
+  color: #333333;
 }
 /* Floated Content */
 .ui.list .list > .item [class*="left floated"],
@@ -13286,7 +13286,7 @@ ol.ui.list ol,
 --------------------*/
 .ui.list .list > a.item:hover .icon,
 .ui.list > a.item:hover .icon {
-  color: #676a6c;
+  color: #333333;
 }
 /*******************************
            Variations
@@ -13469,7 +13469,7 @@ ul.ui.list li:before,
   margin-left: -1rem;
   content: '•';
   opacity: 1;
-  color: #676a6c;
+  color: #333333;
   vertical-align: top;
 }
 ul.ui.list ul,
@@ -13520,7 +13520,7 @@ ol.ui.list li:before,
   counter-increment: ordered;
   content: counters(ordered, ".") " ";
   text-align: right;
-  color: #676a6c;
+  color: #333333;
   vertical-align: middle;
   opacity: 0.8;
 }
@@ -14208,7 +14208,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #aaaaaa transparent transparent;
+  border-color: #333333 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
@@ -14278,13 +14278,13 @@ ol.ui.horizontal.list li:before,
 }
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: #676a6c;
+  color: #333333;
 }
 .ui.inverted.dimmer .ui.loader:before {
   border-color: rgba(0, 0, 0, 0.1);
 }
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: #aaaaaa transparent transparent;
+  border-color: #333333 transparent transparent;
 }
 /*******************************
              Types
@@ -16092,7 +16092,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #aaaaaa rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+  border-color: #333333 rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
@@ -16275,7 +16275,7 @@ ol.ui.horizontal.list li:before,
   box-shadow: none;
 }
 .ui.inverted.segment .segment {
-  color: #676a6c;
+  color: #333333;
 }
 .ui.inverted.segment .inverted.segment {
   color: #ffffff;
@@ -16294,11 +16294,11 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 .ui.secondary.segment {
   background: #faf9fa;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.tertiary.segment {
   background: #ebebeb;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.secondary.inverted.segment {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -16795,7 +16795,7 @@ ol.ui.horizontal.list li:before,
   margin: 0em 0em;
   padding: 0.9285em 1.5em 0.9285em 2.25em;
   background: #ffffff;
-  color: #676a6c;
+  color: #333333;
   box-shadow: 0px 0px 0px 1px #d4d4d5;
   border-radius: 0em;
 }
@@ -16861,7 +16861,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps .step .description {
   font-weight: normal;
   font-size: 0.9285em;
-  color: #676a6c;
+  color: #333333;
 }
 .ui.steps .step .title ~ .description {
   margin-top: 0.1em;
@@ -16998,7 +16998,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps a.active.step:hover {
   cursor: pointer;
   background: #ececec;
-  color: #676a6c;
+  color: #333333;
 }
 /* Completed */
 .ui.steps .step.completed > .icon:before,
@@ -18063,14 +18063,14 @@ ol.ui.horizontal.list li:before,
 .ui.form .field > label {
   display: block;
   margin: 0em 0em 0.2857rem 0em;
-  color: #676a6c;
+  color: #333333;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
 }
 .ui.form .grouped.fields > label {
   margin: 0em 0em 0.2857rem 0em;
-  color: #676a6c;
+  color: #333333;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -18079,7 +18079,7 @@ ol.ui.horizontal.list li:before,
   display: inline-block;
   vertical-align: middle;
   margin: 0em 1em 0em 0em;
-  color: #676a6c;
+  color: #333333;
   font-size: 0.9285em;
   font-weight: bold;
   text-transform: none;
@@ -18122,7 +18122,7 @@ ol.ui.horizontal.list li:before,
   font-size: 1em;
   background: #ffffff;
   border: 1px solid rgba(39, 41, 43, 0.15);
-  color: #676a6c;
+  color: #333333;
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -18137,7 +18137,7 @@ ol.ui.horizontal.list li:before,
   background: #ffffff;
   border: 1px solid rgba(39, 41, 43, 0.15);
   outline: none;
-  color: #676a6c;
+  color: #333333;
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -18171,7 +18171,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0.2857rem;
   box-shadow: 0em 0em 0em 0em transparent inset;
   padding: 0.62em 1em;
-  color: #676a6c;
+  color: #333333;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
           transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -18233,16 +18233,16 @@ ol.ui.horizontal.list li:before,
 ---------------------*/
 /* browsers require these rules separate */
 .ui.form ::-webkit-input-placeholder {
-  color: #f6f6f6;
+  color: #bfbfbf;
 }
 .ui.form ::-moz-placeholder {
-  color: #f6f6f6;
+  color: #bfbfbf;
 }
 .ui.form :focus::-webkit-input-placeholder {
-  color: #c1c3c4;
+  color: #8c8c8c;
 }
 .ui.form :focus::-moz-placeholder {
-  color: #c1c3c4;
+  color: #8c8c8c;
 }
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {
@@ -18466,7 +18466,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #aaaaaa rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+  border-color: #333333 rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 0.2em;
   box-shadow: 0px 0px 0px 1px transparent;
