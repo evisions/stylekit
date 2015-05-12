@@ -1478,6 +1478,12 @@ span.text.orange {
 span.text.light.orange {
   color: #ffaf23;
 }
+span.text.medium.blue {
+  color: #52b0ff;
+}
+span.text.light.blue {
+  color: #dfeffd;
+}
 /*******************************
          Site Overrides
 *******************************/
