@@ -1478,6 +1478,12 @@ span.text.orange {
 span.text.light.orange {
   color: #ffaf23;
 }
+span.text.medium.blue {
+  color: #52b0ff;
+}
+span.text.light.blue {
+  color: #dfeffd;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -20212,10 +20218,4 @@ ol.ui.horizontal.list li:before,
   margin-bottom: 1rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-}
-.ui[class*="vertically divided"].grid > .row {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
 }

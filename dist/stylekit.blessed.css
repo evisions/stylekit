@@ -1,5 +1,11 @@
-@import url('stylekit.blessed-blessed1.css?z=1431357735869');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
+.ui[class*="vertically divided"].grid > .row {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
 .ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
