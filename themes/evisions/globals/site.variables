@@ -53,7 +53,7 @@
 @red              : #D95C5C;
 @teal             : #00B5AD;
 @yellow           : #F2C61F;
-@mediumBlue       : #4FA6EF;
+@mediumBlue       : #52B0FF;
 
 /*---  Light Colors  ---*/
 @lightBlack       : #3a3a3a;
@@ -81,7 +81,7 @@
 --------------------*/
 
 @primaryColor        : @blue;
-@secondaryColor      : @lightBlue;
+@secondaryColor      : @mediumBlue;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
