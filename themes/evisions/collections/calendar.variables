@@ -43,7 +43,7 @@
 @controlColorHover: @primaryColorActive;
 
 @dayColorActive: @dayColor;
-@dayBackgroundActive: lighten(@lightBlueHover, 25%);
+@dayBackgroundActive: @lightBlue;
 @todayBackgroundActive: darken(@dayBackgroundActive, 5%) !important;
 
 @appointmentWidth: .25rem;
@@ -96,8 +96,8 @@
 @timeGridDayBorder: 1px solid #f1f1f1;
 @timeGridMajorIntervalBorder: 1px solid @lightGrey;
 @timeGridMinorIntervalBorder: 1px dotted @lightGrey;
-@weekAppointmentBackground: lighten(@lightBlueHover, 25%);
+@weekAppointmentBackground: @lightBlueHover;
 @weekAppointmentPadding: 0.2rem 0.5rem 0.2rem 2.5rem;
 @weekAppointmentBorder: 4px solid @blue;
-@weekAppointmentActiveBackground: @lightBlue;
+@weekAppointmentActiveBackground: darken(@lightBlue, 10%);
 @weekAppointmentActiveColor: @dayColor;

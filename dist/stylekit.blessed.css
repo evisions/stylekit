@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1431385942589');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
 /* No divider on first column on row */
 .ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
@@ -5469,10 +5469,10 @@
   cursor: pointer;
 }
 .ui.calendar.selectable .day.active {
-  background-color: #ffffff;
+  background-color: #dfeffd;
 }
 .ui.calendar.selectable .day.today.active {
-  background-color: #f2f2f2 !important;
+  background-color: #c7e3fc !important;
 }
 .ui.calendar.selectable .day.active > .text {
   color: rgba(0, 0, 0, 0.85);
@@ -5630,7 +5630,7 @@
 }
 .ui.week .appointments .appointment {
   position: absolute;
-  background: #ffffff;
+  background: #edf6fe;
   cursor: pointer;
   padding: 0.2rem 0.5rem 0.2rem 2.5rem;
   border-left: 4px solid #3b83c0;
@@ -5673,7 +5673,7 @@
   padding-right: 0.5em;
 }
 .ui.week .appointments .appointment.active {
-  background: #dfeffd;
+  background: #afd7fa;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
