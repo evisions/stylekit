@@ -12415,6 +12415,37 @@ a.ui.yellow.label:hover:before {
 .ui.yellow.ribbon.label {
   border-color: #d2a90c !important;
 }
+/*--- Dark Grey ---*/
+.ui.dark.grey.labels .label,
+.ui.dark.grey.label {
+  background-color: #aaaaaa !important;
+  border-color: #aaaaaa !important;
+  color: #ffffff !important;
+}
+.ui.labels .dark.grey.label:before,
+.ui.dark.grey.labels .label:before,
+.ui.dark.grey.label:before {
+  background-color: #aaaaaa !important;
+}
+a.ui.dark.grey.labels .label:hover,
+.ui.dark.grey.labels a.label:hover,
+a.ui.dark.grey.label:hover {
+  background-color: #b2b2b2 !important;
+  border-color: #b2b2b2 !important;
+  color: #ffffff !important;
+}
+.ui.labels a.dark.grey.label:hover:before,
+.ui.dark.grey.labels a.label:hover:before,
+a.ui.dark.grey.label:hover:before {
+  background-color: #b2b2b2 !important;
+}
+.ui.dark.grey.corner.label,
+.ui.dark.grey.corner.label:hover {
+  background-color: transparent !important;
+}
+.ui.dark.grey.ribbon.label {
+  border-color: #919191 !important;
+}
 /*-------------------
        Fluid
 --------------------*/
@@ -24885,7 +24916,7 @@ ol.ui.horizontal.list li:before,
 }
 .ui.padded.table th,
 .ui.padded.table td {
-  padding: 1em 1em;
+  padding: 1em 1em !important;
 }
 /* Very */
 .ui[class*="very padded"].table th {
@@ -24893,7 +24924,7 @@ ol.ui.horizontal.list li:before,
   padding-right: 1.5em;
 }
 .ui[class*="very padded"].table td {
-  padding: 1.5em 1.5em;
+  padding: 1.5em 1.5em !important;
 }
 /*--------------
      Compact

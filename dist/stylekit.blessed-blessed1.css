@@ -12415,6 +12415,37 @@ a.ui.yellow.label:hover:before {
 .ui.yellow.ribbon.label {
   border-color: #d2a90c !important;
 }
+/*--- Dark Grey ---*/
+.ui.dark.grey.labels .label,
+.ui.dark.grey.label {
+  background-color: #aaaaaa !important;
+  border-color: #aaaaaa !important;
+  color: #ffffff !important;
+}
+.ui.labels .dark.grey.label:before,
+.ui.dark.grey.labels .label:before,
+.ui.dark.grey.label:before {
+  background-color: #aaaaaa !important;
+}
+a.ui.dark.grey.labels .label:hover,
+.ui.dark.grey.labels a.label:hover,
+a.ui.dark.grey.label:hover {
+  background-color: #b2b2b2 !important;
+  border-color: #b2b2b2 !important;
+  color: #ffffff !important;
+}
+.ui.labels a.dark.grey.label:hover:before,
+.ui.dark.grey.labels a.label:hover:before,
+a.ui.dark.grey.label:hover:before {
+  background-color: #b2b2b2 !important;
+}
+.ui.dark.grey.corner.label,
+.ui.dark.grey.corner.label:hover {
+  background-color: transparent !important;
+}
+.ui.dark.grey.ribbon.label {
+  border-color: #919191 !important;
+}
 /*-------------------
        Fluid
 --------------------*/
@@ -20163,59 +20194,4 @@ ol.ui.horizontal.list li:before,
 .ui.grid > .relaxed.row > .column {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-.ui[class*="very relaxed"].grid > .column:not(.row),
-.ui[class*="very relaxed"].grid > .row > .column,
-.ui.grid > [class*="very relaxed"].row > .column {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-/* Coupling with UI Divider */
-.ui.relaxed.grid .row + .ui.divider,
-.ui.grid .relaxed.row + .ui.divider {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-.ui[class*="very relaxed"].grid .row + .ui.divider,
-.ui.grid [class*="very relaxed"].row + .ui.divider {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-/*----------------------
-        Padded
------------------------*/
-.ui.padded.grid:not(.vertically):not(.horizontally) {
-  margin: 0em !important;
-}
-[class*="horizontally padded"].ui.grid {
-  margin-left: 0em !important;
-  margin-right: 0em !important;
-}
-[class*="vertically padded"].ui.grid {
-  margin-top: 0em !important;
-  margin-bottom: 0em !important;
-}
-/*----------------------
-       "Floated"
------------------------*/
-.ui.grid [class*="left floated"].column {
-  float: left;
-}
-.ui.grid [class*="right floated"].column {
-  float: right;
-}
-/*----------------------
-        Divided
------------------------*/
-.ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
-.ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
-  box-shadow: -1px 0px 0px 0px rgba(39, 41, 43, 0.15);
-}
-/* Swap from padding to margin on columns to have dividers align */
-.ui[class*="vertically divided"].grid > .column:not(.row),
-.ui[class*="vertically divided"].grid > .row > .column {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
 }

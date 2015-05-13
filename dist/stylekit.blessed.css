@@ -1,5 +1,60 @@
-@import url('stylekit.blessed-blessed1.css?z=1431468311638');
+@import url('stylekit.blessed-blessed1.css?z=1429805490660');
 
+.ui[class*="very relaxed"].grid > .column:not(.row),
+.ui[class*="very relaxed"].grid > .row > .column,
+.ui.grid > [class*="very relaxed"].row > .column {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+/* Coupling with UI Divider */
+.ui.relaxed.grid .row + .ui.divider,
+.ui.grid .relaxed.row + .ui.divider {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.ui[class*="very relaxed"].grid .row + .ui.divider,
+.ui.grid [class*="very relaxed"].row + .ui.divider {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+/*----------------------
+        Padded
+-----------------------*/
+.ui.padded.grid:not(.vertically):not(.horizontally) {
+  margin: 0em !important;
+}
+[class*="horizontally padded"].ui.grid {
+  margin-left: 0em !important;
+  margin-right: 0em !important;
+}
+[class*="vertically padded"].ui.grid {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+/*----------------------
+       "Floated"
+-----------------------*/
+.ui.grid [class*="left floated"].column {
+  float: left;
+}
+.ui.grid [class*="right floated"].column {
+  float: right;
+}
+/*----------------------
+        Divided
+-----------------------*/
+.ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -1px 0px 0px 0px rgba(39, 41, 43, 0.15);
+}
+/* Swap from padding to margin on columns to have dividers align */
+.ui[class*="vertically divided"].grid > .column:not(.row),
+.ui[class*="vertically divided"].grid > .row > .column {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
 .ui[class*="vertically divided"].grid > .row {
   margin-top: 0em;
   margin-bottom: 0em;
@@ -4666,7 +4721,7 @@
 }
 .ui.padded.table th,
 .ui.padded.table td {
-  padding: 1em 1em;
+  padding: 1em 1em !important;
 }
 /* Very */
 .ui[class*="very padded"].table th {
@@ -4674,7 +4729,7 @@
   padding-right: 1.5em;
 }
 .ui[class*="very padded"].table td {
-  padding: 1.5em 1.5em;
+  padding: 1.5em 1.5em !important;
 }
 /*--------------
      Compact
