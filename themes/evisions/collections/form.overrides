@@ -18,8 +18,6 @@
     display: inline-block;
     padding: @fWTextPadding;
     position: relative;
-    margin-top: -@fWVerticalPadding;
-    min-height: @fWMinHeight;
     white-space: pre-wrap;
     i.icon {
       display: none;
