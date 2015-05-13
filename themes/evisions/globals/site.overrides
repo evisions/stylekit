@@ -21,3 +21,9 @@ span.text.orange {
 span.text.light.orange {
   color: @lightOrange;
 }
+span.text.medium.blue {
+  color: @mediumBlue;
+}
+span.text.light.blue {
+  color: @lightBlue;
+}

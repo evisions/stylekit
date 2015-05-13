@@ -53,10 +53,11 @@
 @red              : #D95C5C;
 @teal             : #00B5AD;
 @yellow           : #F2C61F;
+@mediumBlue       : #52B0FF;
 
 /*---  Light Colors  ---*/
 @lightBlack       : #3a3a3a;
-@lightBlue        : #4FA6EF;
+@lightBlue        : #DFEFFD;
 @lightGreen       : #2ECC40;
 @lightOrange      : #ffaf23;
 @lightPink        : #FF8EDF;
@@ -67,7 +68,8 @@
 
 /*---   Neutrals  ---*/
 @fullBlack        : #000000;
-@darkGrey         : #AAAAAA;
+@darkGrey         : #333333;
+@textGrey         : #676A6C;
 @lightGrey        : #DCDDDE;
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
@@ -78,8 +80,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @lightBlue;
-@secondaryColor      : @blue;
+@primaryColor        : @blue;
+@secondaryColor      : @mediumBlue;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -111,7 +113,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.33;
-@textColor           : rgba(0, 0, 0, 0.8);
+@textColor           : @darkGrey;
 
 /*-------------------
       Paragraph

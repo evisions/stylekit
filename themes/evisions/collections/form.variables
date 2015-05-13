@@ -195,4 +195,3 @@
 @fWIconWidth: 1.25em;
 @fWVerticalPadding: (@inputVerticalPadding + ((1em - @inputLineHeight) / 2));
 @fWTextPadding: @fWVerticalPadding (@inputHorizontalPadding + @fWIconWidth + 1px) @fWVerticalPadding @inputHorizontalPadding;
-@fWMinHeight: @inputFontSize * 3;
