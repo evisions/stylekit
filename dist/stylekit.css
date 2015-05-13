@@ -18811,8 +18811,11 @@ ol.ui.horizontal.list li:before,
   display: none;
 }
 .editable.field > .text {
+  border: 1px solid transparent;
   display: inline-block;
+  padding: 0.67861em 3.25em 0.67861em 1em;
   position: relative;
+  margin-top: -0.67861em;
   min-height: 3em;
   white-space: pre-wrap;
 }
@@ -18840,10 +18843,11 @@ ol.ui.horizontal.list li:before,
 .editable.field > .ui.button {
   margin-top: 3px;
 }
+.editable.field.active > .text,
 .editable.field:hover > .text {
-  border: 1px solid rgba(39, 41, 43, 0.15);
-  padding: 0.67861em 3.25em 0.67861em 1em;
+  border-color: rgba(39, 41, 43, 0.15);
 }
+.editable.field.active > .text i.icon,
 .editable.field:hover > .text i.icon {
   border-left: 1px solid rgba(39, 41, 43, 0.15);
   display: inline-block;

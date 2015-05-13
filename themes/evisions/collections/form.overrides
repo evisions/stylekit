@@ -14,8 +14,11 @@
 }
 .editable.field {
   > .text {
+    border: 1px solid transparent;
     display: inline-block;
+    padding: @fWTextPadding;
     position: relative;
+    margin-top: -@fWVerticalPadding;
     min-height: @fWMinHeight;
     white-space: pre-wrap;
     i.icon {
@@ -43,10 +46,10 @@
   > .ui.button {
     margin-top: 3px;
   }
-  &:hover {
+  &.active,
+  &:hover   {
     > .text {
-      border: 1px solid @borderColor;
-      padding: @fWTextPadding;
+      border-color: @borderColor;
       i.icon {
         border-left: 1px solid @borderColor;
         display: inline-block;
