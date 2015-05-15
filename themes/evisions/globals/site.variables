@@ -45,14 +45,14 @@
 /*---  Colors  ---*/
 @black            : #1B1C1D;
 @blue             : #2a94d6;
-@green            : #5BBD72;
+@green            : #4AB471;
 @grey             : #CCCCCC;
-@orange           : #ea6a25;
-@pink             : #D9499A;
-@purple           : #564F8A;
-@red              : #D95C5C;
+@orange           : #F48A52;
+@pink             : #D96383;
+@purple           : #717ECD;
+@red              : #CF5C60;
 @teal             : #00B5AD;
-@yellow           : #F2C61F;
+@yellow           : #F3AE4E;
 @mediumBlue       : #52B0FF;
 
 /*---  Light Colors  ---*/
