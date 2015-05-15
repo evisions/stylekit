@@ -14,6 +14,7 @@
   width: 700px;
   margin: 0px auto;
 }
+#sink {background: #E8E8E8 !important;}
 
 #sink .demo.container .example p {font-size: 16px;}
 
@@ -22,12 +23,17 @@
   margin: 2em 0em;
   border-top: 1px solid #DDD;
 }
+.example .ui.statistics .statistic > .value, .ui.statistic > .value {text-transform: initial;}
 
 #sink .demo.container .button.demo > .buttons,
 #sink .demo.container .button.demo > .button,
 #sink .demo.container .button.demo > .segment > .button {
   margin-bottom: 0.5em;
 }
+.demo .ui.button {margin-bottom:10px;}
+#sink .demo p {font-size: 16px;}
+.demo .ui.dividing.header {color:#8E8E8E;}
+
 #sink .demo.container h4:first-child {
   font-weight: bold !important;
   margin: 0em 0em 1em !important;
