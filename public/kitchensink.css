@@ -10,10 +10,12 @@
   background-color: #FFFFFF;
 }*/
 
-#sink .demo.container {
+#sink .demo.container{
   width: 700px;
   margin: 0px auto;
 }
+
+#sink .demo.container .example p {font-size: 16px;}
 
 #sink .demo.container .example {
   padding: 2em 0em;
@@ -21,10 +23,6 @@
   border-top: 1px solid #DDD;
 }
 
-#sink .demo h4 {
-  font-size: 1.5em;
-  margin: 2em 0em 1em;
-}
 #sink .demo.container .button.demo > .buttons,
 #sink .demo.container .button.demo > .button,
 #sink .demo.container .button.demo > .segment > .button {
@@ -48,3 +46,4 @@
 #sink .demo.container .segment .ui.label {
   margin-bottom: 0em;
 }
+.ui.icon.menu > .item {padding: 16px;}
