@@ -1461,7 +1461,7 @@ input::selection {
         Global Overrides
 *******************************/
 span.text.blue {
-  color: #3b83c0;
+  color: #2a94d6;
 }
 span.text.red {
   color: #d95c5c;
@@ -3088,7 +3088,7 @@ span.text.light.blue {
 /*--- Blue ---*/
 .ui.blue.buttons .button,
 .ui.blue.button {
-  background-color: #3b83c0;
+  background-color: #2a94d6;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3098,13 +3098,13 @@ span.text.light.blue {
 }
 .ui.blue.buttons .button:hover,
 .ui.blue.button:hover {
-  background-color: #458ac6;
+  background-color: #379ad8;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.blue.buttons .button:active,
 .ui.blue.button:active {
-  background-color: #3370a5;
+  background-color: #247fb9;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3112,7 +3112,7 @@ span.text.light.blue {
 .ui.blue.buttons .active.button:active,
 .ui.blue.active.button,
 .ui.blue.button .active.button:active {
-  background-color: #3576ac;
+  background-color: #2585c1;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3125,19 +3125,19 @@ span.text.light.blue {
 .ui.basic.blue.buttons .button:hover,
 .ui.basic.blue.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #458ac6 inset !important;
-  color: #458ac6 !important;
+  box-shadow: 0px 0px 0px 2px #379ad8 inset !important;
+  color: #379ad8 !important;
 }
 .ui.basic.blue.buttons .button:active,
 .ui.basic.blue.button:active {
-  box-shadow: 0px 0px 0px 2px #3370a5 inset !important;
-  color: #3370a5 !important;
+  box-shadow: 0px 0px 0px 2px #247fb9 inset !important;
+  color: #247fb9 !important;
 }
 .ui.basic.blue.buttons .active.button,
 .ui.basic.blue.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #3370a5 inset !important;
-  color: #3370a5 !important;
+  box-shadow: 0px 0px 0px 2px #247fb9 inset !important;
+  color: #247fb9 !important;
 }
 .ui.buttons > .basic.blue.button:not(:first-child) {
   margin-left: -2px;
@@ -3954,7 +3954,7 @@ span.text.light.blue {
 --------------------*/
 .ui.primary.buttons .button,
 .ui.primary.button {
-  background-color: #3b83c0;
+  background-color: #2a94d6;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3964,19 +3964,19 @@ span.text.light.blue {
 }
 .ui.primary.buttons .button:hover,
 .ui.primary.button:hover {
-  background-color: #458ac6;
+  background-color: #379ad8;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #3370a5;
+  background-color: #247fb9;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.primary.buttons .active.button,
 .ui.primary.active.button {
-  background-color: #3576ac;
+  background-color: #2585c1;
   color: #ffffff;
   text-shadow: none;
 }
@@ -6816,10 +6816,10 @@ a.ui.black.header:hover {
   color: #1b1c1d !important;
 }
 .ui.blue.header {
-  color: #3b83c0 !important;
+  color: #2a94d6 !important;
 }
 a.ui.blue.header:hover {
-  color: #458ac6 !important;
+  color: #379ad8 !important;
 }
 .ui.green.header {
   color: #5bbd72 !important;
@@ -6867,7 +6867,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #1b1c1d;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #3b83c0;
+  border-bottom: 2px solid #2a94d6;
 }
 .ui.green.dividing.header {
   border-bottom: 2px solid #5bbd72;
@@ -7627,7 +7627,7 @@ i.black.icon {
   color: #1b1c1d !important;
 }
 i.blue.icon {
-  color: #3b83c0 !important;
+  color: #2a94d6 !important;
 }
 i.green.icon {
   color: #5bbd72 !important;
@@ -7696,7 +7696,7 @@ i.inverted.circular.black.icon {
 }
 i.inverted.bordered.blue.icon,
 i.inverted.circular.blue.icon {
-  background-color: #3b83c0 !important;
+  background-color: #2a94d6 !important;
   color: #FFFFFF !important;
 }
 i.inverted.bordered.green.icon,
@@ -12173,33 +12173,33 @@ a.ui.black.label:hover:before {
 /*--- Blue ---*/
 .ui.blue.labels .label,
 .ui.blue.label {
-  background-color: #3b83c0 !important;
-  border-color: #3b83c0 !important;
+  background-color: #2a94d6 !important;
+  border-color: #2a94d6 !important;
   color: #ffffff !important;
 }
 .ui.labels .blue.label:before,
 .ui.blue.labels .label:before,
 .ui.blue.label:before {
-  background-color: #3b83c0 !important;
+  background-color: #2a94d6 !important;
 }
 a.ui.blue.labels .label:hover,
 .ui.blue.labels a.label:hover,
 a.ui.blue.label:hover {
-  background-color: #458ac6 !important;
-  border-color: #458ac6 !important;
+  background-color: #379ad8 !important;
+  border-color: #379ad8 !important;
   color: #ffffff !important;
 }
 .ui.labels a.blue.label:hover:before,
 .ui.blue.labels a.label:hover:before,
 a.ui.blue.label:hover:before {
-  background-color: #458ac6 !important;
+  background-color: #379ad8 !important;
 }
 .ui.blue.corner.label,
 .ui.blue.corner.label:hover {
   background-color: transparent !important;
 }
 .ui.blue.ribbon.label {
-  border-color: #2f6899 !important;
+  border-color: #2177ac !important;
 }
 /*--- Green ---*/
 .ui.green.labels .label,
@@ -16181,7 +16181,7 @@ ol.ui.horizontal.list li:before,
   border-top: 2px solid #1b1c1d;
 }
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #3b83c0;
+  border-top: 2px solid #2a94d6;
 }
 .ui.green.segment:not(.inverted) {
   border-top: 2px solid #5bbd72;
@@ -16249,7 +16249,7 @@ ol.ui.horizontal.list li:before,
   color: #ffffff !important;
 }
 .ui.inverted.blue.segment {
-  background-color: #3b83c0 !important;
+  background-color: #2a94d6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.green.segment {
@@ -16424,7 +16424,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 .ui.inverted.blue.segment {
-  border-color: #3b83c0;
+  border-color: #2a94d6;
 }
 /*******************************
          Site Overrides
