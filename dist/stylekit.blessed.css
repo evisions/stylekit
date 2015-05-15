@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1431527616964');
+@import url('stylekit.blessed-blessed1.css?z=1431357735869');
 
 .ui[class*="very relaxed"].grid > .column:not(.row),
 .ui[class*="very relaxed"].grid > .row > .column,
@@ -327,7 +327,7 @@
 }
 .ui.grid > .orange.row,
 .ui.grid .orange.column {
-  background-color: #e07b53 !important;
+  background-color: #ea6a25 !important;
   color: #ffffff;
 }
 .ui.grid > .row > .orange.column {
@@ -2229,8 +2229,8 @@
 }
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: #e07b53 !important;
-  color: #e07b53 !important;
+  border-color: #ea6a25 !important;
+  color: #ea6a25 !important;
 }
 .ui.menu .pink.active.item,
 .ui.pink.menu .active.item {
@@ -2261,7 +2261,7 @@
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #294c6c;
+  background: #344a5f;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {
@@ -2397,10 +2397,10 @@
 }
 /* Orange */
 .ui.inverted.orange.menu {
-  background-color: #e07b53;
+  background-color: #ea6a25;
 }
 .ui.inverted.orange.pointing.menu .active.item:after {
-  background-color: #e07b53;
+  background-color: #ea6a25;
 }
 /* Pink */
 .ui.inverted.pink.menu {
@@ -3405,10 +3405,10 @@
 }
 .ui.orange.message {
   background-color: #ffedde;
-  color: #e07b53;
+  color: #ea6a25;
 }
 .ui.orange.message .header {
-  color: #dc6a3d;
+  color: #e05c16;
 }
 .ui.pink.message {
   background-color: #ffe3fb;
@@ -4373,7 +4373,7 @@
   border-top: 0.2em solid #5bbd72;
 }
 .ui.orange.table {
-  border-top: 0.2em solid #e07b53;
+  border-top: 0.2em solid #ea6a25;
 }
 .ui.pink.table {
   border-top: 0.2em solid #d9499a;
@@ -4407,7 +4407,7 @@
   color: #ffffff !important;
 }
 .ui.inverted.orange.table {
-  background-color: #e07b53 !important;
+  background-color: #ea6a25 !important;
   color: #ffffff !important;
 }
 .ui.inverted.pink.table {
@@ -7526,7 +7526,7 @@ a.ui.card:hover,
 .ui.orange.cards > .card,
 .ui.cards > .orange.card,
 .ui.orange.card {
-  box-shadow: 0px 3px 0px 0px #e07b53, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #ea6a25, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.pink.cards > .card,
 .ui.cards > .pink.card,
@@ -7572,7 +7572,7 @@ a.ui.card:hover,
 .ui.orange.cards > .card:hover,
 .ui.cards > .orange.card:hover,
 .ui.orange.card:hover {
-  box-shadow: 0px 3px 0px 0px #e28560, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #eb7433, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.pink.cards > .card:hover,
 .ui.cards > .pink.card:hover,
@@ -10484,7 +10484,7 @@ a.ui.card:hover,
 .ui.orange.statistics .statistic > .value,
 .ui.statistics .orange.statistic > .value,
 .ui.orange.statistic > .value {
-  color: #e07b53;
+  color: #ea6a25;
 }
 .ui.pink.statistics .statistic > .value,
 .ui.statistics .pink.statistic > .value,
@@ -14040,7 +14040,7 @@ select.ui.dropdown {
   color: #d95c5c;
 }
 .ui.dropdown > .header.orange {
-  color: #e07b53;
+  color: #ea6a25;
 }
 .ui.dropdown > .text.blue {
   color: #3b83c0;
@@ -14052,7 +14052,7 @@ select.ui.dropdown {
   color: #d95c5c;
 }
 .ui.dropdown > .text.orange {
-  color: #e07b53;
+  color: #ea6a25;
 }
 /*******************************
         User Overrides
@@ -16658,7 +16658,7 @@ a.ui.nag {
   background-color: #5bbd72;
 }
 .ui.orange.progress .bar {
-  background-color: #e07b53;
+  background-color: #ea6a25;
 }
 .ui.pink.progress .bar {
   background-color: #d9499a;

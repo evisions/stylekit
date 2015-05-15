@@ -47,7 +47,7 @@
 @blue             : #3B83C0;
 @green            : #5BBD72;
 @grey             : #CCCCCC;
-@orange           : #E07B53;
+@orange           : #ea6a25;
 @pink             : #D9499A;
 @purple           : #564F8A;
 @red              : #D95C5C;
@@ -74,7 +74,7 @@
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
 @white            : #FFFFFF;
-@darkBlue         : #294C6C;
+@darkBlue         : #344A5F;
 
 /*-------------------
     Brand Colors
@@ -82,6 +82,7 @@
 
 @primaryColor        : @blue;
 @secondaryColor      : @mediumBlue;
+@accentCOlor         : @orange;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
