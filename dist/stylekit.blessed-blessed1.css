@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin';
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700italic,900,900italic&subset=latin';
 /*
 
 ███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
@@ -20180,19 +20180,4 @@ ol.ui.horizontal.list li:before,
 .ui.centered.grid > .row:not(.centered),
 .ui.grid .centered.row > .column:not(.aligned) {
   text-align: left;
-}
-.ui.grid > .centered.column,
-.ui.grid > .row > .centered.column {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/*----------------------
-        Relaxed
------------------------*/
-.ui.relaxed.grid > .column:not(.row),
-.ui.relaxed.grid > .row > .column,
-.ui.grid > .relaxed.row > .column {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }

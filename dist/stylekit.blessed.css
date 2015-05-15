@@ -1,5 +1,20 @@
 @import url('stylekit.blessed-blessed1.css?z=1431357735869');
 
+.ui.grid > .centered.column,
+.ui.grid > .row > .centered.column {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*----------------------
+        Relaxed
+-----------------------*/
+.ui.relaxed.grid > .column:not(.row),
+.ui.relaxed.grid > .row > .column,
+.ui.grid > .relaxed.row > .column {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .ui[class*="very relaxed"].grid > .column:not(.row),
 .ui[class*="very relaxed"].grid > .row > .column,
 .ui.grid > [class*="very relaxed"].row > .column {
