@@ -25596,7 +25596,6 @@ ol.ui.horizontal.list li:before,
 .ui.calendar .week {
   display: table;
   table-layout: fixed;
-  border-collapse: collapse;
 }
 .ui.calendar .week.header .cell {
   color: rgba(0, 0, 0, 0.85);
@@ -25739,11 +25738,18 @@ ol.ui.horizontal.list li:before,
  */
 .ui.calendar.celled .day {
   border-left: 1px solid #dcddde;
-  border-right: 1px solid #dcddde;
   border-bottom: 1px solid #dcddde;
 }
+.ui.calendar.celled .day:last-child {
+  border-right: 1px solid #dcddde;
+}
 .ui.calendar.celled .week.header .cell {
-  border: 1px solid #dcddde;
+  border-left: 1px solid #dcddde;
+  border-top: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
+}
+.ui.calendar.celled .week.header .cell:last-child {
+  border-right: 1px solid #dcddde;
 }
 /**
  * Selectable
