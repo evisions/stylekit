@@ -113,10 +113,35 @@
   color: @lightRed !important;
 }
 
-
-.ui.button.basic.text {
+.ui.button.inline {
   padding: 0 !important;
   background-color: transparent !important;
   border: 0px !important;
   box-shadow: none !important;
+  font-weight: normal;
+}
+
+.ui.button.inline.blue {
+  color: @blue;
+}
+.ui.button.inline.red {
+  color: @red;
+}
+.ui.button.inline.yellow {
+  color: @yellow;
+}
+.ui.button.inline.orange {
+  color: @orange;
+}
+.ui.button.inline.teal {
+  color: @teal;
+}
+.ui.button.inline.purple {
+  color: @purple;
+}
+.ui.button.inline.black {
+  color: @black;
+}
+.ui.button.inline:active, .ui.button.inline:hover {
+  color: @darkGrey;
 }

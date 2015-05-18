@@ -4264,11 +4264,37 @@ span.text.light.blue {
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
   color: #ff695e !important;
 }
-.ui.button.basic.text {
+.ui.button.inline {
   padding: 0 !important;
   background-color: transparent !important;
   border: 0px !important;
   box-shadow: none !important;
+  font-weight: normal;
+}
+.ui.button.inline.blue {
+  color: #2a94d6;
+}
+.ui.button.inline.red {
+  color: #cf5c60;
+}
+.ui.button.inline.yellow {
+  color: #f3ae4e;
+}
+.ui.button.inline.orange {
+  color: #f48a52;
+}
+.ui.button.inline.teal {
+  color: #00b5ad;
+}
+.ui.button.inline.purple {
+  color: #717ecd;
+}
+.ui.button.inline.black {
+  color: #1b1c1d;
+}
+.ui.button.inline:active,
+.ui.button.inline:hover {
+  color: #333333;
 }
 /*******************************
          Site Overrides

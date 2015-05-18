@@ -4264,11 +4264,37 @@ span.text.light.blue {
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
   color: #ff695e !important;
 }
-.ui.button.basic.text {
+.ui.button.inline {
   padding: 0 !important;
   background-color: transparent !important;
   border: 0px !important;
   box-shadow: none !important;
+  font-weight: normal;
+}
+.ui.button.inline.blue {
+  color: #2a94d6;
+}
+.ui.button.inline.red {
+  color: #cf5c60;
+}
+.ui.button.inline.yellow {
+  color: #f3ae4e;
+}
+.ui.button.inline.orange {
+  color: #f48a52;
+}
+.ui.button.inline.teal {
+  color: #00b5ad;
+}
+.ui.button.inline.purple {
+  color: #717ecd;
+}
+.ui.button.inline.black {
+  color: #1b1c1d;
+}
+.ui.button.inline:active,
+.ui.button.inline:hover {
+  color: #333333;
 }
 /*******************************
          Site Overrides
@@ -20063,115 +20089,4 @@ ol.ui.horizontal.list li:before,
   .ui.column.grid > [class*="sixteen wide large screen"].column {
     width: 100% !important;
   }
-}
-/* Widescreen Sizing Combinations */
-@media only screen and (min-width: 1920px) {
-  .ui.grid > .row > [class*="one wide widescreen"].column,
-  .ui.grid > .column.row > [class*="one wide widescreen"].column,
-  .ui.grid > [class*="one wide widescreen"].column,
-  .ui.column.grid > [class*="one wide widescreen"].column {
-    width: 6.25% !important;
-  }
-  .ui.grid > .row > [class*="two wide widescreen"].column,
-  .ui.grid > .column.row > [class*="two wide widescreen"].column,
-  .ui.grid > [class*="two wide widescreen"].column,
-  .ui.column.grid > [class*="two wide widescreen"].column {
-    width: 12.5% !important;
-  }
-  .ui.grid > .row > [class*="three wide widescreen"].column,
-  .ui.grid > .column.row > [class*="three wide widescreen"].column,
-  .ui.grid > [class*="three wide widescreen"].column,
-  .ui.column.grid > [class*="three wide widescreen"].column {
-    width: 18.75% !important;
-  }
-  .ui.grid > .row > [class*="four wide widescreen"].column,
-  .ui.grid > .column.row > [class*="four wide widescreen"].column,
-  .ui.grid > [class*="four wide widescreen"].column,
-  .ui.column.grid > [class*="four wide widescreen"].column {
-    width: 25% !important;
-  }
-  .ui.grid > .row > [class*="five wide widescreen"].column,
-  .ui.grid > .column.row > [class*="five wide widescreen"].column,
-  .ui.grid > [class*="five wide widescreen"].column,
-  .ui.column.grid > [class*="five wide widescreen"].column {
-    width: 31.25% !important;
-  }
-  .ui.grid > .row > [class*="six wide widescreen"].column,
-  .ui.grid > .column.row > [class*="six wide widescreen"].column,
-  .ui.grid > [class*="six wide widescreen"].column,
-  .ui.column.grid > [class*="six wide widescreen"].column {
-    width: 37.5% !important;
-  }
-  .ui.grid > .row > [class*="seven wide widescreen"].column,
-  .ui.grid > .column.row > [class*="seven wide widescreen"].column,
-  .ui.grid > [class*="seven wide widescreen"].column,
-  .ui.column.grid > [class*="seven wide widescreen"].column {
-    width: 43.75% !important;
-  }
-  .ui.grid > .row > [class*="eight wide widescreen"].column,
-  .ui.grid > .column.row > [class*="eight wide widescreen"].column,
-  .ui.grid > [class*="eight wide widescreen"].column,
-  .ui.column.grid > [class*="eight wide widescreen"].column {
-    width: 50% !important;
-  }
-  .ui.grid > .row > [class*="nine wide widescreen"].column,
-  .ui.grid > .column.row > [class*="nine wide widescreen"].column,
-  .ui.grid > [class*="nine wide widescreen"].column,
-  .ui.column.grid > [class*="nine wide widescreen"].column {
-    width: 56.25% !important;
-  }
-  .ui.grid > .row > [class*="ten wide widescreen"].column,
-  .ui.grid > .column.row > [class*="ten wide widescreen"].column,
-  .ui.grid > [class*="ten wide widescreen"].column,
-  .ui.column.grid > [class*="ten wide widescreen"].column {
-    width: 62.5% !important;
-  }
-  .ui.grid > .row > [class*="eleven wide widescreen"].column,
-  .ui.grid > .column.row > [class*="eleven wide widescreen"].column,
-  .ui.grid > [class*="eleven wide widescreen"].column,
-  .ui.column.grid > [class*="eleven wide widescreen"].column {
-    width: 68.75% !important;
-  }
-  .ui.grid > .row > [class*="twelve wide widescreen"].column,
-  .ui.grid > .column.row > [class*="twelve wide widescreen"].column,
-  .ui.grid > [class*="twelve wide widescreen"].column,
-  .ui.column.grid > [class*="twelve wide widescreen"].column {
-    width: 75% !important;
-  }
-  .ui.grid > .row > [class*="thirteen wide widescreen"].column,
-  .ui.grid > .column.row > [class*="thirteen wide widescreen"].column,
-  .ui.grid > [class*="thirteen wide widescreen"].column,
-  .ui.column.grid > [class*="thirteen wide widescreen"].column {
-    width: 81.25% !important;
-  }
-  .ui.grid > .row > [class*="fourteen wide widescreen"].column,
-  .ui.grid > .column.row > [class*="fourteen wide widescreen"].column,
-  .ui.grid > [class*="fourteen wide widescreen"].column,
-  .ui.column.grid > [class*="fourteen wide widescreen"].column {
-    width: 87.5% !important;
-  }
-  .ui.grid > .row > [class*="fifteen wide widescreen"].column,
-  .ui.grid > .column.row > [class*="fifteen wide widescreen"].column,
-  .ui.grid > [class*="fifteen wide widescreen"].column,
-  .ui.column.grid > [class*="fifteen wide widescreen"].column {
-    width: 93.75% !important;
-  }
-  .ui.grid > .row > [class*="sixteen wide widescreen"].column,
-  .ui.grid > .column.row > [class*="sixteen wide widescreen"].column,
-  .ui.grid > [class*="sixteen wide widescreen"].column,
-  .ui.column.grid > [class*="sixteen wide widescreen"].column {
-    width: 100% !important;
-  }
-}
-/*----------------------
-        Centered
------------------------*/
-.ui.centered.grid,
-.ui.centered.grid > .row,
-.ui.grid > .centered.row {
-  text-align: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
