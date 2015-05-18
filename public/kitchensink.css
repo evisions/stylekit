@@ -55,6 +55,8 @@
   margin-bottom: 0em;
 }
 #sink .demo i.inverted.bordered.icon, i.inverted.circular.icon {background-color: #868686 !important;}
+.circ {text-align: center !important}
+.circ span {color:#666;font-size: 13px;display:block;}
 .ui.icon.menu > .item {padding: 16px;}
 
 .ui.statistic.primary.segment {background-color:#2a94d6 !important;}
