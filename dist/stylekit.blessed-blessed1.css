@@ -2416,13 +2416,13 @@ span.text.light.blue {
 .ui[class*="left floated"].button {
   float: left;
   margin-left: 0em;
-  margin-right: 0.25em;
+  margin-right: 0.5em;
 }
 .ui[class*="right floated"].buttons,
 .ui[class*="right floated"].button {
   float: right;
   margin-right: 0em;
-  margin-left: 0.25em;
+  margin-left: 0.5em;
 }
 /*-------------------
        Compact
