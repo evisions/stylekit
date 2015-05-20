@@ -60,10 +60,12 @@ h2.header {margin-top:82px;}
 #sink .demo.container .segment.example {
   z-index: 1;
 }
+.right-side {padding-left:120px;}
 .p-top {padding-bottom:30px;}
 #sink .demo.container .ui.label:not(.empty) {
   /*margin-bottom: 1em;*/
 }
+.component-head {padding-top:25px;}
 #sink .section-head {text-align:center;padding-top: 140px;padding-bottom:40px;}
 .demo.icons .circ .icon{font-size: 2.4em}
 #sink .demo.container .segment .ui.label {
