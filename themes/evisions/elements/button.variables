@@ -288,7 +288,8 @@
 @attachedHorizontalPadding: 0.75em;
 
 /* Floated */
-@floatedMargin: 0.25em;
+// @floatedMargin: 0.25em;
+@floatedMargin: 0.5em;
 
 /* Animated */
 @animatedVerticalAlign: middle;

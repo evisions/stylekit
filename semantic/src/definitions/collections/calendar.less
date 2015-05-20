@@ -162,7 +162,6 @@
 .ui.calendar .week {
   display: table;
   table-layout: fixed;
-  border-collapse: collapse;
 }
 
 .ui.calendar .week.header .cell {
@@ -315,12 +314,21 @@
  */
 .ui.calendar.celled .day {
   border-left: @dayCellBorder;
-  border-right: @dayCellBorder;
   border-bottom: @dayCellBorder;
 }
 
+.ui.calendar.celled .day:last-child {
+  border-right: @dayCellBorder;
+}
+
 .ui.calendar.celled .week.header .cell {
-  border: @headerCellBorder;
+  border-left: @headerCellBorder;
+  border-top: @headerCellBorder;
+  border-bottom: @headerCellBorder;
+}
+
+.ui.calendar.celled .week.header .cell:last-child {
+  border-right: @headerCellBorder;
 }
 
 /**
