@@ -35,6 +35,8 @@
 #sink .demo p {font-size: 16px;}
 .demo .ui.dividing.header {color:#8E8E8E;}
 h2.header {margin-top:82px;}
+.demo h2.ui.dividing.header {padding-top:40px;}
+
 
 #sink .ui.inverted.statistic .label {padding:30px 8px;}
 #sink .ui.inverted.statistic.small .label{padding:20px 0;}
