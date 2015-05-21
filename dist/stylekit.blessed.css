@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1432056078085');
+@import url('stylekit.blessed-blessed1.css?z=1432142486387');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -11386,6 +11386,36 @@ a.ui.card:hover,
 .ui.accordion .title .dropdown.icon:before,
 .ui.accordion .accordion .title .dropdown.icon:before {
   content: '\f0da' /*rtl:'\f0d9'*/;
+}
+/*--------------
+     Tree
+---------------*/
+.ui.tree.accordion {
+  width: 600px;
+}
+.ui.tree.accordion:not(.styled) .title ~ .content:not(.ui),
+.ui.tree.accordion:not(.styled) .accordion .title ~ .content:not(.ui) {
+  padding-left: 1em;
+}
+.ui.tree.accordion .title .dropdown.icon,
+.ui.tree.accordion .accordion .title .dropdown.icon {
+  float: right;
+}
+/* Content */
+.ui.tree.styled.accordion .content,
+.ui.tree.styled.accordion .accordion .content {
+  margin: 0em;
+  padding: 0px;
+}
+.ui.tree.styled.accordion .title,
+.ui.tree.styled.accordion .accordion .title {
+  border-top: 0px;
+}
+.ui.tree.styled.accordion .node {
+  border-top: 1px solid rgba(39, 41, 43, 0.15);
+}
+.ui.tree.styled.accordion > .node:first-child {
+  border-top: 0px;
 }
 /*******************************
         User Overrides
