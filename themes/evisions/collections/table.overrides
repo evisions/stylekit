@@ -113,7 +113,7 @@
   .ui.table:not(.unstackable) tr > td {
     word-break: break-all;
     min-height: @responsiveCellMinHeight;
-    padding-left: 40%;
+    padding-left: 40% !important;
   }
   .ui.table:not(.unstackable) tr > td:before {
     content: attr(data-column-name);
