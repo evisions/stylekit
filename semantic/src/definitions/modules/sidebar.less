@@ -105,6 +105,7 @@ body.pushable {
 }
 .pushable:not(body) > .ui.sidebar,
 .pushable:not(body) > .fixed,
+.pushable:not(body) > .crusher:after,
 .pushable:not(body) > .pusher:after {
   position: absolute;
 }
@@ -136,10 +137,22 @@ body.pushable {
   z-index: @middleLayer;
 }
 
+.pushable > .crusher {
+  position: relative;
+  backface-visibility: hidden;
+  overflow: hidden;
+  margin: 0px;
+  min-height: 100%;
+  transition: margin @duration @easing;
+  z-index: @middleLayer;
+}
+
+body.pushable > .crusher,
 body.pushable > .pusher {
   background: @pageBackground;
 }
 
+.pushable > .crusher,
 .pushable > .pusher {
   background: inherit;
 }
@@ -148,6 +161,7 @@ body.pushable > .pusher {
      Dimmer
 ---------------*/
 
+.pushable > .crusher:after,
 .pushable > .pusher:after {
   position: fixed;
   top: 0px;
@@ -179,6 +193,7 @@ body.pushable > .pusher {
      Dimmed
 ---------------*/
 
+.pushable > .crusher.dimmed:after,
 .pushable > .pusher.dimmed:after {
   width: 100% !important;
   height: 100% !important;
@@ -228,6 +243,19 @@ body.pushable > .pusher {
 .ui.visible.bottom.sidebar ~ .fixed,
 .ui.visible.bottom.sidebar ~ .pusher {
   transform: translate3d(0, -@height, 0);
+}
+
+.ui.visible.left.sidebar ~ .crusher {
+  margin-left: @width;
+}
+.ui.visible.right.sidebar ~ .crusher {
+  margin-right: @width;
+}
+.ui.visible.top.sidebar ~ .crusher {
+  margin-top: @height;
+}
+.ui.visible.bottom.sidebar ~ .crusher {
+  margin-bottom: @height;
 }
 
 /* opposite sides visible forces content overlay */
@@ -300,6 +328,19 @@ html.ios {
   transform: translate3d(@veryWideWidth, 0, 0);
 }
 
+.ui.visible.thin.left.sidebar ~ .crusher {
+  margin-left: @thinWidth;
+}
+.ui.visible[class*="very thin"].left.sidebar ~ .crusher {
+  margin-left: @veryThinWidth;
+}
+.ui.visible.wide.left.sidebar ~ .crusher {
+  margin-left: @wideWidth;
+}
+.ui.visible[class*="very wide"].left.sidebar ~ .crusher {
+  margin-left: @veryWideWidth;
+}
+
 /* Right Visible */
 .ui.visible[class*="very thin"].right.sidebar ~ .fixed,
 .ui.visible[class*="very thin"].right.sidebar ~ .pusher {
@@ -318,6 +359,18 @@ html.ios {
   transform: translate3d(-@veryWideWidth, 0, 0);
 }
 
+.ui.visible.thin.right.sidebar ~ .crusher {
+  margin-right: @thinWidth;
+}
+.ui.visible[class*="very thin"].right.sidebar ~ .crusher {
+  margin-right: @veryThinWidth;
+}
+.ui.visible.wide.right.sidebar ~ .crusher {
+  margin-right: @wideWidth;
+}
+.ui.visible[class*="very wide"].right.sidebar ~ .crusher {
+  margin-right: @veryWideWidth;
+}
 
 
 /*******************************
@@ -373,7 +426,9 @@ html.ios {
   transform: none !important;
 }
 
-
+.ui.visible.overlay.sidebar ~ .crusher {
+  margin: 0px;
+}
 
 /*--------------
       Push
