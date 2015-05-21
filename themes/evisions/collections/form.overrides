@@ -14,6 +14,9 @@
 }
 .editable.field {
   > .text {
+    font-family: @inputFont;
+    line-height: 1em;
+    font-size: @inputFontSize;
     border: 1px solid transparent;
     display: inline-block;
     padding: @fWTextPadding;
@@ -41,17 +44,47 @@
       }
     }
   }
-  > .ui.button {
-    margin-top: 3px;
+}
+
+.editable.field.inline {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.editable.field.inline.fluid {
+  display: flex;
+}
+
+.editable.field.active > .text,
+.editable.field:hover > .text {
+  border-color: @borderColor;
+  i.icon {
+    border-left: 1px solid @borderColor;
+    display: inline-block;
   }
-  &.active,
-  &:hover   {
-    > .text {
-      border-color: @borderColor;
-      i.icon {
-        border-left: 1px solid @borderColor;
-        display: inline-block;
-      }
-    }
-  }
+}
+
+.editable.field > .ui.buttons {
+  display: none;
+}
+
+.editable.field.editing > .ui.buttons {
+  display: inline-block;
+}
+
+
+.editable.field > * {
+  flex: 0 0 auto;
+}
+.editable.field > .ui.input {
+  flex: 0 1 100%;
+}
+
+.editable.field:not(.inline) > .ui.buttons {
+  float: right;
+  margin-top: 0.5em;
+}
+.editable.field.inline > .ui.buttons {
+  margin-left: 0.5em;
 }
