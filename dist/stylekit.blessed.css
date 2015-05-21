@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1432231840189');
+@import url('stylekit.blessed-blessed1.css?z=1432232304818');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5000,6 +5000,9 @@
   }
   .ui.table:not(.unstackable) thead tr.responsive.sort {
     display: block;
+  }
+  .ui.table:not(.unstackable) thead tr.responsive.sort.hidden {
+    display: none !important;
   }
   .ui.table:not(.unstackable) tbody tr {
     border-bottom: 0px;
