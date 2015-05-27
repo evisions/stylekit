@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         options: {
           port: 8080,
           livereload: 35732,
-          base: ['public', 'dist', 'themes/evisions/assets']
+          base: ['./']
         }
       }
     },

@@ -7,28 +7,26 @@
       <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
       <!-- Site Properities -->
       <title>Kitchen Sink - Semantic</title>
-      <link rel="stylesheet" type="text/css" href="stylekit.blessed.css">
-      <link rel="stylesheet" type="text/css" href="index.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+      <link rel="stylesheet" type="text/css" href="./dist/stylekit.blessed.css">
+      <link rel="stylesheet" type="text/css" href="./public/index.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
       <!-- Used with Tab History !-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.min.js"></script>
       <script type="text/javascript">
          // Just a hack to include canvas util library with arrow drawing code without modifying it.
          window.define = function(deps, canvasLibs) {
             window.CanvasUtil = canvasLibs();
          }
       </script>
-      <script type="text/javascript" src="src/canvas.js"></script>
-      <script type="text/javascript" src="src/overview.js"></script>
-      <!-- // <script src="http://semantic-ui.com/dist/semantic.min.js"></script> -->
-      <!-- // <script src="../dist/semantic.js"></script> -->
+      <script type="text/javascript" src="./public/src/canvas.js"></script>
+      <script type="text/javascript" src="./public/src/overview.js"></script>
    </head>
    <body id="sink" class="pushable">
    <!--           ui left vertical icon inverted visible labeled   menu push  -->
       <div class="ui left vertical icon inverted visible sidebar menu">
          <a class="item" href="index.html">
-         <img src="images/white_logo_small.png">
+         <img src="./public/images/white_logo_small.png">
          </a>
          <a class="active item" href="index.html">
          Elements
@@ -43,7 +41,7 @@
       <div class="page-content">
          <div class="section-blue" style="position: relative">
             <h2 class="section-head">Styleguide Overview</h2>
-            <img id="overview-image" src="images/imac.png">
+            <img id="overview-image" src="./public/images/imac.png">
             <div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;">
                <canvas style="width: 100%; height: 100%; position: absolute; bottom: 0px" id="overview-canvas"></canvas>
             </div>
