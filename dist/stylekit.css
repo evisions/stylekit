@@ -22997,6 +22997,15 @@ ol.ui.horizontal.list li:before,
   font-size: 1.714rem;
 }
 /*******************************
+           Simple Themes
+*******************************/
+.ui.simple.secondary.pointing.menu {
+  border-bottom: 0px;
+}
+.ui.simple.secondary.vertical.pointing.menu {
+  border-right: 0px;
+}
+/*******************************
          Site Overrides
 *******************************/
 /*!
@@ -25168,6 +25177,18 @@ ol.ui.horizontal.list li:before,
  */
 .ui.table tr.light.blue td {
   background: #ffffff;
+}
+/*******************************
+           Borderless
+*******************************/
+.ui.borderless.table {
+  border: 0px;
+}
+.ui.borderless.table thead th {
+  border-bottom: 0px;
+}
+.ui.borderless.table tr td {
+  border-top: 0px;
 }
 /*******************************
          Site Overrides
