@@ -1,0 +1,10 @@
+
+
+@zIndex: 10001;
+@position: absolute;
+@topPosition: 0px;
+@leftPosition: 0px;
+@rightPosition: 0px;
+
+@stepWidth: 400px;
+@stepCenterMargin: 10% auto auto auto;
