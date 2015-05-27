@@ -104,6 +104,9 @@
   .ui.table:not(.unstackable) thead tr.responsive.sort {
     display: block;
   }
+  .ui.table:not(.unstackable) thead tr.responsive.sort.hidden {
+    display: none !important;
+  }
   .ui.table:not(.unstackable) tbody tr {
     border-bottom: 0px;
   }
