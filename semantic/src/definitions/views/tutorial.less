@@ -1,0 +1,30 @@
+
+@type    : 'view';
+@element : 'tutorial';
+
+
+@import (multiple) '../../../../theme.config';
+
+
+.ui.tutorial {
+  z-index: @zIndex;
+  position: @position;
+  top: @topPosition;
+  left: @leftPosition;
+  right: @rightPosition;
+}
+
+.ui.tutorial .step {
+  width: @stepWidth;
+  visibility: hidden;
+}
+.ui.tutorial .step.centered {
+  margin: @stepCenterMargin;
+}
+.ui.tutorial .step.visible {
+  visibility: visible;
+}
+
+.ui.tutorial .step .close {
+  float: right;
+}
