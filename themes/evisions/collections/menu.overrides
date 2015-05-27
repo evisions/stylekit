@@ -63,3 +63,13 @@
 .ui.menu.huge > .title {
   font-size: @h2;
 }
+
+/*******************************
+           Simple Themes
+*******************************/
+.ui.simple.secondary.pointing.menu {
+  border-bottom: 0px;
+}
+.ui.simple.secondary.vertical.pointing.menu {
+  border-right: 0px;
+}

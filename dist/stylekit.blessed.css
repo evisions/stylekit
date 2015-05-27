@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1432135929024');
+@import url('stylekit.blessed-blessed1.css?z=1432750142556');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2863,6 +2863,15 @@
   font-size: 1.714rem;
 }
 /*******************************
+           Simple Themes
+*******************************/
+.ui.simple.secondary.pointing.menu {
+  border-bottom: 0px;
+}
+.ui.simple.secondary.vertical.pointing.menu {
+  border-right: 0px;
+}
+/*******************************
          Site Overrides
 *******************************/
 /*!
@@ -5034,6 +5043,18 @@
  */
 .ui.table tr.light.blue td {
   background: #ffffff;
+}
+/*******************************
+           Borderless
+*******************************/
+.ui.borderless.table {
+  border: 0px;
+}
+.ui.borderless.table thead th {
+  border-bottom: 0px;
+}
+.ui.borderless.table tr td {
+  border-top: 0px;
 }
 /*******************************
          Site Overrides
