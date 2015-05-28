@@ -37,8 +37,21 @@
 .ui.calendar .week.header .cell {
   background: @weekHeaderBackground;
 }
+.ui.calendar .week .cell {
+  display: inline-block;
+  float: left;
+}
 .ui.calendar .week .day {
   background: @dayBackground;
+}
+.ui.calendar .week .day table {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  table-layout: fixed;
+}
+.ui.calendar .week {
+  width: 100%;
 }
 .ui.calendar,.ui.week {
   .controls.default {
@@ -73,10 +86,9 @@
   width: @normalDayWidth;
   height: @normalDayHeight;
   max-width: 100%/7;
-  display: table-cell;
-  vertical-align: top;
   position: relative;
   padding: @dayPadding;
+  padding-top: 1.5rem;
   vertical-align: middle;
   position: relative;
 }
@@ -95,6 +107,7 @@
 
 .ui.calendar.large .day {
   padding: @largeDayPadding;
+  padding-top: 1.7rem;
 }
 
 .ui.calendar .day > .text {
@@ -122,7 +135,7 @@
   bottom: .15em;
 }
 
-.ui.calendar .day.other {
+.ui.calendar .day.other > .text {
   font-weight: @otherDayFontWeight;
   color: @disabledTextColor;
 }
@@ -136,8 +149,11 @@
 }
 
 .ui.calendar .day.today {
-  font-weight: @todayFontWeight;
   background-color: @todayBackground !important;
+}
+
+.ui.calendar .day.today > .text {
+  font-weight: @todayFontWeight;
 }
 
 .ui.calendar .day .more {
@@ -159,8 +175,14 @@
   color: @disabledTextColor;
 }
 
+
+.ui.calendar > .content > table{
+  width: 100%;
+  table-layout: fixed;
+}
+
 .ui.calendar .week {
-  display: table;
+  // display: table-row;
   table-layout: fixed;
 }
 
@@ -169,7 +191,7 @@
   width: @normalHeaderWidth;
   height: @normalHeaderHeight;
   padding: @headerCellPadding;
-  display: table-cell;
+  // display: table-cell;
   vertical-align: top;
 }
 
@@ -296,13 +318,16 @@
   right: 0;
   bottom: 0;
 }
+.ui.calendar.vertical.fluid .content > table {
+  height: 100%;
+}
 .ui.calendar.large.vertical.fluid .content {
   top: @largeHeaderHeight;
 }
 .ui.calendar.vertical.fluid .week.header {
   height: 2em;
 }
-.ui.calendar.vertical.fluid .week {
+.ui.calendar.vertical.fluid .week:not(.header) {
   height: ~"calc("(100%/6)~" - "(@weekHeaderHeight/6)~")";
 }
 .ui.calendar.vertical.fluid .cell {
@@ -393,6 +418,21 @@
   display: inline;
   margin-right: 0.5rem;
 }
+@media only screen and (max-width : @fullScreenCalendar) {
+  .ui.calendar .day .appointments .item .text {
+    display: none !important;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media only screen and (max-width: @tabletScreenCalendar) {
+  .ui.calendar .day .appointments .item .time {
+    visibility: hidden;
+  }
+}
+
+// @media only screen and (max-width: )
 .ui.calendar .day .appointments .item .text {
   display: inline;
   font-weight: @appointmentItemTextWeight;

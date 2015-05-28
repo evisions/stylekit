@@ -58,6 +58,12 @@
 @largeWeekHeaderBackground: transparent;
 @largeDayBackground: @white;
 
+/*
+  Breakpoint
+ */
+@fullScreenCalendar: 1200px;
+@tabletScreenCalendar: @computerBreakpoint;
+
 
 
 /**
