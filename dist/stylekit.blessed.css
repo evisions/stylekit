@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1432756073169');
+@import url('stylekit.blessed-blessed1.css?z=1432755432134');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5367,6 +5367,9 @@
 /*---  Standard  ---*/
 /*---  Emotive  ---*/
 /*---  Neutrals  ---*/
+/*
+  Breakpoint
+ */
 /**
  * Appointment Items
  */
@@ -5419,8 +5422,21 @@
 .ui.calendar .week.header .cell {
   background: transparent;
 }
+.ui.calendar .week .cell {
+  display: inline-block;
+  float: left;
+}
 .ui.calendar .week .day {
   background: transparent;
+}
+.ui.calendar .week .day table {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  table-layout: fixed;
+}
+.ui.calendar .week {
+  width: 100%;
 }
 .ui.calendar .controls.default,
 .ui.week .controls.default {
@@ -5456,9 +5472,8 @@
   width: 3rem;
   height: 3rem;
   max-width: 14.28571429%;
-  display: table-cell;
-  vertical-align: top;
   padding: 0.1em 0.2em 0.1em 0.1em;
+  padding-top: 1.5rem;
   vertical-align: middle;
   position: relative;
 }
@@ -5474,6 +5489,7 @@
 }
 .ui.calendar.large .day {
   padding: 0.5em;
+  padding-top: 1.7rem;
 }
 .ui.calendar .day > .text {
   display: inline-block;
@@ -5497,7 +5513,7 @@
   margin-left: -0.25rem;
   bottom: .15em;
 }
-.ui.calendar .day.other {
+.ui.calendar .day.other > .text {
   font-weight: bold;
   color: rgba(40, 40, 40, 0.3);
 }
@@ -5508,8 +5524,10 @@
   background: #fcfcfc !important;
 }
 .ui.calendar .day.today {
-  font-weight: bold;
   background-color: #e4e5e5 !important;
+}
+.ui.calendar .day.today > .text {
+  font-weight: bold;
 }
 .ui.calendar .day .more {
   color: #cccccc;
@@ -5527,8 +5545,11 @@
   cursor: default !important;
   color: rgba(40, 40, 40, 0.3);
 }
+.ui.calendar > .content > table {
+  width: 100%;
+  table-layout: fixed;
+}
 .ui.calendar .week {
-  display: table;
   table-layout: fixed;
 }
 .ui.calendar .week.header .cell {
@@ -5536,7 +5557,6 @@
   width: 3rem;
   height: 2rem;
   padding: 0 0.5em;
-  display: table-cell;
   vertical-align: top;
 }
 .ui.calendar.large .week.header .cell {
@@ -5655,13 +5675,16 @@
   right: 0;
   bottom: 0;
 }
+.ui.calendar.vertical.fluid .content > table {
+  height: 100%;
+}
 .ui.calendar.large.vertical.fluid .content {
   top: 3rem;
 }
 .ui.calendar.vertical.fluid .week.header {
   height: 2em;
 }
-.ui.calendar.vertical.fluid .week {
+.ui.calendar.vertical.fluid .week:not(.header) {
   height: calc( 16.66666667%  -  0.33333333em );
 }
 .ui.calendar.vertical.fluid .cell {
@@ -5740,6 +5763,19 @@
 .ui.calendar .day .appointments .item .time {
   display: inline;
   margin-right: 0.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .ui.calendar .day .appointments .item .text {
+    display: none !important;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .ui.calendar .day .appointments .item .time {
+    visibility: hidden;
+  }
 }
 .ui.calendar .day .appointments .item .text {
   display: inline;
