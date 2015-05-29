@@ -437,7 +437,7 @@
 }
 .ui.grid > .blue.row,
 .ui.grid .blue.column {
-  background-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
   color: #ffffff;
 }
 .ui.grid > .row > .blue.column {
@@ -2351,8 +2351,8 @@
 /*--- Light Colors  ---*/
 .ui.menu .blue.active.item,
 .ui.blue.menu .active.item {
-  border-color: #2a94d6 !important;
-  color: #2a94d6 !important;
+  border-color: #1c84c6 !important;
+  color: #1c84c6 !important;
 }
 .ui.menu .green.active.item,
 .ui.green.menu .active.item {
@@ -2515,10 +2515,10 @@
 /*--- Inverted Colors  ---*/
 /* Blue */
 .ui.inverted.blue.menu {
-  background-color: #2a94d6;
+  background-color: #1c84c6;
 }
 .ui.inverted.blue.pointing.menu .active.item:after {
-  background-color: #2a94d6;
+  background-color: #1c84c6;
 }
 /* Green */
 .ui.inverted.green.menu {
@@ -3532,10 +3532,10 @@
 }
 .ui.blue.message {
   background-color: #dff0ff;
-  color: #2a94d6;
+  color: #1c84c6;
 }
 .ui.blue.message .header {
-  color: #2585c1;
+  color: #1975b0;
 }
 .ui.green.message {
   background-color: #ebffed;
@@ -4508,7 +4508,7 @@
   border-top: 0.2em solid #1b1c1d;
 }
 .ui.blue.table {
-  border-top: 0.2em solid #2a94d6;
+  border-top: 0.2em solid #1c84c6;
 }
 .ui.green.table {
   border-top: 0.2em solid #4ab471;
@@ -4540,7 +4540,7 @@
   color: #ffffff !important;
 }
 .ui.inverted.blue.table {
-  background-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.green.table {
@@ -5749,7 +5749,7 @@
 .ui.calendar .day .appointments .item:after {
   content: '';
   position: absolute;
-  background: #2a94d6;
+  background: #1c84c6;
   top: 50%;
   width: 0.5em;
   height: 0.5em;
@@ -5892,7 +5892,7 @@
   background: #edf6fe;
   cursor: pointer;
   padding: 0.2rem 0.5rem 0.2rem 2.5rem;
-  border-left: 4px solid #2a94d6;
+  border-left: 4px solid #1c84c6;
   top: 0;
   left: 0%;
   right: 0%;
@@ -5921,7 +5921,7 @@
   height: 0.5em;
   border-radius: 0.5em 0.5em;
   margin-top: -0.25em;
-  background: #2a94d6;
+  background: #1c84c6;
 }
 .ui.week .appointments .appointment .text {
   overflow: hidden;
@@ -6357,7 +6357,7 @@
 ---------------*/
 .ui.visual.search .token.box .ui.label.selected:not(.editing) {
   color: #ffffff;
-  background-color: #2a94d6;
+  background-color: #1c84c6;
   outline: 0;
 }
 .ui.visual.search .token.box .ui.label.selected.editing .detail {
@@ -7714,7 +7714,7 @@ a.ui.card:hover,
 .ui.blue.cards > .card,
 .ui.cards > .blue.card,
 .ui.blue.card {
-  box-shadow: 0px 3px 0px 0px #2a94d6, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #1c84c6, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.green.cards > .card,
 .ui.cards > .green.card,
@@ -7760,7 +7760,7 @@ a.ui.card:hover,
 .ui.blue.cards > .card:hover,
 .ui.cards > .blue.card:hover,
 .ui.blue.card:hover {
-  box-shadow: 0px 3px 0px 0px #379ad8, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #1e8dd3, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.green.cards > .card:hover,
 .ui.cards > .green.card:hover,
@@ -10672,7 +10672,7 @@ a.ui.card:hover,
 .ui.blue.statistics .statistic > .value,
 .ui.statistics .blue.statistic > .value,
 .ui.blue.statistic > .value {
-  color: #2a94d6;
+  color: #1c84c6;
 }
 .ui.green.statistics .statistic > .value,
 .ui.statistics .green.statistic > .value,
@@ -14608,7 +14608,7 @@ select.ui.dropdown {
   margin-right: 0.2em;
 }
 .ui.dropdown > .header.blue {
-  color: #2a94d6;
+  color: #1c84c6;
 }
 .ui.dropdown > .header.yellow {
   color: #f3ae4e;
@@ -14620,7 +14620,7 @@ select.ui.dropdown {
   color: #f48a52;
 }
 .ui.dropdown > .text.blue {
-  color: #2a94d6;
+  color: #1c84c6;
 }
 .ui.dropdown > .text.yellow {
   color: #f3ae4e;
@@ -17229,7 +17229,7 @@ a.ui.nag {
   background-color: #1b1c1d;
 }
 .ui.blue.progress .bar {
-  background-color: #2a94d6;
+  background-color: #1c84c6;
 }
 .ui.green.progress .bar {
   background-color: #4ab471;

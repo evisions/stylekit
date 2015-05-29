@@ -44,7 +44,7 @@
 
 /*---  Colors  ---*/
 @black            : #1B1C1D;
-@blue             : #2a94d6;
+@blue             : #1c84c6;
 @green            : #4AB471;
 @grey             : #CCCCCC;
 @orange           : #F48A52;

@@ -1461,7 +1461,7 @@ input::selection {
         Global Overrides
 *******************************/
 span.text.blue {
-  color: #2a94d6;
+  color: #1c84c6;
 }
 span.text.red {
   color: #cf5c60;
@@ -3094,7 +3094,7 @@ span.text.dark.blue {
 /*--- Blue ---*/
 .ui.blue.buttons .button,
 .ui.blue.button {
-  background-color: #2a94d6;
+  background-color: #1c84c6;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3104,13 +3104,13 @@ span.text.dark.blue {
 }
 .ui.blue.buttons .button:hover,
 .ui.blue.button:hover {
-  background-color: #379ad8;
+  background-color: #1e8dd3;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.blue.buttons .button:active,
 .ui.blue.button:active {
-  background-color: #247fb9;
+  background-color: #186fa7;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3118,7 +3118,7 @@ span.text.dark.blue {
 .ui.blue.buttons .active.button:active,
 .ui.blue.active.button,
 .ui.blue.button .active.button:active {
-  background-color: #2585c1;
+  background-color: #1975b0;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3131,19 +3131,19 @@ span.text.dark.blue {
 .ui.basic.blue.buttons .button:hover,
 .ui.basic.blue.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #379ad8 inset !important;
-  color: #379ad8 !important;
+  box-shadow: 0px 0px 0px 2px #1e8dd3 inset !important;
+  color: #1e8dd3 !important;
 }
 .ui.basic.blue.buttons .button:active,
 .ui.basic.blue.button:active {
-  box-shadow: 0px 0px 0px 2px #247fb9 inset !important;
-  color: #247fb9 !important;
+  box-shadow: 0px 0px 0px 2px #186fa7 inset !important;
+  color: #186fa7 !important;
 }
 .ui.basic.blue.buttons .active.button,
 .ui.basic.blue.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #247fb9 inset !important;
-  color: #247fb9 !important;
+  box-shadow: 0px 0px 0px 2px #186fa7 inset !important;
+  color: #186fa7 !important;
 }
 .ui.buttons > .basic.blue.button:not(:first-child) {
   margin-left: -2px;
@@ -4278,7 +4278,7 @@ span.text.dark.blue {
   font-weight: normal;
 }
 .ui.button.inline.blue {
-  color: #2a94d6;
+  color: #1c84c6;
 }
 .ui.button.inline.red {
   color: #cf5c60;
@@ -6848,10 +6848,10 @@ a.ui.black.header:hover {
   color: #1b1c1d !important;
 }
 .ui.blue.header {
-  color: #2a94d6 !important;
+  color: #1c84c6 !important;
 }
 a.ui.blue.header:hover {
-  color: #379ad8 !important;
+  color: #1e8dd3 !important;
 }
 .ui.green.header {
   color: #4ab471 !important;
@@ -6899,7 +6899,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #1b1c1d;
 }
 .ui.blue.dividing.header {
-  border-bottom: 2px solid #2a94d6;
+  border-bottom: 2px solid #1c84c6;
 }
 .ui.green.dividing.header {
   border-bottom: 2px solid #4ab471;
@@ -7659,7 +7659,7 @@ i.black.icon {
   color: #1b1c1d !important;
 }
 i.blue.icon {
-  color: #2a94d6 !important;
+  color: #1c84c6 !important;
 }
 i.green.icon {
   color: #4ab471 !important;
@@ -7728,7 +7728,7 @@ i.inverted.circular.black.icon {
 }
 i.inverted.bordered.blue.icon,
 i.inverted.circular.blue.icon {
-  background-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
   color: #FFFFFF !important;
 }
 i.inverted.bordered.green.icon,
@@ -12205,33 +12205,33 @@ a.ui.black.label:hover:before {
 /*--- Blue ---*/
 .ui.blue.labels .label,
 .ui.blue.label {
-  background-color: #2a94d6 !important;
-  border-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
+  border-color: #1c84c6 !important;
   color: #ffffff !important;
 }
 .ui.labels .blue.label:before,
 .ui.blue.labels .label:before,
 .ui.blue.label:before {
-  background-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
 }
 a.ui.blue.labels .label:hover,
 .ui.blue.labels a.label:hover,
 a.ui.blue.label:hover {
-  background-color: #379ad8 !important;
-  border-color: #379ad8 !important;
+  background-color: #1e8dd3 !important;
+  border-color: #1e8dd3 !important;
   color: #ffffff !important;
 }
 .ui.labels a.blue.label:hover:before,
 .ui.blue.labels a.label:hover:before,
 a.ui.blue.label:hover:before {
-  background-color: #379ad8 !important;
+  background-color: #1e8dd3 !important;
 }
 .ui.blue.corner.label,
 .ui.blue.corner.label:hover {
   background-color: transparent !important;
 }
 .ui.blue.ribbon.label {
-  border-color: #2177ac !important;
+  border-color: #166699 !important;
 }
 /*--- Green ---*/
 .ui.green.labels .label,
@@ -16213,7 +16213,7 @@ ol.ui.horizontal.list li:before,
   border-top: 2px solid #1b1c1d;
 }
 .ui.blue.segment:not(.inverted) {
-  border-top: 2px solid #2a94d6;
+  border-top: 2px solid #1c84c6;
 }
 .ui.green.segment:not(.inverted) {
   border-top: 2px solid #4ab471;
@@ -16281,7 +16281,7 @@ ol.ui.horizontal.list li:before,
   color: #ffffff !important;
 }
 .ui.inverted.blue.segment {
-  background-color: #2a94d6 !important;
+  background-color: #1c84c6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.green.segment {
@@ -16456,7 +16456,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 .ui.inverted.blue.segment {
-  border-color: #2a94d6;
+  border-color: #1c84c6;
 }
 /*******************************
          Site Overrides
