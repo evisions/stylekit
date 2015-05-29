@@ -27,3 +27,9 @@ span.text.medium.blue {
 span.text.light.blue {
   color: @lightBlue;
 }
+span.text.teal {
+	color:@teal;
+}
+span.text.dark.blue {
+	color: @darkBlue;
+}

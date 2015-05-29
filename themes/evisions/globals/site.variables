@@ -51,7 +51,7 @@
 @pink             : #D96383;
 @purple           : #717ECD;
 @red              : #CF5C60;
-@teal             : #00B5AD;
+@teal             : #39d1b4;
 @yellow           : #F3AE4E;
 @mediumBlue       : #52B0FF;
 
@@ -62,6 +62,7 @@
 @lightOrange      : #ffaf23;
 @lightPink        : #FF8EDF;
 @lightPurple      : #CDC6FF;
+@periwinkle       : #D1DEFD;
 @lightRed         : #FF695E;
 @lightTeal        : #6DFFFF;
 @lightYellow      : #FFE21F;
@@ -74,13 +75,13 @@
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
 @white            : #FFFFFF;
-@darkBlue         : #344A5F;
+@darkBlue         : #2F4050;
 
 /*-------------------
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+@primaryColor        : @teal;
 @secondaryColor      : @mediumBlue;
 @accentCOlor         : @orange;
 
@@ -266,7 +267,7 @@
 @purpleTextColor  : @purple;
 @redTextColor     : @red;
 @greenTextColor   : #1EBC30; // Green is difficult to read
-@tealTextColor    : #10A3A3; // Teal text is difficult to read
+@tealTextColor    : @teal;
 @yellowTextColor  : #B58105; // Yellow text is difficult to read
 
 /*--- Colored Headers ---*/
