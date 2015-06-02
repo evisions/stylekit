@@ -50,7 +50,7 @@
 @orange           : #F48A52;
 @pink             : #D96383;
 @purple           : #717ECD;
-@red              : #CF5C60;
+@red              : #f36;
 @teal             : #39d1b4;
 @yellow           : #F3AE4E;
 @mediumBlue       : #52B0FF;
@@ -256,7 +256,7 @@
 @orangeBackground : #FFEDDE;
 @pinkBackground   : #FFE3FB;
 @purpleBackground : #EAE7FF;
-@redBackground    : #FFE8E6;
+@redBackground    : #f36;
 @tealBackground   : #E9FFFF;
 @yellowBackground : #FFF8DB;
 
