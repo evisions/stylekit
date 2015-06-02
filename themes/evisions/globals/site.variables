@@ -50,7 +50,7 @@
 @orange           : #F48A52;
 @pink             : #D96383;
 @purple           : #717ECD;
-@red              : #CF5C60;
+@red              : #ff3366;
 @teal             : #39d1b4;
 @yellow           : #F3AE4E;
 @mediumBlue       : #225A8E;
@@ -287,7 +287,7 @@
 --------------------*/
 
 /* Positive */
-@positiveColor           : @green;
+@positiveColor           : @teal;
 @positiveBackgroundColor : #EEFFE7;
 @positiveBorderColor     : #B7CAA7;
 @positiveHeaderColor     : #356E36;

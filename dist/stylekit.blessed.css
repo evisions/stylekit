@@ -492,7 +492,7 @@
 }
 .ui.grid > .red.row,
 .ui.grid .red.column {
-  background-color: #cf5c60 !important;
+  background-color: #ff3366 !important;
   color: #ffffff;
 }
 .ui.grid > .row > .red.column {
@@ -2376,8 +2376,8 @@
 }
 .ui.menu .red.active.item,
 .ui.red.menu .active.item {
-  border-color: #cf5c60 !important;
-  color: #cf5c60 !important;
+  border-color: #ff3366 !important;
+  color: #ff3366 !important;
 }
 .ui.menu .teal.active.item,
 .ui.teal.menu .active.item {
@@ -2550,10 +2550,10 @@
 }
 /* Red */
 .ui.inverted.red.menu {
-  background-color: #cf5c60;
+  background-color: #ff3366;
 }
 .ui.inverted.red.pointing.menu .active.item:after {
-  background-color: #cf5c60;
+  background-color: #ff3366;
 }
 /* Teal */
 .ui.inverted.teal.menu {
@@ -3567,10 +3567,10 @@
 }
 .ui.red.message {
   background-color: #ffe8e6;
-  color: #cf5c60;
+  color: #ff3366;
 }
 .ui.red.message .header {
-  color: #c9484d;
+  color: #ff1953;
 }
 .ui.teal.message {
   background-color: #e9ffff;
@@ -4523,7 +4523,7 @@
   border-top: 0.2em solid #717ecd;
 }
 .ui.red.table {
-  border-top: 0.2em solid #cf5c60;
+  border-top: 0.2em solid #ff3366;
 }
 .ui.teal.table {
   border-top: 0.2em solid #39d1b4;
@@ -4560,7 +4560,7 @@
   color: #ffffff !important;
 }
 .ui.inverted.red.table {
-  background-color: #cf5c60 !important;
+  background-color: #ff3366 !important;
   color: #ffffff !important;
 }
 .ui.inverted.teal.table {
@@ -7739,7 +7739,7 @@ a.ui.card:hover,
 .ui.red.cards > .card,
 .ui.cards > .red.card,
 .ui.red.card {
-  box-shadow: 0px 3px 0px 0px #cf5c60, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #ff3366, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.teal.cards > .card,
 .ui.cards > .teal.card,
@@ -7785,7 +7785,7 @@ a.ui.card:hover,
 .ui.red.cards > .card:hover,
 .ui.cards > .red.card:hover,
 .ui.red.card:hover {
-  box-shadow: 0px 3px 0px 0px #d2686c, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #ff4271, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.teal.cards > .card:hover,
 .ui.cards > .teal.card:hover,
@@ -10697,7 +10697,7 @@ a.ui.card:hover,
 .ui.red.statistics .statistic > .value,
 .ui.statistics .red.statistic > .value,
 .ui.red.statistic > .value {
-  color: #cf5c60;
+  color: #ff3366;
 }
 .ui.teal.statistics .statistic > .value,
 .ui.statistics .teal.statistic > .value,
@@ -12594,13 +12594,13 @@ a.ui.card:hover,
 .ui.toggle.checkbox input[type="checkbox"]:checked ~ label,
 .ui.toggle.checkbox input[type="radio"]:checked ~ .box,
 .ui.toggle.checkbox input[type="radio"]:checked ~ label {
-  color: #4ab471;
+  color: #39d1b4;
 }
 .ui.toggle.checkbox input[type="checkbox"]:checked ~ .box:before,
 .ui.toggle.checkbox input[type="checkbox"]:checked ~ label:before,
 .ui.toggle.checkbox input[type="radio"]:checked ~ .box:before,
 .ui.toggle.checkbox input[type="radio"]:checked ~ label:before {
-  background-color: #4ab471;
+  background-color: #39d1b4;
 }
 .ui.toggle.checkbox input[type="checkbox"]:checked ~ .box:after,
 .ui.toggle.checkbox input[type="checkbox"]:checked ~ label:after,
@@ -14614,7 +14614,7 @@ select.ui.dropdown {
   color: #f3ae4e;
 }
 .ui.dropdown > .header.red {
-  color: #cf5c60;
+  color: #ff3366;
 }
 .ui.dropdown > .header.orange {
   color: #f48a52;
@@ -14626,7 +14626,7 @@ select.ui.dropdown {
   color: #f3ae4e;
 }
 .ui.dropdown > .text.red {
-  color: #cf5c60;
+  color: #ff3366;
 }
 .ui.dropdown > .text.orange {
   color: #f48a52;
@@ -17061,7 +17061,7 @@ a.ui.nag {
      Success
 ---------------*/
 .ui.progress.success .bar {
-  background-color: #4ab471 !important;
+  background-color: #39d1b4 !important;
 }
 .ui.progress.success .bar,
 .ui.progress.success .bar::after {
@@ -17089,7 +17089,7 @@ a.ui.nag {
      Error
 ---------------*/
 .ui.progress.error .bar {
-  background-color: #cf5c60 !important;
+  background-color: #ff3366 !important;
 }
 .ui.progress.error .bar,
 .ui.progress.error .bar::after {
@@ -17170,13 +17170,13 @@ a.ui.nag {
   color: #ffffff;
 }
 .ui.inverted.progress.success > .label {
-  color: #4ab471;
+  color: #39d1b4;
 }
 .ui.inverted.progress.warning > .label {
   color: #f2c037;
 }
 .ui.inverted.progress.error > .label {
-  color: #cf5c60;
+  color: #ff3366;
 }
 /*--------------
     Attached
@@ -17244,7 +17244,7 @@ a.ui.nag {
   background-color: #717ecd;
 }
 .ui.red.progress .bar {
-  background-color: #cf5c60;
+  background-color: #ff3366;
 }
 .ui.teal.progress .bar {
   background-color: #39d1b4;
