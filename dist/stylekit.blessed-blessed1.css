@@ -1464,7 +1464,7 @@ span.text.blue {
   color: #1c84c6;
 }
 span.text.red {
-  color: #ff3366;
+  color: #cf5c60;
 }
 span.text.green {
   color: #4ab471;
@@ -3634,7 +3634,7 @@ span.text.dark.blue {
 /*--- Red ---*/
 .ui.red.buttons .button,
 .ui.red.button {
-  background-color: #ff3366;
+  background-color: #cf5c60;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3644,13 +3644,13 @@ span.text.dark.blue {
 }
 .ui.red.buttons .button:hover,
 .ui.red.button:hover {
-  background-color: #ff4271;
+  background-color: #d2686c;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.red.buttons .button:active,
 .ui.red.button:active {
-  background-color: #ff0f4b;
+  background-color: #c74045;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3658,7 +3658,7 @@ span.text.dark.blue {
 .ui.red.buttons .active.button:active,
 .ui.red.active.button,
 .ui.red.button .active.button:active {
-  background-color: #ff1953;
+  background-color: #c9484d;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3671,19 +3671,19 @@ span.text.dark.blue {
 .ui.basic.red.buttons .button:hover,
 .ui.basic.red.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #ff4271 inset !important;
-  color: #ff4271 !important;
+  box-shadow: 0px 0px 0px 2px #d2686c inset !important;
+  color: #d2686c !important;
 }
 .ui.basic.red.buttons .button:active,
 .ui.basic.red.button:active {
-  box-shadow: 0px 0px 0px 2px #ff0f4b inset !important;
-  color: #ff0f4b !important;
+  box-shadow: 0px 0px 0px 2px #c74045 inset !important;
+  color: #c74045 !important;
 }
 .ui.basic.red.buttons .active.button,
 .ui.basic.red.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #ff0f4b inset !important;
-  color: #ff0f4b !important;
+  box-shadow: 0px 0px 0px 2px #c74045 inset !important;
+  color: #c74045 !important;
 }
 .ui.buttons > .basic.red.button:not(:first-child) {
   margin-left: -2px;
@@ -4057,7 +4057,7 @@ span.text.dark.blue {
 ----------------*/
 .ui.negative.buttons .button,
 .ui.negative.button {
-  background-color: #ff3366 !important;
+  background-color: #cf5c60 !important;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -4069,13 +4069,13 @@ span.text.dark.blue {
 .ui.negative.button:hover,
 .ui.negative.buttons .active.button,
 .ui.negative.active.button {
-  background-color: #ff4271 !important;
+  background-color: #d2686c !important;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.negative.buttons .button:active,
 .ui.negative.button:active {
-  background-color: #ff0f4b !important;
+  background-color: #c74045 !important;
   color: #ffffff;
   text-shadow: none;
 }
@@ -4083,7 +4083,7 @@ span.text.dark.blue {
 .ui.negative.buttons .active.button:active,
 .ui.negative.active.button,
 .ui.negative.button .active.button:active {
-  background-color: #ff1953;
+  background-color: #c9484d;
   color: #ffffff;
   text-shadow: none;
 }
@@ -4281,7 +4281,7 @@ span.text.dark.blue {
   color: #1c84c6;
 }
 .ui.button.inline.red {
-  color: #ff3366;
+  color: #cf5c60;
 }
 .ui.button.inline.yellow {
   color: #f3ae4e;
@@ -6878,10 +6878,10 @@ a.ui.purple.header:hover {
   color: #7c88d1 !important;
 }
 .ui.red.header {
-  color: #ff3366 !important;
+  color: #cf5c60 !important;
 }
 a.ui.red.header:hover {
-  color: #ff4271 !important;
+  color: #d2686c !important;
 }
 .ui.teal.header {
   color: #39d1b4 !important;
@@ -6914,7 +6914,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #717ecd;
 }
 .ui.red.dividing.header {
-  border-bottom: 2px solid #ff3366;
+  border-bottom: 2px solid #cf5c60;
 }
 .ui.teal.dividing.header {
   border-bottom: 2px solid #39d1b4;
@@ -7674,7 +7674,7 @@ i.purple.icon {
   color: #717ecd !important;
 }
 i.red.icon {
-  color: #ff3366 !important;
+  color: #cf5c60 !important;
 }
 i.teal.icon {
   color: #39d1b4 !important;
@@ -7753,7 +7753,7 @@ i.inverted.circular.purple.icon {
 }
 i.inverted.bordered.red.icon,
 i.inverted.circular.red.icon {
-  background-color: #ff3366 !important;
+  background-color: #cf5c60 !important;
   color: #FFFFFF !important;
 }
 i.inverted.bordered.teal.icon,
@@ -11025,7 +11025,7 @@ img.ui.bordered.image {
 .ui.input.error textarea {
   background-color: #fff0f0;
   border-color: #dbb1b1;
-  color: #ff3366;
+  color: #cf5c60;
   box-shadow: none;
 }
 /* Error Placeholder */
@@ -12358,14 +12358,14 @@ a.ui.purple.label:hover:before {
 /*--- Red ---*/
 .ui.red.labels .label,
 .ui.red.label {
-  background-color: #ff3366 !important;
-  border-color: #ff3366 !important;
+  background-color: #cf5c60 !important;
+  border-color: #cf5c60 !important;
   color: #ffffff !important;
 }
 .ui.labels .red.label:before,
 .ui.red.labels .label:before,
 .ui.red.label:before {
-  background-color: #ff3366 !important;
+  background-color: #cf5c60 !important;
 }
 .ui.red.corner.label,
 .ui.red.corner.label:hover {
@@ -12373,17 +12373,17 @@ a.ui.purple.label:hover:before {
 }
 a.ui.red.labels .label:hover,
 a.ui.red.label:hover {
-  background-color: #ff4271 !important;
-  border-color: #ff4271 !important;
+  background-color: #d2686c !important;
+  border-color: #d2686c !important;
   color: #ffffff !important;
 }
 .ui.labels a.red.label:hover:before,
 .ui.red.labels a.label:hover:before,
 a.ui.red.label:hover:before {
-  background-color: #ff4271 !important;
+  background-color: #d2686c !important;
 }
 .ui.red.ribbon.label {
-  border-color: #ff0040 !important;
+  border-color: #c0383d !important;
 }
 /*--- Teal ---*/
 .ui.teal.labels .label,
@@ -16228,7 +16228,7 @@ ol.ui.horizontal.list li:before,
   border-top: 2px solid #717ecd;
 }
 .ui.red.segment:not(.inverted) {
-  border-top: 2px solid #ff3366;
+  border-top: 2px solid #cf5c60;
 }
 .ui.teal.segment:not(.inverted) {
   border-top: 2px solid #39d1b4;
@@ -16301,7 +16301,7 @@ ol.ui.horizontal.list li:before,
   color: #ffffff !important;
 }
 .ui.inverted.red.segment {
-  background-color: #ff3366 !important;
+  background-color: #cf5c60 !important;
   color: #ffffff !important;
 }
 .ui.inverted.teal.segment {
@@ -18315,16 +18315,16 @@ ol.ui.horizontal.list li:before,
 }
 /* Error Placeholder */
 .ui.form .error ::-webkit-input-placeholder {
-  color: #ff668c;
+  color: #db8386;
 }
 .ui.form .error ::-moz-placeholder {
-  color: #ff668c;
+  color: #db8386;
 }
 .ui.form .error :focus::-webkit-input-placeholder {
-  color: #ff4d79;
+  color: #d57073;
 }
 .ui.form .error :focus::-moz-placeholder {
-  color: #ff4d79;
+  color: #d57073;
 }
 /*--------------------
         Focus
@@ -18379,11 +18379,11 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error label,
 .ui.form .fields.error .field .input,
 .ui.form .field.error .input {
-  color: #ff3366;
+  color: #cf5c60;
 }
 .ui.form .fields.error .field .corner.label,
 .ui.form .field.error .corner.label {
-  border-color: #ff3366;
+  border-color: #cf5c60;
   color: #ffffff;
 }
 .ui.form .fields.error .field textarea,
@@ -18410,9 +18410,9 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="url"] {
   background: #fff0f0;
   border-color: #dbb1b1;
-  color: #ff3366;
+  color: #cf5c60;
   border-radius: 0em 0.2857rem 0.2857rem 0em;
-  box-shadow: 2px 0em 0em 0em #ff3366 inset;
+  box-shadow: 2px 0em 0em 0em #cf5c60 inset;
 }
 .ui.form .field.error textarea:focus,
 .ui.form .field.error input:not([type]):focus,
@@ -18427,9 +18427,9 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="url"]:focus {
   background: #fff0f0;
   border-color: #dbb1b1;
-  color: #ff4271;
+  color: #d2686c;
   -webkit-appearance: none;
-  box-shadow: 2px 0em 0em 0em #ff4271 inset;
+  box-shadow: 2px 0em 0em 0em #d2686c inset;
 }
 /*------------------
     Dropdown Error
@@ -18440,7 +18440,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .ui.dropdown .text,
 .ui.form .field.error .ui.dropdown .item {
   background: #fff0f0;
-  color: #ff3366;
+  color: #cf5c60;
 }
 .ui.form .fields.error .field .ui.dropdown,
 .ui.form .field.error .ui.dropdown {
@@ -18471,7 +18471,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box {
-  color: #ff3366;
+  color: #cf5c60;
 }
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label:before,
@@ -18484,7 +18484,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .checkbox label:after,
 .ui.form .fields.error .field .checkbox .box:after,
 .ui.form .field.error .checkbox .box:after {
-  color: #ff3366;
+  color: #cf5c60;
 }
 /*--------------------
        Disabled
@@ -18574,7 +18574,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .required.field > .checkbox:after {
   margin: -0.2em 0em 0em 0.2em;
   content: '*';
-  color: #ff3366;
+  color: #cf5c60;
 }
 .ui.form .required.fields > .field > label:after,
 .ui.form .required.field > label:after {
