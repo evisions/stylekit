@@ -1479,7 +1479,7 @@ span.text.light.orange {
   color: #ffaf23;
 }
 span.text.medium.blue {
-  color: #52b0ff;
+  color: #225a8e;
 }
 span.text.light.blue {
   color: #dfeffd;
@@ -3991,7 +3991,7 @@ span.text.dark.blue {
 --------------------*/
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #52b0ff;
+  background-color: #225a8e;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -4001,19 +4001,19 @@ span.text.dark.blue {
 }
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #61b7ff;
+  background-color: #25629a;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #2ea0ff;
+  background-color: #1b4871;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.secondary.buttons .active.button,
 .ui.secondary.active.button {
-  background-color: #38a4ff;
+  background-color: #1d4d79;
   color: #ffffff;
   text-shadow: none;
 }
@@ -7659,7 +7659,7 @@ i.black.icon {
   color: #1b1c1d !important;
 }
 i.blue.icon {
-  color: #1c84c6 !important;
+  color: #225a8e !important;
 }
 i.green.icon {
   color: #4ab471 !important;
@@ -12358,14 +12358,14 @@ a.ui.purple.label:hover:before {
 /*--- Red ---*/
 .ui.red.labels .label,
 .ui.red.label {
-  background-color: #cf5c60 !important;
-  border-color: #cf5c60 !important;
+  background-color: #ff3366 !important;
+  border-color: #ff3366 !important;
   color: #ffffff !important;
 }
 .ui.labels .red.label:before,
 .ui.red.labels .label:before,
 .ui.red.label:before {
-  background-color: #cf5c60 !important;
+  background-color: #ff3366 !important;
 }
 .ui.red.corner.label,
 .ui.red.corner.label:hover {
