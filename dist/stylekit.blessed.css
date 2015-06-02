@@ -5889,7 +5889,7 @@
 }
 .ui.week .appointments .appointment {
   position: absolute;
-  background: #edf6fe;
+  background: #d1defd;
   cursor: pointer;
   padding: 0.2rem 0.5rem 0.2rem 2.5rem;
   border-left: 4px solid #1c84c6;
