@@ -3692,25 +3692,25 @@ span.text.dark.blue {
 .ui.inverted.red.buttons .button,
 .ui.inverted.red.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  color: #ff695e;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  color: #e55075;
 }
 .ui.inverted.red.buttons .button:hover,
 .ui.inverted.red.button:hover {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  background-color: #ff695e;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  background-color: #e55075;
   color: #ffffff;
 }
 .ui.inverted.red.buttons .active.button,
 .ui.inverted.red.active.button {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  background-color: #ff695e;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  background-color: #e55075;
   color: #ffffff;
 }
 .ui.inverted.red.buttons .button:active,
 .ui.inverted.red.button:active {
-  box-shadow: 0px 0px 0px 2px #ff483a inset !important;
-  background-color: #ff483a;
+  box-shadow: 0px 0px 0px 2px #e0315c inset !important;
+  background-color: #e0315c;
   color: #ffffff;
 }
 /* Inverted Basic */
@@ -3724,20 +3724,20 @@ span.text.dark.blue {
 .ui.inverted.red.basic.buttons .button:hover,
 .ui.inverted.red.buttons .basic.button:hover,
 .ui.inverted.red.basic.button:hover {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  color: #ff695e !important;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  color: #e55075 !important;
 }
 .ui.inverted.red.basic.buttons .active.button,
 .ui.inverted.red.buttons .basic.active.button,
 .ui.inverted.red.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  color: #ff695e !important;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  color: #e55075 !important;
 }
 .ui.inverted.red.basic.buttons .button:active,
 .ui.inverted.red.buttons .basic.button:active,
 .ui.inverted.red.basic.button:active {
-  box-shadow: 0px 0px 0px 2px #ff483a inset !important;
-  color: #ff695e !important;
+  box-shadow: 0px 0px 0px 2px #e0315c inset !important;
+  color: #e55075 !important;
 }
 /*--- Teal ---*/
 .ui.teal.buttons .button,
@@ -4255,20 +4255,20 @@ span.text.dark.blue {
 .ui.inverted.white.basic.buttons .button:hover,
 .ui.inverted.white.buttons .basic.button:hover,
 .ui.inverted.white.basic.button:hover {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  color: #ff695e !important;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  color: #e55075 !important;
 }
 .ui.inverted.white.basic.buttons .active.button,
 .ui.inverted.white.buttons .basic.active.button,
 .ui.inverted.white.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #ff695e inset !important;
-  color: #ff695e !important;
+  box-shadow: 0px 0px 0px 2px #e55075 inset !important;
+  color: #e55075 !important;
 }
 .ui.inverted.white.basic.buttons .button:active,
 .ui.inverted.white.buttons .basic.button:active,
 .ui.inverted.white.basic.button:active {
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;
-  color: #ff695e !important;
+  color: #e55075 !important;
 }
 .ui.button.inline {
   padding: 0 !important;
@@ -6981,10 +6981,10 @@ a.ui.inverted.purple.header:hover {
   color: #dad5ff !important;
 }
 .ui.inverted.red.header {
-  color: #ff695e !important;
+  color: #e55075 !important;
 }
 a.ui.inverted.red.header:hover {
-  color: #ff776d !important;
+  color: #e75d80 !important;
 }
 .ui.inverted.teal.header {
   color: #6dffff !important;
@@ -7707,7 +7707,7 @@ i.inverted.purple.icon {
   color: #cdc6ff !important;
 }
 i.inverted.red.icon {
-  color: #ff695e !important;
+  color: #e55075 !important;
 }
 i.inverted.teal.icon {
   color: #6dffff !important;

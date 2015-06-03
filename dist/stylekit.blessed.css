@@ -10760,7 +10760,7 @@ a.ui.card:hover,
 .ui.inverted.red.statistics .statistic > .value,
 .ui.statistics .inverted.red.statistic > .value,
 .ui.inverted.red.statistic > .value {
-  color: #ff695e;
+  color: #e55075;
 }
 .ui.inverted.teal.statistics .statistic > .value,
 .ui.statistics .inverted.teal.statistic > .value,
@@ -17271,7 +17271,7 @@ a.ui.nag {
   background-color: #cdc6ff;
 }
 .ui.red.inverted.progress .bar {
-  background-color: #ff695e;
+  background-color: #e55075;
 }
 .ui.teal.inverted.progress .bar {
   background-color: #6dffff;
