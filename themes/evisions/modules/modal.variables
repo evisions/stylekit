@@ -37,7 +37,7 @@
 @headerBorder: 1px solid @borderColor;
 
 /* Content */
-@contentFontSize: 1em;
+@contentFontSize: 1.3em;
 @contentPadding: 2rem;
 @contentLineHeight: 1.4;
 @contentBackground: #FFFFFF;
