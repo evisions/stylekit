@@ -12,7 +12,7 @@
 
 /* Close Icon */
 @closeOpacity: 0.8;
-@closeSize: 1.25em;
+@closeSize: 3.25em;
 @closeColor: @white;
 
 @closeHitbox: 2.25rem;
