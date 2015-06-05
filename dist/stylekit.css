@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 /*
 
 ███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
@@ -360,7 +361,6 @@
              Reset
 *******************************/
 /* Border-Box */
-@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 *,
 *:before,
 *:after {
@@ -25514,6 +25514,9 @@ ol.ui.horizontal.list li:before,
  * Appointment Items
  */
 /**
+ * Disabled Appointment Item
+ */
+/**
  * Calendar Week
  */
 /*------------------
@@ -25930,6 +25933,15 @@ ol.ui.horizontal.list li:before,
   background: #a0bbfb;
   color: rgba(0, 0, 0, 0.85);
   border: 1px solid #96b4fa;
+}
+/**
+ * Disabled Appointments
+ */
+.ui.calendar .day .appointments .item.disabled {
+  background: #cccccc;
+  color: #1b1c1d;
+  border: #cccccc;
+  cursor: default;
 }
 /**
  * Calendar Week

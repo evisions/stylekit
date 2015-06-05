@@ -83,6 +83,13 @@
 @appointmentItemActiveColor: @appointmentItemColor;
 @appointmentItemActiveBorder: 1px solid darken(@appointmentItemActiveBackground, 2%);
 
+/**
+ * Disabled Appointment Item
+ */
+ @disabledAppointmentBackground: @grey;
+ @disabledAppointmentColor: @black;
+ @disabledAppointmentBorder: @grey;
+ @disabledAppointmentCursor: default;
 
 
 /**
