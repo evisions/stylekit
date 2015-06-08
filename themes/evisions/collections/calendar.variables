@@ -114,3 +114,11 @@
 @weekAppointmentBorder: 4px solid @blue;
 @weekAppointmentActiveBackground: darken(@lightBlue, 10%);
 @weekAppointmentActiveColor: @dayColor;
+
+/**
+ * Disabled Week Appointments
+ */
+ @disabledWeekAppointmentBackground: @grey;
+ @disabledWeekAppointmentColor: @black;
+ @disabledWeekAppointmentBorderColor: @darkGrey;
+ @disabledWeekAppointmentCursor: default;
