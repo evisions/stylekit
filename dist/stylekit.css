@@ -25529,6 +25529,9 @@ ol.ui.horizontal.list li:before,
 /**
  * Calendar Week
  */
+/**
+ * Disabled Week Appointments
+ */
 /*------------------
      Site Theme
 -------------------*/
@@ -26097,6 +26100,15 @@ ol.ui.horizontal.list li:before,
   background: #afd7fa;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
+}
+/**
+ * Disabled Week Appointments
+ */
+.ui.week .appointments .appointment.disabled {
+  background: #cccccc;
+  color: #1b1c1d;
+  border-color: #333333;
+  cursor: default;
 }
 /*******************************
             Theme

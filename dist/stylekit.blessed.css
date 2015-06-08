@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1433781005698');
+@import url('stylekit.blessed-blessed1.css?z=1433790247860');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5379,6 +5379,9 @@
 /**
  * Calendar Week
  */
+/**
+ * Disabled Week Appointments
+ */
 /*------------------
      Site Theme
 -------------------*/
@@ -5947,6 +5950,15 @@
   background: #afd7fa;
   color: rgba(0, 0, 0, 0.85);
   z-index: 2;
+}
+/**
+ * Disabled Week Appointments
+ */
+.ui.week .appointments .appointment.disabled {
+  background: #cccccc;
+  color: #1b1c1d;
+  border-color: #333333;
+  cursor: default;
 }
 /*******************************
             Theme
