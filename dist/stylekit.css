@@ -4276,6 +4276,10 @@ span.text.dark.blue {
   border: 0px !important;
   box-shadow: none !important;
   font-weight: normal;
+  opacity: 1 !important;
+}
+.ui.button.inline.disabled {
+  opacity: 1 !important;
 }
 .ui.button.inline.blue {
   color: #1c84c6;
@@ -14469,6 +14473,12 @@ ol.ui.horizontal.list li:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.loader.right.floated {
+  float: right;
+}
+.ui.loader.left.floated {
+  float: left;
+}
 /*******************************
          Site Overrides
 *******************************/
