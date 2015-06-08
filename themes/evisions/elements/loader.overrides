@@ -1,3 +1,11 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.loader.right.floated {
+  float: right;
+}
+
+.ui.loader.left.floated {
+  float: left;
+}
