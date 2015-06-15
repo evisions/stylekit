@@ -14,3 +14,4 @@
   font-family: 'Step';
   content: '\e800'; /* '' */
 }
+.ui.steps .step.active {border-bottom: 2px solid @primary;}

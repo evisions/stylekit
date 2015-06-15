@@ -85,7 +85,7 @@
 
 /* Active */
 @activeBackground: #F0F0F0;
-@activeColor: @linkColor;
+@activeColor: @darkTextColor;
 @activeIconColor: @darkTextColor;
 
 /* Active + Hover */
