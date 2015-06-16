@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 /*
 
 ███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
@@ -360,7 +361,6 @@
              Reset
 *******************************/
 /* Border-Box */
-@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 *,
 *:before,
 *:after {
@@ -1489,12 +1489,6 @@ span.text.teal {
 }
 span.text.dark.blue {
   color: #2f4050;
-}
-.ui.ordered.list > .item {
-  color: #009fda;
-}
-.ui.list .item a {
-  color: #009fda;
 }
 /*******************************
          Site Overrides
@@ -13236,7 +13230,7 @@ ol.ui.list ol,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: #333333;
+  color: #009fda;
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
@@ -13250,7 +13244,7 @@ ol.ui.list ol,
 /* Linking Content */
 .ui.list .item a {
   cursor: pointer;
-  color: #333333 !important;
+  color: #009fda !important;
 }
 .ui.list .item a:hover {
   color: #00b2f3 !important;

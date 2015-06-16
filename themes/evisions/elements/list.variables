@@ -44,7 +44,7 @@
 @contentVerticalAlign: middle;
 
 /* Link */
-@itemLinkColor: @textColor;
+@itemLinkColor: @linkColor;
 @itemLinkHoverColor: @linkHoverColor;
 
 /* Linked Icon */
