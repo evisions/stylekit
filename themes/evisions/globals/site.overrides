@@ -34,3 +34,4 @@ span.text.dark.blue {
 	color: @darkBlue;
 }
 .ui.ordered.list > .item {color: @linkColor;}
+.ui.list .item a {color: @linkColor;}
