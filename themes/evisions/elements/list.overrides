@@ -1,3 +1,15 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+/*-------------------
+      Bulleted
+--------------------*/
+
+ul.ui.list li.completed:before,
+.ui.bulleted.list .list > .item.completed:before,
+.ui.bulleted.list > .item.completed:before {
+  content: @checkMarkCharacter;
+  color: @checkMarkColor;
+  font-weight: bold;
+}

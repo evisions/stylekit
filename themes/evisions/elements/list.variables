@@ -151,6 +151,9 @@
 @bulletVerticalAlign: top;
 @bulletChildDistance: @bulletDistance;
 
+@checkMarkCharacter: '✓';
+@checkMarkColor: @teal;
+
 /* Horizontal Bullets */
 @horizontalBulletSpacing: 1.5rem;
 
