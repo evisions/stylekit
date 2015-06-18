@@ -35243,15 +35243,15 @@ select.ui.dropdown {
 .ui.modal > .close {
   cursor: pointer;
   position: absolute;
-  top: -2.5rem;
-  right: -2.5rem;
+  top: -5.5rem;
+  right: -5.5rem;
   z-index: 1;
   opacity: 0.8;
   font-size: 3.25em;
   color: #ffffff;
-  width: 2.25rem;
-  height: 2.25rem;
-  padding: 0.625rem 0rem 0rem 0rem;
+  width: 5.25rem;
+  height: 5.25rem;
+  padding: 2.125rem 0rem 0rem 0rem;
 }
 .ui.modal > .close:hover {
   opacity: 1;
@@ -35364,11 +35364,11 @@ select.ui.dropdown {
 /* Tablet and Mobile */
 @media only screen and (max-width: 992px) {
   .ui.modal > .header {
-    padding-right: 2.25rem;
+    padding-right: 5.25rem;
   }
   .ui.modal > .close {
-    top: 0.905rem;
-    right: 1rem;
+    top: -1.5rem;
+    right: 0rem;
     color: #333333;
   }
 }
@@ -35376,15 +35376,15 @@ select.ui.dropdown {
 @media only screen and (max-width: 767px) {
   .ui.modal > .header {
     padding: 0.75rem 1rem !important;
-    padding-right: 2.25rem !important;
+    padding-right: 5.25rem !important;
   }
   .ui.modal > .content {
     display: block;
     padding: 1rem !important;
   }
   .ui.modal > .close {
-    top: 0.5rem !important;
-    right: 0.5rem !important;
+    top: -2rem !important;
+    right: -0.5rem !important;
   }
   /*rtl:ignore*/
   .ui.modal .content > .image {
@@ -35433,8 +35433,8 @@ select.ui.dropdown {
   color: #ffffff;
 }
 .ui.basic.modal > .close {
-  top: 1rem;
-  right: 1.5rem;
+  top: -1.5rem;
+  right: -1rem;
 }
 /* Tablet and Mobile */
 @media only screen and (max-width: 992px) {
@@ -35487,11 +35487,11 @@ select.ui.dropdown {
   left: 0em !important;
 }
 .ui.fullscreen.modal > .header {
-  padding-right: 2.25rem;
+  padding-right: 5.25rem;
 }
 .ui.fullscreen.modal > .close {
-  top: 0.905rem;
-  right: 1rem;
+  top: -1.5rem;
+  right: 0rem;
   color: #333333;
 }
 /*--------------

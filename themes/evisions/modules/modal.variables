@@ -15,7 +15,7 @@
 @closeSize: 3.25em;
 @closeColor: @white;
 
-@closeHitbox: 2.25rem;
+@closeHitbox: 5.25rem;
 @closeDistance: 0.25rem;
 @closeHitBoxOffset: (@closeHitbox - 1rem) / 2;
 @closePadding: @closeHitBoxOffset 0rem 0rem 0rem;
@@ -61,8 +61,8 @@
 @buttonDistance: 0.75em;
 
 /* Inner Close Position (Tablet/Mobile) */
-@innerCloseTop: (@headerVerticalPadding - @closeHitBoxOffset + (@lineHeight - 1em));
-@innerCloseRight: 1rem;
+@innerCloseTop: -1.5rem;
+@innerCloseRight: 0rem;
 @innerCloseColor: @textColor;
 
 /* Mobile Positions */
@@ -73,8 +73,8 @@
 @mobileButtonDistance: 2rem;
 @mobileActionPadding: 1rem 1rem (1rem - @mobileButtonDistance);
 @mobileImageIconSize: 5rem;
-@mobileCloseTop: 0.5rem;
-@mobileCloseRight: 0.5rem;
+@mobileCloseTop: -2rem;
+@mobileCloseRight: -0.5rem;
 
 
 /* Responsive Widths */
@@ -101,8 +101,8 @@
 /* Basic */
 @basicModalHeaderColor: @white;
 @basicModalColor: @white;
-@basicModalCloseTop: 1rem;
-@basicModalCloseRight: 1.5rem;
+@basicModalCloseTop: -1.5rem;
+@basicModalCloseRight: -1rem;
 @basicInnerCloseColor: @white;
 
 /* Scrolling Margin */
