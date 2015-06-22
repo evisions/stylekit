@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1434589923764');
+@import url('stylekit.blessed-blessed1.css?z=1434994301655');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -4988,6 +4988,9 @@
 .ui.table.selectable tbody tr:not(.empty):hover td {
   background: #f7f7f7;
   cursor: default;
+}
+.ui.table.selectable.link tbody tr:not(.empty):hover td {
+  cursor: pointer;
 }
 .ui.table.selectable tbody tr.active:not(.empty):hover td {
   background: #f7f7f7;

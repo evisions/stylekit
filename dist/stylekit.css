@@ -25152,6 +25152,9 @@ ul.ui.list li.completed:before,
   background: #f7f7f7;
   cursor: default;
 }
+.ui.table.selectable.link tbody tr:not(.empty):hover td {
+  cursor: pointer;
+}
 .ui.table.selectable tbody tr.active:not(.empty):hover td {
   background: #f7f7f7;
 }
