@@ -79,6 +79,9 @@
   background: @backgroundHover;
   cursor: @selectableHoverCursor;
 }
+.ui.table.selectable.link tbody tr:not(.empty):hover td {
+  cursor: @selectableLinkHoverCursor;
+}
 
 .ui.table.selectable tbody tr.active:not(.empty):hover td {
   background: @activeBackgroundHover;

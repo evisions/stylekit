@@ -231,5 +231,5 @@
 @medium: 1em;
 @large: 1.1em;
 
-// @selectableHoverCursor: pointer;
 @selectableHoverCursor: default;
+@selectableLinkHoverCursor: pointer;
