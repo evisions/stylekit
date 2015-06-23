@@ -34,6 +34,8 @@
 
 @otherDayFontWeight: bold;
 
+@dateDisplayHoverColor: @primaryColorActive;
+
 @weekendDayBackground: darken(@white, 1%);
 @weekendDayColor: lighten(@black, 10%);
 
