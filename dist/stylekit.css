@@ -34829,6 +34829,11 @@ select.ui.dropdown {
 .ui.dropdown > .text.orange {
   color: #f48a52;
 }
+.ui.dropdown .menu > .disabled.item {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.45;
+}
 /*******************************
         User Overrides
 *******************************/

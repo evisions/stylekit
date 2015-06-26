@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1435081536002');
+@import url('stylekit.blessed-blessed1.css?z=1435347304515');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14665,6 +14665,11 @@ select.ui.dropdown {
 }
 .ui.dropdown > .text.orange {
   color: #f48a52;
+}
+.ui.dropdown .menu > .disabled.item {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.45;
 }
 /*******************************
         User Overrides

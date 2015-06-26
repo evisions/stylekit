@@ -99,3 +99,9 @@
     color: @orange;
   }
 }
+
+.ui.dropdown .menu > .disabled.item {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.45;
+}
