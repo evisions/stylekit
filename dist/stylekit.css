@@ -3418,7 +3418,7 @@ span.text.dark.blue {
 /*--- Pink ---*/
 .ui.pink.buttons .button,
 .ui.pink.button {
-  background-color: #d96383;
+  background-color: #f79eb6;
   color: #ffffff;
   text-shadow: none;
   background-image: none;
@@ -3428,13 +3428,13 @@ span.text.dark.blue {
 }
 .ui.pink.buttons .button:hover,
 .ui.pink.button:hover {
-  background-color: #dc6f8d;
+  background-color: #f8acc1;
   color: #ffffff;
   text-shadow: none;
 }
 .ui.pink.buttons .button:active,
 .ui.pink.button:active {
-  background-color: #d2466c;
+  background-color: #f47d9d;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3442,7 +3442,7 @@ span.text.dark.blue {
 .ui.pink.buttons .active.button:active,
 .ui.pink.active.button,
 .ui.pink.button .active.button:active {
-  background-color: #d44e73;
+  background-color: #f586a4;
   color: #ffffff;
   text-shadow: none;
 }
@@ -3455,19 +3455,19 @@ span.text.dark.blue {
 .ui.basic.pink.buttons .button:hover,
 .ui.basic.pink.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #dc6f8d inset !important;
-  color: #dc6f8d !important;
+  box-shadow: 0px 0px 0px 2px #f8acc1 inset !important;
+  color: #f8acc1 !important;
 }
 .ui.basic.pink.buttons .button:active,
 .ui.basic.pink.button:active {
-  box-shadow: 0px 0px 0px 2px #d2466c inset !important;
-  color: #d2466c !important;
+  box-shadow: 0px 0px 0px 2px #f47d9d inset !important;
+  color: #f47d9d !important;
 }
 .ui.basic.pink.buttons .active.button,
 .ui.basic.pink.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #d2466c inset !important;
-  color: #d2466c !important;
+  box-shadow: 0px 0px 0px 2px #f47d9d inset !important;
+  color: #f47d9d !important;
 }
 .ui.buttons > .basic.pink.button:not(:first-child) {
   margin-left: -2px;
@@ -6870,10 +6870,10 @@ a.ui.orange.header:hover {
   color: #f59460 !important;
 }
 .ui.pink.header {
-  color: #d96383 !important;
+  color: #f79eb6 !important;
 }
 a.ui.pink.header:hover {
-  color: #dc6f8d !important;
+  color: #f8acc1 !important;
 }
 .ui.purple.header {
   color: #717ecd !important;
@@ -6912,7 +6912,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #f48a52;
 }
 .ui.pink.dividing.header {
-  border-bottom: 2px solid #d96383;
+  border-bottom: 2px solid #f79eb6;
 }
 .ui.purple.dividing.header {
   border-bottom: 2px solid #717ecd;
@@ -7672,7 +7672,7 @@ i.orange.icon {
   color: #f48a52 !important;
 }
 i.pink.icon {
-  color: #d96383 !important;
+  color: #f79eb6 !important;
 }
 i.purple.icon {
   color: #717ecd !important;
@@ -7747,7 +7747,7 @@ i.inverted.circular.orange.icon {
 }
 i.inverted.bordered.pink.icon,
 i.inverted.circular.pink.icon {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #FFFFFF !important;
 }
 i.inverted.bordered.purple.icon,
@@ -12300,33 +12300,33 @@ a.ui.orange.label:hover:before {
 /*--- Pink ---*/
 .ui.pink.labels .label,
 .ui.pink.label {
-  background-color: #d96383 !important;
-  border-color: #d96383 !important;
+  background-color: #f79eb6 !important;
+  border-color: #f79eb6 !important;
   color: #ffffff !important;
 }
 .ui.labels .pink.label:before,
 .ui.pink.labels .label:before,
 .ui.pink.label:before {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
 }
 a.ui.pink.labels .label:hover,
 .ui.pink.labels a.label:hover,
 a.ui.pink.label:hover {
-  background-color: #dc6f8d !important;
-  border-color: #dc6f8d !important;
+  background-color: #f8acc1 !important;
+  border-color: #f8acc1 !important;
   color: #ffffff !important;
 }
 .ui.labels a.pink.label:hover:before,
 .ui.pink.labels a.label:hover:before,
 a.ui.pink.label:hover:before {
-  background-color: #dc6f8d !important;
+  background-color: #f8acc1 !important;
 }
 .ui.pink.corner.label,
 .ui.pink.corner.label:hover {
   background-color: transparent !important;
 }
 .ui.pink.ribbon.label {
-  border-color: #cf3a62 !important;
+  border-color: #f36f93 !important;
 }
 /*--- Purple ---*/
 .ui.purple.labels .label,
@@ -16242,7 +16242,7 @@ ul.ui.list li.completed:before,
   border-top: 2px solid #f48a52;
 }
 .ui.pink.segment:not(.inverted) {
-  border-top: 2px solid #d96383;
+  border-top: 2px solid #f79eb6;
 }
 .ui.purple.segment:not(.inverted) {
   border-top: 2px solid #717ecd;
@@ -16313,7 +16313,7 @@ ul.ui.list li.completed:before,
   color: #ffffff !important;
 }
 .ui.inverted.pink.segment {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.purple.segment {
@@ -20633,7 +20633,7 @@ ul.ui.list li.completed:before,
 }
 .ui.grid > .pink.row,
 .ui.grid .pink.column {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #ffffff;
 }
 .ui.grid > .row > .pink.column {
@@ -22529,8 +22529,8 @@ ul.ui.list li.completed:before,
 }
 .ui.menu .pink.active.item,
 .ui.pink.menu .active.item {
-  border-color: #d96383 !important;
-  color: #d96383 !important;
+  border-color: #f79eb6 !important;
+  color: #f79eb6 !important;
 }
 .ui.menu .purple.active.item,
 .ui.purple.menu .active.item {
@@ -22699,10 +22699,10 @@ ul.ui.list li.completed:before,
 }
 /* Pink */
 .ui.inverted.pink.menu {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 .ui.inverted.pink.pointing.menu .active.item:after {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 /* Purple */
 .ui.inverted.purple.menu {
@@ -23716,10 +23716,10 @@ ul.ui.list li.completed:before,
 }
 .ui.pink.message {
   background-color: #ffe3fb;
-  color: #d96383;
+  color: #f79eb6;
 }
 .ui.pink.message .header {
-  color: #d44e73;
+  color: #f586a4;
 }
 .ui.purple.message {
   background-color: #eae7ff;
@@ -24680,7 +24680,7 @@ ul.ui.list li.completed:before,
   border-top: 0.2em solid #f48a52;
 }
 .ui.pink.table {
-  border-top: 0.2em solid #d96383;
+  border-top: 0.2em solid #f79eb6;
 }
 .ui.purple.table {
   border-top: 0.2em solid #717ecd;
@@ -24715,7 +24715,7 @@ ul.ui.list li.completed:before,
   color: #ffffff !important;
 }
 .ui.inverted.pink.table {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.purple.table {
@@ -27927,7 +27927,7 @@ a.ui.card:hover,
 .ui.pink.cards > .card,
 .ui.cards > .pink.card,
 .ui.pink.card {
-  box-shadow: 0px 3px 0px 0px #d96383, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #f79eb6, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.purple.cards > .card,
 .ui.cards > .purple.card,
@@ -27973,7 +27973,7 @@ a.ui.card:hover,
 .ui.pink.cards > .card:hover,
 .ui.cards > .pink.card:hover,
 .ui.pink.card:hover {
-  box-shadow: 0px 3px 0px 0px #dc6f8d, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #f8acc1, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.purple.cards > .card:hover,
 .ui.cards > .purple.card:hover,
@@ -30885,7 +30885,7 @@ a.ui.card:hover,
 .ui.pink.statistics .statistic > .value,
 .ui.statistics .pink.statistic > .value,
 .ui.pink.statistic > .value {
-  color: #d96383;
+  color: #f79eb6;
 }
 .ui.purple.statistics .statistic > .value,
 .ui.statistics .purple.statistic > .value,
@@ -37441,7 +37441,7 @@ a.ui.nag {
   background-color: #f48a52;
 }
 .ui.pink.progress .bar {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 .ui.purple.progress .bar {
   background-color: #717ecd;

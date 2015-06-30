@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1435351575319');
+@import url('stylekit.blessed-blessed1.css?z=1435686517704');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -470,7 +470,7 @@
 }
 .ui.grid > .pink.row,
 .ui.grid .pink.column {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #ffffff;
 }
 .ui.grid > .row > .pink.column {
@@ -2366,8 +2366,8 @@
 }
 .ui.menu .pink.active.item,
 .ui.pink.menu .active.item {
-  border-color: #d96383 !important;
-  color: #d96383 !important;
+  border-color: #f79eb6 !important;
+  color: #f79eb6 !important;
 }
 .ui.menu .purple.active.item,
 .ui.purple.menu .active.item {
@@ -2536,10 +2536,10 @@
 }
 /* Pink */
 .ui.inverted.pink.menu {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 .ui.inverted.pink.pointing.menu .active.item:after {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 /* Purple */
 .ui.inverted.purple.menu {
@@ -3553,10 +3553,10 @@
 }
 .ui.pink.message {
   background-color: #ffe3fb;
-  color: #d96383;
+  color: #f79eb6;
 }
 .ui.pink.message .header {
-  color: #d44e73;
+  color: #f586a4;
 }
 .ui.purple.message {
   background-color: #eae7ff;
@@ -4517,7 +4517,7 @@
   border-top: 0.2em solid #f48a52;
 }
 .ui.pink.table {
-  border-top: 0.2em solid #d96383;
+  border-top: 0.2em solid #f79eb6;
 }
 .ui.purple.table {
   border-top: 0.2em solid #717ecd;
@@ -4552,7 +4552,7 @@
   color: #ffffff !important;
 }
 .ui.inverted.pink.table {
-  background-color: #d96383 !important;
+  background-color: #f79eb6 !important;
   color: #ffffff !important;
 }
 .ui.inverted.purple.table {
@@ -7764,7 +7764,7 @@ a.ui.card:hover,
 .ui.pink.cards > .card,
 .ui.cards > .pink.card,
 .ui.pink.card {
-  box-shadow: 0px 3px 0px 0px #d96383, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #f79eb6, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.purple.cards > .card,
 .ui.cards > .purple.card,
@@ -7810,7 +7810,7 @@ a.ui.card:hover,
 .ui.pink.cards > .card:hover,
 .ui.cards > .pink.card:hover,
 .ui.pink.card:hover {
-  box-shadow: 0px 3px 0px 0px #dc6f8d, 0px 0px 0px 1px #d4d4d5;
+  box-shadow: 0px 3px 0px 0px #f8acc1, 0px 0px 0px 1px #d4d4d5;
 }
 .ui.purple.cards > .card:hover,
 .ui.cards > .purple.card:hover,
@@ -10722,7 +10722,7 @@ a.ui.card:hover,
 .ui.pink.statistics .statistic > .value,
 .ui.statistics .pink.statistic > .value,
 .ui.pink.statistic > .value {
-  color: #d96383;
+  color: #f79eb6;
 }
 .ui.purple.statistics .statistic > .value,
 .ui.statistics .purple.statistic > .value,
@@ -17278,7 +17278,7 @@ a.ui.nag {
   background-color: #f48a52;
 }
 .ui.pink.progress .bar {
-  background-color: #d96383;
+  background-color: #f79eb6;
 }
 .ui.purple.progress .bar {
   background-color: #717ecd;
