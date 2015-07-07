@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1436227761572');
+@import url('stylekit.blessed-blessed1.css?z=1435689708341');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -20825,6 +20825,9 @@ html.ios {
 .ui.tabular.menu .active.item {
   border-radius: 0 !important;
   box-shadow: 0em 2px 0em inset;
+}
+.ui.inverted.teal.menu .active.item {
+  border-top: 3px solid #39d1b4;
 }
 /*******************************
         User Overrides

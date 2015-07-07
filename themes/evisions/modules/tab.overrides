@@ -2,3 +2,4 @@
          Tab Overrides
 *******************************/
 .ui.tabular.menu .active.item {border-radius:0 !important;box-shadow: 0em 2px 0em inset;}
+.ui.inverted.teal.menu .active.item {border-top: 3px solid @teal;}
