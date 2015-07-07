@@ -33,3 +33,6 @@ span.text.teal {
 span.text.dark.blue {
 	color: @darkBlue;
 }
+span.text.link.blue {
+  color: @linkColor;
+}
