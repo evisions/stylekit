@@ -73,3 +73,15 @@
 .ui.simple.secondary.vertical.pointing.menu {
   border-right: 0px;
 }
+
+.ui.inverted.menu .item {
+  // background: rgba(255, 255, 255, 0.2);
+}
+
+.ui.tabular.menu .active.item {
+  border-radius:0 !important;
+  box-shadow: 0em 2px 0em inset;
+}
+.ui.inverted.menu .active.item {
+  box-shadow: @teal 0em 2px 0em inset !important;
+}

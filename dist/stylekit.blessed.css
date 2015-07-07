@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1435689708341');
+@import url('stylekit.blessed-blessed1.css?z=1436303690367');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2870,6 +2870,13 @@
 }
 .ui.simple.secondary.vertical.pointing.menu {
   border-right: 0px;
+}
+.ui.tabular.menu .active.item {
+  border-radius: 0 !important;
+  box-shadow: 0em 2px 0em inset;
+}
+.ui.inverted.menu .active.item {
+  box-shadow: #39d1b4 0em 2px 0em inset !important;
 }
 /*******************************
          Site Overrides
@@ -20822,13 +20829,6 @@ html.ios {
 /*******************************
          Tab Overrides
 *******************************/
-.ui.tabular.menu .active.item {
-  border-radius: 0 !important;
-  box-shadow: 0em 2px 0em inset;
-}
-.ui.inverted.teal.menu .active.item {
-  border-top: 3px solid #39d1b4;
-}
 /*******************************
         User Overrides
 *******************************/
