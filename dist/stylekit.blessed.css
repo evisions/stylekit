@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1436305532752');
+@import url('stylekit.blessed-blessed1.css?z=1436313236459');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2875,7 +2875,7 @@
   border-radius: 0 !important;
   box-shadow: 0em 2px 0em inset;
 }
-.ui.inverted.menu .active.item {
+.ui.inverted.menu:not(.vertical) .active.item {
   box-shadow: #39d1b4 0em 2px 0em inset !important;
 }
 /*******************************

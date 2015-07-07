@@ -82,6 +82,6 @@
   border-radius:0 !important;
   box-shadow: 0em 2px 0em inset;
 }
-.ui.inverted.menu .active.item {
+.ui.inverted.menu:not(.vertical) .active.item {
   box-shadow: @teal 0em 2px 0em inset !important;
 }
