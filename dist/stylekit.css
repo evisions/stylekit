@@ -1490,6 +1490,9 @@ span.text.teal {
 span.text.dark.blue {
   color: #2f4050;
 }
+span.text.link.blue {
+  color: #009fda;
+}
 /*******************************
          Site Overrides
 *******************************/
