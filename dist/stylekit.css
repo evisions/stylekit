@@ -17033,6 +17033,7 @@ ul.ui.list li.completed:before,
     display: block;
     border-radius: 0em;
     padding: 0.9285em 1.5em;
+    width: 100% !important;
   }
   .ui.steps .step:first-child {
     padding: 0.9285em 1.5em;
