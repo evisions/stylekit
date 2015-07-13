@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 /*
 
 ███████╗███████╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██╗ ██████╗    ██╗   ██╗██╗
@@ -360,7 +361,6 @@
              Reset
 *******************************/
 /* Border-Box */
-@import 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic&subset=latin';
 *,
 *:before,
 *:after {
@@ -17238,7 +17238,7 @@ ul.ui.list li.completed:before,
   /* '' */
 }
 .ui.steps .step.active {
-  border-bottom: 2px solid #39d1b4;
+  border-top: 2px solid #39d1b4;
 }
 /*******************************
          Site Overrides
@@ -23029,6 +23029,11 @@ ul.ui.list li.completed:before,
 .ui.menu.huge > .title {
   font-size: 1.714rem;
 }
+@media only screen and (max-width: 768px) {
+  .ui.menu > .title {
+    display: none;
+  }
+}
 /*******************************
            Simple Themes
 *******************************/
@@ -23042,8 +23047,28 @@ ul.ui.list li.completed:before,
   border-radius: 0 !important;
   box-shadow: 0em 2px 0em inset;
 }
-.ui.inverted.menu:not(.vertical) .active.item {
-  box-shadow: #39d1b4 0em 2px 0em inset !important;
+.ui.menu .item:first-child {
+  border-radius: 0.2857rem 0px 0px 0.2857rem;
+}
+.ui.menu .item:nth-last-child(3) {
+  border-radius: 0px 0.2857rem 0.2857rem 0px;
+}
+.ui.menu :nth-last-child(3):before {
+  content: none;
+}
+.ui.dark.menu {
+  background-color: transparent;
+  border: 1px solid #2f4050;
+  border-radius: 0.2857rem;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+.ui.dark.menu .active.item {
+  color: #ffffff;
+  background-color: #2f4050;
+  box-shadow: none;
+}
+.ui.dark.menu .item:before {
+  background: #2f4050;
 }
 /*******************************
          Site Overrides

@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1436313342258');
+@import url('stylekit.blessed-blessed1.css?z=1436570433787');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2862,6 +2862,11 @@
 .ui.menu.huge > .title {
   font-size: 1.714rem;
 }
+@media only screen and (max-width: 768px) {
+  .ui.menu > .title {
+    display: none;
+  }
+}
 /*******************************
            Simple Themes
 *******************************/
@@ -2875,8 +2880,28 @@
   border-radius: 0 !important;
   box-shadow: 0em 2px 0em inset;
 }
-.ui.inverted.menu:not(.vertical) .active.item {
-  box-shadow: #39d1b4 0em 2px 0em inset !important;
+.ui.menu .item:first-child {
+  border-radius: 0.2857rem 0px 0px 0.2857rem;
+}
+.ui.menu .item:nth-last-child(3) {
+  border-radius: 0px 0.2857rem 0.2857rem 0px;
+}
+.ui.menu :nth-last-child(3):before {
+  content: none;
+}
+.ui.dark.menu {
+  background-color: transparent;
+  border: 1px solid #2f4050;
+  border-radius: 0.2857rem;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+.ui.dark.menu .active.item {
+  color: #ffffff;
+  background-color: #2f4050;
+  box-shadow: none;
+}
+.ui.dark.menu .item:before {
+  background: #2f4050;
 }
 /*******************************
          Site Overrides

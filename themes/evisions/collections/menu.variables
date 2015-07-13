@@ -166,7 +166,6 @@
 @activeFontWeight: normal;
 @activeIconOpacity: 1;
 
-// @activeHoverBackground: @hoverBackground;
 @activeHoverBackground: @activeBackground;
 @activeInvertedHoverBackground: @invertedActiveBackground;
 @subMenuActiveBackground: transparent;
@@ -188,7 +187,6 @@
   rgba(0, 0, 0, 0.1) 1.5em,
   rgba(0, 0, 0, 0.03) 100%)
 ;
-
 
 /* Secondary */
 @secondaryBackground: none;
