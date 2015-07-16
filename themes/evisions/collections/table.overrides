@@ -117,7 +117,8 @@
     box-shadow: none !important;
   }
   .ui.table:not(.unstackable) tr > td {
-    word-break: break-all;
+    word-break: break-word;
+    max-width: none !important;
     min-height: @responsiveCellMinHeight;
     padding-left: 40% !important;
   }

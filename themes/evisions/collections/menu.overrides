@@ -12,9 +12,6 @@
 .ui.menu .active.item {
   cursor: @activeCursor !important;
 }
-.ui.menu .active.item:not(.dropdown) > i.icon {
-  // color: @invertedIconActiveColor
-}
 
 .ui.inverted.vertical.menu .active.item:hover,
 .ui.inverted.menu .active.item:hover {
@@ -64,6 +61,12 @@
   font-size: @h2;
 }
 
+@media only screen and (max-width: @tabletBreakpoint) {
+  .ui.menu > .title {
+    display: none;
+  }
+}
+
 /*******************************
            Simple Themes
 *******************************/
@@ -72,4 +75,37 @@
 }
 .ui.simple.secondary.vertical.pointing.menu {
   border-right: 0px;
+}
+
+.ui.tabular.menu .active.item {
+  border-radius:0 !important;
+  box-shadow: 0em 2px 0em inset;
+}
+
+.ui.menu .item:first-child {
+  border-radius: @borderRadius 0px 0px @borderRadius;
+}
+
+.ui.menu .item:nth-last-child(3) {
+  border-radius: 0px @borderRadius @borderRadius 0px;
+}
+.ui.menu :nth-last-child(3):before {
+  content: none;
+}
+
+// Dark Outline Theme
+.ui.dark.menu {
+  background-color: transparent;
+  border: 1px solid @darkBlue;
+  border-radius: @borderRadius;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+.ui.dark.menu .active.item {
+  color: rgba(255, 255, 255, 1);
+  background-color: @darkBlue;
+  box-shadow: none;
+}
+
+.ui.dark.menu .item:before {
+  background: @darkBlue;
 }
