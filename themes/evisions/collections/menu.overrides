@@ -89,7 +89,7 @@
 .ui.menu .item:nth-last-child(3) {
   border-radius: 0px @borderRadius @borderRadius 0px;
 }
-.ui.menu :nth-last-child(3):before {
+.ui.menu .item:nth-last-child(3):before {
   content: none;
 }
 

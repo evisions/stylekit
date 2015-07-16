@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1437009110560');
+@import url('stylekit.blessed-blessed1.css?z=1437063061616');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2886,7 +2886,7 @@
 .ui.menu .item:nth-last-child(3) {
   border-radius: 0px 0.2857rem 0.2857rem 0px;
 }
-.ui.menu :nth-last-child(3):before {
+.ui.menu .item:nth-last-child(3):before {
   content: none;
 }
 .ui.dark.menu {

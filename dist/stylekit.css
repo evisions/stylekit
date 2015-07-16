@@ -23053,7 +23053,7 @@ ul.ui.list li.completed:before,
 .ui.menu .item:nth-last-child(3) {
   border-radius: 0px 0.2857rem 0.2857rem 0px;
 }
-.ui.menu :nth-last-child(3):before {
+.ui.menu .item:nth-last-child(3):before {
   content: none;
 }
 .ui.dark.menu {
