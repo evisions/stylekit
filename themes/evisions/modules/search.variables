@@ -21,7 +21,7 @@
 @promptBoxShadow: 0em 0em 0em 0em transparent inset;
 
 /* Result Box */
-@resultsWidth: 16em;
+@resultsWidth: 100%;
 @resultsBackground: #FFFFFF;
 @resultsDistance: 0.5em;
 @resultsBorderRadius: 0.25em;

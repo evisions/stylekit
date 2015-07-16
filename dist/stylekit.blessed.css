@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1435351575319');
+@import url('stylekit.blessed-blessed1.css?z=1437007850114');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -18351,7 +18351,7 @@ a.ui.nag {
   left: 0%;
   background: #ffffff;
   margin-top: 0.5em;
-  width: 16em;
+  width: 100%;
   border-radius: 0.25em;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
   z-index: 998;
