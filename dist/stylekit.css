@@ -26525,6 +26525,12 @@ ul.ui.list li.completed:before,
   top: 16px;
   right: 12px;
 }
+.ui.visual.search:not(.icon) .prompt {
+  padding: 10px 36px 0px 10px;
+}
+.ui.visual.search:not(.icon) i.search.icon {
+  display: none;
+}
 /* Placeholder */
 .ui.visual.search .placeholder {
   display: none;
@@ -26540,6 +26546,9 @@ ul.ui.list li.completed:before,
   cursor: pointer;
   font-size: 12px;
   margin-bottom: 10px;
+}
+.ui.visual.search .token.box .text {
+  display: inline-block;
 }
 .ui.visual.search .token.box .detail {
   cursor: text;
