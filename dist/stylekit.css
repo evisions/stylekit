@@ -18990,6 +18990,12 @@ ul.ui.list li.completed:before,
 .editable.field.inline > .ui.buttons {
   margin-left: 0.5em;
 }
+@media only screen and (min-width: 767px) {
+  .ui.form .field.right.floated,
+  .ui.form .fields.right.floated {
+    float: right;
+  }
+}
 /*******************************
          Site Overrides
 *******************************/

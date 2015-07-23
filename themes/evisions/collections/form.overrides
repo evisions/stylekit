@@ -88,3 +88,9 @@
 .editable.field.inline > .ui.buttons {
   margin-left: 0.5em;
 }
+@media only screen and (min-width : @largestMobileScreen) {
+  .ui.form .field.right.floated,
+  .ui.form .fields.right.floated {
+    float: right;
+  }
+}
