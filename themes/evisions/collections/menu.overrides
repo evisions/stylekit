@@ -82,21 +82,21 @@
   box-shadow: 0em 2px 0em inset;
 }
 
-.ui.menu .item:first-child {
+.ui.menu:not(.vertical) > .item:first-child {
   border-radius: @borderRadius 0px 0px @borderRadius;
 }
 
-.ui.menu .item:nth-last-child(3) {
+.ui.menu:not(.vertical) > .item:nth-last-child(3) {
   border-radius: 0px @borderRadius @borderRadius 0px;
 }
-.ui.menu .item:nth-last-child(3):before {
+.ui.menu:not(.vertical) > .item:nth-last-child(3):before {
   content: none;
 }
 
 // Dark Outline Theme
 .ui.dark.menu {
   background-color: transparent;
-  border: 1px solid @darkBlue;
+  border: 1px solid #ACAFB2;
   border-radius: @borderRadius;
   box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
 }
@@ -107,5 +107,7 @@
 }
 
 .ui.dark.menu .item:before {
-  background: @darkBlue;
+  background: #ACAFB2;
+  opacity: 0.6;
+  right: -s1px;
 }

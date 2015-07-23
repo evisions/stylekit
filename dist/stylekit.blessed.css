@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1437176127801');
+@import url('stylekit.blessed-blessed1.css?z=1437417687923');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2880,18 +2880,18 @@
   border-radius: 0 !important;
   box-shadow: 0em 2px 0em inset;
 }
-.ui.menu .item:first-child {
+.ui.menu:not(.vertical) > .item:first-child {
   border-radius: 0.2857rem 0px 0px 0.2857rem;
 }
-.ui.menu .item:nth-last-child(3) {
+.ui.menu:not(.vertical) > .item:nth-last-child(3) {
   border-radius: 0px 0.2857rem 0.2857rem 0px;
 }
-.ui.menu .item:nth-last-child(3):before {
+.ui.menu:not(.vertical) > .item:nth-last-child(3):before {
   content: none;
 }
 .ui.dark.menu {
   background-color: transparent;
-  border: 1px solid #2f4050;
+  border: 1px solid #ACAFB2;
   border-radius: 0.2857rem;
   box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
 }
@@ -2901,7 +2901,9 @@
   box-shadow: none;
 }
 .ui.dark.menu .item:before {
-  background: #2f4050;
+  background: #ACAFB2;
+  opacity: 0.6;
+  right: -s1px;
 }
 /*******************************
          Site Overrides
