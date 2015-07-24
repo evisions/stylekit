@@ -25249,15 +25249,60 @@ ul.ui.list li.completed:before,
     font-weight: normal;
   }
 }
-/**
- * Color
- */
+/*******************************
+          Variations
+*******************************/
+/*--------------------
+    Tablet Stackable
+----------------------*/
+@media only screen and (max-width: 991px) {
+  .ui[class*="tablet stackable"].table {
+    position: relative;
+  }
+  .ui[class*="tablet stackable"].table thead tr:first-child {
+    display: none !important;
+  }
+  .ui[class*="tablet stackable"].table thead tr.responsive.sort {
+    display: block;
+  }
+  .ui[class*="tablet stackable"].table thead tr.responsive.sort.hidden {
+    display: none !important;
+  }
+  .ui[class*="tablet stackable"].table tbody tr {
+    border-bottom: 0px;
+  }
+  .ui[class*="tablet stackable"].table tr:last-child td:last-child {
+    box-shadow: none !important;
+  }
+  .ui[class*="tablet stackable"].table tr > td {
+    word-break: break-word;
+    max-width: none !important;
+    min-height: 1.8em;
+    padding-left: 40% !important;
+  }
+  .ui[class*="tablet stackable"].table tr > td:before {
+    content: attr(data-column-name);
+    font-weight: bold;
+    left: 0.75em;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 30%;
+  }
+  .ui[class*="tablet stackable"].table td:first-child {
+    font-weight: normal;
+  }
+}
+/*--------------
+    Color
+---------------*/
 .ui.table tr.light.blue td {
   background: #ffffff;
 }
-/*******************************
-           Borderless
-*******************************/
+/*--------------
+    Borderless
+---------------*/
 .ui.borderless.table {
   border: 0px;
 }
