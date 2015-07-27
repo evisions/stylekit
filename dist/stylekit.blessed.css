@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1437771492685');
+@import url('stylekit.blessed-blessed1.css?z=1437613640579');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -6486,6 +6486,11 @@
 }
 .ui.visual.search .token.box .ui.label.selected.editing .detail {
   color: #1b1c1d;
+}
+@media only screen and (min-width: 992px) {
+  .ui.visual.search .results {
+    width: 28em;
+  }
 }
 /* Views */
 /*!

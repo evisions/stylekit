@@ -26660,6 +26660,11 @@ ul.ui.list li.completed:before,
 .ui.visual.search .token.box .ui.label.selected.editing .detail {
   color: #1b1c1d;
 }
+@media only screen and (min-width: 992px) {
+  .ui.visual.search .results {
+    width: 28em;
+  }
+}
 /* Views */
 /*!
  * # Semantic UI - Ad
