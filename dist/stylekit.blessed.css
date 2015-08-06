@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438903139737');
+@import url('stylekit.blessed-blessed1.css?z=1438903416492');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -4942,6 +4942,10 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.table td {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .ui.transparent.table td {
   border-top: 0px;
 }
