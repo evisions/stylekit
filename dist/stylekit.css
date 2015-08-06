@@ -36801,6 +36801,9 @@ a.ui.nag {
 /*--------------
      Sizes
 ---------------*/
+.ui.mini.popup {
+  font-size: 0.71428571rem;
+}
 .ui.small.popup {
   font-size: 0.785714rem;
 }

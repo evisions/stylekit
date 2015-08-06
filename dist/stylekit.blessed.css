@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438820840122');
+@import url('stylekit.blessed-blessed1.css?z=1438903139737');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -16628,6 +16628,9 @@ a.ui.nag {
 /*--------------
      Sizes
 ---------------*/
+.ui.mini.popup {
+  font-size: 0.71428571rem;
+}
 .ui.small.popup {
   font-size: 0.785714rem;
 }
