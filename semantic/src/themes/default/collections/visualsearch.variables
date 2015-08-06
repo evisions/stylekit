@@ -2,34 +2,48 @@
           Visual Search
 *******************************/
 
-@visualSearchFontSize: 12px;
+// @visualSearchFontSize: 12px;
+@visualSearchFontSize: 0.8rem;
 
-@promptBorderRadius: 0px;
-@promptHorizontalPadding: 36px;
-@promptMinHeight: 48px;
+// @promptBorderRadius: 0px;
+@promptBorderRadius: @defaultBorderRadius;
+// @promptHorizontalPadding: 36px;
+@promptHorizontalPadding: 2.5em;
+// @promptMinHeight: 48px;
+@promptMinHeight: 1em;
 @promptOutline: 0px;
-@promptVerticalPadding: 10px;
-@promptVerticalMargin: 10px;
+// @promptVerticalPadding: 10px;
+@promptVerticalPadding: 0.4em;
+// @promptVerticalMargin: 10px;
+@promptVerticalMargin: 0.5em;
 
-@iconPositionTop: 16px;
-@iconSearchPositionLeft: 12px;
-@iconRemovePositionRight: 12px;
+// @iconPositionTop: 16px;
+@iconPositionTop: 0.8em;
+// @iconSearchPositionLeft: 12px;
+@iconSearchPositionLeft: 0.8em;
+// @iconRemovePositionRight: 12px;
+@iconRemovePositionRight: 0.5em;
 
-@placeholderPositionTop: 16px;
+// @placeholderPositionTop: 16px;
+@placeholderPositionTop: 0.75em;
 @placeholderOpacity: 0.5;
 
 @tokenTextOutline: 0;
 @tokenMinHeight: 1em;
 @tokenMinWidth: 1em;
-@tokenVerticalMargin: 10px;
+// @tokenVerticalMargin: 10px;
+@tokenVerticalMargin: 0.5em;
 
-@tokenInputFontSize: @visualSearchFontSize;
-@tokenInputHorizontalPadding: 10px;
-@tokenInputMinHeight: 2em;
+@tokenInputFontSize: @pageFont;
+// @tokenInputHorizontalPadding: 10px;
+@tokenInputHorizontalPadding: 0.5em;
+// @tokenInputMinHeight: 2em;
+@tokenInputMinHeight: 1.715em;
 @tokenInputMinWidth: 2em;
 @tokenInputOutline: 0;
 
 @resultFooterBackground: #D0D0D0;
+// @resultCountFontSize: 10px;
 @resultCountFontSize: 10px;
 @resultFooterHorizontalPadding: 1em;
 @resultsMaxHeight: 265px;
