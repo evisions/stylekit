@@ -15,7 +15,7 @@
 .ui.white.buttons .button:hover,
 .ui.white.button:hover {
   background-color: @whiteHover;
-  color: @invertedTextColor;
+  color: @hoverColor;;
   text-shadow: @invertedTextShadow;
 }
 .ui.white.buttons .button:active,

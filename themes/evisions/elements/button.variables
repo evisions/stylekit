@@ -259,7 +259,7 @@
 @tealTextShadow: @invertedTextShadow;
 @yellowTextColor: @invertedTextColor;
 @yellowTextShadow: @invertedTextShadow;
-@whiteTextColor: @invertedTextColor;
+@whiteTextColor: @textColor;
 @whiteTextShadow: @invertedTextColor;
 // @whiteHover: @darkWhiteHover;
 
