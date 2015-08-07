@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438982249351');
+@import url('stylekit.blessed-blessed1.css?z=1438985594067');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -16431,7 +16431,7 @@ a.ui.nag {
   font-style: normal;
   color: #333333;
   border-radius: 0.2857rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .ui.popup > .header {
   padding: 0em;
