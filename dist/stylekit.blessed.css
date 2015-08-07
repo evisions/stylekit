@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438967129452');
+@import url('stylekit.blessed-blessed1.css?z=1438967672259');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -16666,6 +16666,20 @@ a.ui.nag {
 .ui.popup .ui.segment.bottom.attached {
   border-bottom-color: transparent;
   margin-bottom: -0.7rem;
+}
+/*--------------
+     Compact
+---------------*/
+.ui.compact.popup {
+  padding: 0 !important;
+}
+/*--------------
+     Borderless
+---------------*/
+.ui.borderless.popup {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
 }
 /*******************************
         User Overrides

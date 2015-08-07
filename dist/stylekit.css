@@ -36840,6 +36840,20 @@ a.ui.nag {
   border-bottom-color: transparent;
   margin-bottom: -0.7rem;
 }
+/*--------------
+     Compact
+---------------*/
+.ui.compact.popup {
+  padding: 0 !important;
+}
+/*--------------
+     Borderless
+---------------*/
+.ui.borderless.popup {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
 /*******************************
         User Overrides
 *******************************/

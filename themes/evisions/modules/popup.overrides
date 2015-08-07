@@ -23,3 +23,20 @@
   border-bottom-color: transparent;
   margin-bottom: @nestSegmentMarginVertical;
 }
+
+
+/*--------------
+     Compact
+---------------*/
+.ui.compact.popup {
+  padding: 0 !important; 
+}
+
+/*--------------
+     Borderless
+---------------*/
+.ui.borderless.popup {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+}
