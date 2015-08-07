@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438903416492');
+@import url('stylekit.blessed-blessed1.css?z=1438967129452');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5658,7 +5658,7 @@
 .ui.calendar.large .week.header .cell {
   padding: 0.5em;
 }
-.ui.calendar .controls.default {
+.ui.calendar .controls.default:not(.fluid) {
   width: 21rem;
 }
 .ui.calendar .controls.default table,

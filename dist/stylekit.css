@@ -25831,7 +25831,7 @@ ul.ui.list li.completed:before,
 .ui.calendar.large .week.header .cell {
   padding: 0.5em;
 }
-.ui.calendar .controls.default {
+.ui.calendar .controls.default:not(.fluid) {
   width: 21rem;
 }
 .ui.calendar .controls.default table,
