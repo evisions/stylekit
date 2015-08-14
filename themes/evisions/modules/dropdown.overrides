@@ -114,6 +114,6 @@
   padding-left: 2.75em;
 }
 
-.ui.dropdown:focus > i.icon {
-  opacity: 1;
+.ui.dropdown.active > i.icon {
+  opacity: 1 !important;
 }
