@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1438985715843');
+@import url('stylekit.blessed-blessed1.css?z=1439511041732');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14764,6 +14764,15 @@ select.ui.dropdown {
   cursor: default;
   pointer-events: none;
   opacity: 0.45;
+}
+.ui.dropdown > i.icon:not(.dropdown):not(.loading) {
+  opacity: 0.5;
+}
+.ui.dropdown > i.icon:not(.dropdown):not(.loading) + input.search {
+  padding-left: 2.75em;
+}
+.ui.dropdown:focus > i.icon {
+  opacity: 1;
 }
 /*******************************
         User Overrides

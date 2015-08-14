@@ -34938,6 +34938,15 @@ select.ui.dropdown {
   pointer-events: none;
   opacity: 0.45;
 }
+.ui.dropdown > i.icon:not(.dropdown):not(.loading) {
+  opacity: 0.5;
+}
+.ui.dropdown > i.icon:not(.dropdown):not(.loading) + input.search {
+  padding-left: 2.75em;
+}
+.ui.dropdown:focus > i.icon {
+  opacity: 1;
+}
 /*******************************
         User Overrides
 *******************************/
