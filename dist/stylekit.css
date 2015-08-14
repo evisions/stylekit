@@ -34938,7 +34938,7 @@ select.ui.dropdown {
   pointer-events: none;
   opacity: 0.45;
 }
-.ui.dropdown > i.icon:not(.dropdown):not(.loading) {
+.ui.dropdown.search > i.icon:not(.dropdown):not(.loading) {
   opacity: 0.5;
 }
 .ui.dropdown > i.icon:not(.dropdown):not(.loading) + input.search {
