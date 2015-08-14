@@ -75,15 +75,15 @@
 }
 
 
-.ui.table.selectable tbody tr:not(.empty):hover td {
+.ui.table.selectable tbody tr:not(.empty):not(.group):hover td {
   background: @backgroundHover;
   cursor: @selectableHoverCursor;
 }
-.ui.table.selectable.link tbody tr:not(.empty):hover td {
+.ui.table.selectable.link tbody tr:not(.empty):not(.group):hover td {
   cursor: @selectableLinkHoverCursor;
 }
 
-.ui.table.selectable tbody tr.active:not(.empty):hover td {
+.ui.table.selectable tbody tr.active:not(.empty):not(.group):hover td {
   background: @activeBackgroundHover;
 }
 
@@ -91,7 +91,7 @@
   background: @activeBackgroundHover;
 }
 
-.ui.table.inverted.selectable tbody tr:not(.empty):hover td {
+.ui.table.inverted.selectable tbody tr:not(.empty):not(.group):hover td {
   background: @sortableInvertedHoverBackground;
 }
 
@@ -210,4 +210,11 @@
 }
 .ui.borderless.table tr td {
   border-top: 0px;
+}
+
+.ui.table tbody tr.group.header td {
+  background-color: @secondaryColor;
+  color: @invertedCellColor;
+  padding-top: 0.3em !important;
+  padding-bottom: 0.3em !important;
 }
