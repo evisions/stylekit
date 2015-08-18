@@ -87,6 +87,7 @@
   display: block;
   max-height: @resultsMaxHeight;
   overflow-y: auto;
+  max-width: 100%;
 }
 .ui.visual.search .results.empty {
   display: none;
@@ -131,5 +132,6 @@
 @media only screen and (min-width: @computerBreakpoint) {
   .ui.visual.search .results {
     width: 28em;
+    max-width: 100%;
   }
 }
