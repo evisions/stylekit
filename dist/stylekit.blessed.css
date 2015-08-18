@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1439864339099');
+@import url('stylekit.blessed-blessed1.css?z=1439936025906');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -6460,6 +6460,7 @@
   display: block;
   max-height: 265px;
   overflow-y: auto;
+  max-width: 100%;
 }
 .ui.visual.search .results.empty {
   display: none;
@@ -6496,6 +6497,7 @@
 @media only screen and (min-width: 992px) {
   .ui.visual.search .results {
     width: 28em;
+    max-width: 100%;
   }
 }
 /* Views */
