@@ -24898,23 +24898,23 @@ ul.ui.list li.completed:before,
 /*--------------
     Sortable
 ---------------*/
-.ui.sortable.table thead th {
+.ui.sortable.table thead th.sortable {
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid #d0d0d0;
   color: #333333;
 }
-.ui.sortable.table thead th:first-child {
+.ui.sortable.table thead th.sortable:first-child {
   border-left: none;
 }
-.ui.sortable.table thead th.sorted,
-.ui.sortable.table thead th.sorted:hover {
+.ui.sortable.table thead th.sortable.sorted,
+.ui.sortable.table thead th.sortable.sorted:hover {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.ui.sortable.table thead th:after {
+.ui.sortable.table thead th.sortable:after {
   display: inline-block;
   content: '';
   width: 1em;
@@ -24926,43 +24926,43 @@ ul.ui.list li.completed:before,
   font-weight: normal;
   text-decoration: inherit;
 }
-.ui.sortable.table thead th.ascending:after {
+.ui.sortable.table thead th.sortable.ascending:after {
   content: '\f0d7';
 }
-.ui.sortable.table thead th.descending:after {
+.ui.sortable.table thead th.sortable.descending:after {
   content: '\f0d8';
 }
 /* Hover */
-.ui.sortable.table th.disabled:hover {
+.ui.sortable.table th.sortable.disabled:hover {
   cursor: auto;
   color: rgba(40, 40, 40, 0.3);
 }
-.ui.sortable.table thead th:hover {
+.ui.sortable.table thead th.sortable:hover {
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted */
-.ui.sortable.table thead th.sorted {
+.ui.sortable.table thead th.sortable.sorted {
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted Hover */
-.ui.sortable.table thead th.sorted:hover {
+.ui.sortable.table thead th.sortable.sorted:hover {
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Inverted */
-.ui.inverted.sortable.table thead th.sorted {
+.ui.inverted.sortable.table thead th.sortable.sorted {
   background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   color: #ffffff;
 }
-.ui.inverted.sortable.table thead th:hover {
+.ui.inverted.sortable.table thead th.sortable:hover {
   background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   color: #ffffff;
 }
-.ui.inverted.sortable.table thead th {
+.ui.inverted.sortable.table thead th.sortable {
   border-left-color: transparent;
   border-right-color: transparent;
 }
