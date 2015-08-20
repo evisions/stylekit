@@ -26633,6 +26633,7 @@ ul.ui.list li.completed:before,
   display: block;
   max-height: 265px;
   overflow-y: auto;
+  max-width: 100%;
 }
 .ui.visual.search .results.empty {
   display: none;
@@ -26669,6 +26670,7 @@ ul.ui.list li.completed:before,
 @media only screen and (min-width: 992px) {
   .ui.visual.search .results {
     width: 28em;
+    max-width: 100%;
   }
 }
 /* Views */
