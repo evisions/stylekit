@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440103105991');
+@import url('stylekit.blessed-blessed1.css?z=1440104320420');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5140,10 +5140,22 @@
   border-top: 0px;
 }
 .ui.table tbody tr.group.header td {
-  background-color: #777;
-  color: #ffffff;
+  background-color: rgba(57, 209, 180, 0.35);
+  color: #333;
   padding-top: 0.3em !important;
   padding-bottom: 0.3em !important;
+  position: relative;
+  font-weight: bold;
+}
+.ui.table tbody tr.group.header td:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2px;
+  background: #39d1b4;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 /*******************************
          Site Overrides
