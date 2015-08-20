@@ -213,7 +213,7 @@
 }
 
 .ui.table tbody tr.group.header td {
-  background-color: @secondaryColor;
+  background-color: #777;
   color: @invertedCellColor;
   padding-top: 0.3em !important;
   padding-bottom: 0.3em !important;
