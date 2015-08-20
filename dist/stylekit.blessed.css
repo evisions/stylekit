@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440032797721');
+@import url('stylekit.blessed-blessed1.css?z=1440103089768');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5140,7 +5140,7 @@
   border-top: 0px;
 }
 .ui.table tbody tr.group.header td {
-  background-color: #225a8e;
+  background-color: #777;
   color: #ffffff;
   padding-top: 0.3em !important;
   padding-bottom: 0.3em !important;
