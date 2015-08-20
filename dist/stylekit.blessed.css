@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1439936025906');
+@import url('stylekit.blessed-blessed1.css?z=1440031717523');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14781,6 +14781,22 @@ select.ui.dropdown {
 }
 .ui.dropdown.active > i.icon {
   opacity: 1 !important;
+}
+/* Clearable Dropdown */
+.ui.dropdown > .ui.clear.button {
+  display: none;
+}
+.ui.clearable.dropdown:not(.button) > .ui.clear.button {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.ui.clearable.dropdown:not(.inline):not(.button) > .ui.clear.button {
+  margin-right: 2.5em;
+}
+.ui.clearable.inline.dropdown:not(.button) {
+  padding-right: 3em;
 }
 /*******************************
         User Overrides
