@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440106555995');
+@import url('stylekit.blessed-blessed1.css?z=1440552251142');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14706,7 +14706,7 @@ select.ui.dropdown {
 }
 .ui.dropdown > .dropdown.icon {
   font-family: 'Dropdown';
-  line-height: 1;
+  line-height: 0.9;
   height: 1em;
   width: 1.23em;
   -webkit-backface-visibility: hidden;

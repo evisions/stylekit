@@ -34879,7 +34879,7 @@ select.ui.dropdown {
 }
 .ui.dropdown > .dropdown.icon {
   font-family: 'Dropdown';
-  line-height: 1;
+  line-height: 0.9;
   height: 1em;
   width: 1.23em;
   -webkit-backface-visibility: hidden;
