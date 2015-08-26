@@ -139,3 +139,6 @@
 .ui.clearable.inline.dropdown:not(.button) {
   padding-right: 3em;
 }
+.ui.clearable.selection.dropdown > .text {
+  margin-right: 4.5em;
+}

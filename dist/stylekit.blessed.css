@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440631703623');
+@import url('stylekit.blessed-blessed1.css?z=1440632607324');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14813,6 +14813,9 @@ select.ui.dropdown {
 }
 .ui.clearable.inline.dropdown:not(.button) {
   padding-right: 3em;
+}
+.ui.clearable.selection.dropdown > .text {
+  margin-right: 4.5em;
 }
 /*******************************
         User Overrides
