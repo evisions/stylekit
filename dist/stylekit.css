@@ -34888,6 +34888,10 @@ select.ui.dropdown {
   font-style: normal;
   text-align: center;
 }
+.ui.selection.dropdown > .dropdown.icon {
+  top: 50%;
+  margin-top: -1.2em;
+}
 .ui.dropdown > .dropdown.icon {
   width: auto;
 }

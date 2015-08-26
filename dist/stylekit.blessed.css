@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440552251142');
+@import url('stylekit.blessed-blessed1.css?z=1440631682897');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14714,6 +14714,10 @@ select.ui.dropdown {
   font-weight: normal;
   font-style: normal;
   text-align: center;
+}
+.ui.selection.dropdown > .dropdown.icon {
+  top: 50%;
+  margin-top: -1.2em;
 }
 .ui.dropdown > .dropdown.icon {
   width: auto;
