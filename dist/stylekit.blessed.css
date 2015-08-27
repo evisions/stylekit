@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440632738684');
+@import url('stylekit.blessed-blessed1.css?z=1440632948288');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -14807,6 +14807,8 @@ select.ui.dropdown {
   position: absolute;
   right: 0;
   z-index: 3;
+  top: 50%;
+  margin-top: -0.5em;
 }
 .ui.clearable.dropdown:not(.inline):not(.button) > .ui.clear.button {
   margin-right: 2.5em;

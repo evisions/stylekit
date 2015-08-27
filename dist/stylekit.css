@@ -34980,6 +34980,8 @@ select.ui.dropdown {
   position: absolute;
   right: 0;
   z-index: 3;
+  top: 50%;
+  margin-top: -0.5em;
 }
 .ui.clearable.dropdown:not(.inline):not(.button) > .ui.clear.button {
   margin-right: 2.5em;
