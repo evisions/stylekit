@@ -63,3 +63,8 @@
 .ui.tree.styled.accordion > .node:first-child {
   border-top: 0px;
 }
+
+.ui.tree.styled.accordion .node.selected > .title {
+  background: @lightBlue;
+  color: @styledActiveTitleColor;
+}
