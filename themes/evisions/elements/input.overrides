@@ -11,3 +11,9 @@
   content: '\f00c';
   color: @green;
 }
+
+.ui.disabled.input {
+  cursor: default;
+  pointer-events: none;
+  opacity: @disabledOpacity;
+}
