@@ -32148,6 +32148,10 @@ a.ui.card:hover,
 .ui.tree.styled.accordion > .node:first-child {
   border-top: 0px;
 }
+.ui.tree.styled.accordion .node.selected > .title {
+  background: #dfeffd;
+  color: rgba(0, 0, 0, 0.8);
+}
 /*******************************
         User Overrides
 *******************************/

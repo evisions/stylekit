@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1440635016078');
+@import url('stylekit.blessed-blessed1.css?z=1440784629558');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -11974,6 +11974,10 @@ a.ui.card:hover,
 }
 .ui.tree.styled.accordion > .node:first-child {
   border-top: 0px;
+}
+.ui.tree.styled.accordion .node.selected > .title {
+  background: #dfeffd;
+  color: rgba(0, 0, 0, 0.8);
 }
 /*******************************
         User Overrides
