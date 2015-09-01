@@ -11362,6 +11362,11 @@ img.ui.bordered.image {
   content: '\f00c';
   color: #4ab471;
 }
+.ui.disabled.input {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.3;
+}
 /*******************************
          Site Overrides
 *******************************/
