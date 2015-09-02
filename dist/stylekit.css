@@ -32971,6 +32971,7 @@ a.ui.card:hover,
 .ui.checkbox .box:before,
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
+  top: 0.3em;
   font-family: 'Checkbox';
 }
 .ui.checkbox label:after,
