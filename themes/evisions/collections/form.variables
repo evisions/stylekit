@@ -158,6 +158,7 @@
 /* Grouped Fields */
 @groupedMargin: @fieldMargin;
 @groupedFieldMargin: 0.5em 0em;
+@groupedPaddedFieldMargin: 0.9em 0em;
 
 @groupedLabelDistance: @labelDistance;
 @groupedLabelColor: @labelColor;

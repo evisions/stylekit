@@ -4,10 +4,10 @@
 
 @checkboxColor: @textColor;
 @fontSize: 1em;
-@checkboxLineHeight: 15px;
+@checkboxLineHeight: 1.4rem;
 
 /* Label */
-@labelPadding: 1.75em;
+@labelPadding: 2.25em;
 
 @neutralCheckbox: @transparentBlack;
 @positiveCheckbox: @positiveColor;

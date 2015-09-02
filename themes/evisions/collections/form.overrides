@@ -2,6 +2,10 @@
          Theme Overrides
 *******************************/
 
+.ui.form .grouped.padded.fields .field {
+  margin: @groupedPaddedFieldMargin;
+}
+
 /*--------------------
     Form Wrapper
 ---------------------*/
