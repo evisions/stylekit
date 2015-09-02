@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1441141275621');
+@import url('stylekit.blessed-blessed1.css?z=1441219361887');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -12379,7 +12379,7 @@ a.ui.card:hover,
   display: inline-block;
   min-height: 17px;
   font-size: 1rem;
-  line-height: 15px;
+  line-height: 1.4rem;
   min-width: 17px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -12402,7 +12402,7 @@ a.ui.card:hover,
 .ui.checkbox label {
   display: block;
   cursor: pointer;
-  padding-left: 1.75em;
+  padding-left: 2.25em;
   outline: none;
 }
 .ui.checkbox label {

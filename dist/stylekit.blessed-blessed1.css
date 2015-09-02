@@ -18904,6 +18904,9 @@ ul.ui.list li.completed:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.form .grouped.padded.fields .field {
+  margin: 0.9em 0em;
+}
 /*--------------------
     Form Wrapper
 ---------------------*/

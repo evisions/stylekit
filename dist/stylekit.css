@@ -18904,6 +18904,9 @@ ul.ui.list li.completed:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.form .grouped.padded.fields .field {
+  margin: 0.9em 0em;
+}
 /*--------------------
     Form Wrapper
 ---------------------*/
@@ -32557,7 +32560,7 @@ a.ui.card:hover,
   display: inline-block;
   min-height: 17px;
   font-size: 1rem;
-  line-height: 15px;
+  line-height: 1.4rem;
   min-width: 17px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -32580,7 +32583,7 @@ a.ui.card:hover,
 .ui.checkbox label {
   display: block;
   cursor: pointer;
-  padding-left: 1.75em;
+  padding-left: 2.25em;
   outline: none;
 }
 .ui.checkbox label {
