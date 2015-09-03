@@ -33,3 +33,54 @@
 .radio:before { content: '\e803'; }
 
 */
+
+// Polar Toggle
+.ui.polar.toggle.checkbox {
+  min-height: 2rem;
+}
+
+.ui.polar.toggle.checkbox .box,
+.ui.polar.toggle.checkbox label {
+  min-height: 2rem;
+  padding-left: 6rem;
+}
+
+.ui.polar.toggle.checkbox label {
+  padding-top: 0.35rem;
+}
+
+/* Switch */
+.ui.polar.toggle.checkbox .box:before,
+.ui.polar.toggle.checkbox label:before {
+  content: 'No';
+  color: white;
+
+  width: 5rem;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 2.75rem;
+
+  transition: padding-left 0.3s ease 0s;
+}
+
+/* Handle */
+.ui.polar.toggle.checkbox .box:after,
+.ui.polar.toggle.checkbox label:after {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Active */
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:before,
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:before,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:before,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:before {
+  content: 'Yes';
+  padding-left: 1rem;
+}
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:after,
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:after,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:after,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:after {
+  left: 2.95rem;
+}

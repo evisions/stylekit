@@ -2539,14 +2539,14 @@ span.text.link.blue {
 }
 .ui.basic.buttons .active.button,
 .ui.basic.active.button {
-  background: rgba(0, 0, 0, 0.05) !important;
+  background: rgba(0, 0, 0, 0.15) !important;
   box-shadow: '' !important;
   color: rgba(0, 0, 0, 0.8);
   box-shadow: rgba(39, 41, 43, 0.3);
 }
 .ui.basic.buttons .active.button:hover,
 .ui.basic.active.button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 /* Vertical */
 .ui.basic.buttons .button:hover {
@@ -6939,13 +6939,13 @@ a.ui.yellow.header:hover {
   color: rgba(255, 255, 255, 0.85);
 }
 .ui.inverted.attached.header {
-  background: #3a3a3a -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #3a3a3a linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #3a3a3a -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: #3a3a3a linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   box-shadow: none;
 }
 .ui.inverted.block.header {
-  background: #3a3a3a -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #3a3a3a linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #3a3a3a -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: #3a3a3a linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   box-shadow: none;
 }
 /*-------------------
@@ -11905,7 +11905,7 @@ a.ui.label {
   border-radius: 0.2857rem;
 }
 .ui.image.label .detail {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.25);
   margin: -0.6em -0.8em -0.6em 0.5em;
   padding: 0.6em 0.8em;
   border-radius: 0em 0.2857rem 0.2857rem 0em;
@@ -13470,12 +13470,12 @@ ol.ui.list ol,
 }
 .ui.selection.list .list > .item:active,
 .ui.selection.list > .item:active {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Inverted */
@@ -15946,7 +15946,7 @@ ul.ui.list li.completed:before,
 .ui.segment {
   position: relative;
   background-color: #ffffff;
-  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   margin: 1rem 0em;
   padding: 1em 1em;
   border-radius: 0.2857rem;
@@ -16026,7 +16026,7 @@ ul.ui.list li.completed:before,
 .ui.basic.table.segment {
   background: #ffffff;
   border: none;
-  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui[class*="very basic"].table.segment {
   padding: 1em 1em;
@@ -16440,7 +16440,7 @@ ul.ui.list li.completed:before,
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 1rem;
-  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0em 0em 0.2857rem 0.2857rem;
 }
 .ui.segment[class*="bottom attached"]:last-child {
@@ -16477,7 +16477,7 @@ ul.ui.list li.completed:before,
   margin-top: 0em;
   margin-bottom: 0em;
   top: 0px;
-  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0em 0em 0.2857rem 0.2857rem;
 }
 /*******************************
@@ -21600,7 +21600,7 @@ ul.ui.list li.completed:before,
   background: #ffffff;
   font-size: 0em;
   font-weight: normal;
-  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0.2857rem;
 }
 .ui.menu:after {
@@ -22221,7 +22221,7 @@ ul.ui.list li.completed:before,
 /* Active */
 .ui.secondary.menu > .menu > .active.item,
 .ui.secondary.menu > .active.item {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   opacity: 1;
   box-shadow: none;
 }
@@ -22599,7 +22599,7 @@ ul.ui.list li.completed:before,
           transition: none;
 }
 .ui.inverted.menu .dropdown .menu .item:hover {
-  background: rgba(0, 0, 0, 0.05) !important;
+  background: rgba(0, 0, 0, 0.15) !important;
   color: rgba(0, 0, 0, 0.85) !important;
 }
 .ui.inverted.menu .item.disabled,
@@ -23613,7 +23613,7 @@ ul.ui.list li.completed:before,
 .ui.bottom.attached.message {
   margin-top: -1px;
   border-radius: 0em 0em 0.2857rem 0.2857rem;
-  box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.bottom.attached.message:not(:last-child) {
   margin-bottom: 1em;
@@ -23674,7 +23674,7 @@ ul.ui.list li.completed:before,
 }
 .ui.positive.message,
 .ui.attached.positive.message {
-  box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.positive.message .header {
   color: #356e36;
@@ -23686,7 +23686,7 @@ ul.ui.list li.completed:before,
 }
 .ui.negative.message,
 .ui.attached.negative.message {
-  box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.negative.message .header {
   color: #912d2b;
@@ -23698,7 +23698,7 @@ ul.ui.list li.completed:before,
 }
 .ui.info.message,
 .ui.attached.info.message {
-  box-shadow: 0px 0px 0px 1px #aad6df inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #aad6df inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.info.message .header {
   color: #297187;
@@ -23710,7 +23710,7 @@ ul.ui.list li.completed:before,
 }
 .ui.warning.message,
 .ui.attached.warning.message {
-  box-shadow: 0px 0px 0px 1px #d9caab inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #d9caab inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.warning.message .header {
   color: #825c01;
@@ -23722,7 +23722,7 @@ ul.ui.list li.completed:before,
 }
 .ui.error.message,
 .ui.attached.error.message {
-  box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.error.message .header {
   color: #912d2b;
@@ -23734,7 +23734,7 @@ ul.ui.list li.completed:before,
 }
 .ui.success.message,
 .ui.attached.success.message {
-  box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.success.message .header {
   color: #356e36;
@@ -24946,28 +24946,28 @@ ul.ui.list li.completed:before,
   color: rgba(40, 40, 40, 0.3);
 }
 .ui.sortable.table thead th.sortable:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted */
 .ui.sortable.table thead th.sortable.sorted {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted Hover */
 .ui.sortable.table thead th.sortable.sorted:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Inverted */
 .ui.inverted.sortable.table thead th.sortable.sorted {
-  background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   color: #ffffff;
 }
 .ui.inverted.sortable.table thead th.sortable:hover {
-  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   color: #ffffff;
 }
 .ui.inverted.sortable.table thead th.sortable {
@@ -25036,7 +25036,7 @@ ul.ui.list li.completed:before,
   background: transparent;
 }
 .ui.basic.striped.table tbody tr:nth-child(2n) {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+  background-color: rgba(0, 0, 0, 0.15) !important;
 }
 /* Very Basic */
 .ui[class*="very basic"].table {
@@ -25172,28 +25172,28 @@ ul.ui.list li.completed:before,
   color: rgba(40, 40, 40, 0.3);
 }
 .ui.sortable.table thead th.sortable:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted */
 .ui.sortable.table thead th.sortable.sorted {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Sorted Hover */
 .ui.sortable.table thead th.sortable.sorted:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
 }
 /* Inverted */
 .ui.sortable.inverted.table thead th.sortable.sorted {
-  background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: rgba(255, 255, 255, 0.07) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: rgba(255, 255, 255, 0.07) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   color: #ffffff;
 }
 .ui.sortable.inverted.table thead th.sortable:hover {
-  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   color: #ffffff;
 }
 .ui.sortable.inverted.table thead th.sortable {
@@ -25214,8 +25214,8 @@ ul.ui.list li.completed:before,
   background: #f7f7f7;
 }
 .ui.table.inverted.selectable tbody tr:not(.empty):not(.group):hover td {
-  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
 }
 /* Responsive */
 @media only screen and (max-width: 767px) {
@@ -27753,7 +27753,7 @@ ul.ui.list li.completed:before,
   display: block;
   position: relative;
   padding: 0em;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
 }
 .ui.cards > .card > .image > img,
 .ui.card > .image > img {
@@ -32028,7 +32028,7 @@ a.ui.card:hover,
 .ui.styled.accordion .accordion {
   border-radius: 0.2857rem;
   background: #ffffff;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(39, 41, 43, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(39, 41, 43, 0.15);
 }
 .ui.styled.accordion .title,
 .ui.styled.accordion .accordion .title {
@@ -32777,7 +32777,7 @@ a.ui.card:hover,
   left: 0em;
   z-index: 1;
   border: none !important;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 3.5rem;
   height: 0.25rem;
   -webkit-transform: none;
@@ -32792,14 +32792,14 @@ a.ui.card:hover,
 /* Handle */
 .ui.slider.checkbox .box:after,
 .ui.slider.checkbox label:after {
-  background: #ffffff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #ffffff linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #ffffff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: #ffffff linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   position: absolute;
   content: '';
   opacity: 1;
   z-index: 2;
   border: none;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
   width: 1.5rem;
   height: 1.5rem;
   top: -0.25rem;
@@ -32818,7 +32818,7 @@ a.ui.card:hover,
 .ui.slider.checkbox input[type="checkbox"]:focus ~ label:before,
 .ui.slider.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.slider.checkbox input[type="radio"]:focus ~ label:before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
   border: none;
 }
 /* Hover */
@@ -32828,7 +32828,7 @@ a.ui.card:hover,
 }
 .ui.slider.checkbox .box:hover::before,
 .ui.slider.checkbox label:hover::before {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.25);
 }
 /* Active */
 .ui.slider.checkbox input[type="checkbox"]:checked ~ .box,
@@ -32841,7 +32841,7 @@ a.ui.card:hover,
 .ui.slider.checkbox input[type="checkbox"]:checked ~ label:before,
 .ui.slider.checkbox input[type="radio"]:checked ~ .box:before,
 .ui.slider.checkbox input[type="radio"]:checked ~ label:before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .ui.slider.checkbox input[type="checkbox"]:checked ~ .box:after,
 .ui.slider.checkbox input[type="checkbox"]:checked ~ label:after,
@@ -32875,7 +32875,7 @@ a.ui.card:hover,
   top: 0rem;
   z-index: 1;
   border: none;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 3.5rem;
   height: 1.5rem;
   border-radius: 500rem;
@@ -32883,14 +32883,14 @@ a.ui.card:hover,
 /* Handle */
 .ui.toggle.checkbox .box:after,
 .ui.toggle.checkbox label:after {
-  background: #ffffff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-  background: #ffffff linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  background: #ffffff -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  background: #ffffff linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   position: absolute;
   content: '';
   opacity: 1;
   z-index: 2;
   border: none;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05), 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
   width: 1.5rem;
   height: 1.5rem;
   top: 0rem;
@@ -32914,13 +32914,13 @@ a.ui.card:hover,
 .ui.toggle.checkbox input[type="checkbox"]:focus ~ label:before,
 .ui.toggle.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.toggle.checkbox input[type="radio"]:focus ~ label:before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
   border: none;
 }
 /* Hover */
 .ui.toggle.checkbox .box:hover::before,
 .ui.toggle.checkbox label:hover::before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
   border: none;
 }
 /* Active */
@@ -32989,6 +32989,49 @@ a.ui.card:hover,
 .radio:before { content: '\e803'; }
 
 */
+.ui.polar.toggle.checkbox {
+  min-height: 2rem;
+}
+.ui.polar.toggle.checkbox .box,
+.ui.polar.toggle.checkbox label {
+  min-height: 2rem;
+  padding-left: 6rem;
+}
+.ui.polar.toggle.checkbox label {
+  padding-top: 0.35rem;
+}
+/* Switch */
+.ui.polar.toggle.checkbox .box:before,
+.ui.polar.toggle.checkbox label:before {
+  content: 'No';
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 2.75rem;
+  -webkit-transition: padding-left 0.3s ease 0s;
+          transition: padding-left 0.3s ease 0s;
+}
+/* Handle */
+.ui.polar.toggle.checkbox .box:after,
+.ui.polar.toggle.checkbox label:after {
+  width: 2rem;
+  height: 2rem;
+}
+/* Active */
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:before,
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:before,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:before,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:before {
+  content: 'Yes';
+  padding-left: 1rem;
+}
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:after,
+.ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:after,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:after,
+.ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:after {
+  left: 2.95rem;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -34464,7 +34507,7 @@ select.ui.dropdown {
 ----------------------*/
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   color: rgba(0, 0, 0, 0.8);
   z-index: 12;
 }
@@ -35449,11 +35492,11 @@ select.ui.dropdown {
 .ui.modal > .header {
   display: block;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15)) #ffffff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.15)) #ffffff;
   margin: 0em;
   padding: 1.2rem 2rem;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   font-size: 1.6em;
   line-height: 1.3em;
   font-weight: bold;

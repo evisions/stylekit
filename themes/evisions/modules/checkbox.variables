@@ -9,7 +9,7 @@
 /* Label */
 @labelPadding: 2.25em;
 
-@neutralCheckbox: @transparentBlack;
+@neutralCheckbox: @strongTransparentBlack;
 @positiveCheckbox: @positiveColor;
 @negativeCheckbox: @negativeColor;
 
