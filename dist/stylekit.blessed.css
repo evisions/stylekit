@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1441304617195');
+@import url('stylekit.blessed-blessed1.css?z=1441301909962');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -12837,6 +12837,12 @@ a.ui.card:hover,
   width: 2rem;
   height: 2rem;
 }
+.ui.polar.toggle.checkbox input[type="checkbox"] ~ .box:after,
+.ui.polar.toggle.checkbox input[type="checkbox"] ~ label:after,
+.ui.polar.toggle.checkbox input[type="radio"] ~ .box:after,
+.ui.polar.toggle.checkbox input[type="radio"] ~ label:after {
+  left: 0.03rem;
+}
 /* Active */
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:before,
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:before,
@@ -12849,7 +12855,7 @@ a.ui.card:hover,
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:after,
 .ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:after,
 .ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:after {
-  left: 2.95rem;
+  left: 3rem;
 }
 /*******************************
          Site Overrides

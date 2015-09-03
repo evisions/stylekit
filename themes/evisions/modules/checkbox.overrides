@@ -70,6 +70,13 @@
   height: 2rem;
 }
 
+.ui.polar.toggle.checkbox input[type="checkbox"] ~ .box:after,
+.ui.polar.toggle.checkbox input[type="checkbox"] ~ label:after,
+.ui.polar.toggle.checkbox input[type="radio"] ~ .box:after,
+.ui.polar.toggle.checkbox input[type="radio"] ~ label:after {
+  left: 0.03rem;
+}
+
 /* Active */
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ .box:before,
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:before,
@@ -82,5 +89,5 @@
 .ui.polar.toggle.checkbox input[type="checkbox"]:checked ~ label:after,
 .ui.polar.toggle.checkbox input[type="radio"]:checked ~ .box:after,
 .ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:after {
-  left: 2.95rem;
+  left: 3rem;
 }
