@@ -17249,10 +17249,11 @@ ul.ui.list li.completed:before,
          Site Overrides
 *******************************/
 .ui.counter {
+  display: inline-block;
   position: relative;
 }
 .ui.counter input[type=number] {
-  padding-right: 3.5em;
+  padding-right: 3em;
 }
 .ui.counter .ui.vertical.buttons {
   margin-right: 1px;
@@ -17274,6 +17275,9 @@ ul.ui.list li.completed:before,
 .ui.counter input::-webkit-outer-spin-button,
 .ui.counter input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+.ui.fluid.counter {
+  direction: block;
 }
 /* Collections */
 /*!

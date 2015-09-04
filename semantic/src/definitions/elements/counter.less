@@ -1,8 +1,10 @@
 .ui.counter {
+  display: inline-block;
   position: relative;
 }
+
 .ui.counter input[type=number] {
-  padding-right: 3.5em;
+  padding-right: 3em;
 }
 
 .ui.counter .ui.vertical.buttons {
@@ -26,4 +28,8 @@
 .ui.counter input::-webkit-outer-spin-button,
 .ui.counter input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.ui.fluid.counter {
+  direction: block;
 }
