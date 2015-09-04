@@ -17277,7 +17277,7 @@ ul.ui.list li.completed:before,
   -webkit-appearance: none;
 }
 .ui.fluid.counter {
-  direction: block;
+  display: block;
 }
 /* Collections */
 /*!
