@@ -68,3 +68,14 @@
   background: @lightBlue;
   color: @styledActiveTitleColor;
 }
+
+.ui.accordion .title:not(.ui) > a {
+  // make sure links do not mess up the style
+  color: @titleColor;
+  font-family: @titleFont;
+  font-size: @titleFontSize;
+  text-decoration: none;
+}
+.ui.inverted.accordion .title:not(.ui) > a {
+  color: @invertedTitleColor;
+}
