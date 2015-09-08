@@ -32191,6 +32191,15 @@ a.ui.card:hover,
   background: #dfeffd;
   color: rgba(0, 0, 0, 0.8);
 }
+.ui.accordion .title:not(.ui) > a {
+  color: #333333;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+.ui.inverted.accordion .title:not(.ui) > a {
+  color: #ffffff;
+}
 /*******************************
         User Overrides
 *******************************/

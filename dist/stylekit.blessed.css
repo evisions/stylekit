@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1441395771203');
+@import url('stylekit.blessed-blessed1.css?z=1441737364209');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -11978,6 +11978,15 @@ a.ui.card:hover,
 .ui.tree.styled.accordion .node.selected > .title {
   background: #dfeffd;
   color: rgba(0, 0, 0, 0.8);
+}
+.ui.accordion .title:not(.ui) > a {
+  color: #333333;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+}
+.ui.inverted.accordion .title:not(.ui) > a {
+  color: #ffffff;
 }
 /*******************************
         User Overrides
