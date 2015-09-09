@@ -213,7 +213,8 @@
 }
 
 .ui.table tbody tr.group.header td {
-  background-color: rgba(red(@primaryColor), green(@primaryColor), blue(@primaryColor), 0.35);
+  // background-color: rgba(red(@primaryColor), green(@primaryColor), blue(@primaryColor), 0.35);
+  background-color: #f1eeee;
   color: #333;
   padding-top: 0.3em !important;
   padding-bottom: 0.3em !important;
