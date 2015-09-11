@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1441832534010');
+@import url('stylekit.blessed-blessed1.css?z=1441990823434');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -964,6 +964,14 @@
 }
 .ui.grid.fitted {
   margin: 0;
+}
+@media only screen and (min-width: 992px) {
+  .ui.grid > .row > [class*="zero wide computer"].column,
+  .ui.grid > .column.row > [class*="zero wide computer"].column,
+  .ui.grid > [class*="zero wide computer"].column,
+  .ui.column.grid > [class*="zero wide computer"].column {
+    display: none;
+  }
 }
 /*******************************
          Site Overrides

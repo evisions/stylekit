@@ -21177,6 +21177,14 @@ ul.ui.list li.completed:before,
 .ui.grid.fitted {
   margin: 0;
 }
+@media only screen and (min-width: 992px) {
+  .ui.grid > .row > [class*="zero wide computer"].column,
+  .ui.grid > .column.row > [class*="zero wide computer"].column,
+  .ui.grid > [class*="zero wide computer"].column,
+  .ui.column.grid > [class*="zero wide computer"].column {
+    display: none;
+  }
+}
 /*******************************
          Site Overrides
 *******************************/
