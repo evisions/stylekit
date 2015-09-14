@@ -21889,6 +21889,8 @@ ul.ui.list li.completed:before,
 .ui.menu .item > img:only-child {
   display: block;
   max-width: 100%;
+}
+.ui.menu:not(.vertical) > img:only-child {
   margin: 0em auto;
 }
 /*******************************

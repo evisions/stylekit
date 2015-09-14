@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1441991141651');
+@import url('stylekit.blessed-blessed1.css?z=1442249799951');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -1677,6 +1677,8 @@
 .ui.menu .item > img:only-child {
   display: block;
   max-width: 100%;
+}
+.ui.menu:not(.vertical) > img:only-child {
   margin: 0em auto;
 }
 /*******************************
