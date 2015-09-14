@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1442249870614');
+@import url('stylekit.blessed-blessed1.css?z=1442253901149');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -1489,7 +1489,7 @@
   padding: 0 0.95em;
 }
 .ui.menu.vertical .item.image {
-  padding: 0.78571em 0.95em !important;
+  padding: 0.78571em 0.95em;
 }
 /* Floated Content */
 .ui.menu > .item:first-child {

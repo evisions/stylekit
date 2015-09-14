@@ -21701,7 +21701,7 @@ ul.ui.list li.completed:before,
   padding: 0 0.95em;
 }
 .ui.menu.vertical .item.image {
-  padding: 0.78571em 0.95em !important;
+  padding: 0.78571em 0.95em;
 }
 /* Floated Content */
 .ui.menu > .item:first-child {
