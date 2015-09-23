@@ -16486,6 +16486,12 @@ ul.ui.list li.completed:before,
 .ui.inverted.blue.segment {
   border-color: #1c84c6;
 }
+.ui:not(.inverted).segment.selectable {
+  background: #f7f7f7;
+}
+.ui:not(.inverted).segment.selected {
+  background: #dfeffd;
+}
 /*******************************
          Site Overrides
 *******************************/

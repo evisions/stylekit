@@ -8,7 +8,7 @@
 
 
 .ui:not(.inverted).segment.selectable {
-  background: @backgroundHover;
+  background: darken(@white, 3%);
 }
 
 .ui:not(.inverted).segment.selected {
