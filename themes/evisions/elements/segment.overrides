@@ -4,4 +4,13 @@
 
 .ui.inverted.blue.segment {
   border-color: @blue;
-} 
+}
+
+
+.ui:not(.inverted).segment.selectable {
+  background: @backgroundHover;
+}
+
+.ui:not(.inverted).segment.selected {
+  background: @lightBlue;
+}
