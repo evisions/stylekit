@@ -11,6 +11,6 @@
   background: darken(@white, 3%);
 }
 
-.ui:not(.inverted):not(.tab).segment.active {
+.ui:not(.inverted):not(.tab):not(.basic).segment.active {
   background: @lightBlue;
 }
