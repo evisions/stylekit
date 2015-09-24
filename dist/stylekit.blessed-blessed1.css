@@ -16486,10 +16486,10 @@ ul.ui.list li.completed:before,
 .ui.inverted.blue.segment {
   border-color: #1c84c6;
 }
-.ui:not(.inverted):not(.active).segment.selectable:hover {
+.ui:not(.inverted):not(.active):not(.tab).segment.selectable:hover {
   background: #f7f7f7;
 }
-.ui:not(.inverted).segment.active {
+.ui:not(.inverted):not(.tab).segment.active {
   background: #dfeffd;
 }
 /*******************************
