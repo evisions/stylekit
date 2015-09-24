@@ -16486,7 +16486,7 @@ ul.ui.list li.completed:before,
 .ui.inverted.blue.segment {
   border-color: #1c84c6;
 }
-.ui:not(.inverted).segment.selectable:hover {
+.ui:not(.inverted):not(.active).segment.selectable:hover {
   background: #f7f7f7;
 }
 .ui:not(.inverted).segment.active {
