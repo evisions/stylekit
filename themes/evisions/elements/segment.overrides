@@ -7,10 +7,10 @@
 }
 
 
-.ui:not(.inverted):not(.active).segment.selectable:hover {
+.ui:not(.inverted):not(.active):not(.tab).segment.selectable:hover {
   background: darken(@white, 3%);
 }
 
-.ui:not(.inverted).segment.active {
+.ui:not(.inverted):not(.tab).segment.active {
   background: @lightBlue;
 }
