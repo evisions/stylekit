@@ -16489,7 +16489,7 @@ ul.ui.list li.completed:before,
 .ui:not(.inverted):not(.active):not(.tab).segment.selectable:hover {
   background: #f7f7f7;
 }
-.ui:not(.inverted):not(.tab).segment.active {
+.ui:not(.inverted):not(.tab):not(.basic).segment.active {
   background: #dfeffd;
 }
 /*******************************
