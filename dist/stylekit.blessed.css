@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1443121906614');
+@import url('stylekit.blessed-blessed1.css?z=1443128960989');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -13392,12 +13392,6 @@ body.dimmed.dimmable > :not(.dimmer) {
 }
 .dimmed.dimmable > .ui.simple.inverted.dimmer {
   background: rgba(255, 255, 255, 0.85);
-}
-/*******************************
-         Theme Overrides
-*******************************/
-.ui.page.dimmer {
-  z-index: 1005;
 }
 /*******************************
         User Overrides
