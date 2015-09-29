@@ -14,3 +14,12 @@
 .ui:not(.inverted):not(.tab):not(.basic).segment.active {
   background: @lightBlue;
 }
+
+
+/* Padding */
+.ui.segment.padded {
+  padding: @paddedVerticalPadding @paddedHorizontalPadding;
+}
+.ui[class*="very padded"].segment {
+  padding: @veryPaddedVerticalPadding @veryPaddedHorizontalPadding;
+}

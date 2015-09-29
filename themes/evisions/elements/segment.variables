@@ -18,6 +18,12 @@
 @verticalPadding: 1em;
 @horizontalPadding: 1em;
 
+@paddedVerticalPadding: @verticalPadding*1.5;
+@paddedHorizontalPadding: @horizontalPadding*1.5;
+
+@veryPaddedVerticalPadding: @verticalPadding*3;
+@veryPaddedHorizontalPadding: @horizontalPadding*3;
+
 @margin: 1rem;
 @borderRadius: @defaultBorderRadius;
 
