@@ -16492,6 +16492,13 @@ ul.ui.list li.completed:before,
 .ui:not(.inverted):not(.tab):not(.basic).segment.active {
   background: #dfeffd;
 }
+/* Padding */
+.ui.segment.padded {
+  padding: 1.5em 1.5em;
+}
+.ui[class*="very padded"].segment {
+  padding: 3em 3em;
+}
 /*******************************
          Site Overrides
 *******************************/
