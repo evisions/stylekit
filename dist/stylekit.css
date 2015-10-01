@@ -23731,7 +23731,7 @@ ul.ui.list li.completed:before,
   box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.positive.message .header {
-  color: #356e36;
+  color: #39d1b4;
 }
 /* Negative */
 .ui.negative.message {
@@ -23791,7 +23791,7 @@ ul.ui.list li.completed:before,
   box-shadow: 0px 0px 0px 1px #b7caa7 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.success.message .header {
-  color: #356e36;
+  color: #39d1b4;
 }
 /* Colors */
 .ui.inverted.message,
@@ -37504,7 +37504,7 @@ a.ui.nag {
 }
 /* Indicating Success */
 .ui.indicating.progress.success .label {
-  color: #356e36;
+  color: #39d1b4;
 }
 /*******************************
             Content
@@ -37569,7 +37569,7 @@ a.ui.nag {
           animation: none !important;
 }
 .ui.progress.success > .label {
-  color: #356e36;
+  color: #39d1b4;
 }
 /*--------------
      Warning

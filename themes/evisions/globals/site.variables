@@ -290,7 +290,8 @@
 @positiveColor           : @teal;
 @positiveBackgroundColor : #EEFFE7;
 @positiveBorderColor     : #B7CAA7;
-@positiveHeaderColor     : #356E36;
+// @positiveHeaderColor     : #356E36;
+@positiveHeaderColor     : @teal;
 @positiveTextColor       : #3C763D;
 
 /* Negative */
