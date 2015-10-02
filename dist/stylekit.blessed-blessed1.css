@@ -12659,6 +12659,22 @@ a.ui.dark.grey.label:hover:before {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.label.wrappable {
+  max-width: 100%;
+  overflow: hidden;
+}
+.ui.label.wrappable > * {
+  display: table-cell !important;
+}
+.ui.label.wrappable > i.icon {
+  min-width: 1.75em;
+  vertical-align: middle;
+  text-align: left;
+}
+.ui.label.wrappable > .text {
+  white-space: normal;
+  text-align: left;
+}
 /*******************************
          Site Overrides
 *******************************/
