@@ -23759,7 +23759,7 @@ ul.ui.list li.completed:before,
   box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.negative.message .header {
-  color: #912d2b;
+  color: #ff3366;
 }
 /* Info */
 .ui.info.message {
@@ -23795,7 +23795,7 @@ ul.ui.list li.completed:before,
   box-shadow: 0px 0px 0px 1px #dbb1b1 inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .ui.error.message .header {
-  color: #912d2b;
+  color: #ff3366;
 }
 /* Success */
 .ui.success.message {
@@ -37613,7 +37613,7 @@ a.ui.nag {
           animation: none !important;
 }
 .ui.progress.error > .label {
-  color: #912d2b;
+  color: #ff3366;
 }
 /*--------------
      Active
