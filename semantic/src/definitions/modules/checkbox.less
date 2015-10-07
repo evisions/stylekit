@@ -210,6 +210,14 @@
   color: @disabledCheckboxLabelColor;
 }
 
+.ui.disabled.checkbox label:before,
+.ui.disabled.checkbox label:after,
+.ui.checkbox input[type="checkbox"][disabled] ~ label:before,
+.ui.checkbox input[type="checkbox"][disabled] ~ label:after,
+.ui.checkbox input[type="radio"][disabled] ~ label:before,
+.ui.checkbox input[type="radio"][disabled] ~ label:after {
+  opacity: @disabledCheckboxOpacity;
+}
 
 /*******************************
              Types
