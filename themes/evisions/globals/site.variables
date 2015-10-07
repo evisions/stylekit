@@ -298,7 +298,8 @@
 @negativeColor           : @red;
 @negativeBackgroundColor : #FFF0F0;
 @negativeBorderColor     : #DBB1B1;
-@negativeHeaderColor     : #912D2B;
+// @negativeHeaderColor     : #912D2B;
+@negativeHeaderColor     : @red;
 @negativeTextColor       : #A94442;
 
 /* Info */
