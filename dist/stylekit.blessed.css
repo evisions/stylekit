@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1444325276960');
+@import url('stylekit.blessed-blessed1.css?z=1444325484832');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -12547,6 +12547,14 @@ a.ui.card:hover,
   cursor: default;
   opacity: 0.5;
   color: #000000;
+}
+.ui.disabled.checkbox label:before,
+.ui.disabled.checkbox label:after,
+.ui.checkbox input[type="checkbox"][disabled] ~ label:before,
+.ui.checkbox input[type="checkbox"][disabled] ~ label:after,
+.ui.checkbox input[type="radio"][disabled] ~ label:before,
+.ui.checkbox input[type="radio"][disabled] ~ label:after {
+  opacity: 0.5;
 }
 /*******************************
              Types
