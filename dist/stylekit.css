@@ -35563,15 +35563,15 @@ select.ui.dropdown {
 .ui.modal > .close {
   cursor: pointer;
   position: absolute;
-  top: -5.5rem;
-  right: -5.5rem;
+  top: -4rem;
+  right: -4rem;
   z-index: 1;
   opacity: 0.8;
-  font-size: 3.25em;
+  font-size: 2em;
   color: #ffffff;
-  width: 5.25rem;
-  height: 5.25rem;
-  padding: 2.125rem 0rem 0rem 0rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 1.375rem 0rem 0rem 0rem;
 }
 .ui.modal > .close:hover {
   opacity: 1;
@@ -35684,7 +35684,7 @@ select.ui.dropdown {
 /* Tablet and Mobile */
 @media only screen and (max-width: 992px) {
   .ui.modal > .header {
-    padding-right: 5.25rem;
+    padding-right: 3.75rem;
   }
   .ui.modal > .close {
     top: -1.5rem;
@@ -35696,7 +35696,7 @@ select.ui.dropdown {
 @media only screen and (max-width: 767px) {
   .ui.modal > .header {
     padding: 0.75rem 1rem !important;
-    padding-right: 5.25rem !important;
+    padding-right: 3.75rem !important;
   }
   .ui.modal > .content {
     display: block;
@@ -35807,7 +35807,7 @@ select.ui.dropdown {
   left: 0em !important;
 }
 .ui.fullscreen.modal > .header {
-  padding-right: 5.25rem;
+  padding-right: 3.75rem;
 }
 .ui.fullscreen.modal > .close {
   top: -1.5rem;
