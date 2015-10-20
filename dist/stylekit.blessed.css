@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1445371392757');
+@import url('stylekit.blessed-blessed1.css?z=1445374874878');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5166,6 +5166,12 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+/*-----------------
+    Footer
+-------------------*/
+.ui.table tfoot tr td {
+  border-top: 1px solid #d4d4d5 !important;
 }
 /*******************************
          Site Overrides

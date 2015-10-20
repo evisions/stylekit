@@ -231,3 +231,12 @@
     left: 0;
   }
 }
+
+
+
+/*-----------------
+    Footer
+-------------------*/
+.ui.table tfoot tr td {
+  border-top: @rowBorder !important;
+}
