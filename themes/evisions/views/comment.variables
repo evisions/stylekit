@@ -16,8 +16,10 @@
 
 /* Comment */
 @commentBackground: none;
-@commentMargin: 0.5em 0em 0em;
-@commentPadding: 0.5em 0em 0em;
+@commentMargin: 0.75em 0em 0em;
+// @commentMargin: 0.5em 0em 0em;
+@commentPadding: 0.75em 0em 0em;
+// @commentPadding: 0.5em 0em 0em;
 @commentDivider: none;
 @commentBorder: none;
 @commentLineHeight: 1.2;
