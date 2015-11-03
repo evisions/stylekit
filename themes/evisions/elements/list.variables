@@ -200,6 +200,9 @@
 @relaxedHeaderMargin: 0.25rem;
 @relaxedHorizontalPadding: 1.25rem;
 
+/* Padded */
+@paddedHorizontalPadding: 1rem;
+
 /* Very Relaxed */
 @veryRelaxedVerticalPadding: 1rem;
 @veryRelaxedHeaderMargin: 0.5rem;

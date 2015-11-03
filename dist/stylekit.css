@@ -13089,6 +13089,7 @@ a.ui.dark.grey.label:hover:before {
 /* Divided */
 /* Divided Horizontal */
 /* Relaxed */
+/* Padded */
 /* Very Relaxed */
 /*------------------
      Site Theme
@@ -13898,6 +13899,10 @@ ul.ui.list li.completed:before,
   content: '✓';
   color: #39d1b4;
   font-weight: bold;
+}
+.ui.padded.list:not(.horizontal) > .item {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 /*******************************
     User Variable Overrides
@@ -25411,6 +25416,15 @@ ul.ui.list li.completed:before,
   top: 0;
   left: 0;
 }
+/*--------------
+    Muted & Emphasized
+---------------*/
+.ui.table tbody tr:not(.disabled).muted {
+  color: rgba(0, 0, 0, 0.6);
+}
+.ui.table tbody tr:not(.disabled).emphasized {
+  font-weight: bold;
+}
 /*-----------------
     Footer
 -------------------*/
@@ -28937,8 +28951,8 @@ a.ui.card:hover,
 .ui.comments .comment {
   position: relative;
   background: none;
-  margin: 0.5em 0em 0em;
-  padding: 0.5em 0em 0em;
+  margin: 0.75em 0em 0em;
+  padding: 0.75em 0em 0em;
   border: none;
   border-top: none;
   line-height: 1.2;

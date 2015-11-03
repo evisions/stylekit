@@ -13089,6 +13089,7 @@ a.ui.dark.grey.label:hover:before {
 /* Divided */
 /* Divided Horizontal */
 /* Relaxed */
+/* Padded */
 /* Very Relaxed */
 /*------------------
      Site Theme
@@ -13898,6 +13899,10 @@ ul.ui.list li.completed:before,
   content: '✓';
   color: #39d1b4;
   font-weight: bold;
+}
+.ui.padded.list:not(.horizontal) > .item {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 /*******************************
     User Variable Overrides

@@ -13,3 +13,8 @@ ul.ui.list li.completed:before,
   color: @checkMarkColor;
   font-weight: bold;
 }
+
+.ui.padded.list:not(.horizontal) > .item {
+  padding-left: @paddedHorizontalPadding;
+  padding-right: @paddedHorizontalPadding;
+}
