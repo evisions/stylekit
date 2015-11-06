@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1446485224640');
+@import url('stylekit.blessed-blessed1.css?z=1446849987676');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -13991,7 +13991,7 @@ body.dimmed.dimmable > :not(.dimmer) {
   margin: 1rem 0rem 0.75rem;
   padding: 0em 1.25rem;
   color: rgba(0, 0, 0, 0.85);
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
 }
