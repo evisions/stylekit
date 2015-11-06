@@ -4281,6 +4281,9 @@ span.text.link.blue {
   font-weight: normal;
   opacity: 1 !important;
 }
+.ui.button.inline:focus {
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0px 1px rgba(81, 167, 232, 0.8) inset, 0px 0px 3px 2px rgba(81, 167, 232, 0.8) !important;
+}
 .ui.button.inline.disabled {
   opacity: 1 !important;
 }
@@ -24421,6 +24424,7 @@ ul.ui.list li.completed:before,
   padding: 0.7em 0.8em;
   text-align: left;
   vertical-align: middle;
+  word-break: break-word;
 }
 /* Icons */
 .ui.table > .icon {
@@ -24649,9 +24653,13 @@ ul.ui.list li.completed:before,
   box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.9) inset;
 }
 .ui.table tr.active td,
-.ui.table td.active {
+.ui.table td.active,
+.ui.table tr:focus {
   background: #dfeffd !important;
   color: rgba(50, 50, 50, 0.9) !important;
+}
+.ui.table tr:focus {
+  outline: none;
 }
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {

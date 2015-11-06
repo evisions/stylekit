@@ -121,6 +121,9 @@
   font-weight: normal;
   opacity: 1 !important;
 }
+.ui.button.inline:focus {
+  box-shadow: @focusBoxShadow !important;
+}
 
 .ui.button.inline.disabled {
   opacity: 1 !important;

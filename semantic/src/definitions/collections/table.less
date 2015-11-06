@@ -127,6 +127,7 @@
   padding: @cellVerticalPadding @cellHorizontalPadding;
   text-align: @cellTextAlign;
   vertical-align: @cellVerticalAlign;
+  word-break: break-word;
 }
 
 /* Icons */
@@ -388,10 +389,15 @@
   box-shadow: @activeBoxShadow;
 }
 .ui.table tr.active td,
-.ui.table td.active {
+.ui.table td.active,
+.ui.table tr:focus {
   background: @activeBackgroundColor !important;
   color: @activeColor !important;
 }
+.ui.table tr:focus {
+  outline: none;
+}
+
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {
   background: @activeBackgroundColor !important;
