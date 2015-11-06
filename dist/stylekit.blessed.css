@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1446672268840');
+@import url('stylekit.blessed-blessed1.css?z=1446848081572');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -4175,6 +4175,7 @@
   padding: 0.7em 0.8em;
   text-align: left;
   vertical-align: middle;
+  word-break: break-word;
 }
 /* Icons */
 .ui.table > .icon {
