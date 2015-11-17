@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1447462108595');
+@import url('stylekit.blessed-blessed1.css?z=1447726376767');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -12522,7 +12522,7 @@ a.ui.card:hover,
 .ui.checkbox .box:active::before,
 .ui.checkbox label:active::before {
   background: #f5f5f5;
-  border: 1px solid 1px solid rgba(39, 41, 43, 0.3);
+  border: 1px solid rgba(39, 41, 43, 0.3);
 }
 .ui.checkbox input[type="checkbox"]:active ~ label,
 .ui.checkbox input[type="radio"]:active ~ label {
@@ -12536,7 +12536,7 @@ a.ui.card:hover,
 .ui.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.checkbox input[type="radio"]:focus ~ label:before {
   background: #f5f5f5;
-  border: 1px solid 1px solid rgba(39, 41, 43, 0.3);
+  border: 1px solid rgba(39, 41, 43, 0.3);
 }
 .ui.checkbox input[type="checkbox"]:focus ~ label,
 .ui.checkbox input[type="radio"]:focus ~ label {
@@ -12784,7 +12784,6 @@ a.ui.card:hover,
 .ui.toggle.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.toggle.checkbox input[type="radio"]:focus ~ label:before {
   background-color: rgba(0, 0, 0, 0.25);
-  border: none;
 }
 /* Hover */
 .ui.toggle.checkbox .box:hover::before,
