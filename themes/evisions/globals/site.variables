@@ -76,7 +76,7 @@
 @offWhite         : #FAFAFA;
 @darkWhite        : #F0F0F0;
 @white            : #FFFFFF;
-@darkBlue         : #2F4050;
+@darkBlue         : #001F3F;
 
 /*-------------------
     Brand Colors

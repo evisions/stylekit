@@ -1488,7 +1488,7 @@ span.text.teal {
   color: #39d1b4;
 }
 span.text.dark.blue {
-  color: #2f4050;
+  color: #001f3f;
 }
 span.text.link.blue {
   color: #0074d9;
@@ -22652,7 +22652,7 @@ ul.ui.list li.completed:before,
     Inverted
 ---------------*/
 .ui.inverted.menu {
-  background: #2f4050;
+  background: #001f3f;
   box-shadow: none;
 }
 .ui.inverted.menu .header.item {
@@ -23156,7 +23156,7 @@ ul.ui.list li.completed:before,
 }
 .ui.dark.menu .active.item {
   color: #ffffff;
-  background-color: #2f4050;
+  background-color: #001f3f;
   box-shadow: none;
 }
 .ui.dark.menu .item:before {
