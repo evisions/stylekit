@@ -44,16 +44,16 @@
 
 /*---  Colors  ---*/
 @black            : #1B1C1D;
-@blue             : #1c84c6;
-@green            : #4AB471;
+@blue             : #0074D9;
+@green            : #3D9970;
 @grey             : #CCCCCC;
-@orange           : #F48A52;
+@orange           : #F06C00;
 @pink             : #F79EB6;
 @purple           : #717ECD;
 @red              : #ff3366;
 @teal             : #39d1b4;
 @yellow           : #F3AE4E;
-@mediumBlue       : #225A8E;
+@mediumBlue       : #1C4B77;
 @magenta          : #f36;
 
 /*---  Light Colors  ---*/
@@ -82,7 +82,7 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @teal;
+@primaryColor        : @blue;
 @secondaryColor      : @mediumBlue;
 @accentCOlor         : @orange;
 
@@ -129,8 +129,8 @@
        Links
 --------------------*/
 
-@linkColor           : #009FDA;
-@linkUnderline       : none;
+@linkColor           : @blue;
+@linkUnderline       : underline;
 @linkHoverColor      : lighten(@linkColor, 5);
 
 /*-------------------
@@ -287,7 +287,7 @@
 --------------------*/
 
 /* Positive */
-@positiveColor           : @teal;
+@positiveColor           : @green;
 @positiveBackgroundColor : #EEFFE7;
 @positiveBorderColor     : #B7CAA7;
 // @positiveHeaderColor     : #356E36;
