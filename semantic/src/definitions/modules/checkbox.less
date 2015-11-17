@@ -150,7 +150,7 @@
 .ui.checkbox .box:active::before,
 .ui.checkbox label:active::before {
   background: @checkboxSelectedBackground;
-  border: 1px solid @checkboxSelectedBorder;
+  border: @checkboxSelectedBorder;
 }
 .ui.checkbox input[type="checkbox"]:active ~ label,
 .ui.checkbox input[type="radio"]:active ~ label {
@@ -166,7 +166,7 @@
 .ui.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.checkbox input[type="radio"]:focus ~ label:before {
   background: @checkboxSelectedBackground;
-  border: 1px solid @checkboxSelectedBorder;
+  border: @checkboxSelectedBorder;
 }
 .ui.checkbox input[type="checkbox"]:focus ~ label,
 .ui.checkbox input[type="radio"]:focus ~ label {
@@ -442,7 +442,7 @@
 .ui.toggle.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.toggle.checkbox input[type="radio"]:focus ~ label:before {
   background-color: @toggleFocusColor;
-  border: none;
+  // border: none;
 }
 
 /* Hover */
