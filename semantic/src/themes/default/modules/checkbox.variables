@@ -10,7 +10,7 @@
 @labelPadding: 1.75em;
 
 @neutralCheckbox: @transparentBlack;
-@positiveCheckbox: @positiveColor;
+@positiveCheckbox: #3D9970;
 @negativeCheckbox: @negativeColor;
 
 /* Checkbox */

@@ -91,3 +91,14 @@
 .ui.polar.toggle.checkbox input[type="radio"]:checked ~ label:after {
   left: 3rem;
 }
+
+/* Focus */
+.ui.checkbox input[type="checkbox"]:focus ~ .box:before,
+.ui.checkbox input[type="checkbox"]:focus ~ label:before,
+.ui.checkbox input[type="radio"]:focus ~ .box:before,
+.ui.checkbox input[type="radio"]:focus ~ label:before {
+  box-shadow: 
+    -1px 0px 0px 1px transparent inset, 
+    0px 0px 1px rgba(81, 167, 232, 0.8) inset, 
+    0px 0px 3px 2px rgba(81, 167, 232, 0.8) !important;
+}
