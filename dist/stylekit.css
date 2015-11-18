@@ -17280,7 +17280,7 @@ ul.ui.list li.completed:before,
   /* '' */
 }
 .ui.steps .step.active {
-  border-top: 2px solid #0074d9;
+  border-top: 2px solid #3d9970;
 }
 /*******************************
          Site Overrides

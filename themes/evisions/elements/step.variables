@@ -87,6 +87,7 @@
 @activeBackground: #F0F0F0;
 @activeColor: @darkTextColor;
 @activeIconColor: @darkTextColor;
+@activeBorderTop: 2px solid @positiveColor;
 
 /* Active + Hover */
 @activeHoverBackground: #ECECEC;
