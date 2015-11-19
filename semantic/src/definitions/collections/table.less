@@ -397,6 +397,11 @@
 .ui.table tr:focus {
   outline: none;
 }
+.ui.table tr.active td > a,
+.ui.table td.active > a,
+.ui.table tr:focus td > a {
+  color: @activeColor !important;
+}
 .ui.table td > a[tabindex="-1"]:focus {
   outline: none;
 }

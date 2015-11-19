@@ -24661,6 +24661,11 @@ ul.ui.list li.completed:before,
 .ui.table tr:focus {
   outline: none;
 }
+.ui.table tr.active td > a,
+.ui.table td.active > a,
+.ui.table tr:focus td > a {
+  color: #fafafa !important;
+}
 .ui.table td > a[tabindex="-1"]:focus {
   outline: none;
 }
@@ -25401,10 +25406,10 @@ ul.ui.list li.completed:before,
 .ui.borderless.table {
   border: 0px;
 }
-.ui.borderless.table thead th {
+.ui[class*="very basic"].borderless.table thead th {
   border-bottom: 0px;
 }
-.ui.borderless.table tr td {
+.ui[class*="very basic"].borderless.table tr td {
   border-top: 0px;
 }
 .ui.table tbody tr.group.header td {
@@ -25439,6 +25444,10 @@ ul.ui.list li.completed:before,
 -------------------*/
 .ui.table tfoot tr td {
   border-top: 1px solid #d4d4d5 !important;
+}
+.ui.table tr td.nowrap {
+  word-break: normal;
+  white-space: nowrap;
 }
 /*******************************
          Site Overrides
