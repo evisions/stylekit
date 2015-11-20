@@ -25291,12 +25291,12 @@ ul.ui.list li.completed:before,
   border-left-color: transparent;
   border-right-color: transparent;
 }
-.ui.table.selectable tbody tr:not(.empty):not(.group):hover td {
+.ui.table.selectable tbody tr:not(:focus):not(.empty):not(.group):hover td {
   background: #f7f7f7;
   color: #333333;
   cursor: default;
 }
-.ui.table.selectable.link tbody tr:not(.empty):not(.group):hover td {
+.ui.table.selectable.link tbody tr:not(:focus):not(.empty):not(.group):hover td {
   cursor: pointer;
 }
 .ui.table.selectable tbody tr.active:not(.empty):not(.group):hover td {
