@@ -98,7 +98,7 @@
 
 /* Responsive */
 @media only screen and (max-width : @largestMobileScreen) {
- 
+
  .ui.table:not(.unstackable) {
     position: relative;
   }
@@ -149,7 +149,7 @@
     Tablet Stackable
 ----------------------*/
 @media only screen and (max-width : @largestTabletScreen) {
- 
+
  .ui[class*="tablet stackable"].table {
     position: relative;
   }
@@ -204,7 +204,7 @@
 ---------------*/
 
 .ui.borderless.table {
-  border: 0px;
+  border: 0px !important;
 }
 .ui[class*="very basic"].borderless.table thead th {
   border-bottom: 0px;

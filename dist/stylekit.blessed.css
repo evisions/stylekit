@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1447979145900');
+@import url('stylekit.blessed-blessed1.css?z=1448306694781');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5155,7 +5155,7 @@
     Borderless
 ---------------*/
 .ui.borderless.table {
-  border: 0px;
+  border: 0px !important;
 }
 .ui[class*="very basic"].borderless.table thead th {
   border-bottom: 0px;
