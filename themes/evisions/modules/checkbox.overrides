@@ -15,7 +15,7 @@
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
   top: 0.2em;
-  font-family: 'Checkbox';
+  font-family: inherit;
 }
 .ui.checkbox label:after,
 .ui.checkbox .box:after {

@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1447979145900');
+@import url('stylekit.blessed-blessed1.css?z=1448926429643');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -12850,7 +12850,7 @@ a.ui.card:hover,
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
   top: 0.2em;
-  font-family: 'Checkbox';
+  font-family: inherit;
 }
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
