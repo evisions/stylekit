@@ -354,6 +354,9 @@
   box-shadow: 0px 0px 0px @invertedBorderSize @white inset !important;
   color: @hoverColor;
 }
+.ui.inverted.button:focus {
+  box-shadow: @focusBoxShadow !important;
+}
 
 
 /*-------------------
@@ -709,6 +712,9 @@
 .ui.basic.inverted.active.button:hover {
   background-color: @strongTransparentWhite;
   box-shadow: @basicInvertedHoverBoxShadow !important;
+}
+.ui.basic.inverted.button:focus {
+  box-shadow: @focusBoxShadow !important;
 }
 
 
