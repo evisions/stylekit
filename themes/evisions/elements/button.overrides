@@ -153,3 +153,8 @@
 .ui.button.inline:active, .ui.button.inline:hover {
   color: @darkGrey;
 }
+
+.ui.inverted.button:focus:not(:hover),
+.ui.inverted.basic.button:focus:not(:hover) {
+  box-shadow: @focusBoxShadow !important;
+}
