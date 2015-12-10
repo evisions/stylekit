@@ -16524,7 +16524,8 @@ ul.ui.list li.completed:before,
   background: #f7f7f7;
 }
 .ui:not(.inverted):not(.tab):not(.basic).segment.active {
-  background: #dfeffd;
+  color: #ffffff;
+  background: #0074d9;
 }
 /* Padding */
 .ui.segment.padded {
