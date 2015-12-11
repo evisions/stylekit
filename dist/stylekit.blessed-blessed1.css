@@ -19083,6 +19083,10 @@ ul.ui.list li.completed:before,
     float: right;
   }
 }
+.ui.form .ui.counter {
+  width: 100%;
+  vertical-align: top;
+}
 /*******************************
          Site Overrides
 *******************************/
