@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1449853370775');
+@import url('stylekit.blessed-blessed1.css?z=1450208194137');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -15382,11 +15382,10 @@ select.ui.dropdown {
 .ui.modal > .header {
   display: block;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15)) #ffffff;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.15)) #ffffff;
+  background: #ffffff;
   margin: 0em;
   padding: 1.2rem 2rem;
-  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: none;
   font-size: 1.6em;
   line-height: 1.3em;
   font-weight: bold;
