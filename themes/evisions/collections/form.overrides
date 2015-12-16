@@ -98,3 +98,8 @@
     float: right;
   }
 }
+
+.ui.form .ui.counter {
+  width: 100%;
+  vertical-align: top;
+}

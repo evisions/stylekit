@@ -29,11 +29,13 @@
 @headerVerticalPadding: 1.2rem;
 @headerHorizontalPadding: 2rem;
 @headerPadding: @headerVerticalPadding @headerHorizontalPadding;
-@headerBackground: @subtleGradient @white;
+// @headerBackground: @subtleGradient @white;
+@headerBackground: @white;
 @headerColor: @darkTextColor;
 @headerFontSize: 1.6em;
 @headerLineHeight: 1.3em;
-@headerBoxShadow: @subtleShadow;
+// @headerBoxShadow: @subtleShadow;
+@headerBoxShadow: none;
 @headerFontWeight: bold;
 @headerFontFamily: @headerFont;
 @headerBorder: 1px solid @borderColor;

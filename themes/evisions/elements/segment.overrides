@@ -12,7 +12,8 @@
 }
 
 .ui:not(.inverted):not(.tab):not(.basic).segment.active {
-  background: @lightBlue;
+  color: @white;
+  background: @primaryColor;
 }
 
 
