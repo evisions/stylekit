@@ -36,3 +36,7 @@ span.text.dark.blue {
 span.text.link.blue {
   color: @linkColor;
 }
+
+span.muted {
+  color: rgba(0, 0, 0, 0.6);
+}

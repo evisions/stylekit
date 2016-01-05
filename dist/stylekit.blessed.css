@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1450234457590');
+@import url('stylekit.blessed-blessed1.css?z=1452022747849');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5189,6 +5189,16 @@
 }
 .ui.table tbody tr:not(.disabled).emphasized {
   font-weight: bold;
+}
+/*--------------
+    Active Invertable Modifiers
+---------------*/
+.ui.table tbody tr.active span.invertable {
+  color: #ffffff !important;
+}
+.ui.table tbody tr.active .ui.button.invertable {
+  background-color: #ffffff;
+  color: #1b1c1d;
 }
 /*-----------------
     Footer

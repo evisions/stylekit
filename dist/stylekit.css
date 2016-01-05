@@ -1493,6 +1493,9 @@ span.text.dark.blue {
 span.text.link.blue {
   color: #0074d9;
 }
+span.muted {
+  color: rgba(0, 0, 0, 0.6);
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -25446,6 +25449,16 @@ ul.ui.list li.completed:before,
 }
 .ui.table tbody tr:not(.disabled).emphasized {
   font-weight: bold;
+}
+/*--------------
+    Active Invertable Modifiers
+---------------*/
+.ui.table tbody tr.active span.invertable {
+  color: #ffffff !important;
+}
+.ui.table tbody tr.active .ui.button.invertable {
+  background-color: #ffffff;
+  color: #1b1c1d;
 }
 /*-----------------
     Footer

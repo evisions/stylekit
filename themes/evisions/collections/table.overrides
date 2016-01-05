@@ -244,6 +244,17 @@
   font-weight: bold;
 }
 
+/*--------------
+    Active Invertable Modifiers
+---------------*/
+.ui.table tbody tr.active span.invertable {
+  color: @white !important;
+}
+.ui.table tbody tr.active .ui.button.invertable {
+  background-color: @white;
+  color: @black;
+}
+
 /*-----------------
     Footer
 -------------------*/

@@ -1493,6 +1493,9 @@ span.text.dark.blue {
 span.text.link.blue {
   color: #0074d9;
 }
+span.muted {
+  color: rgba(0, 0, 0, 0.6);
+}
 /*******************************
          Site Overrides
 *******************************/
