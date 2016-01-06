@@ -111,3 +111,58 @@
   opacity: 0.6;
   right: -s1px;
 }
+
+// Expandable Menu Styles
+.ui.expandable.menu.vertical {
+  transition: width 150ms ease;
+  min-height: 100%;
+  height: auto !important;
+  overflow-x: hidden;
+  &:not(.expanded) {
+    width: 3.5rem;
+    .item > .text:not(.icon),
+    .item.accordion > .node > .title .text,
+    .item.accordion > .node > .content,
+    .item.accordion > .node > .title .dropdown.icon {
+      opacity: 0;
+    }
+  }
+  &.expanded {
+    width: 15rem;
+    .item > .text:not(.icon),
+    .item.accordion > .node > .title > .text,
+    .item.accordion > .node > .content,
+    .item.accordion > .node > .title .dropdown.icon {
+      opacity: 1;
+    }
+  }
+
+  .item > .text:not(.icon),
+  .item.accordion > .node > .title > .text,
+  .item.accordion > .node > .title .dropdown.icon {
+    transition: opacity 150ms ease;
+  }
+
+  .item:not(.header):not(.image) {
+    white-space: nowrap;
+    &:not(.accordion) {
+      padding: 1.5em 1.25em;
+    }
+    &.accordion {
+      padding: 1em 1.25em;
+    }
+  }
+  .item > i.icon {
+    float: left;
+    margin: 0em 0.5em 0em 0em;
+  }
+  .item.accordion .title i.icon,
+  .item.accordion > .node > .content .title {
+    opacity: 0.75;
+  }
+
+  .item.accordion > .node > .content .title:hover,
+  .item.accordion > .node > .title:hover .dropdown.icon {
+    opacity: 1;
+  }
+}
