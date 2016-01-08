@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1452125217146');
+@import url('stylekit.blessed-blessed1.css?z=1452270521754');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5245,10 +5245,12 @@
 /*--------------
     Active Invertable Modifiers
 ---------------*/
-.ui.table tbody tr.active span.invertable {
+.ui.table tbody tr.active span.invertable,
+.ui.table tbody tr:focus span.invertable {
   color: #ffffff !important;
 }
-.ui.table tbody tr.active .ui.button.invertable {
+.ui.table tbody tr.active .ui.button.invertable,
+.ui.table tbody tr:focus .ui.button.invertable {
   background-color: #ffffff;
   color: #1b1c1d;
 }
