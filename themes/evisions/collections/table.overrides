@@ -247,10 +247,14 @@
 /*--------------
     Active Invertable Modifiers
 ---------------*/
-.ui.table tbody tr.active span.invertable {
+.ui.table tbody tr.active span.invertable,
+.ui.table tbody tr:focus span.invertable
+{
   color: @white !important;
 }
-.ui.table tbody tr.active .ui.button.invertable {
+.ui.table tbody tr.active .ui.button.invertable,
+.ui.table tbody tr:focus .ui.button.invertable
+{
   background-color: @white;
   color: @black;
 }
