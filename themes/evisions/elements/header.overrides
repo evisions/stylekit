@@ -2,3 +2,6 @@
          Theme Overrides
 *******************************/
 
+.ui.header.muted {
+  color: rgba(0, 0, 0, 0.6);
+}

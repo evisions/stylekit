@@ -97,7 +97,7 @@
 /**
  * Calendar Week
  */
-@weekGutterWidth: 10rem;
+@weekGutterWidth: 6rem;
 @headerCellHeight: 3em;
 @headerCellPadding: 0 0.5em;
 @headerCellBorder: 1px solid @lightGrey;

@@ -114,7 +114,7 @@
   display: inline-block;
 }
 
-.ui.calendar:not(.celled) .day:not(.other) {
+.ui.calendar:not(.celled):not(.innercelled) .day:not(.other) {
   border-top: @dayBorderTop;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .ui.calendar .controls.default:not(.fluid) {
-  width: @controlsWidth;  
+  width: @controlsWidth;
 }
 .ui.calendar,.ui.week {
   .controls.default table {
@@ -316,19 +316,24 @@
  */
 .ui.calendar.vertical.fluid {
   position: relative;
-  height: 100%;
+  // random fix for borders
+  height: ~"calc(100% - 10px)";
 }
 .ui.calendar.vertical.fluid .content {
   position: absolute;
-  top: @normalHeaderHeight;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  // add 2px for borders
+  bottom: 2px;
+}
+.ui.calendar.vertical.controls.fluid .content {
+  top: @normalHeaderHeight;
 }
 .ui.calendar.vertical.fluid .content > table {
   height: 100%;
 }
-.ui.calendar.large.vertical.fluid .content {
+.ui.calendar.large.vertical.controls.fluid .content {
   top: @largeHeaderHeight;
 }
 .ui.calendar.vertical.fluid .week.header {
@@ -363,6 +368,26 @@
   border-right: @headerCellBorder;
 }
 
+/**
+ * Inner Celled
+ */
+ .ui.calendar.innercelled .day:first-child {
+    border-left: 0;
+ }
+ .ui.calendar.innercelled .day {
+   border-left: @dayCellBorder;
+   border-bottom: @dayCellBorder;
+ }
+ .ui.calendar.innercelled .week:last-child .day {
+   border-bottom: 0;
+ }
+ .ui.calendar.innercelled .week.header .cell:first-child {
+   border-left: 0;
+ }
+ .ui.calendar.innercelled .week.header .cell {
+   border-left: @headerCellBorder;
+   border-bottom: @headerCellBorder;
+ }
 /**
  * Selectable
  */
@@ -551,6 +576,12 @@
   padding: @headerCellPadding;
   border: @headerCellBorder;
 }
+.ui.week.borderless .header .cell:last-child {
+  border-right: 0;
+}
+.ui.week.borderless .header .cell {
+  border-top: 0;
+}
 .ui.week.right.aligned .header .cell {
   text-align: right;
 }
@@ -561,7 +592,7 @@
   position: relative;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 .ui.week .layout.appointment {
