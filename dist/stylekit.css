@@ -7155,6 +7155,9 @@ a.ui.inverted.yellow.header:hover {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.header.muted {
+  color: rgba(0, 0, 0, 0.6);
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -25968,7 +25971,7 @@ ul.ui.list li.completed:before,
 .ui.calendar .day > .text {
   display: inline-block;
 }
-.ui.calendar:not(.celled) .day:not(.other) {
+.ui.calendar:not(.celled):not(.innercelled) .day:not(.other) {
   border-top: 1px solid #cccccc;
 }
 .ui.calendar .day .appointment {
@@ -26148,19 +26151,22 @@ ul.ui.list li.completed:before,
  */
 .ui.calendar.vertical.fluid {
   position: relative;
-  height: 100%;
+  height: calc(100% - 10px);
 }
 .ui.calendar.vertical.fluid .content {
   position: absolute;
-  top: 2rem;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 2px;
+}
+.ui.calendar.vertical.controls.fluid .content {
+  top: 2rem;
 }
 .ui.calendar.vertical.fluid .content > table {
   height: 100%;
 }
-.ui.calendar.large.vertical.fluid .content {
+.ui.calendar.large.vertical.controls.fluid .content {
   top: 3rem;
 }
 .ui.calendar.vertical.fluid .week.header {
@@ -26189,6 +26195,26 @@ ul.ui.list li.completed:before,
 }
 .ui.calendar.celled .week.header .cell:last-child {
   border-right: 1px solid #dcddde;
+}
+/**
+ * Inner Celled
+ */
+.ui.calendar.innercelled .day:first-child {
+  border-left: 0;
+}
+.ui.calendar.innercelled .day {
+  border-left: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
+}
+.ui.calendar.innercelled .week:last-child .day {
+  border-bottom: 0;
+}
+.ui.calendar.innercelled .week.header .cell:first-child {
+  border-left: 0;
+}
+.ui.calendar.innercelled .week.header .cell {
+  border-left: 1px solid #dcddde;
+  border-bottom: 1px solid #dcddde;
 }
 /**
  * Selectable
@@ -26318,7 +26344,7 @@ ul.ui.list li.completed:before,
   height: 100%;
 }
 .ui.week .time.gutter {
-  width: 10rem;
+  width: 6rem;
 }
 .ui.week .time.grid > table.layout {
   vertical-align: bottom;
@@ -26356,6 +26382,12 @@ ul.ui.list li.completed:before,
   height: 3em;
   padding: 0 0.5em;
   border: 1px solid #dcddde;
+}
+.ui.week.borderless .header .cell:last-child {
+  border-right: 0;
+}
+.ui.week.borderless .header .cell {
+  border-top: 0;
 }
 .ui.week.right.aligned .header .cell {
   text-align: right;
