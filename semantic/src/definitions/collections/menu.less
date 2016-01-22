@@ -448,7 +448,7 @@
 }
 
 /*--- Icon ---*/
-.ui.vertical.menu .item > i.icon {
+.ui.vertical.menu .item:not(.dropdown) > i.icon {
   width: @iconWidth;
   float: @verticalIconFloat;
   margin: @verticalIconMargin;
@@ -1169,6 +1169,11 @@
 
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
+  color: @invertedTextColor;
+}
+
+.ui.inverted.menu .item.ui.selection.active.dropdown > .text:not(.default),
+.ui.inverted.menu .item.ui.selection.visible.dropdown > .text:not(.default) {
   color: @invertedTextColor;
 }
 
