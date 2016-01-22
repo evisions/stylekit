@@ -22049,7 +22049,7 @@ ul.ui.list li.completed:before,
   text-align: center;
 }
 /*--- Icon ---*/
-.ui.vertical.menu .item > i.icon {
+.ui.vertical.menu .item:not(.dropdown) > i.icon {
   width: 1.18em;
   float: right;
   margin: 0em 0em 0em 0.5em;
@@ -22676,6 +22676,10 @@ ul.ui.list li.completed:before,
 }
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
+  color: #ffffff;
+}
+.ui.inverted.menu .item.ui.selection.active.dropdown > .text:not(.default),
+.ui.inverted.menu .item.ui.selection.visible.dropdown > .text:not(.default) {
   color: #ffffff;
 }
 .ui.inverted.menu .item:not(.dropdown).menu {

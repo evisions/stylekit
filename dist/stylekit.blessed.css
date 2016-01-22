@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1453247857880');
+@import url('stylekit.blessed-blessed1.css?z=1453488220706');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -1786,7 +1786,7 @@
   text-align: center;
 }
 /*--- Icon ---*/
-.ui.vertical.menu .item > i.icon {
+.ui.vertical.menu .item:not(.dropdown) > i.icon {
   width: 1.18em;
   float: right;
   margin: 0em 0em 0em 0.5em;
@@ -2413,6 +2413,10 @@
 }
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
+  color: #ffffff;
+}
+.ui.inverted.menu .item.ui.selection.active.dropdown > .text:not(.default),
+.ui.inverted.menu .item.ui.selection.visible.dropdown > .text:not(.default) {
   color: #ffffff;
 }
 .ui.inverted.menu .item:not(.dropdown).menu {
