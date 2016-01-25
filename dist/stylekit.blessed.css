@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1453488220706');
+@import url('stylekit.blessed-blessed1.css?z=1453737068569');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2881,6 +2881,9 @@
     display: none;
   }
 }
+.ui.vertical.menu .item:not(.dropdown) > .menu {
+  font-size: 0.875rem;
+}
 /*******************************
            Simple Themes
 *******************************/
@@ -2944,22 +2947,22 @@
 .ui.expandable.menu.vertical.expanded .item.accordion > .node > .title .dropdown.icon {
   opacity: 1;
 }
-.ui.expandable.menu.vertical .item > .text:not(.icon),
+.ui.expandable.menu.vertical > .item > .text:not(.icon),
 .ui.expandable.menu.vertical .item.accordion > .node > .title > .text,
 .ui.expandable.menu.vertical .item.accordion > .node > .title .dropdown.icon {
   -webkit-transition: opacity 150ms ease;
           transition: opacity 150ms ease;
 }
-.ui.expandable.menu.vertical .item:not(.header):not(.image) {
+.ui.expandable.menu.vertical > .item:not(.header):not(.image) {
   white-space: nowrap;
 }
-.ui.expandable.menu.vertical .item:not(.header):not(.image):not(.accordion) {
+.ui.expandable.menu.vertical > .item:not(.header):not(.image):not(.accordion) {
   padding: 1.5em 1.25em;
 }
-.ui.expandable.menu.vertical .item:not(.header):not(.image).accordion {
+.ui.expandable.menu.vertical > .item:not(.header):not(.image).accordion {
   padding: 1em 1.25em;
 }
-.ui.expandable.menu.vertical .item > i.icon {
+.ui.expandable.menu.vertical > .item > i.icon {
   float: left;
   margin: 0em 0.5em 0em 0em;
 }
