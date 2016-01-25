@@ -67,6 +67,11 @@
   }
 }
 
+// SubMenu Margin fix
+.ui.vertical.menu .item:not(.dropdown) > .menu {
+  font-size: @subMenuFontSize;
+}
+
 /*******************************
            Simple Themes
 *******************************/
@@ -137,13 +142,13 @@
     }
   }
 
-  .item > .text:not(.icon),
+  > .item > .text:not(.icon),
   .item.accordion > .node > .title > .text,
   .item.accordion > .node > .title .dropdown.icon {
     transition: opacity 150ms ease;
   }
 
-  .item:not(.header):not(.image) {
+  > .item:not(.header):not(.image) {
     white-space: nowrap;
     &:not(.accordion) {
       padding: 1.5em 1.25em;
@@ -152,7 +157,7 @@
       padding: 1em 1.25em;
     }
   }
-  .item > i.icon {
+  > .item > i.icon {
     float: left;
     margin: 0em 0.5em 0em 0em;
   }
