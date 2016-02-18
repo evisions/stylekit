@@ -171,3 +171,15 @@
     opacity: 1;
   }
 }
+
+/**
+ * Basic Menu
+ */
+.ui.menu.basic {
+  background: transparent;
+  // box-shadow: none;
+}
+.ui.menu .item:before {
+  display: none;
+  background: transparent;
+}
