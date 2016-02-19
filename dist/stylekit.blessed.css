@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1455831016338');
+@import url('stylekit.blessed-blessed1.css?z=1455917615314');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2980,7 +2980,7 @@
 .ui.menu.basic {
   background: transparent;
 }
-.ui.menu .item:before {
+.ui.menu.basic .item:before {
   display: none;
   background: transparent;
 }
