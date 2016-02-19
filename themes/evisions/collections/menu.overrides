@@ -179,7 +179,7 @@
   background: transparent;
   // box-shadow: none;
 }
-.ui.menu .item:before {
+.ui.menu.basic .item:before {
   display: none;
   background: transparent;
 }
