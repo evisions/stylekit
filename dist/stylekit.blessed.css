@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1455928173516');
+@import url('stylekit.blessed-blessed1.css?z=1455928834158');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2021,7 +2021,7 @@
   background: none;
   margin: 0em 0.25em;
   padding: 0.5em 0.8em;
-  border-radius: 0.2857rem;
+  border-radius: 0 !important;
 }
 .ui.secondary.menu > .menu > .item:before,
 .ui.secondary.menu > .item:before {
@@ -2055,7 +2055,7 @@
   box-shadow: none;
 }
 .ui.secondary.vertical.menu > .active.item {
-  border-radius: 0.2857rem;
+  border-radius: 0;
 }
 /* Inverted */
 .ui.secondary.inverted.menu .link.item,

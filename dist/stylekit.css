@@ -22284,7 +22284,7 @@ ul.ui.list li.completed:before,
   background: none;
   margin: 0em 0.25em;
   padding: 0.5em 0.8em;
-  border-radius: 0.2857rem;
+  border-radius: 0 !important;
 }
 .ui.secondary.menu > .menu > .item:before,
 .ui.secondary.menu > .item:before {
@@ -22318,7 +22318,7 @@ ul.ui.list li.completed:before,
   box-shadow: none;
 }
 .ui.secondary.vertical.menu > .active.item {
-  border-radius: 0.2857rem;
+  border-radius: 0;
 }
 /* Inverted */
 .ui.secondary.inverted.menu .link.item,
