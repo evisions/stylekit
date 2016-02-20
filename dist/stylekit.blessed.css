@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1455917615314');
+@import url('stylekit.blessed-blessed1.css?z=1455928173516');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2010,7 +2010,7 @@
 ---------------*/
 .ui.secondary.menu {
   background: none;
-  border-radius: 0em;
+  border-radius: 0em !important;
   box-shadow: none;
 }
 .ui.secondary.menu > .menu > .item,

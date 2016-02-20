@@ -22273,7 +22273,7 @@ ul.ui.list li.completed:before,
 ---------------*/
 .ui.secondary.menu {
   background: none;
-  border-radius: 0em;
+  border-radius: 0em !important;
   box-shadow: none;
 }
 .ui.secondary.menu > .menu > .item,
