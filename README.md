@@ -39,7 +39,7 @@ Adding a New Component Checklist
 }
 ```
 
-###Adding a default theme
+####Adding a default theme
 - Within the `semantic/src/theme.config` file, add the variable for your new component to reference the default theme, for instance:
 
 ```
@@ -48,7 +48,7 @@ Adding a New Component Checklist
 
 - Create a .variable and .override file in `semantic/src/theme/default/{{type}}/`
 
-###Adding the Evisions theme
+####Adding the Evisions theme
 - Within the `./theme.config` file, add the variable for your new component to reference the default evisions theme, for instance:
 
 ```
@@ -57,10 +57,10 @@ Adding a New Component Checklist
 
 - Create a .variable and .override file in `themes/evisions/{{type}}/`
 
-###Adding the site specific overrides
+####Adding the site specific overrides
 - Create a .variable and .override file in `semantic/src/_site/{{type}}/`
 
-###Adding the app specific overrides
+####Adding the app specific overrides
 - Create a .variable and .override file in `apps/irb/{{type}}/`
 
 
