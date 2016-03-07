@@ -1,0 +1,83 @@
+/*******************************
+            Theme
+*******************************/
+
+@type    : 'collection';
+@element : 'instantnotifications';
+
+@import (multiple) '../../../../theme.config';
+
+.ui.instant.notifications {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 801;
+}
+
+.ui.instant.notifications .notification {
+  margin-left: ~"calc(100% - 400px)";
+}
+.ui.instant.notifications .fluid.notification {
+  margin-left: 0px;
+}
+
+.ui.instant.notifications .notification table {
+  width: 100%;
+}
+.ui.instant.notifications .notification table tr td {
+  cursor: default;
+  padding: 1em 1em;
+}
+
+.ui.instant.notifications .notification .icon-column {
+  padding-right: 0.5em;
+  width: 1%;
+}
+.ui.instant.notifications .notification .icon-column + td {
+  padding-left: 0em;
+}
+
+.ui.instant.notifications .notification .content-column {
+  padding: 0.5em 0em;
+}
+.ui.instant.notifications .notification .content-column .ui.header {
+  max-height: 300px;
+  overflow-y: auto;
+
+  padding: 1em;
+}
+.ui.instant.notifications .notification .content-column .ui.header .sub.header {
+  pointer-events: auto;
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0 !important;
+    padding: 0 !important;
+    font-weight: bold;
+  }
+}
+
+.ui.instant.notifications .notification .actions-column {
+  border-left: 1px solid;
+  border-left-color: rgb(128, 128, 128);
+  padding: 1em;
+  text-align: center;
+  vertical-align: top;
+  width: 1%;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons {
+  margin: 0em !important;
+  width: 100%;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button {
+  margin: 0em;
+  margin-bottom: 0.5em; 
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button:focus {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button:last-child {
+  margin-bottom: 0em;
+}
+
+.loadUIOverrides();

@@ -2,6 +2,7 @@
   "name": "stylekit",
   "version": "0.0.175",
   "authors": [
+    "Johnny Zarate <johnny.zarate@evisions.com>",
     "Trevor Harwell <trevor.harwell@evisions.com>"
   ],
   "license": "MIT",
