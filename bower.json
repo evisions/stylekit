@@ -1,20 +1,13 @@
 {
   "name": "stylekit",
-  "version": "0.0.174",
+  "version": "0.0.176",
   "authors": [
+    "Johnny Zarate <johnny.zarate@evisions.com>",
     "Trevor Harwell <trevor.harwell@evisions.com>"
   ],
   "license": "MIT",
   "private": true,
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    "apps",
-    "public",
-    "themes",
-    "semantic"
+    "**/.*"
   ]
 }

@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1455928834158');
+@import url('stylekit.blessed-blessed1.css?z=1457379380085');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -6664,6 +6664,406 @@
     width: 28em;
     max-width: 100%;
   }
+}
+/*******************************
+            Theme
+*******************************/
+/*
+
+████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
+╚══██╔══╝██║  ██║██╔════╝████╗ ████║██╔════╝██╔════╝
+   ██║   ███████║█████╗  ██╔████╔██║█████╗  ███████╗
+   ██║   ██╔══██║██╔══╝  ██║╚██╔╝██║██╔══╝  ╚════██║
+   ██║   ██║  ██║███████╗██║ ╚═╝ ██║███████╗███████║
+   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝
+
+*/
+/*******************************
+        Theme Selection
+*******************************/
+/* To override a theme for an individual element
+   specify theme name below
+*/
+/* Global */
+/* Elements */
+/* Collections */
+/* Modules */
+/* Views */
+/*******************************
+            Folders
+*******************************/
+/* Path to theme packages */
+/* Path to site override folder */
+/*******************************
+         Import Theme
+*******************************/
+/*******************************
+        Import Directives
+*******************************/
+/*------------------
+    Default Theme
+-------------------*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* 4px @ default em */
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+       Easing
+--------------------*/
+/*-------------------
+     All Colors
+--------------------*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Text ---*/
+/*--- Colored Headers ---*/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Header Spacing */
+/* Makes sure padded grid can fit at 320px */
+/* Used to match floats with text */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+           States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Standard  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*******************************
+      Instant Notifications
+*******************************/
+/*------------------
+   Packaged Theme
+-------------------*/
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  To have sizing resolve to a specified pixel values adjust
+  the numerator to the desired font size and the denominator
+  to the base em size
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* 4px @ default em */
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/* Exact pixel values expressed in em */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+       Easing
+--------------------*/
+/*-------------------
+     All Colors
+--------------------*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Text ---*/
+/*--- Colored Headers ---*/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Header Spacing */
+/* Makes sure padded grid can fit at 320px */
+/* Used to match floats with text */
+/* Positive / Negative Dupes */
+/* Responsive */
+/* Columns */
+/*******************************
+           States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Standard  ---*/
+/*---  Emotive  ---*/
+/*---  Neutrals  ---*/
+/*------------------
+     Site Theme
+-------------------*/
+/*******************************
+     User Global Variables
+*******************************/
+/*******************************
+        Import Mix-ins
+*******************************/
+/*------------------
+       Fonts
+-------------------*/
+/*------------------
+     Overrides
+-------------------*/
+/* End Config */
+.ui.instant.notifications {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 801;
+}
+.ui.instant.notifications .notification {
+  margin-left: calc(100% - 400px);
+}
+.ui.instant.notifications .fluid.notification {
+  margin-left: 0px;
+}
+.ui.instant.notifications .notification table {
+  width: 100%;
+}
+.ui.instant.notifications .notification table tr td {
+  cursor: default;
+  padding: 1em 1em;
+}
+.ui.instant.notifications .notification .icon-column {
+  padding-right: 0.5em;
+  width: 1%;
+}
+.ui.instant.notifications .notification .icon-column + td {
+  padding-left: 0em;
+}
+.ui.instant.notifications .notification .content-column {
+  padding: 0.5em 0em;
+}
+.ui.instant.notifications .notification .content-column .ui.header {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 1em;
+}
+.ui.instant.notifications .notification .content-column .ui.header .sub.header {
+  pointer-events: auto;
+}
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h1,
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h2,
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h3,
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h4,
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h5,
+.ui.instant.notifications .notification .content-column .ui.header .sub.header h6 {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  font-weight: bold;
+}
+.ui.instant.notifications .notification .actions-column {
+  border-left: 1px solid;
+  border-left-color: #808080;
+  padding: 1em;
+  text-align: center;
+  vertical-align: top;
+  width: 1%;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons {
+  margin: 0em !important;
+  width: 100%;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button {
+  margin: 0em;
+  margin-bottom: 0.5em;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button:focus {
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
+}
+.ui.instant.notifications .notification .actions-column .vertical.buttons .button:last-child {
+  margin-bottom: 0em;
 }
 /* Views */
 /*!
