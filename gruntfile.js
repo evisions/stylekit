@@ -9,7 +9,12 @@ module.exports = function(grunt) {
     less: {
       stylekit: {
         files: {
-          '<%= config.build %>/stylekit.css': 'semantic/src/semantic.less'
+          '<%= config.build %>/stylekit.css': 'stylekit.less'
+        },
+        options: {
+          modifyVars: {
+            themeConfig: 'theme.config'
+          }
         }
       }
     },
