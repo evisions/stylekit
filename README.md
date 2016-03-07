@@ -1,7 +1,10 @@
 #Stylekit
 <img align="center" src="https://stash.evisions.com/projects/LAB/repos/stylekit/browse/stylekit-logo.png?at=master&raw" alt="StyleKit" width="250">
+<br></br>
 
 ####_Warning_: This project is currently setup only for the IRB product, so try to avoid any adding any overrides within the irb/ folder, instead add them to the company theme overrides.
+
+<br></br>
 
 Adding a New Component Checklist
 --------------------------------
@@ -63,6 +66,7 @@ Adding a New Component Checklist
 ####Adding the app specific overrides
 - Create a .variable and .override file in `apps/irb/{{type}}/`
 
+<br></br>
 
 Building and Releasing
 ----------------------
