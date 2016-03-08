@@ -5,7 +5,7 @@
 @type    : 'collection';
 @element : 'instantnotifications';
 
-@import (multiple) '../../../../theme.config';
+@import (multiple) '@{themeConfigFile}';
 
 .ui.instant.notifications {
   position: absolute;
@@ -49,7 +49,7 @@
 }
 .ui.instant.notifications .notification .content-column .ui.header .sub.header {
   pointer-events: auto;
-  
+
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0 !important;
     padding: 0 !important;
@@ -71,7 +71,7 @@
 }
 .ui.instant.notifications .notification .actions-column .vertical.buttons .button {
   margin: 0em;
-  margin-bottom: 0.5em; 
+  margin-bottom: 0.5em;
 }
 .ui.instant.notifications .notification .actions-column .vertical.buttons .button:focus {
   box-shadow: 0px 0px 0px 2px #ffffff inset !important;

@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         },
         options: {
           modifyVars: {
-            themeConfig: 'theme.config'
+            themeConfigFile: '"../../../../theme.config"'
           }
         }
       }
