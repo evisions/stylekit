@@ -1485,7 +1485,7 @@ span.text.light.blue {
   color: #DFEFFD;
 }
 span.text.teal {
-  color: #159D92;
+  color: #39d1b4;
 }
 span.text.dark.blue {
   color: #001F3F;
@@ -3748,7 +3748,7 @@ span.muted {
 /*--- Teal ---*/
 .ui.teal.buttons .button,
 .ui.teal.button {
-  background-color: #159D92;
+  background-color: #39d1b4;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -3758,13 +3758,13 @@ span.muted {
 }
 .ui.teal.buttons .button:hover,
 .ui.teal.button:hover {
-  background-color: #17aa9f;
+  background-color: #45d4b9;
   color: #FFFFFF;
   text-shadow: none;
 }
 .ui.teal.buttons .button:active,
 .ui.teal.button:active {
-  background-color: #117e75;
+  background-color: #2bbba0;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -3772,7 +3772,7 @@ span.muted {
 .ui.teal.buttons .active.button:active,
 .ui.teal.active.button,
 .ui.teal.button .active.button:active {
-  background-color: #12877d;
+  background-color: #2dc3a7;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -3785,19 +3785,19 @@ span.muted {
 .ui.basic.teal.buttons .button:hover,
 .ui.basic.teal.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #17aa9f inset !important;
-  color: #17aa9f !important;
+  box-shadow: 0px 0px 0px 2px #45d4b9 inset !important;
+  color: #45d4b9 !important;
 }
 .ui.basic.teal.buttons .button:active,
 .ui.basic.teal.button:active {
-  box-shadow: 0px 0px 0px 2px #117e75 inset !important;
-  color: #117e75 !important;
+  box-shadow: 0px 0px 0px 2px #2bbba0 inset !important;
+  color: #2bbba0 !important;
 }
 .ui.basic.teal.buttons .active.button,
 .ui.basic.teal.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #117e75 inset !important;
-  color: #117e75 !important;
+  box-shadow: 0px 0px 0px 2px #2bbba0 inset !important;
+  color: #2bbba0 !important;
 }
 .ui.buttons > .basic.teal.button:not(:first-child) {
   margin-left: -2px;
@@ -4296,7 +4296,7 @@ span.muted {
   color: #F36A20;
 }
 .ui.button.inline.teal {
-  color: #159D92;
+  color: #39d1b4;
 }
 .ui.button.inline.purple {
   color: #717ECD;
@@ -6893,10 +6893,10 @@ a.ui.red.header:hover {
   color: #e44a2f !important;
 }
 .ui.teal.header {
-  color: #159D92 !important;
+  color: #39d1b4 !important;
 }
 a.ui.teal.header:hover {
-  color: #17aa9f !important;
+  color: #45d4b9 !important;
 }
 .ui.yellow.header {
   color: #F3AE4E !important;
@@ -6926,7 +6926,7 @@ a.ui.yellow.header:hover {
   border-bottom: 2px solid #E23E21;
 }
 .ui.teal.dividing.header {
-  border-bottom: 2px solid #159D92;
+  border-bottom: 2px solid #39d1b4;
 }
 .ui.yellow.dividing.header {
   border-bottom: 2px solid #F3AE4E;
@@ -7685,7 +7685,7 @@ i.red.icon {
   color: #E23E21 !important;
 }
 i.teal.icon {
-  color: #159D92 !important;
+  color: #39d1b4 !important;
 }
 i.yellow.icon {
   color: #F3AE4E !important;
@@ -7766,7 +7766,7 @@ i.inverted.circular.red.icon {
 }
 i.inverted.bordered.teal.icon,
 i.inverted.circular.teal.icon {
-  background-color: #159D92 !important;
+  background-color: #39d1b4 !important;
   color: #FFFFFF !important;
 }
 i.inverted.bordered.yellow.icon,
@@ -12399,33 +12399,33 @@ a.ui.red.label:hover:before {
 /*--- Teal ---*/
 .ui.teal.labels .label,
 .ui.teal.label {
-  background-color: #159D92 !important;
-  border-color: #159D92 !important;
+  background-color: #39d1b4 !important;
+  border-color: #39d1b4 !important;
   color: #ffffff !important;
 }
 .ui.labels .teal.label:before,
 .ui.teal.labels .label:before,
 .ui.teal.label:before {
-  background-color: #159D92 !important;
+  background-color: #39d1b4 !important;
 }
 a.ui.teal.labels .label:hover,
 .ui.teal.labels a.label:hover,
 a.ui.teal.label:hover {
-  background-color: #17aa9f !important;
-  border-color: #17aa9f !important;
+  background-color: #45d4b9 !important;
+  border-color: #45d4b9 !important;
   color: #ffffff !important;
 }
 .ui.labels a.teal.label:hover:before,
 .ui.teal.labels a.label:hover:before,
 a.ui.teal.label:hover:before {
-  background-color: #17aa9f !important;
+  background-color: #45d4b9 !important;
 }
 .ui.teal.corner.label,
 .ui.teal.corner.label:hover {
   background-color: transparent !important;
 }
 .ui.teal.ribbon.label {
-  border-color: #0f7068 !important;
+  border-color: #29ae95 !important;
 }
 /*--- Yellow ---*/
 .ui.yellow.labels .label,
@@ -12672,6 +12672,36 @@ a.ui.dark.grey.label:hover:before {
 .ui.label.wrappable > .text {
   white-space: normal;
   text-align: left;
+}
+.ui.dark.teal.labels .label,
+.ui.dark.teal.label {
+  background-color: #159D92 !important;
+  border-color: #159D92 !important;
+  color: #ffffff !important;
+}
+.ui.labels .teal.label:before,
+.ui.dark.teal.labels .label:before,
+.ui.dark.teal.label:before {
+  background-color: #159D92 !important;
+}
+a.ui.dark.teal.labels .label:hover,
+.ui.dark.teal.labels a.label:hover,
+a.ui.dark.teal.label:hover {
+  background-color: #17aa9f !important;
+  border-color: #17aa9f !important;
+  color: #ffffff !important;
+}
+.ui.labels a.teal.label:hover:before,
+.ui.dark.teal.labels a.label:hover:before,
+a.ui.dark.teal.label:hover:before {
+  background-color: #17aa9f !important;
+}
+.ui.dark.teal.corner.label,
+.ui.dark.teal.corner.label:hover {
+  background-color: transparent !important;
+}
+.ui.dark.teal.ribbon.label {
+  border-color: #29ae95 !important;
 }
 /*******************************
          Site Overrides
@@ -13892,7 +13922,7 @@ ul.ui.list li.completed:before,
 .ui.bulleted.list .list > .item.completed:before,
 .ui.bulleted.list > .item.completed:before {
   content: '✓';
-  color: #159D92;
+  color: #39d1b4;
   font-weight: bold;
 }
 .ui.padded.list:not(.horizontal) > .item {
@@ -16251,7 +16281,7 @@ ul.ui.list li.completed:before,
   border-top: 2px solid #E23E21;
 }
 .ui.teal.segment:not(.inverted) {
-  border-top: 2px solid #159D92;
+  border-top: 2px solid #39d1b4;
 }
 .ui.yellow.segment:not(.inverted) {
   border-top: 2px solid #F3AE4E;
@@ -16325,7 +16355,7 @@ ul.ui.list li.completed:before,
   color: #FFFFFF !important;
 }
 .ui.inverted.teal.segment {
-  background-color: #159D92 !important;
+  background-color: #39d1b4 !important;
   color: #FFFFFF !important;
 }
 .ui.inverted.yellow.segment {
