@@ -112,6 +112,7 @@
 @purpleRibbonShadow: darken(@purple, 10);
 @redRibbonShadow: darken(@red, 10);
 @tealRibbonShadow: darken(@teal, 10);
+@darkTealRibbonShadow: darken(@teal, 10);
 @yellowRibbonShadow: darken(@yellow, 10);
 @darkGreyRibbonShadow: darken(@darkGrey, 10);
 

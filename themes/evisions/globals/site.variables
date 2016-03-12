@@ -51,7 +51,7 @@
 @pink             : #E60045;
 @purple           : #717ECD;
 @red              : #E23E21;
-@teal             : #159D92;
+@teal             : #39d1b4;
 @yellow           : #F3AE4E;
 @mediumBlue       : #1C4B77;
 @magenta          : #F36;
@@ -69,14 +69,15 @@
 @lightYellow      : #FFE21F;
 
 /*---   Neutrals  ---*/
-@fullBlack        : #000000;
-@darkGrey         : #333333;
-@textGrey         : #676A6C;
-@lightGrey        : #DCDDDE;
-@offWhite         : #FAFAFA;
-@darkWhite        : #F0F0F0;
-@white            : #FFFFFF;
-@darkBlue         : #001F3F;
+@fullBlack : #000000;
+@darkGrey  : #333333;
+@darkTeal  : #159D92;
+@textGrey  : #676A6C;
+@lightGrey : #DCDDDE;
+@offWhite  : #FAFAFA;
+@darkWhite : #F0F0F0;
+@white     : #FFFFFF;
+@darkBlue  : #001F3F;
 
 /*-------------------
     Brand Colors
@@ -496,6 +497,7 @@
 @lightGreyHover       : lighten(@lightGrey, 3);
 @greyHover            : lighten(@grey, 3);
 @darkGreyHover        : lighten(@darkGrey, 3);
+@darkTealHover        : lighten(@darkTeal, 3);
 
 @whiteHover           : lighten(@white, 3);
 @offWhiteHover        : lighten(@offWhite, 3);
