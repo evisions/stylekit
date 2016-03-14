@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1457744091499');
+@import url('stylekit.blessed-blessed1.css?z=1457965175159');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -6563,12 +6563,12 @@
   padding: 0.4em 2.5em 0px 2.5em;
   position: relative;
 }
-.ui.visual.search .prompt > i.icon {
+.ui.visual.search .prompt > i.icon:not(.clear) {
   position: absolute;
   top: 0.8em;
   left: 0.8em;
 }
-.ui.visual.search .prompt > i.remove.icon {
+.ui.visual.search .prompt > .token.clear {
   cursor: pointer;
 }
 .ui.visual.search:not(.icon) .prompt {

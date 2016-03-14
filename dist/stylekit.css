@@ -26814,12 +26814,12 @@ ul.ui.list li.completed:before,
   padding: 0.4em 2.5em 0px 2.5em;
   position: relative;
 }
-.ui.visual.search .prompt > i.icon {
+.ui.visual.search .prompt > i.icon:not(.clear) {
   position: absolute;
   top: 0.8em;
   left: 0.8em;
 }
-.ui.visual.search .prompt > i.remove.icon {
+.ui.visual.search .prompt > .token.clear {
   cursor: pointer;
 }
 .ui.visual.search:not(.icon) .prompt {
