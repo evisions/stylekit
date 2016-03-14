@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1457965175159');
+@import url('stylekit.blessed-blessed1.css?z=1457992186208');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -6570,6 +6570,9 @@
 }
 .ui.visual.search .prompt > .token.clear {
   cursor: pointer;
+  position: absolute;
+  top: 0.8em;
+  right: 0.5em;
 }
 .ui.visual.search:not(.icon) .prompt {
   padding: 0.4em 2.5em 0px 0.4em;
