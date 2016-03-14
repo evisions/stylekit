@@ -19,13 +19,13 @@
   position: relative;
 }
 
-.ui.visual.search .prompt > i.icon {
+.ui.visual.search .prompt > i.icon:not(.clear) {
   position: absolute;
   top: @iconPositionTop;
   left: @iconSearchPositionLeft;
 }
 
-.ui.visual.search .prompt > i.remove.icon {
+.ui.visual.search .prompt > .token.clear {
   cursor: pointer;
 }
 
