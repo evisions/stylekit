@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         files: ['package.json', 'bower.json'],
         commit: true,
         commitFiles: ['-a'],
-        pushTo: 'origin master'
+        pushTo: 'origin'
       }
     },
 

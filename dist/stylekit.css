@@ -4124,11 +4124,25 @@ span.muted {
 }
 .ui.buttons .button {
   float: left;
+}
+.ui.buttons:not(.fluid) .button {
   margin-left: 0.5em;
   margin-right: 0em;
 }
+.ui.buttons.fluid .button {
+  border-radius: 0em;
+  margin: 0px 0px 0px 0px;
+}
 .ui.buttons .button:first-child {
   margin-left: 0em;
+}
+.ui.buttons.fluid .button:first-child {
+  border-top-left-radius: 0.2857rem;
+  border-bottom-left-radius: 0.2857rem;
+}
+.ui.buttons.fluid .button:last-child {
+  border-top-right-radius: 0.2857rem;
+  border-bottom-right-radius: 0.2857rem;
 }
 /* Vertical  Style */
 .ui.vertical.buttons {
