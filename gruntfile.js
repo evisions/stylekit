@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('release', ['build', 'bump']);
+  grunt.registerTask('release', ['build', 'bump-commit']);
 
   grunt.registerTask('build', ['less', 'autoprefixer', 'cssmin', 'bless', 'copy:assets']);
 
