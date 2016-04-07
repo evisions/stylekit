@@ -29,6 +29,7 @@
 @placeholderOpacity: 0.5;
 
 @tokenTextOutline: 0;
+@tokenDetailPadding: 0.5em;
 @tokenMinHeight: 1em;
 @tokenMinWidth: 1em;
 // @tokenVerticalMargin: 10px;
