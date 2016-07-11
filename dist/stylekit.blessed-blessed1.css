@@ -18232,6 +18232,9 @@ ul.ui.list li.completed:before,
 .ui.form .field:last-child {
   margin-bottom: 0em;
 }
+.ui.sidebar .ui.form .field {
+  position: relative;
+}
 /*--------------------
         Labels
 ---------------------*/

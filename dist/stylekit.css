@@ -18232,6 +18232,9 @@ ul.ui.list li.completed:before,
 .ui.form .field:last-child {
   margin-bottom: 0em;
 }
+.ui.sidebar .ui.form .field {
+  position: relative;
+}
 /*--------------------
         Labels
 ---------------------*/
@@ -37530,6 +37533,42 @@ a.ui.nag {
 }
 .ui.huge.popup {
   font-size: 1.14285rem;
+}
+/*--------------------
+  Inline Calendar Popup (input.date only)
+---------------------*/
+.calendar-inline {
+  position: absolute;
+  top: 4rem;
+  z-index: 1900;
+  border: none;
+  border-top: 1px solid #CCCCCC;
+  max-width: 350px;
+  background-color: #FFFFFF;
+  margin: 0.75em 0em 1em;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85714rem;
+  color: #333333;
+  border-radius: 0.2857rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.calendar-inline::before {
+  position: absolute;
+  top: -0.325em;
+  left: 1em;
+  right: auto;
+  bottom: auto;
+  margin-left: 0;
+  content: '';
+  width: 0.75em;
+  height: 0.75em;
+  background: #FFFFFF;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  box-shadow: -1px -1px 0px 0px #b3b3b3;
 }
 /*******************************
          Theme Overrides
