@@ -291,5 +291,46 @@
   font-size: @huge;
 }
 
+/*--------------------
+  Inline Calendar Popup (input.date only)
+---------------------*/
+.calendar-inline {
+  position: absolute;
+  top: 4rem;
+  z-index: @zIndex;
+  border: none;
+  border-top: @border;
+
+  max-width: @wideWidth;
+  background-color: @background;
+
+  margin: @popupDistanceAway 0em 1em;
+  padding: 0;
+  font-weight: @fontWeight;
+  font-style: @fontStyle;
+  font-size: @medium;
+  color: @color;
+
+  border-radius: @borderRadius;
+  box-shadow: @boxShadow;
+  &::before {
+    position: absolute;
+    top: @arrowOffset;
+    left: @arrowDistanceFromEdge;
+    right: auto;
+    bottom: auto;
+    margin-left: 0;
+    content: '';
+    width: @arrowSize;
+    height: @arrowSize;
+
+    background: @arrowBackground;
+    transform: rotate(45deg);
+
+    z-index: @arrowZIndex;
+    box-shadow: @bottomArrowBoxShadow;
+  }
+}
+
 
 .loadUIOverrides();
