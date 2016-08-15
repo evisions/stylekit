@@ -2,6 +2,9 @@
              Sidebar
 *******************************/
 
+@backgroundColor: @white;
+@padding: 1.5em;
+
 /*-------------------
        Content
 --------------------*/
@@ -19,7 +22,7 @@
 ;
 
 /* Color below page */
-@canvasBackground: @lightBlack;
+@canvasBackground: @white;
 
 /* Shadow */
 @boxShadow: 0px 0px 20px @borderColor;
