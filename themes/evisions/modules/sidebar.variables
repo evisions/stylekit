@@ -22,7 +22,7 @@
 ;
 
 /* Color below page */
-@canvasBackground: @white;
+@canvasBackground: @pageBackground;
 
 /* Shadow */
 @boxShadow: 0px 0px 20px @borderColor;

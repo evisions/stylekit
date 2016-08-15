@@ -20382,7 +20382,7 @@ a.ui.nag {
 }
 /* Whole Page */
 body.pushable {
-  background: #FFFFFF !important;
+  background: #F7F7F7 !important;
 }
 /* Page Context */
 .pushable:not(body) {
