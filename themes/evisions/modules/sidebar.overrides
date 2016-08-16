@@ -2,10 +2,8 @@
          Theme Overrides
 *******************************/
 
-.ui.sidebar {
-  background-color: @backgroundColor;
-  width: @width;
-  padding: 0;
+.ui.sidebar.white {
+  background-color: @white;
 }
 
 .ui.sidebar.padded {
