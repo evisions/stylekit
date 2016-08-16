@@ -40539,7 +40539,7 @@ a.ui.nag {
 }
 /* Whole Page */
 body.pushable {
-  background: #3a3a3a !important;
+  background: #F7F7F7 !important;
 }
 /* Page Context */
 .pushable:not(body) {
@@ -41042,6 +41042,20 @@ html.ios {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.sidebar {
+  background-color: #FFFFFF;
+  width: 260px;
+  padding: 0;
+}
+.ui.sidebar.padded {
+  padding: 1.5em;
+}
+/*--------------
+     Page
+---------------*/
+.pushable > .pusher {
+  overflow: initial;
+}
 /*******************************
          Site Overrides
 *******************************/

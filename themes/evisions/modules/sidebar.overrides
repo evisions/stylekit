@@ -1,3 +1,19 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.sidebar.white {
+  background-color: @white;
+}
+
+.ui.sidebar.padded {
+  padding: @padding;
+}
+
+/*--------------
+     Page
+---------------*/
+
+.pushable > .pusher {
+  overflow: initial;
+}
