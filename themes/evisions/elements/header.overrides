@@ -2,6 +2,10 @@
          Theme Overrides
 *******************************/
 
+.ui.header.primary {
+  color: @primaryColor;
+}
+
 .ui.header.muted {
   color: rgba(0, 0, 0, 0.6);
 }
