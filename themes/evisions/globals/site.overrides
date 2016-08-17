@@ -2,7 +2,9 @@
         Global Overrides
 *******************************/
 
-
+span.text.primary {
+  color: @primaryColor;
+}
 span.text.blue {
   color: @blue;
 }
