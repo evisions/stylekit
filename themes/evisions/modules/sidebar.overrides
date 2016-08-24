@@ -15,5 +15,5 @@
 ---------------*/
 
 .pushable > .pusher {
-  overflow: initial;
+  overflow: visible;
 }
