@@ -113,6 +113,10 @@
   color: @lightRed !important;
 }
 
+a.ui.button.inline {
+  text-decoration: underline;
+}
+
 .ui.button.inline {
   padding: 0 !important;
   background-color: transparent !important;
