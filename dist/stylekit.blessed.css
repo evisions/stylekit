@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1472066660995');
+@import url('stylekit.blessed-blessed1.css?z=1473703612351');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -15500,6 +15500,10 @@ select.ui.dropdown {
 }
 .ui.clearable.selection.dropdown > .text {
   margin-right: 4.5em;
+}
+/* Read-Only Dropdown */
+.ui.read-only.dropdown {
+  pointer-events: none;
 }
 /*******************************
         User Overrides

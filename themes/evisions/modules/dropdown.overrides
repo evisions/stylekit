@@ -144,3 +144,8 @@
 .ui.clearable.selection.dropdown > .text {
   margin-right: 4.5em;
 }
+
+/* Read-Only Dropdown */
+.ui.read-only.dropdown {
+  pointer-events: none;
+}
