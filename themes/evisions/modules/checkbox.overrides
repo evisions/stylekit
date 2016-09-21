@@ -105,3 +105,11 @@
     0px 0px 1px rgba(81, 167, 232, 0.8) inset, 
     0px 0px 3px 2px rgba(81, 167, 232, 0.8) !important;
 }
+
+// this fixes a bug where disabling a checkbox
+// causes the check to appear
+.ui.disabled.checkbox:not(.checked):not(.toggle):not(.slider) label:after,
+.ui.checkbox:not(.checked):not(.toggle):not(.slider) input[type="checkbox"][disabled] ~ label:after,
+.ui.checkbox:not(.checked):not(.toggle):not(.slider) input[type="radio"][disabled] ~ label:after {
+  opacity: 0 !important;
+}
