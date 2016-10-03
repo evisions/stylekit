@@ -15,5 +15,4 @@
 .ui.disabled.input {
   cursor: default;
   pointer-events: none;
-  opacity: @disabledOpacity;
 }
