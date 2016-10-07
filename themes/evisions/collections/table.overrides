@@ -7,6 +7,10 @@
   display: none;
 }
 
+.ui.sortable.indicated.table thead th.sortable:after {
+  content: @sortableIconUnsorted;
+}
+
 /**
  * Sortable on indivicual column header
  */

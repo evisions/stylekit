@@ -25283,6 +25283,9 @@ ul.ui.list li.completed:before,
 .ui.table thead tr.responsive.sort {
   display: none;
 }
+.ui.sortable.indicated.table thead th.sortable:after {
+  content: '\f0dc';
+}
 /**
  * Sortable on indivicual column header
  */

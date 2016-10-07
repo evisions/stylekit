@@ -167,6 +167,7 @@
 @sortableIconFont: 'Icons';
 @sortableIconAscending: '\f0d7';
 @sortableIconDescending: '\f0d8';
+@sortableIconUnsorted: '\f0dc';
 @sortableDisabledColor: @disabledTextColor;
 
 @sortableHoverBackground: @transparentBlack;
