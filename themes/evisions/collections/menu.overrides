@@ -110,11 +110,13 @@
   background-color: @darkBlue;
   box-shadow: none;
 }
-
 .ui.dark.menu .item:before {
   background: #ACAFB2;
   opacity: 0.6;
   right: -s1px;
+}
+.ui.dark.primary.menu .active.item {
+  background-color: @primaryColor;
 }
 
 // Expandable Menu Styles
