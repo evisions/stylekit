@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1475797559636');
+@import url('stylekit.blessed-blessed1.css?z=1475882357044');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -2999,6 +2999,9 @@
   background: #ACAFB2;
   opacity: 0.6;
   right: -s1px;
+}
+.ui.dark.primary.menu .active.item {
+  background-color: #0074D9;
 }
 .ui.expandable.menu.vertical {
   -webkit-transition: width 150ms ease;

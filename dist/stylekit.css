@@ -16521,6 +16521,9 @@ ul.ui.list li.completed:before,
 /*******************************
          Theme Overrides
 *******************************/
+.ui.dark.segment {
+  background-color: rgba(0, 0, 0, 0.15);
+}
 .ui.inverted.blue.segment {
   border-color: #0074D9;
 }
@@ -23164,6 +23167,9 @@ ul.ui.list li.completed:before,
   background: #ACAFB2;
   opacity: 0.6;
   right: -s1px;
+}
+.ui.dark.primary.menu .active.item {
+  background-color: #0074D9;
 }
 .ui.expandable.menu.vertical {
   -webkit-transition: width 150ms ease;
