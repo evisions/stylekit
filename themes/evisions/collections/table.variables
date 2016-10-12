@@ -5,8 +5,8 @@
 /*-------------------
        Element
 --------------------*/
-
-@margin: 1em 0em;
+@marginVertical: 1em;
+@margin: @marginVertical 0em;
 @borderCollapse: separate;
 @borderSpacing: 0px;
 @transition:
@@ -14,12 +14,14 @@
   border-color @transitionDuration @transitionEasing,
   color @transitionDuration @transitionEasing
 ;
-@borderRadius: none;
+@borderRadius: 0.25rem;
 @background: #FFFFFF;
 @color: @textColor;
 @borderWidth: 1px;
 @borderColor: #D0D0D0;
 @border: @borderWidth solid @borderColor;
+@attachedBorder: 1px solid @solidBorderColor;
+@borderShadow: 0px 0px 0px @borderWidth @borderColor;
 @boxShadow: none;
 @textAlign: left;
 
