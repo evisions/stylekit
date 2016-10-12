@@ -7,7 +7,7 @@
   display: none;
 }
 
-.ui.sortable.indicated.table thead th.sortable:after {
+.ui.sortable.table thead th.sortable:after {
   content: @sortableIconUnsorted;
 }
 

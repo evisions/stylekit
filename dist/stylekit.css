@@ -17296,9 +17296,6 @@ ul.ui.list li.completed:before,
   content: '\e800';
   /* '' */
 }
-.ui.steps .step.active {
-  border-top: 2px solid #158557;
-}
 /*******************************
          Site Overrides
 *******************************/

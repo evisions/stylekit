@@ -2,10 +2,6 @@
          Theme Overrides
 *******************************/
 
-.ui.dark.segment {
-  background-color: @transparentBlack;
-}
-
 .ui.inverted.blue.segment {
   border-color: @blue;
 }
