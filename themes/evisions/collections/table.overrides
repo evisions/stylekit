@@ -31,10 +31,6 @@
   display: none;
 }
 
-.ui.sortable.table thead th.sortable:after {
-  content: @sortableIconUnsorted;
-}
-
 /**
  * Sortable on indivicual column header
  */
@@ -53,7 +49,7 @@
 }
 .ui.sortable.table thead th.sortable:after {
   display: inline-block;
-  content: '';
+  content: @sortableIconUnsorted;
   width: @sortableIconWidth;
   height: 1em;
   opacity: @sortableIconOpacity;
