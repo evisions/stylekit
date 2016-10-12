@@ -24,8 +24,3 @@
 .ui[class*="very padded"].segment {
   padding: @veryPaddedVerticalPadding @veryPaddedHorizontalPadding;
 }
-
-.ui.segments > .segment {
-  border: 1px solid @grey;
-  box-shadow: @raisedShadow;
-}
