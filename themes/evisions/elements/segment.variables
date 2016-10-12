@@ -81,7 +81,7 @@
 @attachedBottomOffset: 0px;
 @attachedHorizontalOffset: -1px;
 @attachedWidth: ~"calc(100% + "-@attachedHorizontalOffset * 2~")";
-@attachedBoxShadow: none;
+@attachedBoxShadow: @raisedShadow;
 @attachedBorder: 1px solid @solidBorderColor;
 @attachedBottomBoxShadow:
   @attachedBoxShadow,
