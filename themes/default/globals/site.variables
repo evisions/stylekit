@@ -353,7 +353,7 @@
 @selectedBorderColor           : rgba(39, 41, 43, 0.3);
 @disabledBorderColor           : rgba(39, 41, 43, 0.5);
 
-@solidBorderColor              : #D4D4D5;
+@solidBorderColor              : #CCCCCC;
 @solidSelectedBorderColor      : #BEBEBF;
 
 @whiteBorderColor              : rgba(255, 255, 255, 0.2);
