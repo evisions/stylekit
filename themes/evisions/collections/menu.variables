@@ -274,7 +274,7 @@
 ---------------*/
 
 /* Inverted */
-@invertedBackground: @darkBlue;
+@invertedBackground: @black;
 @invertedBoxShadow: none;
 @invertedHeaderBackground: rgba(0, 0, 0, 0.3);
 
@@ -293,7 +293,6 @@
 @invertedMenuPressedColor: @white;
 
 /* Inverted Active */
-// @invertedActiveBackground: @darkBlue;
 @invertedActiveBackground: rgba(255, 255, 255, 0.2);
 @invertedActiveColor: @white;
 @invertedSubMenuActiveBackground: transparent;

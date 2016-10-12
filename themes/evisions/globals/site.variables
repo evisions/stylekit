@@ -44,36 +44,31 @@
 
 /*---  Colors  ---*/
 @black            : #1B1C1D;
-@blue             : #0074D9;
-@green            : #158557;
+@blue             : #0075C9;
+@green            : #39823C;
 @grey             : #CCCCCC;
-@orange           : #F36A20;
-@pink             : #E60045;
-@purple           : #717ECD;
-@red              : #E23E21;
-@teal             : #39d1b4;
-@yellow           : #F3AE4E;
-@mediumBlue       : #1C4B77;
-@magenta          : #F36;
+@orange           : #D1471C;
+@pink             : #D41555;
+@purple           : #8C5495;
+@red              : #DE1A0C;
+@teal             : #007468;
+@yellow           : #FFD700;
 
 /*---  Light Colors  ---*/
-@lightBlack       : #3a3a3a;
-@lightBlue        : #DFEFFD;
+@lightBlack       : #333333;
+@lightBlue        : #54C8FF;
 @lightGreen       : #2ECC40;
-@lightOrange      : #ffaf23;
+@lightOrange      : #FF851B;
 @lightPink        : #FF8EDF;
 @lightPurple      : #CDC6FF;
-@periwinkle       : #D1DEFD;
-@lightRed         : #E55075;
+@lightRed         : #FF695E;
 @lightTeal        : #6DFFFF;
 @lightYellow      : #FFE21F;
 
 /*---   Neutrals  ---*/
 @fullBlack : #000000;
-@darkGrey  : #333333;
-@darkTeal  : #159D92;
-@textGrey  : #676A6C;
-@lightGrey : #DCDDDE;
+@darkGrey  : #AAAAAA;
+@lightGrey : #DDDDDD;
 @offWhite  : #FAFAFA;
 @darkWhite : #F0F0F0;
 @white     : #FFFFFF;
@@ -83,9 +78,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @mediumBlue;
-@accentCOlor         : @orange;
+@primaryColor        : #0078A7;
+@secondaryColor      : @lightBlack;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -113,11 +107,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #F7F7F7;
+@pageBackground      : #F5F5F5;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.33;
-@textColor           : @darkGrey;
+@textColor           : rgba(0, 0, 0, 0.8);
 
 /*-------------------
       Paragraph
@@ -497,7 +491,6 @@
 @lightGreyHover       : lighten(@lightGrey, 3);
 @greyHover            : lighten(@grey, 3);
 @darkGreyHover        : lighten(@darkGrey, 3);
-@darkTealHover        : lighten(@darkTeal, 3);
 
 @whiteHover           : lighten(@white, 3);
 @offWhiteHover        : lighten(@offWhite, 3);

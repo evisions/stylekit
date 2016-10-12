@@ -17,35 +17,3 @@
   white-space: normal;
   text-align: left;
 }
-
-
-.ui.dark.teal.labels .label,
-.ui.dark.teal.label {
-  background-color: @darkTeal !important;
-  border-color: @darkTeal !important;
-  color: @invertedTextColor !important;
-}
-.ui.labels .teal.label:before,
-.ui.dark.teal.labels .label:before,
-.ui.dark.teal.label:before {
-  background-color: @darkTeal !important;
-}
-a.ui.dark.teal.labels .label:hover,
-.ui.dark.teal.labels a.label:hover,
-a.ui.dark.teal.label:hover {
-  background-color: @darkTealHover !important;
-  border-color: @darkTealHover !important;
-  color: @invertedTextColor !important;
-}
-.ui.labels a.teal.label:hover:before,
-.ui.dark.teal.labels a.label:hover:before,
-a.ui.dark.teal.label:hover:before {
-  background-color: @darkTealHover !important;
-}
-.ui.dark.teal.corner.label,
-.ui.dark.teal.corner.label:hover {
-  background-color: transparent !important;
-}
-.ui.dark.teal.ribbon.label {
-  border-color: @darkTealRibbonShadow !important;
-}

@@ -60,7 +60,7 @@
 /* Table Header */
 @headerBorder: 1px solid @solidBorderColor;
 @headerDivider: none;
-@headerBackground: @darkWhite;
+@headerBackground: #EEEEEE;
 @headerAlign: @textAlign;
 @headerVerticalAlign: middle;
 @headerColor: @textColor;
@@ -169,13 +169,13 @@
 @sortableIconDescending: '\f0d8';
 @sortableDisabledColor: @disabledTextColor;
 
-@sortableHoverBackground: @transparentBlack;
+@sortableHoverBackground: #DDDDDD;
 @sortableHoverColor: @hoveredTextColor;
 
-@sortableActiveBackground: @transparentBlack;
+@sortableActiveBackground: #DDDDDD;
 @sortableActiveColor: @selectedTextColor;
 
-@sortableActiveHoverBackground: @transparentBlack;
+@sortableActiveHoverBackground: #DDDDDD;
 @sortableActiveHoverColor: @selectedTextColor;
 
 @sortableInvertedBorderColor: transparent;

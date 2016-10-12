@@ -23,22 +23,16 @@ span.text.orange {
 span.text.light.orange {
   color: @lightOrange;
 }
-span.text.medium.blue {
-  color: @mediumBlue;
-}
 span.text.light.blue {
   color: @lightBlue;
 }
 span.text.teal {
 	color:@teal;
 }
-span.text.dark.blue {
-	color: @darkBlue;
-}
 span.text.link.blue {
   color: @linkColor;
 }
 
 span.muted {
-  color: @textGrey;
+  color: darken(@darkGrey, 30%);
 }
