@@ -1,6 +1,30 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.table {
+  overflow: hidden;
+}
+
+.ui.attached.table {
+  border: @attachedBorder;
+}
+.ui.attached.table:not(.top) {
+  border-top: none;
+}
+.ui.table[class*="bottom attached"] {
+  margin-bottom: @marginVertical;
+}
+
+.ui.table.attached thead tr:first-child > th:first-child {
+  border-radius: 0;
+}
+.ui.table.attached thead tr:first-child > th:last-child {
+  border-radius: 0;
+}
+.ui.table.attached thead tr:first-child > th:only-child {
+  border-radius: 0;
+}
+
 .ui.transparent.table td {border-top:0px;}
 
 .ui.table thead tr.responsive.sort {
@@ -209,6 +233,7 @@
 
 .ui.borderless.table {
   border: 0px !important;
+  box-shadow: none;
 }
 .ui[class*="very basic"].borderless.table thead th {
   border-bottom: 0px;
