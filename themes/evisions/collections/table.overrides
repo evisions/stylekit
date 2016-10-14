@@ -6,8 +6,12 @@
 }
 
 .ui.attached.table {
+  position: relative;
+  top: 0px;
+  bottom: 0px;
   border: @attachedBorder;
 }
+
 .ui.attached.table:not(.top) {
   border-top: none;
 }
@@ -49,7 +53,7 @@
 }
 .ui.sortable.table thead th.sortable:after {
   display: inline-block;
-  content: '';
+  content: @sortableIconUnsorted;
   width: @sortableIconWidth;
   height: 1em;
   opacity: @sortableIconOpacity;

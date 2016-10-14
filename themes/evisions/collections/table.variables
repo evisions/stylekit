@@ -151,7 +151,7 @@
 
 /* Attached */
 @attachedHorizontalOffset: -1px;
-@attachedBoxShadow: none;
+@attachedBoxShadow: @subtleShadow;
 @attachedTableWidth: ~"calc(100% + "@attachedHorizontalOffset * -2~")";
 
 /* Striped */
@@ -169,6 +169,7 @@
 @sortableIconFont: 'Icons';
 @sortableIconAscending: '\f0d7';
 @sortableIconDescending: '\f0d8';
+@sortableIconUnsorted: '\f0dc';
 @sortableDisabledColor: @disabledTextColor;
 
 @sortableHoverBackground: #DDDDDD;
