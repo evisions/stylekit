@@ -172,13 +172,13 @@
 @sortableIconUnsorted: '\f0dc';
 @sortableDisabledColor: @disabledTextColor;
 
-@sortableHoverBackground: #DDDDDD;
+@sortableHoverBackground: @lightGrey;
 @sortableHoverColor: @hoveredTextColor;
 
-@sortableActiveBackground: #DDDDDD;
+@sortableActiveBackground: @lightGrey;
 @sortableActiveColor: @selectedTextColor;
 
-@sortableActiveHoverBackground: #DDDDDD;
+@sortableActiveHoverBackground: @lightGrey;
 @sortableActiveHoverColor: @selectedTextColor;
 
 @sortableInvertedBorderColor: transparent;
@@ -192,7 +192,7 @@
 @coloredBorderRadius: 0em 0em @borderRadius @borderRadius;
 
 /* Inverted */
-@invertedBackground: #333333;
+@invertedBackground: @lightBlack;
 @invertedBorder: none;
 @invertedCellBorderColor: rgba(0, 0, 0, 0.2);
 @invertedCellColor: @invertedTextColor;

@@ -95,7 +95,7 @@
 @secondaryBackground: #EEEEEE;
 @secondaryColor: @textColor;
 
-@tertiaryBackground: #DDDDDD;
+@tertiaryBackground: @lightGrey;
 @tertiaryColor: @lightBlack;
 
 @secondaryInvertedBackground: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
