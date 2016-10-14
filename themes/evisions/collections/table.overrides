@@ -53,7 +53,7 @@
 }
 .ui.sortable.table thead th.sortable:after {
   display: inline-block;
-  content: '';
+  content: @sortableIconUnsorted;
   width: @sortableIconWidth;
   height: 1em;
   opacity: @sortableIconOpacity;

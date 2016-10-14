@@ -3053,7 +3053,7 @@ span.muted {
 .ui.inverted.black.buttons .button,
 .ui.inverted.black.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
+  box-shadow: 0px 0px 0px 2px #CCCCCC inset !important;
   color: #FFFFFF;
 }
 .ui.inverted.black.buttons .button:hover,
@@ -7094,7 +7094,7 @@ a.ui.inverted.yellow.header:hover {
   background: #F0F0F0;
   padding: 0.75rem 1rem;
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 1px solid #CCCCCC;
   border-radius: 0.3125rem;
 }
 .ui.tiny.block.header {
@@ -7121,7 +7121,7 @@ a.ui.inverted.yellow.header:hover {
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 1px solid #CCCCCC;
 }
 .ui.attached.block.header {
   background: #F0F0F0;
@@ -16455,8 +16455,8 @@ ul.ui.list li.completed:before,
   width: calc(100% +  2px );
   max-width: calc(100% +  2px );
   border-radius: 0px;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #CCCCCC;
 }
 .ui.segment.attached + .ui.segment.attached:not(.top) {
   border-top: none;
@@ -16478,7 +16478,7 @@ ul.ui.list li.completed:before,
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 1rem;
-  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0em 0em 0.2857rem 0.2857rem;
 }
 .ui.segment[class*="bottom attached"]:last-child {
@@ -16494,8 +16494,8 @@ ul.ui.list li.completed:before,
   width: calc(100% +  2px );
   max-width: calc(100% +  2px );
   border-radius: 0px;
-  box-shadow: none;
-  border: 1px solid #D4D4D5;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #CCCCCC;
 }
 .ui.segments > .segment:not(:first-child) {
   border-top: none;
@@ -16515,7 +16515,7 @@ ul.ui.list li.completed:before,
   margin-top: 0em;
   margin-bottom: 0em;
   top: 0px;
-  box-shadow: none, 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
   border-radius: 0em 0em 0.2857rem 0.2857rem;
 }
 /*******************************
@@ -16945,7 +16945,7 @@ ul.ui.list li.completed:before,
   padding: 0.9285em 1.5em 0.9285em 2.25em;
   background: #FFFFFF;
   color: #333333;
-  box-shadow: 0px 0px 0px 1px #D4D4D5;
+  box-shadow: 0px 0px 0px 1px #CCCCCC;
   border-radius: 0em;
 }
 .ui.steps .step:after {
@@ -17292,9 +17292,6 @@ ul.ui.list li.completed:before,
   font-family: 'Step';
   content: '\e800';
   /* '' */
-}
-.ui.steps .step.active {
-  border-top: 2px solid #158557;
 }
 /*******************************
          Site Overrides
