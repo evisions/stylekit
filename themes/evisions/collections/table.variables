@@ -22,7 +22,7 @@
 @border: @borderWidth solid @borderColor;
 @attachedBorder: 1px solid @solidBorderColor;
 @borderShadow: 0px 0px 0px @borderWidth @borderColor;
-@boxShadow: none;
+@boxShadow: @subtleShadow;
 @textAlign: left;
 
 /*-------------------
