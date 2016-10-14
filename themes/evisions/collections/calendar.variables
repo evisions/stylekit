@@ -72,7 +72,7 @@
  * Appointment Items
  */
 @appointmentItemPadding: 0.1rem 1rem 0.1rem 1.5rem;
-@appointmentItemBackground: @periwinkle;
+@appointmentItemBackground: @lightBlue;
 @appointmentItemColor: @dayColor;
 @appointmentItemTextWeight: bold;
 @appointmentItemBorder: 1px solid darken(@appointmentItemBackground, 5%);
@@ -111,7 +111,7 @@
 @timeGridDayBorder: 1px solid #f1f1f1;
 @timeGridMajorIntervalBorder: 1px solid @lightGrey;
 @timeGridMinorIntervalBorder: 1px dotted @lightGrey;
-@weekAppointmentBackground: @periwinkle;
+@weekAppointmentBackground: @lightBlue;
 @weekAppointmentPadding: 0.2rem 0.5rem 0.2rem 2.5rem;
 @weekAppointmentBorder: 4px solid @blue;
 @weekAppointmentActiveBackground: darken(@lightBlue, 10%);

@@ -22,7 +22,7 @@
 @border: @borderWidth solid @borderColor;
 @attachedBorder: 1px solid @solidBorderColor;
 @borderShadow: 0px 0px 0px @borderWidth @borderColor;
-@boxShadow: none;
+@boxShadow: @subtleShadow;
 @textAlign: left;
 
 /*-------------------
@@ -62,7 +62,7 @@
 /* Table Header */
 @headerBorder: 1px solid @solidBorderColor;
 @headerDivider: none;
-@headerBackground: @darkWhite;
+@headerBackground: #EEEEEE;
 @headerAlign: @textAlign;
 @headerVerticalAlign: middle;
 @headerColor: @textColor;
@@ -172,13 +172,13 @@
 @sortableIconUnsorted: '\f0dc';
 @sortableDisabledColor: @disabledTextColor;
 
-@sortableHoverBackground: @transparentBlack;
+@sortableHoverBackground: @lightGrey;
 @sortableHoverColor: @hoveredTextColor;
 
-@sortableActiveBackground: @transparentBlack;
+@sortableActiveBackground: @lightGrey;
 @sortableActiveColor: @selectedTextColor;
 
-@sortableActiveHoverBackground: @transparentBlack;
+@sortableActiveHoverBackground: @lightGrey;
 @sortableActiveHoverColor: @selectedTextColor;
 
 @sortableInvertedBorderColor: transparent;
@@ -192,7 +192,7 @@
 @coloredBorderRadius: 0em 0em @borderRadius @borderRadius;
 
 /* Inverted */
-@invertedBackground: #333333;
+@invertedBackground: @lightBlack;
 @invertedBorder: none;
 @invertedCellBorderColor: rgba(0, 0, 0, 0.2);
 @invertedCellColor: @invertedTextColor;

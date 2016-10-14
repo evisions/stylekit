@@ -92,16 +92,13 @@
 @coloredBorderRadius: @borderRadius;
 
 /* Ordinality */
-@secondaryBackground: #FAF9FA;
+@secondaryBackground: #EEEEEE;
 @secondaryColor: @textColor;
 
-@tertiaryBackground:  #EBEBEB;
-@tertiaryColor: @lightTextColor;
-// @tertiaryBackground:  @lightBlack;
-// @tertiaryColor: @white;
+@tertiaryBackground: @lightGrey;
+@tertiaryColor: @lightBlack;
 
 @secondaryInvertedBackground: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
-// @secondaryInvertedBackground: @lightBlack;
 @secondaryInvertedColor: @offWhite;
 
 @tertiaryInvertedBackground: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);

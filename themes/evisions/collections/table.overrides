@@ -267,7 +267,7 @@
     Muted & Emphasized
 ---------------*/
 .ui.table tbody tr:not(.disabled).muted {
-  color: @textGrey;
+  color: darken(@darkGrey, 30%);
 }
 .ui.table tbody tr:not(.disabled).emphasized {
   font-weight: bold;
