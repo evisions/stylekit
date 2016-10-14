@@ -151,7 +151,7 @@
 
 /* Attached */
 @attachedHorizontalOffset: -1px;
-@attachedBoxShadow: none;
+@attachedBoxShadow: @subtleShadow;
 @attachedTableWidth: ~"calc(100% + "@attachedHorizontalOffset * -2~")";
 
 /* Striped */
