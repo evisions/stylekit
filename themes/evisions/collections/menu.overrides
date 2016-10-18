@@ -102,6 +102,9 @@
 .ui.dark.menu {
   background-color: transparent;
 }
+.ui.dark.menu .item {
+  background-color: @white;
+}
 .ui.dark.menu .active.item {
   color: @white;
   background-color: @primaryColor;
