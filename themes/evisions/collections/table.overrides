@@ -1,9 +1,6 @@
 /*******************************
          Theme Overrides
 *******************************/
-.ui.table {
-  overflow: hidden;
-}
 
 .ui.attached.table {
   position: relative;
