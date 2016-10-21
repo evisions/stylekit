@@ -25212,9 +25212,6 @@ ul.ui.list li.completed:before,
 /*******************************
          Theme Overrides
 *******************************/
-.ui.table {
-  overflow: hidden;
-}
 .ui.attached.table {
   position: relative;
   top: 0px;
