@@ -32,6 +32,12 @@ span.text.teal {
 span.text.link.blue {
   color: @linkColor;
 }
+span.text.strikethrough {
+  text-decoration: line-through;
+}
+span.text.underline {
+  text-decoration: underline;
+}
 
 span.muted {
   color: darken(@darkGrey, 30%);

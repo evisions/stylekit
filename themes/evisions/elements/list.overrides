@@ -18,3 +18,7 @@ ul.ui.list li.completed:before,
   padding-left: @paddedHorizontalPadding;
   padding-right: @paddedHorizontalPadding;
 }
+
+.ui.list .item a.secondary {
+  color: @white !important;
+}
