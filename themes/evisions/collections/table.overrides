@@ -102,6 +102,10 @@
   border-right-color: @sortableInvertedBorderColor;
 }
 
+.ui.table.secondary tr:focus{
+  background: @secondaryActiveBackgroundColor !important;
+  color: @secondaryActiveColor !important;
+}
 
 .ui.table.selectable tbody tr:not(:focus):not(.empty):not(.group):hover td {
   background: @backgroundHover;

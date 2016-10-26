@@ -25279,6 +25279,10 @@ ul.ui.list li.completed:before,
   border-left-color: transparent;
   border-right-color: transparent;
 }
+.ui.table.secondary tr:focus {
+  background: #DDDDDD !important;
+  color: #323232 !important;
+}
 .ui.table.selectable tbody tr:not(:focus):not(.empty):not(.group):hover td {
   background: #f7f7f7;
   color: rgba(0, 0, 0, 0.8);
