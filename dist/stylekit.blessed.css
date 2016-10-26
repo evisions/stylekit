@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1477524906456');
+@import url('stylekit.blessed-blessed1.css?z=1477525138905');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -2888,6 +2888,9 @@
 .ui.dark.menu {
   background-color: transparent;
 }
+.ui.dark.menu .item {
+  background-color: #FFFFFF;
+}
 .ui.dark.menu .active.item {
   color: #FFFFFF;
   background-color: #0078A7;
@@ -4953,9 +4956,6 @@
 /*******************************
          Theme Overrides
 *******************************/
-.ui.table {
-  overflow: hidden;
-}
 .ui.attached.table {
   position: relative;
   top: 0px;

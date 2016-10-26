@@ -1490,6 +1490,12 @@ span.text.teal {
 span.text.link.blue {
   color: #0075C9;
 }
+span.text.strikethrough {
+  text-decoration: line-through;
+}
+span.text.underline {
+  text-decoration: underline;
+}
 span.muted {
   color: #5e5e5e;
 }
@@ -13908,6 +13914,9 @@ ul.ui.list li.completed:before,
 .ui.padded.list:not(.horizontal) > .item {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.ui.list .item a.secondary {
+  color: #FFFFFF !important;
 }
 /*******************************
     User Variable Overrides
