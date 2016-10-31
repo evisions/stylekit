@@ -103,3 +103,10 @@
   width: 100%;
   vertical-align: top;
 }
+
+.ui.form .field :disabled,
+.ui.form .field.disabled {
+  background: @pageBackground;
+  border: 1px solid @solidBorderColor;
+  opacity: 1.0;
+}

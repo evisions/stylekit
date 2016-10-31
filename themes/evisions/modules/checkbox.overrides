@@ -48,6 +48,11 @@
   padding-left: 6rem;
 }
 
+.ui.polar.toggle.checkbox.disabled .box:before,
+.ui.polar.toggle.checkbox.disabled label:before {
+  cursor: default;
+}
+
 .ui.polar.toggle.checkbox label {
   padding-top: 0.35rem;
 }
@@ -100,9 +105,9 @@
 .ui.checkbox input[type="checkbox"]:focus ~ label:before,
 .ui.checkbox input[type="radio"]:focus ~ .box:before,
 .ui.checkbox input[type="radio"]:focus ~ label:before {
-  box-shadow: 
-    -1px 0px 0px 1px transparent inset, 
-    0px 0px 1px rgba(81, 167, 232, 0.8) inset, 
+  box-shadow:
+    -1px 0px 0px 1px transparent inset,
+    0px 0px 1px rgba(81, 167, 232, 0.8) inset,
     0px 0px 3px 2px rgba(81, 167, 232, 0.8) !important;
 }
 
