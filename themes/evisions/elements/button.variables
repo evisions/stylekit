@@ -99,6 +99,7 @@
 ;
 @focusColor: @hoveredTextColor;
 @iconFocusOpacity: 0.85;
+@disabledOpacity: 0.50;
 
 /* Pressed Down */
 @downBackgroundColor: #CCCCCC;

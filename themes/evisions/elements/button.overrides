@@ -133,13 +133,6 @@ a.ui.button.inline {
   opacity: 1 !important;
 }
 
-.ui.buttons .disabled.button,
-.ui.disabled.button,
-.ui.disabled.button:hover,
-.ui.disabled.active.button {
-  opacity: 0.5 !important;
-}
-
 .ui.button.inline.blue {
   color: @blue;
 }
