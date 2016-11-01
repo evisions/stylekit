@@ -63,13 +63,6 @@
 @labeledIconInputMargin: 3.25em;
 @labeledIconMargin: 1.25em;
 
-/* Type Ahead Find Results */
-@resultFooterBackground: #D0D0D0;
-@resultCountFontSize: 10px;
-@resultFooterHorizontalPadding: 1em;
-@resultsMaxHeight: 265px;
-@resultFooterVerticalPadding: 1em;
-
 /*-------------------
         States
 --------------------*/
