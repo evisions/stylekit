@@ -2115,7 +2115,7 @@ span.muted {
   cursor: default;
   background-color: #DDDDDD !important;
   color: rgba(0, 0, 0, 0.4) !important;
-  opacity: 0.3 !important;
+  opacity: 0.5 !important;
   background-image: none !important;
   box-shadow: none !important;
   pointer-events: none;
@@ -10901,6 +10901,7 @@ img.ui.bordered.image {
 /* Icon Input */
 /* Circular Icon Input */
 /* Labeled Input */
+/* Type Ahead Find Results */
 /*-------------------
         States
 --------------------*/
@@ -11383,6 +11384,34 @@ img.ui.bordered.image {
 .ui.disabled.input {
   cursor: default;
   pointer-events: none;
+}
+/*--------------------
+      Type Ahead Find
+---------------------*/
+/* Results */
+.ui.input.type-ahead-find .results {
+  display: block;
+  max-height: 265px;
+  overflow-y: auto;
+  max-width: 100%;
+}
+.ui.input.type-ahead-find .results.empty {
+  display: none;
+}
+.ui.input.type-ahead-find .results .result.footer {
+  background-color: #D0D0D0;
+  position: relative;
+  text-align: center;
+}
+.ui.input.type-ahead-find .results .result.footer i.count {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  font-size: 10px;
+}
+.ui.input.type-ahead-find .results .result.footer span.description {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }
 /*******************************
          Site Overrides
@@ -19057,6 +19086,12 @@ ul.ui.list li.completed:before,
   width: 100%;
   vertical-align: top;
 }
+.ui.form .field :disabled,
+.ui.form .field.disabled {
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  opacity: 1.0;
+}
 /*******************************
          Site Overrides
 *******************************/
@@ -25288,6 +25323,10 @@ ul.ui.list li.completed:before,
   border-left-color: transparent;
   border-right-color: transparent;
 }
+.ui.table.secondary tr.active td,
+.ui.table.secondary td.active,
+.ui.table tr.secondary.active td,
+.ui.table td.secondary.active,
 .ui.table.secondary tr:focus {
   background: #DDDDDD !important;
   color: #323232 !important;
@@ -33550,6 +33589,10 @@ a.ui.card:hover,
 .ui.polar.toggle.checkbox label {
   min-height: 2rem;
   padding-left: 6rem;
+}
+.ui.polar.toggle.checkbox.disabled .box:before,
+.ui.polar.toggle.checkbox.disabled label:before {
+  cursor: default;
 }
 .ui.polar.toggle.checkbox label {
   padding-top: 0.35rem;

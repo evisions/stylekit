@@ -99,7 +99,11 @@
   border-right-color: @sortableInvertedBorderColor;
 }
 
-.ui.table.secondary tr:focus{
+.ui.table.secondary tr.active td,
+.ui.table.secondary td.active,
+.ui.table tr.secondary.active td,
+.ui.table td.secondary.active,
+.ui.table.secondary tr:focus {
   background: @secondaryActiveBackgroundColor !important;
   color: @secondaryActiveColor !important;
 }

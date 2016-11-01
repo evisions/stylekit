@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1477525138905');
+@import url('stylekit.blessed-blessed1.css?z=1478020646653');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -5054,6 +5054,10 @@
   border-left-color: transparent;
   border-right-color: transparent;
 }
+.ui.table.secondary tr.active td,
+.ui.table.secondary td.active,
+.ui.table tr.secondary.active td,
+.ui.table td.secondary.active,
 .ui.table.secondary tr:focus {
   background: #DDDDDD !important;
   color: #323232 !important;
@@ -13316,6 +13320,10 @@ a.ui.card:hover,
 .ui.polar.toggle.checkbox label {
   min-height: 2rem;
   padding-left: 6rem;
+}
+.ui.polar.toggle.checkbox.disabled .box:before,
+.ui.polar.toggle.checkbox.disabled label:before {
+  cursor: default;
 }
 .ui.polar.toggle.checkbox label {
   padding-top: 0.35rem;
