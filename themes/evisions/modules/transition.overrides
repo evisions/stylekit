@@ -10,6 +10,11 @@
   by Nick Pettit - https://github.com/nickpettit/glide
 */
 
+// fix z-index overlay bug
+.transition.visible {
+  transform: initial;
+}
+
 /*--------------
      Browse
 ---------------*/
@@ -906,6 +911,3 @@
     transform: scale3d(1, 1, 1);
   }
 }
-
-
-
