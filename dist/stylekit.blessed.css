@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1478020646653');
+@import url('stylekit.blessed-blessed1.css?z=1478123872020');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -107,6 +107,7 @@
 .ui.grid > .centered.row {
   text-align: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -367,13 +368,15 @@
 .ui.grid [class*="top aligned"].column,
 .ui.grid > [class*="top aligned"].row > .column {
   vertical-align: top;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 .ui.grid [class*="top aligned"].column {
   vertical-align: top !important;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 /* Middle Aligned */
 .ui[class*="middle aligned"].grid,
@@ -381,13 +384,15 @@
 .ui[class*="middle aligned"].grid > .column,
 .ui.grid > [class*="middle aligned"].row > .column {
   vertical-align: middle;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 .ui.grid [class*="middle aligned"].column {
   vertical-align: middle !important;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 /* Bottom Aligned */
 .ui[class*="bottom aligned"].grid,
@@ -395,12 +400,14 @@
 .ui[class*="bottom aligned"].grid > .column,
 .ui.grid > [class*="bottom aligned"].row > .column {
   vertical-align: bottom;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 .ui.grid [class*="bottom aligned"].column {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
   vertical-align: bottom !important;
 }
 /*----------------------
@@ -537,23 +544,28 @@
 /* Flexbox (Experimental / Overrides Where Supported) */
 .ui[class*="equal width"].grid {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 .ui[class*="equal width"].grid > .row,
 .ui.grid > [class*="equal width"].row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -563,9 +575,11 @@
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
@@ -592,13 +606,16 @@
 .ui[class*="equal height"].grid > .row,
 .ui.grid > [class*="equal height"].row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -608,9 +625,11 @@
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
@@ -953,6 +972,21 @@
   .ui.column.grid > [class*="zero wide computer"].column {
     display: none;
   }
+}
+.ui.uptight.grid {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.ui.uptight.grid > .column:not(.row),
+.ui.uptight.grid > .row > .column,
+.ui.grid > .uptight.row > .column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.ui.uptight.grid .row + .ui.divider,
+.ui.grid .uptight.row + .ui.divider {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 /*******************************
          Site Overrides
@@ -7988,10 +8022,12 @@
   max-width: 100%;
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 290px;
@@ -8023,14 +8059,17 @@
 ---------------*/
 .ui.cards {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: -0.875em -0.5em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .ui.cards > .card {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0.875em 0.5em;
@@ -8089,6 +8128,7 @@
 .ui.cards > .card > .content,
 .ui.card > .content {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background: none;
@@ -8301,6 +8341,7 @@
   max-width: 100%;
   min-height: 0em !important;
   -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   position: static;
@@ -15817,7 +15858,7 @@ select.ui.dropdown {
   right: -4rem;
   z-index: 1;
   opacity: 0.8;
-  font-size: 2em;
+  font-size: 1.286em;
   color: #FFFFFF;
   width: 3.75rem;
   height: 3.75rem;
@@ -20169,6 +20210,7 @@ a.ui.nag {
 --------------------*/
 /* Animation */
 /* Dimmer */
+/* Header */
 /* Color below page */
 /* Shadow */
 /* Layering */
@@ -20177,6 +20219,7 @@ a.ui.nag {
 --------------------*/
 /* Width */
 /* Height */
+/* Fullscreen */
 /*------------------
      Site Theme
 -------------------*/
@@ -20776,6 +20819,74 @@ html.ios {
   background-color: #FFFFFF;
 }
 .ui.sidebar.padded {
+  padding: 1em;
+}
+/* Header */
+.ui.sidebar > .header {
+  background: #F0F0F0;
+  padding: 1.5em;
+  display: table;
+  width: 100%;
+}
+.ui.sidebar > .header > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ui.sidebar > .header > .ui.header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ui.sidebar.padded > .header {
+  margin-left: -1em;
+  margin-top: -1em;
+  margin-right: -1em;
+  width: calc(100% +  2em );
+}
+/* Actions */
+.ui.sidebar > .actions {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.ui.sidebar:not(.padded) > .actions {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.ui.sidebar > .header > .actions {
+  text-align: right;
+}
+.ui.sidebar > .header > .actions *:last-child {
+  margin-right: 0;
+}
+/* Content */
+.ui.sidebar > .content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.ui.sidebar:not(.padded) > .content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* Fullscreen */
+.ui.sidebar.fullscreen {
+  width: 75%;
+}
+.ui.sidebar.fullscreen > .actions {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.ui.sidebar.fullscreen:not(.padded) > .actions {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.ui.sidebar.fullscreen > .content {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.ui.sidebar.fullscreen:not(.padded) > .content {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.ui.sidebar.fullscreen.padded {
   padding: 1.5em;
 }
 /*--------------
