@@ -41,7 +41,7 @@
 ;
 
 /* Icon */
-@iconOpacity: 0.8;
+@iconOpacity: 1;
 @iconDistance: 0.4em;
 @iconColor: '';
 @iconTransition: opacity @transitionDuration @transitionEasing;

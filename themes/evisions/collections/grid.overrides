@@ -55,3 +55,19 @@
     display: none;
   }
 }
+
+.ui.uptight.grid  {
+  margin-left: -(@rowSpacing / 4);
+  margin-right: -(@rowSpacing / 4);
+}
+.ui.uptight.grid > .column:not(.row),
+.ui.uptight.grid > .row > .column,
+.ui.grid > .uptight.row > .column {
+  padding-left: (@rowSpacing / 4);
+  padding-right: (@rowSpacing / 4);
+}
+.ui.uptight.grid .row + .ui.divider,
+.ui.grid .uptight.row + .ui.divider {
+  margin-left: (@rowSpacing / 4);
+  margin-right: (@rowSpacing / 4);
+}
