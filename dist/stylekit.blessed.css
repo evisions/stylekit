@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1478020646653');
+@import url('stylekit.blessed-blessed1.css?z=1478123555782');
 
 /* Widescreen Sizing Combinations */
 @media only screen and (min-width: 1920px) {
@@ -953,6 +953,21 @@
   .ui.column.grid > [class*="zero wide computer"].column {
     display: none;
   }
+}
+.ui.uptight.grid {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.ui.uptight.grid > .column:not(.row),
+.ui.uptight.grid > .row > .column,
+.ui.grid > .uptight.row > .column {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.ui.uptight.grid .row + .ui.divider,
+.ui.grid .uptight.row + .ui.divider {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 /*******************************
          Site Overrides
@@ -15817,7 +15832,7 @@ select.ui.dropdown {
   right: -4rem;
   z-index: 1;
   opacity: 0.8;
-  font-size: 2em;
+  font-size: 1.286em;
   color: #FFFFFF;
   width: 3.75rem;
   height: 3.75rem;
@@ -20169,6 +20184,7 @@ a.ui.nag {
 --------------------*/
 /* Animation */
 /* Dimmer */
+/* Header */
 /* Color below page */
 /* Shadow */
 /* Layering */
@@ -20177,6 +20193,7 @@ a.ui.nag {
 --------------------*/
 /* Width */
 /* Height */
+/* Fullscreen */
 /*------------------
      Site Theme
 -------------------*/
@@ -20776,6 +20793,74 @@ html.ios {
   background-color: #FFFFFF;
 }
 .ui.sidebar.padded {
+  padding: 1em;
+}
+/* Header */
+.ui.sidebar > .header {
+  background: #F0F0F0;
+  padding: 1.5em;
+  display: table;
+  width: 100%;
+}
+.ui.sidebar > .header > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ui.sidebar > .header > .ui.header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ui.sidebar.padded > .header {
+  margin-left: -1em;
+  margin-top: -1em;
+  margin-right: -1em;
+  width: calc(100% +  2em );
+}
+/* Actions */
+.ui.sidebar > .actions {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.ui.sidebar:not(.padded) > .actions {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.ui.sidebar > .header > .actions {
+  text-align: right;
+}
+.ui.sidebar > .header > .actions *:last-child {
+  margin-right: 0;
+}
+/* Content */
+.ui.sidebar > .content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.ui.sidebar:not(.padded) > .content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* Fullscreen */
+.ui.sidebar.fullscreen {
+  width: 75%;
+}
+.ui.sidebar.fullscreen > .actions {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.ui.sidebar.fullscreen:not(.padded) > .actions {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.ui.sidebar.fullscreen > .content {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.ui.sidebar.fullscreen:not(.padded) > .content {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.ui.sidebar.fullscreen.padded {
   padding: 1.5em;
 }
 /*--------------
@@ -22010,6 +22095,10 @@ html.ios {
   Additional transitions adapted from Glide
   by Nick Pettit - https://github.com/nickpettit/glide
 */
+.transition.visible {
+  -webkit-transform: initial;
+          transform: initial;
+}
 /*--------------
      Browse
 ---------------*/
