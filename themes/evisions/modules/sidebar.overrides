@@ -7,8 +7,81 @@
 }
 
 .ui.sidebar.padded {
-  padding: @padding;
+  padding: @defaultPadding;
 }
+
+/* Header */
+.ui.sidebar > .header {
+  background: @headerBackground;
+  padding: @largePadding;
+  display: table;
+  width: 100%;
+}
+.ui.sidebar > .header > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ui.sidebar > .header > .ui.header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ui.sidebar.padded > .header {
+  margin-left: -@defaultPadding;
+  margin-top: -@defaultPadding;
+  margin-right: -@defaultPadding;
+  width: ~"calc(100% + "(2*@defaultPadding)~")";
+}
+
+/* Actions */
+.ui.sidebar > .actions {
+  padding-top: @defaultPadding;
+  padding-bottom: @defaultPadding;
+}
+.ui.sidebar:not(.padded) > .actions {
+  padding-left: @defaultPadding;
+  padding-right: @defaultPadding;
+}
+.ui.sidebar > .header > .actions {
+  text-align: right;
+}
+.ui.sidebar > .header > .actions *:last-child {
+  margin-right: 0;
+}
+
+/* Content */
+.ui.sidebar > .content {
+  padding-top: @defaultPadding;
+  padding-bottom: @defaultPadding;
+}
+.ui.sidebar:not(.padded) > .content {
+  padding-left: @defaultPadding;
+  padding-right: @defaultPadding;
+}
+
+/* Fullscreen */
+.ui.sidebar.fullscreen {
+  width: @fullscreenWidth;
+}
+.ui.sidebar.fullscreen > .actions {
+  padding-top: @largePadding;
+  padding-bottom: @largePadding;
+}
+.ui.sidebar.fullscreen:not(.padded) > .actions {
+  padding-left: @largePadding;
+  padding-right: @largePadding;
+}
+.ui.sidebar.fullscreen > .content {
+  padding-top: @largePadding;
+  padding-bottom: @largePadding;
+}
+.ui.sidebar.fullscreen:not(.padded) > .content {
+  padding-left: @largePadding;
+  padding-right: @largePadding;
+}
+.ui.sidebar.fullscreen.padded {
+  padding: @largePadding;
+}
+
 
 /*--------------
      Page

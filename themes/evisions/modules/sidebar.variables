@@ -2,7 +2,8 @@
              Sidebar
 *******************************/
 
-@padding: 1.5em;
+@defaultPadding: 1em;
+@largePadding: 1.5em;
 
 /*-------------------
        Content
@@ -19,6 +20,9 @@
   transform @duration,
   opacity @duration
 ;
+
+/* Header */
+@headerBackground: @darkWhite;
 
 /* Color below page */
 @canvasBackground: @pageBackground;
@@ -48,3 +52,6 @@
 
 /* Height */
 @height: 36px;
+
+/* Fullscreen */
+@fullscreenWidth: 75%;
