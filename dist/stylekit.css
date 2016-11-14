@@ -16526,6 +16526,15 @@ ul.ui.list li.completed:before,
 .ui.inverted.blue.segment {
   border-color: #0075C9;
 }
+/* Only one segment in segment group */
+.ui.segments > .segment:only-child {
+  margin-top: 0em;
+  bottom: 0px;
+  margin-bottom: 0em;
+  top: 0px;
+  margin-top: 1rem;
+  border-radius: 0.2857rem 0.2857rem 0.2857rem 0.2857rem;
+}
 .ui:not(.inverted):not(.active):not(.tab).segment.selectable:hover {
   background: #f7f7f7;
 }
