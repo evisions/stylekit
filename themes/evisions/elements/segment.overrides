@@ -8,11 +8,6 @@
 
 /* Only one segment in segment group */
 .ui.segments > .segment:only-child {
-  margin-top: 0em;
-  bottom: 0px;
-  margin-bottom: 0em;
-  top: @attachedTopOffset;
-  margin-top: @margin;
   border-radius: @borderRadius @borderRadius @borderRadius @borderRadius;
 }
 
