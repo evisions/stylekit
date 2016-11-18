@@ -8,16 +8,10 @@
 @dayCellBorder: 1px solid @lightGrey;
 @dayDotSize: 0.5em;
 
-@largeDayPadding: 0.5em;
-@largeHeaderCellPadding: @largeDayPadding;
-@largeHeaderHeight: 3rem;
-
 @normalDayWidth: 3rem;
 @normalDayHeight: 3rem;
 @weekHeaderHeight: 2em;
 
-@headerCellBorder: 1px solid @lightGrey;
-@headerCellPadding: @dayPadding;
 @normalHeaderWidth: @normalDayWidth;
 @normalHeaderHeight: 2rem;
 
@@ -33,6 +27,8 @@
 @todayBackground: @lightGreyHover;
 
 @otherDayFontWeight: bold;
+@otherDayBackgroundColor: transparent;
+@otherDayWeekendBackgroundColor: @otherDayBackgroundColor;
 
 @dateDisplayHoverColor: @primaryColorActive;
 
@@ -45,8 +41,9 @@
 @controlColorHover: @primaryColorActive;
 
 @dayColorActive: @dayColor;
-@dayBackgroundActive: @lightBlue;
-@todayBackgroundActive: darken(@dayBackgroundActive, 5%) !important;
+@dayBackgroundActive: #EBF2EB;
+@todayBackgroundActive: @dayBackgroundActive;
+@otherDayWeekendBackgroundColorActive: @dayBackgroundActive;
 
 @appointmentWidth: .25rem;
 @appointmentBackground: @primaryColorActive;
@@ -57,8 +54,25 @@
 @defaultControlsBackground: transparent;
 @defaultControlsHeight: @normalHeaderHeight;
 
-@largeWeekHeaderBackground: transparent;
-@largeDayBackground: @white;
+
+/*
+ Large Support
+*/
+@largeCalendarFontSize: @relativeMedium;
+@largeCalendarWeekHeaderBackground: @lightGrey;
+@largeCalendarDayBackground: @white;
+@largeCalendarDayHeight: 8rem;
+@largeCalendarDayPadding: 0.5em;
+@largeCalendarOtherDayBackgroundColor: #EEEEEE;
+@largeCalendarOtherDayWeekendBackgroundColor: @largeCalendarOtherDayBackgroundColor;
+@largeCalendarTodayBackground: @lightGreyHover;
+@largeCalendarHeaderHeight: 3rem;
+@largeCalendarHeaderCellPadding: @largeCalendarDayPadding;
+@largeCalendarDayBackgroundActive: #EBF2EB;
+@largeCalendarTodayBackgroundActive: @largeCalendarDayBackgroundActive;
+@largeCalendarOtherDayWeekendBackgroundColorActive: @largeCalendarDayBackgroundActive;
+@largeCalendarDayCellBorder: 1px solid #cfcfcf;
+@largeCalendarHeaderCellBorder: @largeCalendarDayCellBorder;
 
 /*
   Breakpoint
@@ -71,19 +85,22 @@
 /**
  * Appointment Items
  */
-@appointmentItemPadding: 0.1rem 1rem 0.1rem 1.5rem;
-@appointmentItemBackground: @lightBlue;
-@appointmentItemColor: @dayColor;
-@appointmentItemTextWeight: bold;
-@appointmentItemBorder: 1px solid darken(@appointmentItemBackground, 5%);
+@appointmentItemPadding: 0.1rem 0.5rem 0.1rem 0.5rem;
+@appointmentItemBackground: #E6F1F9;
+@appointmentItemFontSize: 0.85rem;
+@appointmentItemColor: #005796;
+@appointmentItemTimeWeight: bold;
+@appointmentItemTextWeight: normal;
+@appointmentItemBorderColor: #0075C9;
+@appointmentItemBorder: 1px solid @appointmentItemBorderColor;
 
 @appointmentItemHoverBackground: darken(@appointmentItemBackground, 2%);
 @appointmentItemHoverColor: @appointmentItemColor;
-@appointmentItemHoverBorder: 1px solid darken(@appointmentItemHoverBackground, 2%);
+@appointmentItemHoverBorder: 1px solid @appointmentItemBorderColor;
 
-@appointmentItemActiveBackground: darken(@appointmentItemBackground, 10%);
-@appointmentItemActiveColor: @appointmentItemColor;
-@appointmentItemActiveBorder: 1px solid darken(@appointmentItemActiveBackground, 2%);
+@appointmentItemActiveBackground: #0075c9;
+@appointmentItemActiveColor: @white;
+@appointmentItemActiveBorder: 1px solid #0075c9;
 
 /**
  * Disabled Appointment Item
@@ -104,7 +121,7 @@
 @timeGridHeight: 2em;
 @timeGutterPadding: 0 0.5em 0 0;
 @timeGutterBackground: transparent;
-@timeGutterTextColor: @darkGrey;
+@timeGutterTextColor: #cfcfcf;
 @timeGridDayBackground: @white;
 @timeGridDayOffHoursBackground: darken(@white, 1%);
 @timeGridDayPadding: 0 0.5em;
