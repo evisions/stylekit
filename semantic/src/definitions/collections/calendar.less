@@ -69,7 +69,7 @@
   }
 }
 .ui.calendar.large {
-  font-size: @relativeLarge;
+  font-size: @relativeMedium;
 }
 .ui.calendar.massive {
   font-size: @relativeMassive;
@@ -77,8 +77,9 @@
 .ui.calendar.large .week.header .cell {
   background: @largeWeekHeaderBackground;
 }
-.ui.calendar.large .week .day {
+.ui.calendar.large .day {
   background: @largeDayBackground;
+  height: @largeDayHeight;
 }
 
 .ui.calendar .day {
@@ -135,6 +136,12 @@
   bottom: .15em;
 }
 
+.ui.calendar .day.other.weekend:not(.active) {
+  background: @otherDayWeekendBackgroundColor;
+}
+.ui.calendar .day.other {
+  background: @otherDayBackgroundColor;
+}
 .ui.calendar .day.other > .text {
   font-weight: @otherDayFontWeight;
   color: @disabledTextColor;
@@ -145,11 +152,11 @@
 }
 
 .ui.calendar .day.weekend:not(.active) {
-  background: @weekendDayBackground !important;
+  background: @weekendDayBackground;
 }
 
 .ui.calendar .day.today {
-  background-color: @todayBackground !important;
+  background-color: @todayBackground;
 }
 
 .ui.calendar .day.today > .text {
@@ -191,7 +198,6 @@
   width: @normalHeaderWidth;
   height: @normalHeaderHeight;
   padding: @headerCellPadding;
-  // display: table-cell;
   vertical-align: top;
 }
 
@@ -319,7 +325,7 @@
   // random fix for borders
   height: ~"calc(100% - 10px)";
 }
-.ui.calendar.vertical.fluid .content {
+.ui.calendar.vertical.fluid > .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -394,12 +400,14 @@
 .ui.calendar.selectable .day {
   cursor: @dayCursor;
 }
-
 .ui.calendar.selectable .day.active {
   background-color: @dayBackgroundActive;
 }
 .ui.calendar.selectable .day.today.active {
   background-color: @todayBackgroundActive;
+}
+.ui.calendar .day.other.weekend.active {
+  background: @otherDayWeekendBackgroundColorActive;
 }
 
 .ui.calendar.selectable .day.active > .text {
@@ -427,20 +435,10 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   box-shadow: @boxShadow;
   position: relative;
-}
-.ui.calendar .day .appointments .item:after {
-  content: '';
-  position: absolute;
-  background: @blue;
-  top: 50%;
-  width: @dayDotSize;
-  height: @dayDotSize;
-  border-radius: @dayDotSize;
-  margin-top: -@dayDotSize/2;
-  left: 0.5em;
+  font-size: @appointmentItemFontSize;
 }
 
 .ui.calendar .day .appointments .item:last-child {
@@ -449,6 +447,7 @@
 .ui.calendar .day .appointments .item .time {
   display: inline;
   margin-right: 0.5rem;
+  font-weight: @appointmentItemTimeWeight;
 }
 @media only screen and (max-width : @fullScreenCalendar) {
   .ui.calendar .day .appointments .item .text {
