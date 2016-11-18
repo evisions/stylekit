@@ -11197,11 +11197,13 @@ img.ui.bordered.image {
 /* Adjacent Label */
 .ui.labeled.input {
   display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .ui.labeled.input > .label {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   margin: 0;
@@ -11214,6 +11216,7 @@ img.ui.bordered.image {
 /* Fluid Labeled */
 .ui.fluid.labeled.input {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -11263,12 +11266,14 @@ img.ui.bordered.image {
 ---------------------*/
 .ui.action.input {
   display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .ui.action.input > .button,
 .ui.action.input > .buttons {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
@@ -11281,6 +11286,7 @@ img.ui.bordered.image {
 /* Fluid */
 .ui.fluid.action.input {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -19035,16 +19041,20 @@ ul.ui.list li.completed:before,
 }
 .editable.field.inline {
   display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
 .editable.field.inline.fluid {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -19065,11 +19075,13 @@ ul.ui.list li.completed:before,
 }
 .editable.field > * {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 .editable.field > .ui.input {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
 }
@@ -20380,6 +20392,7 @@ ul.ui.list li.completed:before,
 .ui.grid > .centered.row {
   text-align: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -20640,13 +20653,15 @@ ul.ui.list li.completed:before,
 .ui.grid [class*="top aligned"].column,
 .ui.grid > [class*="top aligned"].row > .column {
   vertical-align: top;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 .ui.grid [class*="top aligned"].column {
   vertical-align: top !important;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 /* Middle Aligned */
 .ui[class*="middle aligned"].grid,
@@ -20654,13 +20669,15 @@ ul.ui.list li.completed:before,
 .ui[class*="middle aligned"].grid > .column,
 .ui.grid > [class*="middle aligned"].row > .column {
   vertical-align: middle;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 .ui.grid [class*="middle aligned"].column {
   vertical-align: middle !important;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 /* Bottom Aligned */
 .ui[class*="bottom aligned"].grid,
@@ -20668,12 +20685,14 @@ ul.ui.list li.completed:before,
 .ui[class*="bottom aligned"].grid > .column,
 .ui.grid > [class*="bottom aligned"].row > .column {
   vertical-align: bottom;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 .ui.grid [class*="bottom aligned"].column {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
   vertical-align: bottom !important;
 }
 /*----------------------
@@ -20810,23 +20829,28 @@ ul.ui.list li.completed:before,
 /* Flexbox (Experimental / Overrides Where Supported) */
 .ui[class*="equal width"].grid {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 .ui[class*="equal width"].grid > .row,
 .ui.grid > [class*="equal width"].row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -20836,9 +20860,11 @@ ul.ui.list li.completed:before,
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
@@ -20865,13 +20891,16 @@ ul.ui.list li.completed:before,
 .ui[class*="equal height"].grid > .row,
 .ui.grid > [class*="equal height"].row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -20881,9 +20910,11 @@ ul.ui.list li.completed:before,
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
@@ -25833,6 +25864,9 @@ ul.ui.list li.completed:before,
 /*---  Emotive  ---*/
 /*---  Neutrals  ---*/
 /*
+ Large Support
+*/
+/*
   Breakpoint
  */
 /**
@@ -25871,9 +25905,6 @@ ul.ui.list li.completed:before,
   text-align: right;
   left: auto;
   right: 0.1rem;
-}
-.ui.calendar.large.right.aligned .day > .text {
-  right: 0.3rem;
 }
 .ui.calendar.center.aligned .day > .text {
   display: block;
@@ -25926,17 +25957,8 @@ ul.ui.list li.completed:before,
 .ui.week .controls.default.huge {
   font-size: 1.42857143rem;
 }
-.ui.calendar.large {
-  font-size: 1.14285714em;
-}
 .ui.calendar.massive {
   font-size: 1.71428571em;
-}
-.ui.calendar.large .week.header .cell {
-  background: transparent;
-}
-.ui.calendar.large .week .day {
-  background: #FFFFFF;
 }
 .ui.calendar .day {
   color: rgba(0, 0, 0, 0.85);
@@ -25953,14 +25975,6 @@ ul.ui.list li.completed:before,
   position: absolute;
   top: 0.1rem;
   left: 0.1rem;
-}
-.ui.calendar.large .day > .text {
-  top: 0.3rem;
-  left: 0.3rem;
-}
-.ui.calendar.large .day {
-  padding: 0.5em;
-  padding-top: 1.7rem;
 }
 .ui.calendar .day > .text {
   display: inline-block;
@@ -25984,6 +25998,12 @@ ul.ui.list li.completed:before,
   margin-left: -0.25rem;
   bottom: .15em;
 }
+.ui.calendar .day.other.weekend:not(.active) {
+  background: transparent;
+}
+.ui.calendar .day.other {
+  background: transparent;
+}
 .ui.calendar .day.other > .text {
   font-weight: bold;
   color: rgba(40, 40, 40, 0.3);
@@ -25992,10 +26012,10 @@ ul.ui.list li.completed:before,
   color: #343637;
 }
 .ui.calendar .day.weekend:not(.active) {
-  background: #fcfcfc !important;
+  background: #fcfcfc;
 }
 .ui.calendar .day.today {
-  background-color: #e5e5e5 !important;
+  background-color: #e5e5e5;
 }
 .ui.calendar .day.today > .text {
   font-weight: bold;
@@ -26029,12 +26049,6 @@ ul.ui.list li.completed:before,
   height: 2rem;
   padding: 0 0.5em;
   vertical-align: top;
-}
-.ui.calendar.large .week.header .cell {
-  height: 3rem;
-}
-.ui.calendar.large .week.header .cell {
-  padding: 0.5em;
 }
 .ui.calendar .controls.default:not(.fluid) {
   width: 21rem;
@@ -26147,7 +26161,7 @@ ul.ui.list li.completed:before,
   position: relative;
   height: calc(100% - 10px);
 }
-.ui.calendar.vertical.fluid .content {
+.ui.calendar.vertical.fluid > .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -26159,9 +26173,6 @@ ul.ui.list li.completed:before,
 }
 .ui.calendar.vertical.fluid .content > table {
   height: 100%;
-}
-.ui.calendar.large.vertical.controls.fluid .content {
-  top: 3rem;
 }
 .ui.calendar.vertical.fluid .week.header {
   height: 2em;
@@ -26217,13 +26228,95 @@ ul.ui.list li.completed:before,
   cursor: pointer;
 }
 .ui.calendar.selectable .day.active {
-  background-color: #54C8FF;
+  background-color: #EBF2EB;
 }
 .ui.calendar.selectable .day.today.active {
-  background-color: #3ac0ff !important;
+  background-color: #EBF2EB;
+}
+.ui.calendar .day.other.weekend.active {
+  background: #EBF2EB;
 }
 .ui.calendar.selectable .day.active > .text {
   color: rgba(0, 0, 0, 0.85);
+}
+/**
+ * Large Calendar Support
+ */
+.ui.calendar.large {
+  font-size: 1em;
+}
+.ui.calendar.large .day {
+  background: #FFFFFF;
+  height: 8rem;
+}
+.ui.calendar.large .week.header .cell {
+  background: #DDDDDD;
+  padding: 0.5em;
+  height: 3rem;
+}
+.ui.calendar.large.right.aligned .day > .text {
+  right: 0.3rem;
+}
+.ui.calendar.large .day > .text {
+  top: 0.3rem;
+  left: 0.3rem;
+}
+.ui.calendar.large .day {
+  padding: 0.5em;
+  padding-top: 1.7rem;
+}
+.ui.calendar.large .day.other {
+  background: #EEEEEE;
+}
+.ui.calendar.large .day.other.weekend:not(.active) {
+  background: #EEEEEE;
+}
+.ui.calendar.large .day.today {
+  background-color: #e5e5e5;
+}
+.ui.calendar.large.vertical.controls.fluid .content {
+  top: 3rem;
+}
+.ui.calendar.selectable.large .day.active {
+  background-color: #EBF2EB;
+}
+.ui.calendar.selectable.large .day.today.active {
+  background-color: #EBF2EB;
+}
+.ui.calendar.large .day.other.weekend.active {
+  background: #EBF2EB;
+}
+.ui.calendar.celled .day {
+  border-left: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.ui.calendar.celled .day:last-child {
+  border-right: 1px solid #cfcfcf;
+}
+.ui.calendar.celled .week.header .cell {
+  border-left: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.ui.calendar.celled .week.header .cell:last-child {
+  border-right: 1px solid #cfcfcf;
+}
+.ui.calendar.innercelled .day:first-child {
+  border-left: 0;
+}
+.ui.calendar.innercelled .day {
+  border-left: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.ui.calendar.innercelled .week:last-child .day {
+  border-bottom: 0;
+}
+.ui.calendar.innercelled .week.header .cell:first-child {
+  border-left: 0;
+}
+.ui.calendar.innercelled .week.header .cell {
+  border-left: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
 }
 /**
  * Label Support
@@ -26236,28 +26329,18 @@ ul.ui.list li.completed:before,
  * Appointment Information
  */
 .ui.calendar .day .appointments .item {
-  background: #54C8FF;
-  color: rgba(0, 0, 0, 0.85);
-  padding: 0.1rem 1rem 0.1rem 1.5rem;
-  border: 1px solid #3ac0ff;
+  background: #E6F1F9;
+  color: #005796;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border: 1px solid #0075C9;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   box-shadow: 0px 1px 3px -2px rgba(0, 0, 0, 0.25);
   position: relative;
-}
-.ui.calendar .day .appointments .item:after {
-  content: '';
-  position: absolute;
-  background: #0075C9;
-  top: 50%;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 0.5em;
-  margin-top: -0.25em;
-  left: 0.5em;
+  font-size: 0.85rem;
 }
 .ui.calendar .day .appointments .item:last-child {
   margin-bottom: 0;
@@ -26265,6 +26348,7 @@ ul.ui.list li.completed:before,
 .ui.calendar .day .appointments .item .time {
   display: inline;
   margin-right: 0.5rem;
+  font-weight: bold;
 }
 @media only screen and (max-width: 1200px) {
   .ui.calendar .day .appointments .item .text {
@@ -26281,17 +26365,17 @@ ul.ui.list li.completed:before,
 }
 .ui.calendar .day .appointments .item .text {
   display: inline;
-  font-weight: bold;
+  font-weight: normal;
 }
 .ui.calendar .day .appointments .item:hover {
-  background: #4ac5ff;
-  color: rgba(0, 0, 0, 0.85);
-  border: 1px solid #40c1ff;
+  background: #deecf7;
+  color: #005796;
+  border: 1px solid #0075C9;
 }
 .ui.calendar .day .appointments .item.active {
-  background: #21b8ff;
-  color: rgba(0, 0, 0, 0.85);
-  border: 1px solid #17b4ff;
+  background: #0075c9;
+  color: #FFFFFF;
+  border: 1px solid #0075c9;
 }
 /**
  * Disabled Appointments
@@ -26366,7 +26450,7 @@ ul.ui.list li.completed:before,
   text-align: right;
 }
 .ui.week .time.grid .time.gutter .text {
-  color: #AAAAAA;
+  color: #cfcfcf;
   margin-bottom: -0.5em;
 }
 .ui.week .time.grid .minor.interval .time.interval {
@@ -28276,10 +28360,12 @@ ul.ui.list li.completed:before,
   max-width: 100%;
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 290px;
@@ -28311,14 +28397,17 @@ ul.ui.list li.completed:before,
 ---------------*/
 .ui.cards {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: -0.875em -0.5em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .ui.cards > .card {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0.875em 0.5em;
@@ -28377,6 +28466,7 @@ ul.ui.list li.completed:before,
 .ui.cards > .card > .content,
 .ui.card > .content {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background: none;
@@ -28589,6 +28679,7 @@ ul.ui.list li.completed:before,
   max-width: 100%;
   min-height: 0em !important;
   -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   position: static;
