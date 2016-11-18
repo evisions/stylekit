@@ -5,12 +5,8 @@
 @dayColor: @darkTextColor;
 @dayPadding: 0.1em 0.2em 0.1em 0.1em;
 @dayBorderTop: 1px solid #ccc;
-@dayCellBorder: 1px solid #cfcfcf;
+@dayCellBorder: 1px solid @lightGrey;
 @dayDotSize: 0.5em;
-
-@largeDayPadding: 0.5em;
-@largeHeaderCellPadding: @largeDayPadding;
-@largeHeaderHeight: 3rem;
 
 @normalDayWidth: 3rem;
 @normalDayHeight: 3rem;
@@ -31,7 +27,7 @@
 @todayBackground: @lightGreyHover;
 
 @otherDayFontWeight: bold;
-@otherDayBackgroundColor: #EEEEEE;
+@otherDayBackgroundColor: transparent;
 @otherDayWeekendBackgroundColor: @otherDayBackgroundColor;
 
 @dateDisplayHoverColor: @primaryColorActive;
@@ -52,15 +48,31 @@
 @appointmentWidth: .25rem;
 @appointmentBackground: @primaryColorActive;
 
-@weekHeaderBackground: @lightGrey;
+@weekHeaderBackground: transparent;
 @dayBackground: transparent;
 
 @defaultControlsBackground: transparent;
 @defaultControlsHeight: @normalHeaderHeight;
 
-@largeWeekHeaderBackground: @weekHeaderBackground;
-@largeDayBackground: @white;
-@largeDayHeight: 8rem;
+
+/*
+ Large Support
+*/
+@largeCalendarFontSize: @relativeMedium;
+@largeCalendarWeekHeaderBackground: @lightGrey;
+@largeCalendarDayBackground: @white;
+@largeCalendarDayHeight: 8rem;
+@largeCalendarDayPadding: 0.5em;
+@largeCalendarOtherDayBackgroundColor: #EEEEEE;
+@largeCalendarOtherDayWeekendBackgroundColor: @largeCalendarOtherDayBackgroundColor;
+@largeCalendarTodayBackground: @lightGreyHover;
+@largeCalendarHeaderHeight: 3rem;
+@largeCalendarHeaderCellPadding: @largeCalendarDayPadding;
+@largeCalendarDayBackgroundActive: #EBF2EB;
+@largeCalendarTodayBackgroundActive: @largeCalendarDayBackgroundActive;
+@largeCalendarOtherDayWeekendBackgroundColorActive: @largeCalendarDayBackgroundActive;
+@largeCalendarDayCellBorder: 1px solid #cfcfcf;
+@largeCalendarHeaderCellBorder: @largeCalendarDayCellBorder;
 
 /*
   Breakpoint
@@ -105,7 +117,7 @@
 @weekGutterWidth: 6rem;
 @headerCellHeight: 3em;
 @headerCellPadding: 0 0.5em;
-@headerCellBorder: 1px solid #cfcfcf;
+@headerCellBorder: 1px solid @lightGrey;
 @timeGridHeight: 2em;
 @timeGutterPadding: 0 0.5em 0 0;
 @timeGutterBackground: transparent;

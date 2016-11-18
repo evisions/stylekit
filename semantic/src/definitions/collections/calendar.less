@@ -12,9 +12,6 @@
   left: auto;
   right: 0.1rem;
 }
-.ui.calendar.large.right.aligned .day > .text {
-  right: 0.3rem;
-}
 
 .ui.calendar.center.aligned .day > .text {
   display: block;
@@ -68,18 +65,8 @@
     font-size: @huge;
   }
 }
-.ui.calendar.large {
-  font-size: @relativeMedium;
-}
 .ui.calendar.massive {
   font-size: @relativeMassive;
-}
-.ui.calendar.large .week.header .cell {
-  background: @largeWeekHeaderBackground;
-}
-.ui.calendar.large .day {
-  background: @largeDayBackground;
-  height: @largeDayHeight;
 }
 
 .ui.calendar .day {
@@ -99,16 +86,6 @@
   position: absolute;
   top: 0.1rem;
   left: 0.1rem;
-}
-
-.ui.calendar.large .day > .text {
-  top: 0.3rem;
-  left: 0.3rem;
-}
-
-.ui.calendar.large .day {
-  padding: @largeDayPadding;
-  padding-top: 1.7rem;
 }
 
 .ui.calendar .day > .text {
@@ -189,7 +166,6 @@
 }
 
 .ui.calendar .week {
-  // display: table-row;
   table-layout: fixed;
 }
 
@@ -199,14 +175,6 @@
   height: @normalHeaderHeight;
   padding: @headerCellPadding;
   vertical-align: top;
-}
-
-.ui.calendar.large .week.header .cell {
-  height: @largeHeaderHeight;
-}
-
-.ui.calendar.large .week.header .cell {
-  padding: @largeHeaderCellPadding;
 }
 
 .ui.calendar .controls.default:not(.fluid) {
@@ -339,9 +307,6 @@
 .ui.calendar.vertical.fluid .content > table {
   height: 100%;
 }
-.ui.calendar.large.vertical.controls.fluid .content {
-  top: @largeHeaderHeight;
-}
 .ui.calendar.vertical.fluid .week.header {
   height: 2em;
 }
@@ -412,6 +377,86 @@
 
 .ui.calendar.selectable .day.active > .text {
   color: @dayColorActive;
+}
+
+/**
+ * Large Calendar Support
+ */
+.ui.calendar.large {
+  font-size: @largeCalendarFontSize;
+}
+.ui.calendar.large .day {
+  background: @largeCalendarDayBackground;
+  height: @largeCalendarDayHeight;
+}
+.ui.calendar.large .week.header .cell {
+  background: @largeCalendarWeekHeaderBackground;
+  padding: @largeCalendarHeaderCellPadding;
+  height: @largeCalendarHeaderHeight;
+}
+.ui.calendar.large.right.aligned .day > .text {
+  right: 0.3rem;
+}
+.ui.calendar.large .day > .text {
+  top: 0.3rem;
+  left: 0.3rem;
+}
+.ui.calendar.large .day {
+  padding: @largeCalendarDayPadding;
+  padding-top: 1.7rem;
+}
+.ui.calendar.large .day.other {
+  background: @largeCalendarOtherDayBackgroundColor
+}
+.ui.calendar.large .day.other.weekend:not(.active) {
+  background: @largeCalendarOtherDayWeekendBackgroundColor;
+}
+.ui.calendar.large .day.today {
+  background-color: @largeCalendarTodayBackground;
+}
+.ui.calendar.large.vertical.controls.fluid .content {
+  top: @largeCalendarHeaderHeight;
+}
+.ui.calendar.selectable.large .day.active {
+  background-color: @largeCalendarDayBackgroundActive;
+}
+.ui.calendar.selectable.large .day.today.active {
+  background-color: @largeCalendarTodayBackgroundActive;
+}
+.ui.calendar.large .day.other.weekend.active {
+  background: @largeCalendarOtherDayWeekendBackgroundColorActive;
+}
+.ui.calendar.celled .day {
+  border-left: @largeCalendarDayCellBorder;
+  border-bottom: @largeCalendarDayCellBorder;
+}
+.ui.calendar.celled .day:last-child {
+  border-right: @largeCalendarDayCellBorder;
+}
+.ui.calendar.celled .week.header .cell {
+  border-left: @largeCalendarHeaderCellBorder;
+  border-top: @largeCalendarHeaderCellBorder;
+  border-bottom: @largeCalendarHeaderCellBorder;
+}
+.ui.calendar.celled .week.header .cell:last-child {
+  border-right: @largeCalendarHeaderCellBorder;
+}
+.ui.calendar.innercelled .day:first-child {
+  border-left: 0;
+}
+.ui.calendar.innercelled .day {
+ border-left: @largeCalendarDayCellBorder;
+ border-bottom: @largeCalendarDayCellBorder;
+}
+.ui.calendar.innercelled .week:last-child .day {
+ border-bottom: 0;
+}
+.ui.calendar.innercelled .week.header .cell:first-child {
+ border-left: 0;
+}
+.ui.calendar.innercelled .week.header .cell {
+ border-left: @largeCalendarHeaderCellBorder;
+ border-bottom: @largeCalendarHeaderCellBorder;
 }
 
 
