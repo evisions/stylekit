@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1479510606493');
+@import url('stylekit.blessed-blessed1.css?z=1479746694603');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -5729,9 +5729,6 @@
 .ui.calendar .day .appointments {
   font-size: 14px;
 }
-.ui.calendar.right.aligned .week.header .cell {
-  text-align: right;
-}
 .ui.calendar.center.aligned .week.header .cell {
   text-align: center;
 }
@@ -5862,6 +5859,7 @@
   width: 3rem;
   height: 2rem;
   padding: 0 0.5em;
+  font-weight: bold;
   vertical-align: top;
 }
 .ui.calendar .controls.default:not(.fluid) {
@@ -6067,6 +6065,7 @@
   background: #DDDDDD;
   padding: 0.5em;
   height: 3rem;
+  line-height: 2rem;
 }
 .ui.calendar.large.right.aligned .day > .text {
   right: 0.3rem;

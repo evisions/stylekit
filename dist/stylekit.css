@@ -25915,9 +25915,6 @@ ul.ui.list li.completed:before,
 .ui.calendar .day .appointments {
   font-size: 14px;
 }
-.ui.calendar.right.aligned .week.header .cell {
-  text-align: right;
-}
 .ui.calendar.center.aligned .week.header .cell {
   text-align: center;
 }
@@ -26048,6 +26045,7 @@ ul.ui.list li.completed:before,
   width: 3rem;
   height: 2rem;
   padding: 0 0.5em;
+  font-weight: bold;
   vertical-align: top;
 }
 .ui.calendar .controls.default:not(.fluid) {
@@ -26253,6 +26251,7 @@ ul.ui.list li.completed:before,
   background: #DDDDDD;
   padding: 0.5em;
   height: 3rem;
+  line-height: 2rem;
 }
 .ui.calendar.large.right.aligned .day > .text {
   right: 0.3rem;
