@@ -118,6 +118,7 @@
 @headerCellHeight: 3em;
 @headerCellPadding: 0 0.5em;
 @headerCellBorder: 1px solid @lightGrey;
+@headerCellFontWeight: bold;
 @timeGridHeight: 2em;
 @timeGutterPadding: 0 0.5em 0 0;
 @timeGutterBackground: transparent;

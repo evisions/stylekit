@@ -23,10 +23,6 @@
   font-size: @fontSize;
 }
 
-.ui.calendar.right.aligned .week.header .cell {
-  text-align: right;
-}
-
 .ui.calendar.center.aligned .week.header .cell {
   text-align: center;
 }
@@ -174,6 +170,7 @@
   width: @normalHeaderWidth;
   height: @normalHeaderHeight;
   padding: @headerCellPadding;
+  font-weight: @headerCellFontWeight;
   vertical-align: top;
 }
 
@@ -393,6 +390,7 @@
   background: @largeCalendarWeekHeaderBackground;
   padding: @largeCalendarHeaderCellPadding;
   height: @largeCalendarHeaderHeight;
+  line-height: @largeCalendarHeaderHeight - (@largeCalendarHeaderCellPadding*2);
 }
 .ui.calendar.large.right.aligned .day > .text {
   right: 0.3rem;
