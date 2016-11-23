@@ -19102,11 +19102,15 @@ ul.ui.list li.completed:before,
   width: 100%;
   vertical-align: top;
 }
-.ui.form .field :disabled,
-.ui.form .field.disabled {
+.ui.form .ui.disabled.input > input {
   background: #F5F5F5;
   border: 1px solid #CCCCCC;
   opacity: 1.0;
+}
+.ui.form .ui.disabled.dropdown {
+  background: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  opacity: 1.0 !important;
 }
 /*******************************
          Site Overrides
