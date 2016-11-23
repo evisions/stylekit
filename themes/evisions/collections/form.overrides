@@ -104,9 +104,14 @@
   vertical-align: top;
 }
 
-.ui.form .field :disabled,
-.ui.form .field.disabled {
+.ui.form .ui.disabled.input > input {
   background: @pageBackground;
   border: 1px solid @solidBorderColor;
   opacity: 1.0;
+}
+
+.ui.form .ui.disabled.dropdown {
+  background: @pageBackground;
+  border: 1px solid @solidBorderColor;
+  opacity: 1.0 !important;
 }
