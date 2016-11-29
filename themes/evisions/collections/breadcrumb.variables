@@ -26,6 +26,9 @@
 /* Coupling */
 @segmentPadding: 0.5em 1em;
 
+@linkColor: @primaryColor;
+@linkHoverColor: lighten(@linkColor, 10);
+
 /*-------------------
        States
 --------------------*/

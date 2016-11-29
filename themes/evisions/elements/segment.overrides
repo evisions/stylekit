@@ -3,7 +3,11 @@
 *******************************/
 
 .ui.inverted.blue.segment {
-  border-color: @blue;
+  border-color: @primaryColor;
+}
+
+.ui.blue.segment:not(.inverted) {
+  border-top: @coloredBorderSize solid @primaryColor
 }
 
 /* Only one segment in segment group */
