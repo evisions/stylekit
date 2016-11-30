@@ -108,24 +108,24 @@
   color: @secondaryActiveColor !important;
 }
 
-.ui.table.selectable tbody tr:not(:focus):not(.empty):not(.group):hover td {
+.ui.table.selectable > tbody > tr:not(:focus):not(.empty):not(.group):hover td {
   background: @backgroundHover;
   color: @textColor;
   cursor: @selectableHoverCursor;
 }
-.ui.table.selectable.link tbody tr:not(:focus):not(.empty):not(.group):hover td {
+.ui.table.selectable.link > tbody > tr:not(:focus):not(.empty):not(.group):hover td {
   cursor: @selectableLinkHoverCursor;
 }
 
-.ui.table.selectable tbody tr.active:not(.empty):not(.group):hover td {
+.ui.table.selectable > tbody > tr.active:not(.empty):not(.group):hover td {
   background: @activeBackgroundHover;
 }
 
-.ui.table.selectable.striped tbody tr:nth-child(2n):not(.empty):hover td {
+.ui.table.selectable.striped > tbody > tr:nth-child(2n):not(.empty):hover td {
   background: @activeBackgroundHover;
 }
 
-.ui.table.inverted.selectable tbody tr:not(.empty):not(.group):hover td {
+.ui.table.inverted.selectable > tbody > tr:not(.empty):not(.group):hover td {
   background: @sortableInvertedHoverBackground;
 }
 
