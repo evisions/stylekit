@@ -10,6 +10,8 @@
 @borderWidth: 1px;
 @border: none;
 
+@blue: @primaryColor;
+
 @borderShadow: 0px 0px 0px @borderWidth @borderColor;
 @boxShadow:
   @borderShadow,

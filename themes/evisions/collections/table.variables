@@ -136,8 +136,8 @@
 @warningColorHover: darken(@warningColor, 3);
 
 /* Active */
-@activeColor: @offWhite;
-@activeBackgroundColor: @blue;
+@activeColor: @color;
+@activeBackgroundColor: #E6F1F9;
 @secondaryActiveBackgroundColor: @lightGrey;
 @secondaryActiveColor: rgba(50, 50, 50, 1);
 @activeBoxShadow: @stateMarkerWidth 0px 0px @activeColor inset;

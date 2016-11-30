@@ -80,6 +80,7 @@
 
 @primaryColor        : #0078A7;
 @secondaryColor      : @lightBlack;
+@tertiaryColor       : #EEEEEE;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
