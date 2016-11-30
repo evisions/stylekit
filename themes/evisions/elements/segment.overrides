@@ -32,11 +32,3 @@
 .ui[class*="very padded"].segment {
   padding: @veryPaddedVerticalPadding @veryPaddedHorizontalPadding;
 }
-
-.ui[class*="vertical segment"]:last-child {
-  border-radius: 0em 0em @borderRadius @borderRadius;
-}
-
-.ui.segment.attached {
-  border-radius: @borderRadius;
-}
