@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1479932163308');
+@import url('stylekit.blessed-blessed1.css?z=1480539737417');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -4525,13 +4525,13 @@
 ---------------*/
 .ui.table tr.active,
 .ui.table td.active {
-  box-shadow: 0px 0px 0px #FAFAFA inset;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8) inset;
 }
 .ui.table tr.active td,
 .ui.table td.active,
 .ui.table tr:focus {
-  background: #0075C9 !important;
-  color: #FAFAFA !important;
+  background: #E6F1F9 !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 .ui.table tr:focus {
   outline: none;
@@ -4539,15 +4539,15 @@
 .ui.table tr.active td > a,
 .ui.table td.active > a,
 .ui.table tr:focus td > a {
-  color: #FAFAFA !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 .ui.table td > a[tabindex="-1"]:focus {
   outline: none;
 }
 .ui.celled.table tr.active:hover td,
 .ui.celled.table tr:hover td.active {
-  background: #0075C9 !important;
-  color: #FAFAFA !important;
+  background: #E6F1F9 !important;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 /*--------------
      Disabled
@@ -5195,21 +5195,21 @@
   background: #DDDDDD !important;
   color: #323232 !important;
 }
-.ui.table.selectable tbody tr:not(:focus):not(.empty):not(.group):hover td {
+.ui.table.selectable > tbody > tr:not(:focus):not(.empty):not(.group):hover td {
   background: #f7f7f7;
   color: rgba(0, 0, 0, 0.8);
   cursor: default;
 }
-.ui.table.selectable.link tbody tr:not(:focus):not(.empty):not(.group):hover td {
+.ui.table.selectable.link > tbody > tr:not(:focus):not(.empty):not(.group):hover td {
   cursor: pointer;
 }
-.ui.table.selectable tbody tr.active:not(.empty):not(.group):hover td {
+.ui.table.selectable > tbody > tr.active:not(.empty):not(.group):hover td {
   background: #f7f7f7;
 }
-.ui.table.selectable.striped tbody tr:nth-child(2n):not(.empty):hover td {
+.ui.table.selectable.striped > tbody > tr:nth-child(2n):not(.empty):hover td {
   background: #f7f7f7;
 }
-.ui.table.inverted.selectable tbody tr:not(.empty):not(.group):hover td {
+.ui.table.inverted.selectable > tbody > tr:not(.empty):not(.group):hover td {
   background: rgba(255, 255, 255, 0.05) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.15));
   background: rgba(255, 255, 255, 0.05) linear-gradient(transparent, rgba(0, 0, 0, 0.15));
 }
@@ -5344,18 +5344,6 @@
 .ui.table tbody tr:not(.disabled).emphasized {
   font-weight: bold;
 }
-/*--------------
-    Active Invertable Modifiers
----------------*/
-.ui.table tbody tr.active span.invertable,
-.ui.table tbody tr:focus span.invertable {
-  color: #FFFFFF !important;
-}
-.ui.table tbody tr.active .ui.button.invertable,
-.ui.table tbody tr:focus .ui.button.invertable {
-  background-color: #FFFFFF;
-  color: #1B1C1D;
-}
 /*-----------------
     Footer
 -------------------*/
@@ -5365,6 +5353,9 @@
 .ui.table tr td.nowrap {
   word-break: normal;
   white-space: nowrap;
+}
+.ui.table td.fitted {
+  padding: 0;
 }
 /*******************************
          Site Overrides
@@ -13483,7 +13474,6 @@ a.ui.card:hover,
 }
 .ui.checkbox label:after,
 .ui.checkbox .box:after {
-  top: 0.2em;
   font-family: 'Checkbox';
 }
 .ui.checkbox label:before,
