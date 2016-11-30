@@ -290,3 +290,7 @@
   word-break: normal;
   white-space: nowrap;
 }
+
+.ui.table td.fitted {
+  padding: 0;
+}
