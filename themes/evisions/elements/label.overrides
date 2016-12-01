@@ -1,6 +1,10 @@
 /*******************************
          Theme Overrides
 *******************************/
+.ui.yellow.label {
+  color: @labelTextColor !important;
+}
+
 .ui.label.wrappable {
   max-width: 100%;
   overflow: hidden;
