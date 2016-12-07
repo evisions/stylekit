@@ -104,7 +104,8 @@
   vertical-align: top;
 }
 
-.ui.form .ui.disabled.input > input {
+.ui.form .ui.disabled.input > input,
+.ui.form .ui.disabled.input > textarea {
   background: @pageBackground;
   border: 1px solid @solidBorderColor;
   opacity: 1.0;

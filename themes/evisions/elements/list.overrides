@@ -22,3 +22,8 @@ ul.ui.list li.completed:before,
 .ui.list .item a.secondary {
   color: @white !important;
 }
+
+.ui.list .item a.ui.button.primary,
+.ui.list .item a.ui.button.primary:hover {
+  color: @white !important
+}
