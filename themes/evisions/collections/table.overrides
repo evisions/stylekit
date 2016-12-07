@@ -294,3 +294,10 @@
 .ui.table td.fitted {
   padding: 0;
 }
+
+/*-----------------
+    Disabled fixes
+-------------------*/
+.ui.table tr.disabled {
+  pointer-events: none;
+}
