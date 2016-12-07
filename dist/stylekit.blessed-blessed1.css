@@ -12708,6 +12708,9 @@ a.ui.dark.grey.label:hover:before {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.yellow.label {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
 .ui.label.wrappable {
   max-width: 100%;
   overflow: hidden;

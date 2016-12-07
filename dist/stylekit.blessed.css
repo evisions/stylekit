@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1480539737417');
+@import url('stylekit.blessed-blessed1.css?z=1481069115230');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -5356,6 +5356,12 @@
 }
 .ui.table td.fitted {
   padding: 0;
+}
+/*-----------------
+    Disabled fixes
+-------------------*/
+.ui.table tr.disabled {
+  pointer-events: none;
 }
 /*******************************
          Site Overrides
