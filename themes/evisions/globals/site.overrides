@@ -3,14 +3,11 @@
 *******************************/
 .disallowed, .disallowed * {
   cursor: not-allowed !important;
-  &:before {
-    cursor: not-allowed !important
-  }
+  &:before,
   &:after {
     cursor: not-allowed !important
   }
 }
-
 span.text.primary {
   color: @primaryColor;
 }
