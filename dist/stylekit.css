@@ -1459,6 +1459,16 @@ input::selection {
 /*******************************
         Global Overrides
 *******************************/
+.disallowed,
+.disallowed * {
+  cursor: not-allowed !important;
+}
+.disallowed:before,
+.disallowed *:before,
+.disallowed:after,
+.disallowed *:after {
+  cursor: not-allowed !important;
+}
 span.text.primary {
   color: #0078A7;
 }
@@ -11356,13 +11366,11 @@ img.ui.bordered.image {
 /* Adjacent Label */
 .ui.labeled.input {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .ui.labeled.input > .label {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   margin: 0;
@@ -11375,7 +11383,6 @@ img.ui.bordered.image {
 /* Fluid Labeled */
 .ui.fluid.labeled.input {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -11425,14 +11432,12 @@ img.ui.bordered.image {
 ---------------------*/
 .ui.action.input {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .ui.action.input > .button,
 .ui.action.input > .buttons {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
@@ -11445,7 +11450,6 @@ img.ui.bordered.image {
 /* Fluid */
 .ui.fluid.action.input {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -19204,20 +19208,16 @@ ul.ui.list li.completed:before,
 }
 .editable.field.inline {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .editable.field.inline.fluid {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -19238,13 +19238,11 @@ ul.ui.list li.completed:before,
 }
 .editable.field > * {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
 .editable.field > .ui.input {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
 }
@@ -20560,7 +20558,6 @@ ul.ui.list li.completed:before,
 .ui.grid > .centered.row {
   text-align: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -20821,15 +20818,13 @@ ul.ui.list li.completed:before,
 .ui.grid [class*="top aligned"].column,
 .ui.grid > [class*="top aligned"].row > .column {
   vertical-align: top;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .ui.grid [class*="top aligned"].column {
   vertical-align: top !important;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /* Middle Aligned */
 .ui[class*="middle aligned"].grid,
@@ -20837,15 +20832,13 @@ ul.ui.list li.completed:before,
 .ui[class*="middle aligned"].grid > .column,
 .ui.grid > [class*="middle aligned"].row > .column {
   vertical-align: middle;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .ui.grid [class*="middle aligned"].column {
   vertical-align: middle !important;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 /* Bottom Aligned */
 .ui[class*="bottom aligned"].grid,
@@ -20853,14 +20846,12 @@ ul.ui.list li.completed:before,
 .ui[class*="bottom aligned"].grid > .column,
 .ui.grid > [class*="bottom aligned"].row > .column {
   vertical-align: bottom;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .ui.grid [class*="bottom aligned"].column {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   vertical-align: bottom !important;
 }
 /*----------------------
@@ -20997,28 +20988,23 @@ ul.ui.list li.completed:before,
 /* Flexbox (Experimental / Overrides Where Supported) */
 .ui[class*="equal width"].grid {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 .ui[class*="equal width"].grid > .row,
 .ui.grid > [class*="equal width"].row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -21028,11 +21014,9 @@ ul.ui.list li.completed:before,
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
@@ -21059,16 +21043,13 @@ ul.ui.list li.completed:before,
 .ui[class*="equal height"].grid > .row,
 .ui.grid > [class*="equal height"].row {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -21078,11 +21059,9 @@ ul.ui.list li.completed:before,
   display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
@@ -27493,11 +27472,9 @@ ul.ui.list li.completed:before,
   background: rgba(0, 0, 0, 0.85);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box !important;
-  display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
   margin-left: calc(100% - 275px);
@@ -27507,7 +27484,6 @@ ul.ui.list li.completed:before,
   color: #FFFFFF;
   font-size: 14px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 0;
       -ms-flex: 1 0 0;
           flex: 1 0 0;
 }
@@ -28498,12 +28474,10 @@ ul.ui.list li.completed:before,
   max-width: 100%;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 290px;
@@ -28535,17 +28509,14 @@ ul.ui.list li.completed:before,
 ---------------*/
 .ui.cards {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: -0.875em -0.5em;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .ui.cards > .card {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 0.875em 0.5em;
@@ -28604,7 +28575,6 @@ ul.ui.list li.completed:before,
 .ui.cards > .card > .content,
 .ui.card > .content {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background: none;
@@ -28817,7 +28787,6 @@ ul.ui.list li.completed:before,
   max-width: 100%;
   min-height: 0em !important;
   -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   position: static;
