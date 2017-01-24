@@ -95,3 +95,5 @@
 @stackableMobileBorder: 1px solid @borderColor;
 @stackableInvertedMobileBorder: 1px solid @whiteBorderColor;
 
+@primaryTextColor: @invertedTextColor;
+@secondaryTextColor: @invertedTextColor;

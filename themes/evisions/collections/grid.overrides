@@ -71,3 +71,42 @@
   margin-left: (@rowSpacing / 4);
   margin-right: (@rowSpacing / 4);
 }
+
+/*----------------------
+         Colored
+-----------------------*/
+
+.ui.grid .primary.column {
+  background-color: @primaryColor;
+  color:@primaryTextColor;
+}
+
+.ui.grid > .row > .primary.column {
+  margin-top: -(@rowSpacing / 2);
+  margin-bottom: -(@rowSpacing / 2);
+  padding-top: (@rowSpacing / 2);
+  padding-bottom: (@rowSpacing / 2);
+}
+
+.ui.grid .secondary.column {
+  background-color: @secondaryColor;
+  color: @secondaryTextColor;
+}
+
+.ui.grid > .row > .secondary.column {
+  margin-top: -(@rowSpacing / 2);
+  margin-bottom: -(@rowSpacing / 2);
+  padding-top: (@rowSpacing / 2);
+  padding-bottom: (@rowSpacing / 2);
+}
+
+.ui.grid .tertiary.column {
+  background-color: @tertiaryColor;
+}
+
+.ui.grid > .row > .tertiary.column {
+  margin-top: -(@rowSpacing / 2);
+  margin-bottom: -(@rowSpacing / 2);
+  padding-top: (@rowSpacing / 2);
+  padding-bottom: (@rowSpacing / 2);
+}
