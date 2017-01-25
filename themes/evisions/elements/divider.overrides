@@ -1,3 +1,7 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.uptight.divider {
+  margin: @uptightMargin;
+}
