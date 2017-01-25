@@ -1,4 +1,4 @@
-@import url('stylekit.blessed-blessed1.css?z=1484267362416');
+@import url('stylekit.blessed-blessed1.css?z=1485302553313');
 
 /* Large Monitor Sizing Combinations */
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
@@ -1067,6 +1067,38 @@
 .ui.grid .uptight.row + .ui.divider {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+/*----------------------
+         Colored
+-----------------------*/
+.ui.grid .primary.column {
+  background-color: #0078A7;
+  color: #ffffff;
+}
+.ui.grid > .row > .primary.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid .secondary.column {
+  background-color: #333333;
+  color: #ffffff;
+}
+.ui.grid > .row > .secondary.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ui.grid .tertiary.column {
+  background-color: #EEEEEE;
+}
+.ui.grid > .row > .tertiary.column {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 /*******************************
          Site Overrides
