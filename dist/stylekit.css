@@ -1495,6 +1495,9 @@ span.text.light.orange {
 span.text.light.blue {
   color: #54C8FF;
 }
+span.text.light.gray {
+  color: rgba(0, 0, 0, 0.4);
+}
 span.text.teal {
   color: #007468;
 }
@@ -5072,6 +5075,9 @@ a.ui.button.inline {
 /*******************************
          Theme Overrides
 *******************************/
+.ui.uptight.divider {
+  margin: 0.3rem 0rem;
+}
 /*******************************
          Site Overrides
 *******************************/
