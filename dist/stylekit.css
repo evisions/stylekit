@@ -19282,6 +19282,13 @@ ul.ui.list li.completed:before,
   border: 1px solid #CCCCCC;
   opacity: 1.0 !important;
 }
+.ui.form .field.error .prompt {
+  background: #FFF0F0;
+  border-color: #DBB1B1;
+  color: #DE1A0C;
+  border-radius: 0em 0.2857rem 0.2857rem 0em;
+  box-shadow: 2px 0em 0em 0em #DE1A0C inset;
+}
 /*******************************
          Site Overrides
 *******************************/
