@@ -116,3 +116,11 @@
   border: 1px solid @solidBorderColor;
   opacity: 1.0 !important;
 }
+
+.ui.form .field.error .prompt {
+  background: @formErrorBackground;
+  border-color: @formErrorBorder;
+  color: @formErrorColor;
+  border-radius: @inputErrorBorderRadius;
+  box-shadow: @inputErrorBoxShadow;
+}
