@@ -1,6 +1,40 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+/*--- Dark Grey ---*/
+.ui.dark.grey.labels .label,
+.ui.dark.grey.label {
+  background-color: @darkGrey !important;
+  border-color: @darkGrey !important;
+  color: @invertedTextColor !important;
+}
+.ui.labels .dark.grey.label:before,
+.ui.dark.grey.labels .label:before,
+.ui.dark.grey.label:before {
+  background-color: @darkGrey !important;
+}
+a.ui.dark.grey.labels .label:hover,
+.ui.dark.grey.labels a.label:hover,
+a.ui.dark.grey.label:hover {
+  background-color: @darkGreyHover !important;
+  border-color: @darkGreyHover !important;
+  color: @invertedTextColor !important;
+}
+.ui.labels a.dark.grey.label:hover:before,
+.ui.dark.grey.labels a.label:hover:before,
+a.ui.dark.grey.label:hover:before {
+  background-color: @darkGreyHover !important;
+}
+.ui.dark.grey.corner.label,
+.ui.dark.grey.corner.label:hover {
+  background-color: transparent !important;
+}
+.ui.dark.grey.ribbon.label {
+  border-color: @darkGreyRibbonShadow !important;
+}
+
+
 .ui.yellow.label {
   color: @labelTextColor !important;
 }

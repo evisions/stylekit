@@ -2,6 +2,31 @@
          Theme Overrides
 *******************************/
 
+.ui.table td {
+  word-break: break-word;
+}
+
+.ui.table tr:focus {
+  background: @activeBackgroundColor !important;
+  color: @activeColor !important;
+}
+
+.ui.table tr:focus {
+  outline: none;
+}
+.ui.table td > a[tabindex="-1"]:focus {
+  outline: none;
+}
+
+// Active link suport
+.ui.table tr.active td > a,
+.ui.table td.active > a,
+.ui.table tr:focus td > a {
+  color: @activeColor !important;
+}
+
+
+// Attached support
 .ui.attached.table {
   position: relative;
   top: 0px;

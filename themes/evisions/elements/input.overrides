@@ -2,14 +2,31 @@
          Theme Overrides
 *******************************/
 
-
 /*--------------------
-    Success
-----------------------*/
-.ui.success.dropdown > i.icon.dropdown:before {
-  font-family: Icons !important;
-  content: '\f00c';
-  color: @green;
+      Editable
+---------------------*/
+
+.ui.editable.transparent.input input {
+  cursor: pointer;
+  padding: @padding !important;
+}
+.ui.editable.transparent.input > i.icon {
+  cursor: pointer;
+  display: none;
+  padding-left: @horizontalPadding;
+  padding-right: @horizontalPadding;
+}
+
+.ui.editable.transparent.input:hover {
+  outline: @border;
+}
+.ui.editable.transparent.input:hover > i.icon {
+  border-left: @border;
+  display: block;
+}
+
+.ui.editable.input > .ui.button {
+  border: @border;
 }
 
 .ui.disabled.input {

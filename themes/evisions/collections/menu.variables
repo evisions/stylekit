@@ -195,6 +195,7 @@
 @secondaryTransition: color 0.2s ease;
 
 @secondaryBorderRadius: 0;
+@secondaryItemBorderRadius: 0;
 
 @secondaryMargin: 0.25em;
 @secondaryVerticalMargin: 0.3em;
