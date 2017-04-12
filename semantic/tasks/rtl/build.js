@@ -15,7 +15,7 @@ var
   flatten      = require('gulp-flatten'),
   gulpif       = require('gulp-if'),
   less         = require('gulp-less'),
-  minifyCSS    = require('gulp-minify-css'),
+  minifyCSS    = require('gulp-clean-css'),
   plumber      = require('gulp-plumber'),
   print        = require('gulp-print'),
   rename       = require('gulp-rename'),
@@ -27,7 +27,7 @@ var
   config       = require('../config/user'),
 
   // install config
-  tasks        = require('../config/project/tasks'),
+  tasks        = require('../config/tasks'),
   install      = require('../config/project/install'),
 
   // shorthand

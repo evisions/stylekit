@@ -1,3 +1,5 @@
+
+
 /*
 
 ████████╗██╗  ██╗███████╗███╗   ███╗███████╗███████╗
@@ -22,6 +24,7 @@
 
 /* Elements */
 @button     : 'evisions';
+@container  : 'evisions';
 @divider    : 'evisions';
 @flag       : 'evisions';
 @header     : 'evisions';
@@ -35,6 +38,7 @@
 @reveal     : 'evisions';
 @segment    : 'evisions';
 @step       : 'evisions';
+@counter    : 'evisions';
 
 /* Collections */
 @breadcrumb           : 'evisions';
@@ -52,6 +56,7 @@
 @checkbox   : 'evisions';
 @dimmer     : 'evisions';
 @dropdown   : 'evisions';
+@embed      : 'evisions';
 @modal      : 'evisions';
 @nag        : 'evisions';
 @popup      : 'evisions';
@@ -63,7 +68,6 @@
 @sticky     : 'evisions';
 @tab        : 'evisions';
 @transition : 'evisions';
-@video      : 'evisions';
 
 /* Views */
 @ad        : 'evisions';
@@ -79,16 +83,16 @@
 *******************************/
 
 /* Path to theme packages */
-@themesFolder : 'themes';
+@themesFolder : '@{bower}/stylekit/themes';
 
 /* Path to site override folder */
-@siteFolder   : '_site';
+@siteFolder   : '../theme';
 
 
 /*******************************
          Import Theme
 *******************************/
 
-@import "theme.less";
+@import "@{bower}/stylekit/theme.less";
 
 /* End Config */

@@ -1,5 +1,5 @@
 {
-  "base": "semantic\\",
+  "base": "semantic/",
   "paths": {
     "source": {
       "config": "src/theme.config",
@@ -8,14 +8,14 @@
       "themes": "src/themes/"
     },
     "output": {
-      "packaged": "..\\dist\\",
-      "uncompressed": "..\\dist\\components\\",
-      "compressed": "..\\dist\\components\\",
+      "packaged": "dist/",
+      "uncompressed": "dist/components/",
+      "compressed": "dist/components/",
       "themes": "dist/themes/"
     },
     "clean": "dist/"
   },
-  "permission": false,
+  "permission": 744,
   "rtl": "No",
   "components": [
     "reset",
@@ -65,7 +65,9 @@
     "api",
     "form",
     "state",
-    "visibility"
+    "visibility",
+    "container",
+    "embed"
   ],
-  "version": "1.10.3"
+  "version": "2.2.10"
 }

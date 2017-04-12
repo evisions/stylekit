@@ -3,15 +3,21 @@
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2014 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
  */
 
-;(function ( $, window, document, undefined ) {
+;(function ($, window, document, undefined) {
 
 "use strict";
+
+window = (typeof window != 'undefined' && window.Math == Math)
+  ? window
+  : (typeof self != 'undefined' && self.Math == Math)
+    ? self
+    : Function('return this')()
+;
 
 $.fn.visibility = function(parameters) {
   var
@@ -24,25 +30,33 @@ $.fn.visibility = function(parameters) {
     query          = arguments[0],
     methodInvoked  = (typeof query == 'string'),
     queryArguments = [].slice.call(arguments, 1),
-    returnedValue
+    returnedValue,
+
+    moduleCount    = $allModules.length,
+    loadedCount    = 0
   ;
 
   $allModules
     .each(function() {
       var
-        settings        = $.extend(true, {}, $.fn.visibility.settings, parameters),
+        settings        = ( $.isPlainObject(parameters) )
+          ? $.extend(true, {}, $.fn.visibility.settings, parameters)
+          : $.extend({}, $.fn.visibility.settings),
 
         className       = settings.className,
         namespace       = settings.namespace,
         error           = settings.error,
+        metadata        = settings.metadata,
 
         eventNamespace  = '.' + namespace,
         moduleNamespace = 'module-' + namespace,
 
         $window         = $(window),
+
         $module         = $(this),
         $context        = $(settings.context),
-        $container      = $module.offsetParent(),
+
+        $placeholder,
 
         selector        = $module.selector || '',
         instance        = $module.data(moduleNamespace),
@@ -54,46 +68,74 @@ $.fn.visibility = function(parameters) {
           || function(callback) { setTimeout(callback, 0); },
 
         element         = this,
+        disabled        = false,
+
+        contextObserver,
         observer,
         module
       ;
 
-      module      = {
+      module = {
 
         initialize: function() {
-          module.verbose('Initializing visibility', settings);
+          module.debug('Initializing', settings);
 
           module.setup.cache();
-          module.save.position();
 
           if( module.should.trackChanges() ) {
-            module.bindEvents();
+
             if(settings.type == 'image') {
               module.setup.image();
             }
             if(settings.type == 'fixed') {
               module.setup.fixed();
             }
+
+            if(settings.observeChanges) {
+              module.observeChanges();
+            }
+            module.bind.events();
           }
+
+          module.save.position();
+          if( !module.is.visible() ) {
+            module.error(error.visible, $module);
+          }
+
           if(settings.initialCheck) {
             module.checkVisibility();
-          }
-          if(settings.observeChanges) {
-            module.observeChanges();
           }
           module.instantiate();
         },
 
         instantiate: function() {
-          module.verbose('Storing instance of module', module);
-          instance = module;
+          module.debug('Storing instance', module);
           $module
             .data(moduleNamespace, module)
           ;
+          instance = module;
         },
 
         destroy: function() {
           module.verbose('Destroying previous module');
+          if(observer) {
+            observer.disconnect();
+          }
+          if(contextObserver) {
+            contextObserver.disconnect();
+          }
+          $window
+            .off('load'   + eventNamespace, module.event.load)
+            .off('resize' + eventNamespace, module.event.resize)
+          ;
+          $context
+            .off('scroll'       + eventNamespace, module.event.scroll)
+            .off('scrollchange' + eventNamespace, module.event.scrollchange)
+          ;
+          if(settings.type == 'fixed') {
+            module.resetFixed();
+            module.remove.placeholder();
+          }
           $module
             .off(eventNamespace)
             .removeData(moduleNamespace)
@@ -101,13 +143,12 @@ $.fn.visibility = function(parameters) {
         },
 
         observeChanges: function() {
-          var
-            context = $context[0]
-          ;
           if('MutationObserver' in window) {
-            observer = new MutationObserver(function(mutations) {
-              module.verbose('DOM tree modified, updating visibility calculations');
-              module.refresh();
+            contextObserver = new MutationObserver(module.event.contextChanged);
+            observer        = new MutationObserver(module.event.changed);
+            contextObserver.observe(document, {
+              childList : true,
+              subtree   : true
             });
             observer.observe(element, {
               childList : true,
@@ -117,30 +158,74 @@ $.fn.visibility = function(parameters) {
           }
         },
 
-        bindEvents: function() {
-          module.verbose('Binding visibility events to scroll and resize');
-          $window
-            .on('resize' + eventNamespace, module.event.refresh)
-          ;
-          $context
-            .on('scroll' + eventNamespace, module.event.scroll)
-          ;
+        bind: {
+          events: function() {
+            module.verbose('Binding visibility events to scroll and resize');
+            if(settings.refreshOnLoad) {
+              $window
+                .on('load'   + eventNamespace, module.event.load)
+              ;
+            }
+            $window
+              .on('resize' + eventNamespace, module.event.resize)
+            ;
+            // pub/sub pattern
+            $context
+              .off('scroll'      + eventNamespace)
+              .on('scroll'       + eventNamespace, module.event.scroll)
+              .on('scrollchange' + eventNamespace, module.event.scrollchange)
+            ;
+          }
         },
 
         event: {
-          refresh: function() {
+          changed: function(mutations) {
+            module.verbose('DOM tree modified, updating visibility calculations');
+            module.timer = setTimeout(function() {
+              module.verbose('DOM tree modified, updating sticky menu');
+              module.refresh();
+            }, 100);
+          },
+          contextChanged: function(mutations) {
+            [].forEach.call(mutations, function(mutation) {
+              if(mutation.removedNodes) {
+                [].forEach.call(mutation.removedNodes, function(node) {
+                  if(node == element || $(node).find(element).length > 0) {
+                    module.debug('Element removed from DOM, tearing down events');
+                    module.destroy();
+                  }
+                });
+              }
+            });
+          },
+          resize: function() {
+            module.debug('Window resized');
+            if(settings.refreshOnResize) {
+              requestAnimationFrame(module.refresh);
+            }
+          },
+          load: function() {
+            module.debug('Page finished loading');
             requestAnimationFrame(module.refresh);
           },
+          // publishes scrollchange event on one scroll
           scroll: function() {
-            module.verbose('Scroll position changed');
             if(settings.throttle) {
               clearTimeout(module.timer);
-              module.timer = setTimeout(module.checkVisibility, settings.throttle);
+              module.timer = setTimeout(function() {
+                $context.triggerHandler('scrollchange' + eventNamespace, [ $context.scrollTop() ]);
+              }, settings.throttle);
             }
             else {
-              requestAnimationFrame(module.checkVisibility);
+              requestAnimationFrame(function() {
+                $context.triggerHandler('scrollchange' + eventNamespace, [ $context.scrollTop() ]);
+              });
             }
-          }
+          },
+          // subscribes to scrollchange
+          scrollchange: function(event, scrollPosition) {
+            module.checkVisibility(scrollPosition);
+          },
         },
 
         precache: function(images, callback) {
@@ -170,17 +255,25 @@ $.fn.visibility = function(parameters) {
           }
         },
 
-        should: {
+        enableCallbacks: function() {
+          module.debug('Allowing callbacks to occur');
+          disabled = false;
+        },
 
+        disableCallbacks: function() {
+          module.debug('Disabling all callbacks temporarily');
+          disabled = true;
+        },
+
+        should: {
           trackChanges: function() {
-            if(methodInvoked && queryArguments.length > 0) {
+            if(methodInvoked) {
               module.debug('One time query, no need to bind events');
               return false;
             }
-            module.debug('Query is attaching callbacks, watching for changes with scroll');
+            module.debug('Callbacks being attached');
             return true;
           }
-
         },
 
         setup: {
@@ -193,112 +286,198 @@ $.fn.visibility = function(parameters) {
           },
           image: function() {
             var
-              src = $module.data('src')
+              src = $module.data(metadata.src)
             ;
             if(src) {
               module.verbose('Lazy loading image', src);
+              settings.once           = true;
+              settings.observeChanges = false;
+
               // show when top visible
-              module.topVisible(function() {
-                module.debug('Image top visible', element);
+              settings.onOnScreen = function() {
+                module.debug('Image on screen', element);
                 module.precache(src, function() {
-                  module.set.image(src);
-                  settings.onTopVisible = false;
+                  module.set.image(src, function() {
+                    loadedCount++;
+                    if(loadedCount == moduleCount) {
+                      settings.onAllLoaded.call(this);
+                    }
+                    settings.onLoad.call(this);
+                  });
                 });
-              });
+              };
             }
           },
           fixed: function() {
-            module.verbose('Setting up fixed on element pass');
-            $module
-              .visibility({
-                once: false,
-                continuous: false,
-                onTopPassed: function() {
-                  $module
-                    .addClass(className.fixed)
-                    .css({
-                      position: 'fixed',
-                      top: settings.offset + 'px'
-                    })
-                  ;
-                  if(settings.transition) {
-                    if($.fn.transition !== undefined) {
-                      $module.transition(settings.transition, settings.duration);
-                    }
-                  }
-                },
-                onTopPassedReverse: function() {
-                  $module
-                    .removeClass(className.fixed)
-                    .css({
-                      position: '',
-                      top: ''
-                    })
-                  ;
+            module.debug('Setting up fixed');
+            settings.once           = false;
+            settings.observeChanges = false;
+            settings.initialCheck   = true;
+            settings.refreshOnLoad  = true;
+            if(!parameters.transition) {
+              settings.transition = false;
+            }
+            module.create.placeholder();
+            module.debug('Added placeholder', $placeholder);
+            settings.onTopPassed = function() {
+              module.debug('Element passed, adding fixed position', $module);
+              module.show.placeholder();
+              module.set.fixed();
+              if(settings.transition) {
+                if($.fn.transition !== undefined) {
+                  $module.transition(settings.transition, settings.duration);
                 }
-              })
+              }
+            };
+            settings.onTopPassedReverse = function() {
+              module.debug('Element returned to position, removing fixed', $module);
+              module.hide.placeholder();
+              module.remove.fixed();
+            };
+          }
+        },
+
+        create: {
+          placeholder: function() {
+            module.verbose('Creating fixed position placeholder');
+            $placeholder = $module
+              .clone(false)
+              .css('display', 'none')
+              .addClass(className.placeholder)
+              .insertAfter($module)
+            ;
+          }
+        },
+
+        show: {
+          placeholder: function() {
+            module.verbose('Showing placeholder');
+            $placeholder
+              .css('display', 'block')
+              .css('visibility', 'hidden')
+            ;
+          }
+        },
+        hide: {
+          placeholder: function() {
+            module.verbose('Hiding placeholder');
+            $placeholder
+              .css('display', 'none')
+              .css('visibility', '')
             ;
           }
         },
 
         set: {
-          image: function(src) {
-            var
-              offScreen = (module.cache.screen.bottom < module.cache.element.top)
+          fixed: function() {
+            module.verbose('Setting element to fixed position');
+            $module
+              .addClass(className.fixed)
+              .css({
+                position : 'fixed',
+                top      : settings.offset + 'px',
+                left     : 'auto',
+                zIndex   : settings.zIndex
+              })
             ;
+            settings.onFixed.call(element);
+          },
+          image: function(src, callback) {
             $module
               .attr('src', src)
             ;
-            if(offScreen) {
-              module.verbose('Image outside browser, no show animation');
-              $module.show();
-            }
-            else {
-              if(settings.transition) {
-                if( $.fn.transition !== undefined ) {
-                  $module.transition(settings.transition, settings.duration);
+            if(settings.transition) {
+              if( $.fn.transition !== undefined) {
+                if($module.hasClass(className.visible)) {
+                  module.debug('Transition already occurred on this image, skipping animation');
+                  return;
                 }
-                else {
-                  $module.fadeIn(settings.duration);
-                }
+                $module.transition(settings.transition, settings.duration, callback);
               }
               else {
-                $module.show();
+                $module.fadeIn(settings.duration, callback);
               }
+            }
+            else {
+              $module.show();
             }
           }
         },
 
         is: {
+          onScreen: function() {
+            var
+              calculations   = module.get.elementCalculations()
+            ;
+            return calculations.onScreen;
+          },
+          offScreen: function() {
+            var
+              calculations   = module.get.elementCalculations()
+            ;
+            return calculations.offScreen;
+          },
           visible: function() {
             if(module.cache && module.cache.element) {
-              return (module.cache.element.height > 0 && module.cache.element.width > 0);
+              return !(module.cache.element.width === 0 && module.cache.element.offset.top === 0);
             }
             return false;
+          },
+          verticallyScrollableContext: function() {
+            var
+              overflowY = ($context.get(0) !== window)
+                ? $context.css('overflow-y')
+                : false
+            ;
+            return (overflowY == 'auto' || overflowY == 'scroll');
+          },
+          horizontallyScrollableContext: function() {
+            var
+              overflowX = ($context.get(0) !== window)
+                ? $context.css('overflow-x')
+                : false
+            ;
+            return (overflowX == 'auto' || overflowX == 'scroll');
           }
         },
 
         refresh: function() {
-          module.debug('Refreshing constants (element width/height)');
+          module.debug('Refreshing constants (width/height)');
+          if(settings.type == 'fixed') {
+            module.resetFixed();
+          }
           module.reset();
           module.save.position();
-          module.checkVisibility();
+          if(settings.checkOnRefresh) {
+            module.checkVisibility();
+          }
           settings.onRefresh.call(element);
         },
 
+        resetFixed: function () {
+          module.remove.fixed();
+          module.remove.occurred();
+        },
+
         reset: function() {
-          module.verbose('Reseting all cached values');
+          module.verbose('Resetting all cached values');
           if( $.isPlainObject(module.cache) ) {
             module.cache.screen = {};
             module.cache.element = {};
           }
         },
 
-        checkVisibility: function() {
+        checkVisibility: function(scroll) {
           module.verbose('Checking visibility of element', module.cache.element);
-          module.save.calculations();
 
-          if( module.is.visible() ) {
+          if( !disabled && module.is.visible() ) {
+
+            // save scroll position
+            module.save.scroll(scroll);
+
+            // update calculations derived from scroll
+            module.save.calculations();
+
             // percentage
             module.passed();
 
@@ -310,11 +489,18 @@ $.fn.visibility = function(parameters) {
             module.bottomPassedReverse();
 
             // one time
+            module.onScreen();
+            module.offScreen();
             module.passing();
             module.topVisible();
             module.bottomVisible();
             module.topPassed();
             module.bottomPassed();
+
+            // on update callback
+            if(settings.onUpdate) {
+              settings.onUpdate.call(element, module.get.elementCalculations());
+            }
           }
         },
 
@@ -324,7 +510,7 @@ $.fn.visibility = function(parameters) {
             amountInPixels
           ;
           // assign callback
-          if(amount !== undefined && newCallback !== undefined) {
+          if(amount && newCallback) {
             settings.onPassed[amount] = newCallback;
           }
           else if(amount !== undefined) {
@@ -339,6 +525,48 @@ $.fn.visibility = function(parameters) {
                 module.remove.occurred(callback);
               }
             });
+          }
+        },
+
+        onScreen: function(newCallback) {
+          var
+            calculations = module.get.elementCalculations(),
+            callback     = newCallback || settings.onOnScreen,
+            callbackName = 'onScreen'
+          ;
+          if(newCallback) {
+            module.debug('Adding callback for onScreen', newCallback);
+            settings.onOnScreen = newCallback;
+          }
+          if(calculations.onScreen) {
+            module.execute(callback, callbackName);
+          }
+          else if(!settings.once) {
+            module.remove.occurred(callbackName);
+          }
+          if(newCallback !== undefined) {
+            return calculations.onOnScreen;
+          }
+        },
+
+        offScreen: function(newCallback) {
+          var
+            calculations = module.get.elementCalculations(),
+            callback     = newCallback || settings.onOffScreen,
+            callbackName = 'offScreen'
+          ;
+          if(newCallback) {
+            module.debug('Adding callback for offScreen', newCallback);
+            settings.onOffScreen = newCallback;
+          }
+          if(calculations.offScreen) {
+            module.execute(callback, callbackName);
+          }
+          else if(!settings.once) {
+            module.remove.occurred(callbackName);
+          }
+          if(newCallback !== undefined) {
+            return calculations.onOffScreen;
           }
         },
 
@@ -584,9 +812,31 @@ $.fn.visibility = function(parameters) {
         },
 
         remove: {
+          fixed: function() {
+            module.debug('Removing fixed position');
+            $module
+              .removeClass(className.fixed)
+              .css({
+                position : '',
+                top      : '',
+                left     : '',
+                zIndex   : ''
+              })
+            ;
+            settings.onUnfixed.call(element);
+          },
+          placeholder: function() {
+            module.debug('Removing placeholder content');
+            if($placeholder) {
+              $placeholder.remove();
+            }
+          },
           occurred: function(callback) {
             if(callback) {
-              if(module.cache.occurred[callback] !== undefined && module.cache.occurred[callback] === true) {
+              var
+                occurred = module.cache.occurred
+              ;
+              if(occurred[callback] !== undefined && occurred[callback] === true) {
                 module.debug('Callback can now be called again', callback);
                 module.cache.occurred[callback] = false;
               }
@@ -600,7 +850,6 @@ $.fn.visibility = function(parameters) {
         save: {
           calculations: function() {
             module.verbose('Saving all calculations necessary to determine positioning');
-            module.save.scroll();
             module.save.direction();
             module.save.screenCalculations();
             module.save.elementCalculations();
@@ -613,8 +862,9 @@ $.fn.visibility = function(parameters) {
               }
             }
           },
-          scroll: function() {
-            module.cache.scroll = $context.scrollTop() + settings.offset;
+          scroll: function(scrollPosition) {
+            scrollPosition      = scrollPosition + settings.offset || $context.scrollTop() + settings.offset;
+            module.cache.scroll = scrollPosition;
           },
           direction: function() {
             var
@@ -641,13 +891,17 @@ $.fn.visibility = function(parameters) {
             ;
             module.verbose('Saving element position');
             // (quicker than $.extend)
-            element.margin        = {};
-            element.margin.top    = parseInt($module.css('margin-top'), 10);
-            element.margin.bottom = parseInt($module.css('margin-bottom'), 10);
             element.fits          = (element.height < screen.height);
             element.offset        = $module.offset();
             element.width         = $module.outerWidth();
             element.height        = $module.outerHeight();
+            // compensate for scroll in context
+            if(module.is.verticallyScrollableContext()) {
+              element.offset.top += $context.scrollTop() - $context.offset().top;
+            }
+            if(module.is.horizontallyScrollableContext()) {
+              element.offset.left += $context.scrollLeft - $context.offset().left;
+            }
             // store
             module.cache.element = element;
             return element;
@@ -659,6 +913,9 @@ $.fn.visibility = function(parameters) {
             ;
             // offset
             if(settings.includeMargin) {
+              element.margin        = {};
+              element.margin.top    = parseInt($module.css('margin-top'), 10);
+              element.margin.bottom = parseInt($module.css('margin-bottom'), 10);
               element.top    = element.offset.top - element.margin.top;
               element.bottom = element.offset.top + element.height + element.margin.bottom;
             }
@@ -668,17 +925,17 @@ $.fn.visibility = function(parameters) {
             }
 
             // visibility
-            element.topVisible       = (screen.bottom >= element.top);
             element.topPassed        = (screen.top >= element.top);
-            element.bottomVisible    = (screen.bottom >= element.bottom);
             element.bottomPassed     = (screen.top >= element.bottom);
+            element.topVisible       = (screen.bottom >= element.top) && !element.bottomPassed;
+            element.bottomVisible    = (screen.bottom >= element.bottom) && !element.topPassed;
             element.pixelsPassed     = 0;
             element.percentagePassed = 0;
 
             // meta calculations
-            element.visible = (element.topVisible || element.bottomVisible);
-            element.passing = (element.topPassed && !element.bottomPassed);
-            element.hidden  = (!element.topVisible && !element.bottomVisible);
+            element.onScreen  = (element.topVisible && !element.bottomPassed);
+            element.passing   = (element.topPassed && !element.bottomPassed);
+            element.offScreen = (!element.onScreen);
 
             // passing calculations
             if(element.passing) {
@@ -691,16 +948,11 @@ $.fn.visibility = function(parameters) {
           },
           screenCalculations: function() {
             var
-              scroll = $context.scrollTop() + settings.offset
+              scroll = module.get.scroll()
             ;
-            if(module.cache.scroll === undefined) {
-              module.cache.scroll = $context.scrollTop() + settings.offset;
-            }
             module.save.direction();
-            $.extend(module.cache.screen, {
-              top    : scroll,
-              bottom : scroll + module.cache.screen.height
-            });
+            module.cache.screen.top    = scroll;
+            module.cache.screen.bottom = scroll + module.cache.screen.height;
             return module.cache.screen;
           },
           screenSize: function() {
@@ -799,7 +1051,7 @@ $.fn.visibility = function(parameters) {
           }
         },
         debug: function() {
-          if(settings.debug) {
+          if(!settings.silent && settings.debug) {
             if(settings.performance) {
               module.performance.log(arguments);
             }
@@ -810,7 +1062,7 @@ $.fn.visibility = function(parameters) {
           }
         },
         verbose: function() {
-          if(settings.verbose && settings.debug) {
+          if(!settings.silent && settings.verbose && settings.debug) {
             if(settings.performance) {
               module.performance.log(arguments);
             }
@@ -821,8 +1073,10 @@ $.fn.visibility = function(parameters) {
           }
         },
         error: function() {
-          module.error = Function.prototype.bind.call(console.error, console, settings.name + ':');
-          module.error.apply(console, arguments);
+          if(!settings.silent) {
+            module.error = Function.prototype.bind.call(console.error, console, settings.name + ':');
+            module.error.apply(console, arguments);
+          }
         },
         performance: {
           log: function(message) {
@@ -844,7 +1098,7 @@ $.fn.visibility = function(parameters) {
               });
             }
             clearTimeout(module.performance.timer);
-            module.performance.timer = setTimeout(module.performance.display, 100);
+            module.performance.timer = setTimeout(module.performance.display, 500);
           },
           display: function() {
             var
@@ -935,6 +1189,8 @@ $.fn.visibility = function(parameters) {
         if(instance === undefined) {
           module.initialize();
         }
+        instance.save.scroll();
+        instance.save.calculations();
         module.invoke(query);
       }
       else {
@@ -957,23 +1213,39 @@ $.fn.visibility.settings = {
   name                   : 'Visibility',
   namespace              : 'visibility',
 
-  className: {
-    fixed: 'fixed'
-  },
-
-  observeChanges         : true,
-
   debug                  : false,
   verbose                : false,
   performance            : true,
 
-  offset                 : 0,
-  includeMargin          : false,
-
-  context                : window,
+  // whether to use mutation observers to follow changes
+  observeChanges         : true,
 
   // check position immediately on init
   initialCheck           : true,
+
+  // whether to refresh calculations after all page images load
+  refreshOnLoad          : true,
+
+  // whether to refresh calculations after page resize event
+  refreshOnResize        : true,
+
+  // should call callbacks on refresh event (resize, etc)
+  checkOnRefresh         : true,
+
+  // callback should only occur one time
+  once                   : true,
+
+  // callback should fire continuously whe evaluates to true
+  continuous             : false,
+
+  // offset to use with scroll top
+  offset                 : 0,
+
+  // whether to include margin in elements position
+  includeMargin          : false,
+
+  // scroll context for visibility checks
+  context                : window,
 
   // visibility check delay in ms (defaults to animationFrame)
   throttle               : false,
@@ -981,14 +1253,19 @@ $.fn.visibility.settings = {
   // special visibility type (image, fixed)
   type                   : false,
 
+  // z-index to use with visibility 'fixed'
+  zIndex                 : '10',
+
   // image only animation settings
-  transition             : false,
+  transition             : 'fade in',
   duration               : 1000,
 
   // array of callbacks for percentage
   onPassed               : {},
 
   // standard callbacks
+  onOnScreen             : false,
+  onOffScreen            : false,
   onPassing              : false,
   onTopVisible           : false,
   onBottomVisible        : false,
@@ -1002,17 +1279,33 @@ $.fn.visibility.settings = {
   onTopPassedReverse     : false,
   onBottomPassedReverse  : false,
 
-  once                   : true,
-  continuous             : false,
+  // special callbacks for image
+  onLoad                 : function() {},
+  onAllLoaded            : function() {},
+
+  // special callbacks for fixed position
+  onFixed                : function() {},
+  onUnfixed              : function() {},
 
   // utility callbacks
+  onUpdate               : false, // disabled by default for performance
   onRefresh              : function(){},
-  onScroll               : function(){},
+
+  metadata : {
+    src: 'src'
+  },
+
+  className: {
+    fixed       : 'fixed',
+    placeholder : 'placeholder',
+    visible     : 'visible'
+  },
 
   error : {
-    method : 'The method you called is not defined.'
+    method  : 'The method you called is not defined.',
+    visible : 'Element is hidden, you must call refresh after element becomes visible'
   }
 
 };
 
-})( jQuery, window , document );
+})( jQuery, window, document );
