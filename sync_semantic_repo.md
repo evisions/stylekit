@@ -1,0 +1,1 @@
+https://stash.evisions.com/projects/LAB/repos/stylekit/commits/b487078941d501881976a405346e12abc74d3a5e#semantic/src/definitions/collections/table.less
