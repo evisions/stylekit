@@ -10,7 +10,6 @@
 @borderCollapse: separate;
 @borderSpacing: 0px;
 @transition:
-  background @transitionDuration @transitionEasing,
   border-color @transitionDuration @transitionEasing,
   color @transitionDuration @transitionEasing
 ;
