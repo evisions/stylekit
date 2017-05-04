@@ -87,16 +87,6 @@
   box-shadow: 0em 2px 0em inset;
 }
 
-.ui.menu:not(.vertical) > .item:first-child {
-  border-radius: @borderRadius 0px 0px @borderRadius;
-}
-
-.ui.menu:not(.vertical) > .item:nth-last-child(3) {
-  border-radius: 0px @borderRadius @borderRadius 0px;
-}
-.ui.menu:not(.vertical) > .item:nth-last-child(3):before {
-  content: none;
-}
 
 // Dark Outline Theme
 .ui.dark.menu {
