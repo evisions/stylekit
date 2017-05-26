@@ -82,11 +82,6 @@
   border-right: 0px;
 }
 
-.ui.tabular.menu .active.item {
-  border-radius:0 !important;
-  box-shadow: 0em 2px 0em inset;
-}
-
 
 // Dark Outline Theme
 .ui.dark.menu {
