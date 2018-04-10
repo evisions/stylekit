@@ -38,6 +38,8 @@
 /* Page Grid Segment */
 @pageGridMargin: (2 * @verticalPadding);
 
+/* Selectable */
+@selectableHoverBackground: #f5f5f5;
 
 /*******************************
             States
